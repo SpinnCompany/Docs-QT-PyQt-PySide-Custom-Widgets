@@ -16,7 +16,7 @@
             <description><![CDATA[We’re excited to introduce the new modern Dashboard UI for the Docs-QT-PyQt-PySide-Custom-Widgets project! 🎨]]></description>
             <content:encoded><![CDATA[<p>We’re excited to introduce the <strong>new modern Dashboard UI</strong> for the <em>Docs-QT-PyQt-PySide-Custom-Widgets</em> project! 🎨<br>
 <!-- -->It’s built with <strong>PySide6</strong>, styled for dark mode, and designed to provide a seamless development experience.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-highlights">🚀 Highlights<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/introducing-the-new-dashboard-ui#-highlights" class="hash-link" aria-label="Direct link to 🚀 Highlights" title="Direct link to 🚀 Highlights" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="-highlights">🚀 Highlights<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/introducing-the-new-dashboard-ui#-highlights" class="hash-link" aria-label="Direct link to 🚀 Highlights" title="Direct link to 🚀 Highlights" translate="no">​</a></h2>
 <p>Here’s what’s new in the Dashboard:</p>
 <ul>
 <li class=""><strong>Responsive layout</strong> with sidebar, header, and content sections.</li>
@@ -25,7 +25,7 @@
 <li class=""><strong>Tailwind-inspired design</strong> for better visual consistency.</li>
 <li class=""><strong>Modular includes</strong> for sidebar, header, and footer — making it easy to reuse across pages.</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-technologies">🧩 Technologies<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/introducing-the-new-dashboard-ui#-technologies" class="hash-link" aria-label="Direct link to 🧩 Technologies" title="Direct link to 🧩 Technologies" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="-technologies">🧩 Technologies<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/introducing-the-new-dashboard-ui#-technologies" class="hash-link" aria-label="Direct link to 🧩 Technologies" title="Direct link to 🧩 Technologies" translate="no">​</a></h2>
 <p>The dashboard is powered by:</p>
 <ul>
 <li class=""><strong>PySide6</strong> for UI logic</li>
@@ -33,7 +33,7 @@
 <li class=""><strong>Jinja templates</strong> for component structure</li>
 <li class=""><strong>Docusaurus</strong> for the documentation and blog system</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-upcoming-features">🛠️ Upcoming Features<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/introducing-the-new-dashboard-ui#%EF%B8%8F-upcoming-features" class="hash-link" aria-label="Direct link to 🛠️ Upcoming Features" title="Direct link to 🛠️ Upcoming Features" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="️-upcoming-features">🛠️ Upcoming Features<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/introducing-the-new-dashboard-ui#%EF%B8%8F-upcoming-features" class="hash-link" aria-label="Direct link to 🛠️ Upcoming Features" title="Direct link to 🛠️ Upcoming Features" translate="no">​</a></h2>
 <p>Next, we’re adding:</p>
 <ul>
 <li class="">Markdown live preview for blog creation.</li>
@@ -41,7 +41,7 @@
 <li class="">Post synchronization with your hosted docs site at<br>
 <!-- -->👉 <a href="https://qtcustomwidgets.spinncode.com/blog" target="_blank" rel="noopener noreferrer" class="">qtcustomwidgets.spinncode.com/blog</a></li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-final-thoughts">💬 Final Thoughts<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/introducing-the-new-dashboard-ui#-final-thoughts" class="hash-link" aria-label="Direct link to 💬 Final Thoughts" title="Direct link to 💬 Final Thoughts" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="-final-thoughts">💬 Final Thoughts<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/introducing-the-new-dashboard-ui#-final-thoughts" class="hash-link" aria-label="Direct link to 💬 Final Thoughts" title="Direct link to 💬 Final Thoughts" translate="no">​</a></h2>
 <p>This marks the beginning of a unified workflow — write, preview, and publish your documentation or blogs directly from the <strong>Dashboard UI</strong>.</p>
 <p>Stay tuned for the next update:</p>
 <blockquote>
@@ -61,7 +61,7 @@
             <description><![CDATA[Welcome to the official Qt Custom Widgets Blog, hosted on Spinncode! 🎉]]></description>
             <content:encoded><![CDATA[<p>Welcome to the official <strong>Qt Custom Widgets Blog</strong>, hosted on <a href="https://spinncode.com/" target="_blank" rel="noopener noreferrer" class="">Spinncode</a>! 🎉</p>
 <p>This space is dedicated to sharing tutorials, behind-the-scenes updates, and deep dives into <strong>modern PySide6 and PyQt widget design</strong>.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-why-this-blog-exists">💡 Why This Blog Exists<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/welcome-to-the-qt-custom-widgets-blog#-why-this-blog-exists" class="hash-link" aria-label="Direct link to 💡 Why This Blog Exists" title="Direct link to 💡 Why This Blog Exists" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="-why-this-blog-exists">💡 Why This Blog Exists<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/welcome-to-the-qt-custom-widgets-blog#-why-this-blog-exists" class="hash-link" aria-label="Direct link to 💡 Why This Blog Exists" title="Direct link to 💡 Why This Blog Exists" translate="no">​</a></h2>
 <p>When building modern desktop apps with Qt for Python, you quickly realize that many of the best UI ideas need custom widgets — not just the defaults.<br>
 <!-- -->This blog will help you:</p>
 <ul>
@@ -70,7 +70,7 @@
 <li class="">Follow development updates for the <strong>Docs-QT-PyQt-PySide-Custom-Widgets</strong> module.</li>
 </ul>
 <p>Whether you’re creating dashboards, admin panels, or interactive desktop tools — you’ll find practical examples here.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-what-you-can-expect">🚀 What You Can Expect<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/welcome-to-the-qt-custom-widgets-blog#-what-you-can-expect" class="hash-link" aria-label="Direct link to 🚀 What You Can Expect" title="Direct link to 🚀 What You Can Expect" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="-what-you-can-expect">🚀 What You Can Expect<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/welcome-to-the-qt-custom-widgets-blog#-what-you-can-expect" class="hash-link" aria-label="Direct link to 🚀 What You Can Expect" title="Direct link to 🚀 What You Can Expect" translate="no">​</a></h2>
 <ul>
 <li class="">🧩 Step-by-step widget tutorials</li>
 <li class="">🎨 Modern UI design ideas</li>
@@ -83,7 +83,7 @@
 <li class="">Creating <strong>Designer-friendly Widgets</strong> with custom properties.</li>
 <li class="">Structuring PySide6 projects for maintainability and scalability.</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-about-the-project">🧱 About the Project<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/welcome-to-the-qt-custom-widgets-blog#-about-the-project" class="hash-link" aria-label="Direct link to 🧱 About the Project" title="Direct link to 🧱 About the Project" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="-about-the-project">🧱 About the Project<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/welcome-to-the-qt-custom-widgets-blog#-about-the-project" class="hash-link" aria-label="Direct link to 🧱 About the Project" title="Direct link to 🧱 About the Project" translate="no">​</a></h2>
 <p>The <strong>Docs-QT-PyQt-PySide-Custom-Widgets</strong> project is a growing toolkit of pre-built, stylized Qt widgets that you can use in your apps or preview in Qt Designer.<br>
 <!-- -->It includes:</p>
 <ul>
@@ -93,7 +93,7 @@
 </ul>
 <p>You can explore the docs at<br>
 <!-- -->👉 <a href="https://qtcustomwidgets.spinncode.com/" target="_blank" rel="noopener noreferrer" class="">https://qtcustomwidgets.spinncode.com</a></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-about-the-author">👨‍💻 About the Author<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/welcome-to-the-qt-custom-widgets-blog#-about-the-author" class="hash-link" aria-label="Direct link to 👨‍💻 About the Author" title="Direct link to 👨‍💻 About the Author" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="-about-the-author">👨‍💻 About the Author<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/welcome-to-the-qt-custom-widgets-blog#-about-the-author" class="hash-link" aria-label="Direct link to 👨‍💻 About the Author" title="Direct link to 👨‍💻 About the Author" translate="no">​</a></h2>
 <p>I’m <strong>Khamisi Kibet</strong>, a Python developer from Kenya 🇰🇪 passionate about creating <strong>modern, lightweight desktop UIs</strong>.<br>
 <!-- -->I believe in building one line of code at a time — clean, efficient, and scalable.</p>
 <p>Follow updates here or on <a href="https://spinncode.com/" target="_blank" rel="noopener noreferrer" class="">Spinncode.com</a>.</p>
