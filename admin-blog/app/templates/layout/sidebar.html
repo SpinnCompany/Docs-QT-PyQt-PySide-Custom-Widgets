@@ -1,0 +1,142 @@
+<!-- Mobile Overlay -->
+<div id="sidebar-overlay" class="fixed inset-0 bg-black bg-opacity-40 z-30 hidden md:hidden"></div>
+
+<!-- Sidebar -->
+<div id="mobile-sidebar"
+     class="fixed md:static inset-y-0 left-0 w-64 bg-white border-r border-gray-200 p-6 transform -translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out z-40 dark:bg-gray-800 dark:border-gray-700">
+
+    <div class="flex items-center justify-between mb-8">
+        <div class="flex items-center space-x-3">
+            <i class="fas fa-blog text-blue-500 text-2xl"></i>
+            <span class="text-xl font-bold dark:text-white">Blog Admin</span>
+        </div>
+        <!-- Close button visible on mobile -->
+        <button class="md:hidden text-gray-500 dark:text-gray-400" onclick="document.getElementById('sidebar-overlay').classList.add('hidden'); document.getElementById('mobile-sidebar').classList.add('-translate-x-full')">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <nav class="space-y-2">
+        <a href="{{ url_for('dashboard.dashboard_home') }}" class="sidebar-item flex items-center space-x-3 p-3 dark:text-white {% if request.path == '/' or request.path == '/dashboard' %}active{% endif %}">
+            <i class="fas fa-tachometer-alt text-blue-500"></i>
+            <span>Dashboard</span>
+        </a>
+        <a href="{{ url_for('dashboard.blog_create') }}" class="sidebar-item flex items-center space-x-3 p-3 dark:text-gray-300 {% if request.path == '/blogs/create' %}active{% endif %}">
+            <i class="fas fa-plus-circle text-blue-500"></i>
+            <span>New Post</span>
+        </a>
+        <a href="{{ url_for('dashboard.blog_list') }}" class="sidebar-item flex items-center space-x-3 p-3 dark:text-gray-300 {% if request.path == '/blogs' %}active{% endif %}">
+            <i class="fas fa-file-alt text-blue-500"></i>
+            <span>All Posts</span>
+        </a>
+        <a href="#" class="sidebar-item flex items-center space-x-3 p-3 dark:text-gray-300">
+            <i class="fas fa-tags text-blue-500"></i>
+            <span>Categories</span>
+        </a>
+        <a href="#" class="sidebar-item flex items-center space-x-3 p-3 dark:text-gray-300">
+            <i class="fas fa-cog text-blue-500"></i>
+            <span>Settings</span>
+        </a>
+    </nav>
+
+    <!-- Quick Stats -->
+    <div class="mt-8 p-4 bg-gray-50 rounded-lg dark:bg-gray-700">
+        <div class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Quick Stats</div>
+        <div class="space-y-2 text-xs">
+            <div class="flex justify-between">
+                <span class="text-gray-500 dark:text-gray-400">Total Posts</span>
+                <span class="font-medium dark:text-white">{{ stats.total_posts if stats else 0 }}</span>
+            </div>
+            <div class="flex justify-between">
+                <span class="text-gray-500 dark:text-gray-400">Published</span>
+                <span class="font-medium text-green-600 dark:text-green-400">{{ stats.published_posts if stats else 0 }}</span>
+            </div>
+            <div class="flex justify-between">
+                <span class="text-gray-500 dark:text-gray-400">Drafts</span>
+                <span class="font-medium text-yellow-600 dark:text-yellow-400">{{ stats.draft_posts if stats else 0 }}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
+        <div class="text-xs text-gray-500 mb-2 dark:text-gray-400">DOCUSAURUS</div>
+        <a href="https://qtcustomwidgets.spinncode.com" target="_blank"
+           class="flex items-center space-x-2 text-gray-700 hover:text-blue-500 transition-all dark:text-gray-300 mb-2">
+            <i class="fas fa-external-link-alt"></i>
+            <span>View Live Site</span>
+        </a>
+        <a href="https://blog.spinncode.com" target="_blank"
+           class="flex items-center space-x-2 text-gray-700 hover:text-blue-500 transition-all dark:text-gray-300">
+            <i class="fas fa-blog"></i>
+            <span>Blog Homepage</span>
+        </a>
+    </div>
+
+    <!-- User Info -->
+    <div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
+        <div class="flex items-center space-x-3">
+            <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                <span class="text-white text-sm font-medium">{{ session.user[0] if session.user else 'U' }}</span>
+            </div>
+            <div class="flex-1 min-w-0">
+                <p class="text-sm font-medium text-gray-900 dark:text-white truncate">
+                    {{ session.user if session.user else 'Guest' }}
+                </p>
+                <p class="text-xs text-gray-500 dark:text-gray-400 truncate">Administrator</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.sidebar-item {
+    @apply rounded-lg transition-all duration-200;
+}
+
+.sidebar-item:not(.active) {
+    @apply text-gray-600 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white;
+}
+
+.sidebar-item.active {
+    @apply bg-blue-50 text-blue-700 border border-blue-200 dark:bg-blue-900/20 dark:text-blue-300 dark:border-blue-800;
+}
+
+.sidebar-item i {
+    @apply transition-colors duration-200;
+}
+
+.sidebar-item:not(.active) i {
+    @apply text-gray-400;
+}
+
+.sidebar-item.active i {
+    @apply text-blue-500;
+}
+</style>
+
+<script>
+// Auto-close mobile sidebar when clicking on links
+document.querySelectorAll('#mobile-sidebar a').forEach(link => {
+    link.addEventListener('click', function() {
+        if (window.innerWidth < 768) {
+            document.getElementById('sidebar-overlay').classList.add('hidden');
+            document.getElementById('mobile-sidebar').classList.add('-translate-x-full');
+        }
+    });
+});
+
+// Update active states based on current URL
+function updateActiveSidebarItem() {
+    const currentPath = window.location.pathname;
+    document.querySelectorAll('.sidebar-item').forEach(item => {
+        item.classList.remove('active');
+        const href = item.getAttribute('href');
+        if (href && (currentPath === href || currentPath.startsWith(href + '/'))) {
+            item.classList.add('active');
+        }
+    });
+}
+
+// Initialize active states
+document.addEventListener('DOMContentLoaded', updateActiveSidebarItem);
+</script>

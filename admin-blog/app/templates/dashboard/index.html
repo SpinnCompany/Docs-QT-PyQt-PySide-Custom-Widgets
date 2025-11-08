@@ -1,0 +1,15 @@
+{% extends 'layout/base.html' %}
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<div class="space-y-6">
+    <!-- Include stats and recent posts -->
+    {% include 'dashboard/stats.html' %}
+    
+    <!-- Include build status panel -->
+    {% include 'dashboard/build_status.html' %}
+    
+    <!-- Include recent posts -->
+    {% include 'dashboard/recent_posts.html' %}
+</div>
+{% endblock %}

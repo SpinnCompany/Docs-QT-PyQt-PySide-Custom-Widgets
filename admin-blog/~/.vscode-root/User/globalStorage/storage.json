@@ -1,0 +1,83 @@
+{
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "26bc276c8ad76314d30209380c698c13a0d9fcc2ed3c6f905ae39fa4c1c5018b",
+    "telemetry.devDeviceId": "7e8810e2-fe25-4da9-bb69-adac827b6c98",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [
+            {
+                "folderUri": "file:///mnt/NewVolume/git/Doc/Docs-QT-PyQt-PySide-Custom-Widgets/admin-blog"
+            }
+        ],
+        "emptyWindows": [
+            {
+                "backupFolder": "1762293945507"
+            }
+        ]
+    },
+    "windowControlHeight": 35,
+    "profileAssociations": {
+        "workspaces": {
+            "file:///mnt/NewVolume/git/Doc/Docs-QT-PyQt-PySide-Custom-Widgets/admin-blog": "__default__profile__"
+        },
+        "emptyWindows": {
+            "1762293945507": "__default__profile__"
+        }
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#1f1f1f",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#cccccc",
+            "background": "#1f1f1f",
+            "editorBackground": "#1f1f1f",
+            "titleBarBackground": "#181818",
+            "titleBarBorder": "#2b2b2b",
+            "activityBarBackground": "#181818",
+            "activityBarBorder": "#2b2b2b",
+            "sideBarBackground": "#181818",
+            "sideBarBorder": "#2b2b2b",
+            "statusBarBackground": "#181818",
+            "statusBarBorder": "#2b2b2b",
+            "statusBarNoFolderBackground": "#1f1f1f"
+        },
+        "layoutInfo": {
+            "sideBarSide": "right",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 48,
+            "sideBarWidth": 300,
+            "auxiliaryBarWidth": 0,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///mnt/NewVolume/git/Doc/Docs-QT-PyQt-PySide-Custom-Widgets/admin-blog",
+            "backupPath": "/mnt/NewVolume/git/Doc/Docs-QT-PyQt-PySide-Custom-Widgets/admin-blog/~/.vscode-root/Backups/6b3f840b6f6af853d605d6b119ddee50",
+            "uiState": {
+                "mode": 0,
+                "x": 1872,
+                "y": 110,
+                "width": 1200,
+                "height": 724
+            }
+        },
+        "openedWindows": []
+    },
+    "windowSplashWorkspaceOverride": {
+        "layoutInfo": {
+            "sideBarWidth": 300,
+            "auxiliaryBarWidth": 300,
+            "workspaces": {
+                "e4fbedc55614bcceecf67da987b0da37": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+venv/
+node_modules/
+app/data/database/*
+app/data/*
+app/data/logs/*
+app/data/sessions/*
+!app/data/sessions/.gitkeep
+app/static/css/output.css
+*.log

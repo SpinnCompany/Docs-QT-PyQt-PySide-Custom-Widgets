@@ -1,0 +1,83 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroBanner {
+  text-align: center;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #111827, #1f2937);
+  color: white;
+}
+
+.heroBanner img {
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.heroBanner img:hover {
+  transform: scale(1.02);
+}
+
+.heroBanner {
+  background: linear-gradient(135deg, #1e1e1e 0%, #2c2c2c 100%);
+  color: white;
+  text-align: center;
+  padding: 4rem 0;
+  position: relative;
+}
+
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(65,205,82,0.2) 0%, transparent 70%);
+  z-index: 0;
+}
+
+.heroBanner * {
+  position: relative;
+  z-index: 1;
+}
+
+.heroImage {
+  max-width: 800px;      /* ✅ Limits image width to a reasonable size */
+  width: 100%;           /* responsive scaling */
+  height: auto;          /* maintains aspect ratio */
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  aspect-ratio: 16 / 9; /* keeps 1200x630 style ratio */
+  object-fit: cover;
+}
+
+.heroImage:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 32px rgba(65, 205, 82, 0.4); /* Qt green glow */
+}
+
+@media (max-width: 768px) {
+  .heroImage {
+    max-width: 90%;  /* ✅ Shrinks slightly for mobile */
+  }
+}
+

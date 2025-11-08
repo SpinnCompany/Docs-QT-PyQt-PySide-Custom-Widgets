@@ -1,0 +1,43 @@
+{
+    "files.associations": {
+        "*.html": "jinja-html",
+        "*.j2": "jinja-html",
+        "*.js": "javascript",
+        ".php_cs": "php",
+        ".php_cs.dist": "php"
+    },
+    // Emmet Support for Jinja and HTML
+    "emmet.includeLanguages": {
+        "jinja-html": "html",
+        "blade": "html",
+        "vue-html": "html",
+        "vue": "html",
+        "react": "html",
+        "javascript": "html"
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.minimap.enabled": false,
+    "editor.wrappingIndent": "same",
+
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    
+    // Typography
+    "editor.fontFamily": "Geist Mono",
+    "editor.suggestFontSize": 16,
+    // "editor.suggestLineHeight": 30,
+    
+    "material-icon-theme.saturation": 0,
+    "vscode_custom_css.imports": [
+        "file://${workspaceFolder}/.vscode/custom-vscode.css",
+        "file://${workspaceFolder}/.vscode/vscode-script.js"
+    ],
+    "workbench.colorTheme": "Tokyo Night",
+    // "workbench.colorTheme": "React Theme",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.sideBar.location": "right",
+    "material-icon-theme.files.color": "#42a5f5",
+    "workbench.tree.enableStickyScroll": false
+}
