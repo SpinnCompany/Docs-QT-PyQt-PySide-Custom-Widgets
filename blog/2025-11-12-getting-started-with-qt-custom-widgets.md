@@ -1,11 +1,29 @@
-# Basicusage
+---
+authors:
+- Khamisi Kibet
+date: '2025-11-12'
+slug: getting-started-with-qt-custom-widgets
+tags:
+- PySide6
+- Python
+- GUI
+- Custom Widgets
+- Tutorial
+- Qt
+- PyQt
+- Gui. Interface
+- Desktop
+title: Getting Started With Qt Custom Widgets
+---
 
-> Complete Tutorial: Getting Started with QT-PyQt-PySide-Custom-Widgets
+# Complete Tutorial: Getting Started with QT-PyQt-PySide-Custom-Widgets
 
 ## Step 1: Install Python and Create Virtual Environment
 
 ### Install Python
 First, ensure you have Python 3.7 or higher installed:
+
+<!-- truncate -->
 
 **Windows:**
 ```bash

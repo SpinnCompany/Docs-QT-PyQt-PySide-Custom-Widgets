@@ -7,18 +7,20 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
+// Import the image correctly
+import socialCardImage from '@site/static/img/social-card.png';
+
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container text-center">
-        {/* Optional logo/banner image */}
+        {/* Use the imported image */}
         <img
-          src="/img/social-card.png"
+          src={socialCardImage}
           alt="Qt Custom Widgets Banner"
           className={`${styles.heroImage} mx-auto mb-6 rounded-xl shadow-lg`}
         />
-
 
         <Heading as="h1" className="hero__title text-white">
           {siteConfig.title}

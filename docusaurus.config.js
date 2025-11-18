@@ -1,15 +1,20 @@
 // @ts-check
 import { themes as prismThemes } from 'prism-react-renderer';
 
+// Simple and reliable environment detection
+const isGitHubPages = process.env.DEPLOY_ENV === 'gh-pages';
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Qt Custom Widgets',
   tagline: 'Professional PyQt and PySide Custom Widgets & Components',
   favicon: 'img/favicon.ico',
 
-  // GitHub Pages configuration
+  // Dynamic configuration
   url: 'https://SpinnCompany.github.io',
-  baseUrl: '/Docs-QT-PyQt-PySide-Custom-Widgets/',
+  // baseUrl: isGitHubPages ? '/Docs-QT-PyQt-PySide-Custom-Widgets/' : '/',
+  // baseUrl: '/Docs-QT-PyQt-PySide-Custom-Widgets/',
+  baseUrl: '/',
   
   // GitHub repo information
   organizationName: 'SpinnCompany',

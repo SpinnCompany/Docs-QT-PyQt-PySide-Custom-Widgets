@@ -6,13 +6,15 @@ from pathlib import Path
 from ..utils.status import get_user_status
 from .. services.build_manager import build_manager
 import asyncio
+
 dashboard_bp = Blueprint('dashboard', __name__)
 
 # Configuration
-# Configuration
-BLOG_DIR = Path('/mnt/NewVolume/git/Doc/Docs-QT-PyQt-PySide-Custom-Widgets/blog')
-DRAFT_DIR = Path('/mnt/NewVolume/git/Doc/Docs-QT-PyQt-PySide-Custom-Widgets/blogs_draft')
+BLOG_DIR = Path('/mnt/NewVolume/git/SpinnCompany/Docs-QT-PyQt-PySide-Custom-Widgets/blog')
+DRAFT_DIR = Path('/mnt/NewVolume/git/SpinnCompany/Docs-QT-PyQt-PySide-Custom-Widgets/blogs_draft')
 
+# Supported file extensions
+SUPPORTED_EXTENSIONS = {'.md', '.mdx'}
 
 # -----------------------------
 # Blog operations
@@ -34,7 +36,7 @@ def parse_front_matter(content):
         return front_matter, body
     return {}, content
 
-def generate_blog_content(front_matter, body):
+def generate_blog_content(front_matter, body, file_extension='.md'):
     """Generate markdown content with YAML front matter"""
     yaml_content = yaml.dump(front_matter, default_flow_style=False, allow_unicode=True)
     return f"---\n{yaml_content}---\n\n{body}"
@@ -49,84 +51,91 @@ async def get_blog_posts():
             directory.mkdir(parents=True, exist_ok=True)
     
     # Get published posts
-    for file_path in BLOG_DIR.glob('*.md'):
-        try:
-            content = file_path.read_text(encoding='utf-8')
-            front_matter, body = parse_front_matter(content)
-            posts.append({
-                'slug': file_path.stem,
-                'filename': file_path.name,
-                'title': front_matter.get('title', 'Untitled'),
-                'date': front_matter.get('date', ''),
-                'authors': front_matter.get('authors', []),
-                'draft': False,  # Published posts are not drafts
-                'tags': front_matter.get('tags', []),
-                'content': body,
-                'file_path': str(file_path)
-            })
-        except Exception as e:
-            print(f"Error reading {file_path}: {e}")
-            continue
+    for file_path in BLOG_DIR.iterdir():
+        if file_path.suffix.lower() in SUPPORTED_EXTENSIONS:
+            try:
+                content = file_path.read_text(encoding='utf-8')
+                front_matter, body = parse_front_matter(content)
+                posts.append({
+                    'slug': file_path.stem,
+                    'filename': file_path.name,
+                    'title': front_matter.get('title', 'Untitled'),
+                    'date': front_matter.get('date', ''),
+                    'authors': front_matter.get('authors', []),
+                    'draft': False,  # Published posts are not drafts
+                    'tags': front_matter.get('tags', []),
+                    'content': body,
+                    'file_path': str(file_path),
+                    'file_extension': file_path.suffix.lower()
+                })
+            except Exception as e:
+                print(f"Error reading {file_path}: {e}")
+                continue
 
     # Get draft posts
-    for file_path in DRAFT_DIR.glob('*.md'):
-        try:
-            content = file_path.read_text(encoding='utf-8')
-            front_matter, body = parse_front_matter(content)
-            posts.append({
-                'slug': file_path.stem,
-                'filename': file_path.name,
-                'title': front_matter.get('title', 'Untitled'),
-                'date': front_matter.get('date', ''),
-                'authors': front_matter.get('authors', []),
-                'draft': True,  # Draft posts are drafts
-                'tags': front_matter.get('tags', []),
-                'content': body,
-                'file_path': str(file_path)
-            })
-        except Exception as e:
-            print(f"Error reading draft {file_path}: {e}")
-            continue
+    for file_path in DRAFT_DIR.iterdir():
+        if file_path.suffix.lower() in SUPPORTED_EXTENSIONS:
+            try:
+                content = file_path.read_text(encoding='utf-8')
+                front_matter, body = parse_front_matter(content)
+                posts.append({
+                    'slug': file_path.stem,
+                    'filename': file_path.name,
+                    'title': front_matter.get('title', 'Untitled'),
+                    'date': front_matter.get('date', ''),
+                    'authors': front_matter.get('authors', []),
+                    'draft': True,  # Draft posts are drafts
+                    'tags': front_matter.get('tags', []),
+                    'content': body,
+                    'file_path': str(file_path),
+                    'file_extension': file_path.suffix.lower()
+                })
+            except Exception as e:
+                print(f"Error reading draft {file_path}: {e}")
+                continue
 
     posts.sort(key=lambda x: x.get('date', ''), reverse=True)
     return posts
 
-
 async def get_blog_post(slug):
-    """Get a blog post by slug, checking both published and draft directories"""
-    # Check published posts first
-    file_path = BLOG_DIR / f"{slug}.md"
-    if file_path.exists():
-        content = file_path.read_text(encoding='utf-8')
-        front_matter, body = parse_front_matter(content)
-        return {
-            'slug': slug,
-            'filename': file_path.name,
-            'title': front_matter.get('title', 'Untitled'),
-            'date': front_matter.get('date', ''),
-            'authors': front_matter.get('authors', []),
-            'draft': False,
-            'tags': front_matter.get('tags', []),
-            'content': body,
-            'file_path': str(file_path)
-        }
+    """Get a blog post by slug, checking both published and draft directories for both .md and .mdx"""
+    # Check all supported extensions in published posts first
+    for ext in SUPPORTED_EXTENSIONS:
+        file_path = BLOG_DIR / f"{slug}{ext}"
+        if file_path.exists():
+            content = file_path.read_text(encoding='utf-8')
+            front_matter, body = parse_front_matter(content)
+            return {
+                'slug': slug,
+                'filename': file_path.name,
+                'title': front_matter.get('title', 'Untitled'),
+                'date': front_matter.get('date', ''),
+                'authors': front_matter.get('authors', []),
+                'draft': False,
+                'tags': front_matter.get('tags', []),
+                'content': body,
+                'file_path': str(file_path),
+                'file_extension': file_path.suffix.lower()
+            }
     
-    # Check draft posts
-    file_path = DRAFT_DIR / f"{slug}.md"
-    if file_path.exists():
-        content = file_path.read_text(encoding='utf-8')
-        front_matter, body = parse_front_matter(content)
-        return {
-            'slug': slug,
-            'filename': file_path.name,
-            'title': front_matter.get('title', 'Untitled'),
-            'date': front_matter.get('date', ''),
-            'authors': front_matter.get('authors', []),
-            'draft': True,
-            'tags': front_matter.get('tags', []),
-            'content': body,
-            'file_path': str(file_path)
-        }
+    # Check all supported extensions in draft posts
+    for ext in SUPPORTED_EXTENSIONS:
+        file_path = DRAFT_DIR / f"{slug}{ext}"
+        if file_path.exists():
+            content = file_path.read_text(encoding='utf-8')
+            front_matter, body = parse_front_matter(content)
+            return {
+                'slug': slug,
+                'filename': file_path.name,
+                'title': front_matter.get('title', 'Untitled'),
+                'date': front_matter.get('date', ''),
+                'authors': front_matter.get('authors', []),
+                'draft': True,
+                'tags': front_matter.get('tags', []),
+                'content': body,
+                'file_path': str(file_path),
+                'file_extension': file_path.suffix.lower()
+            }
     
     return None
 
@@ -199,7 +208,6 @@ async def dashboard_home():
 
     return await render_template('dashboard/index.html', **context)
 
-
 @dashboard_bp.route('/api/status')
 async def api_status():
     """Provide live dashboard status (MQTT, balance, etc.)"""
@@ -213,7 +221,6 @@ async def api_status():
         "balance": status.get('balance', 0)
     }
 
-
 @dashboard_bp.route('/blogs')
 async def blog_list():
     posts = await get_blog_posts()
@@ -224,7 +231,6 @@ async def blog_list():
         'current_year': datetime.now().year
     }
     return await render_template('blog_list.html', **context)
-
 
 @dashboard_bp.route('/blogs/create', methods=['GET', 'POST'])
 async def blog_create():
@@ -238,7 +244,7 @@ async def blog_create():
         content = form.get('content')
         authors = [a.strip() for a in form.get('authors', '').split(',') if a.strip()]
         tags = [t.strip() for t in form.get('tags', '').split(',') if t.strip()]
-        file_type = form.get('type', 'md')
+        file_type = form.get('type', 'md')  # 'md' or 'mdx'
         action = form.get('action', 'publish')  # 'draft' or 'publish'
         
         # Determine if it's a draft
@@ -267,7 +273,7 @@ async def blog_create():
             front_matter['draft'] = True
         
         # Generate file content
-        file_content = generate_blog_content(front_matter, content)
+        file_content = generate_blog_content(front_matter, content, f".{file_type}")
         
         # Save to appropriate directory
         if is_draft:
@@ -287,7 +293,6 @@ async def blog_create():
         current_year=datetime.now().year
     )
 
-
 @dashboard_bp.route('/blogs/edit/<slug>', methods=['GET', 'POST'])
 async def blog_edit(slug):
     """Edit an existing blog post"""
@@ -304,7 +309,7 @@ async def blog_edit(slug):
         content = form.get('content')
         authors = [a.strip() for a in form.get('authors', '').split(',') if a.strip()]
         tags = [t.strip() for t in form.get('tags', '').split(',') if t.strip()]
-        file_type = form.get('type', 'md')
+        file_type = form.get('type', 'md')  # 'md' or 'mdx'
         action = form.get('action', 'publish')  # 'draft' or 'publish'
         
         # Determine if it's a draft
@@ -332,7 +337,7 @@ async def blog_edit(slug):
             front_matter['draft'] = True
         
         # Generate file content
-        file_content = generate_blog_content(front_matter, content)
+        file_content = generate_blog_content(front_matter, content, f".{file_type}")
         
         # Determine save path based on new status
         if is_draft:
@@ -340,9 +345,10 @@ async def blog_edit(slug):
         else:
             new_save_path = BLOG_DIR / new_filename
         
-        # If slug changed or status changed, remove old file
+        # If slug changed or status changed or file type changed, remove old file
         old_file_path = Path(post['file_path'])
-        if old_file_path.exists() and (new_slug != slug or is_draft != post['draft']):
+        if (old_file_path.exists() and 
+            (new_slug != slug or is_draft != post['draft'] or f".{file_type}" != post.get('file_extension', '.md'))):
             old_file_path.unlink()
         
         # Save to appropriate directory
@@ -362,11 +368,12 @@ async def blog_edit(slug):
 @dashboard_bp.route('/blogs/publish/<slug>', methods=['POST'])
 async def blog_publish(slug):
     """Move a draft to published posts and trigger build"""
-    draft_path = DRAFT_DIR / f"{slug}.md"
-    published_path = BLOG_DIR / f"{slug}.md"
-    
-    if not draft_path.exists():
+    post = await get_blog_post(slug)
+    if not post or not post.get('draft'):
         return await render_template('404.html'), 404
+    
+    draft_path = Path(post['file_path'])
+    published_path = BLOG_DIR / f"{slug}{post.get('file_extension', '.md')}"
     
     try:
         # Read draft content
@@ -378,7 +385,7 @@ async def blog_publish(slug):
             del front_matter['draft']
         
         # Generate new content without draft field
-        new_content = generate_blog_content(front_matter, body)
+        new_content = generate_blog_content(front_matter, body, post.get('file_extension', '.md'))
         
         # Save to published directory
         published_path.write_text(new_content, encoding='utf-8')
@@ -411,15 +418,15 @@ async def build_history():
     """Get build history"""
     return {'history': build_manager.get_build_history()}
 
-
 @dashboard_bp.route('/blogs/unpublish/<slug>', methods=['POST'])
 async def blog_unpublish(slug):
     """Move a published post back to drafts"""
-    published_path = BLOG_DIR / f"{slug}.md"
-    draft_path = DRAFT_DIR / f"{slug}.md"
-    
-    if not published_path.exists():
+    post = await get_blog_post(slug)
+    if not post or post.get('draft'):
         return await render_template('404.html'), 404
+    
+    published_path = Path(post['file_path'])
+    draft_path = DRAFT_DIR / f"{slug}{post.get('file_extension', '.md')}"
     
     try:
         # Read published content
@@ -430,7 +437,7 @@ async def blog_unpublish(slug):
         front_matter['draft'] = True
         
         # Generate new content with draft field
-        new_content = generate_blog_content(front_matter, body)
+        new_content = generate_blog_content(front_matter, body, post.get('file_extension', '.md'))
         
         # Save to draft directory
         draft_path.write_text(new_content, encoding='utf-8')
@@ -443,7 +450,7 @@ async def blog_unpublish(slug):
     except Exception as e:
         print(f"Error unpublishing {slug}: {e}")
         return await render_template('error.html', error=str(e)), 500
-    
+
 @dashboard_bp.route('/blogs/delete/<slug>', methods=['POST'])
 async def blog_delete(slug):
     """Delete a blog post (both draft and published)"""

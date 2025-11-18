@@ -1,0 +1,469 @@
+---
+authors:
+- Khamisi Kibet
+date: '2025-11-12'
+slug: custom-variables-in-json-and-qss-style-sheets
+tags:
+- qt custom widgets
+- qt theming
+- qss styling
+- json stylesheet
+- qt variables
+- pyqt styling
+- pyside theming
+- qt dark theme
+- qt light theme
+- qt design system
+- qt styling guide
+- qt css
+- qt stylesheets
+- qt custom variables
+- qt theme engine
+- qt application styling
+- python qt
+- qt desktop apps
+- qt ui design
+- qt development
+- qt best practices
+- qt styling variables
+- qt scss
+- qt qss variables
+- qt theme switching
+- qt color variables
+- qt design tokens
+- qt styling system
+- qt json configuration
+- qt theme consistency
+title: Custom Variables in JSon and QSS Style Sheets
+---
+
+# Mastering Qt Theme Variables: How to Use Custom Variables in Your QSS
+
+In the Qt Custom Widgets framework, you can define custom variables in your JSON theme configuration and use them throughout your QSS stylesheets. This powerful feature allows you to create consistent, maintainable, and theme-aware styles for your applications.
+
+<!-- truncate -->
+
+:::warning
+**Important Note**: Custom variables defined in `"Other-variables"` must be present in **every** `CustomTheme` object in your JSON file. If a theme is missing a variable that you use in your QSS, it will cause SCSS compilation errors when switching to that theme.
+:::
+
+## Defining Custom Variables in JSON
+
+You can add custom variables to any theme in your `style.json` file using the `"Other-variables"` section. Make sure to define the same variables in all themes:
+
+```json
+{
+  "Theme-name": "Qt-Dark-Theme",
+  "Background-color": "#1e1e1e",
+  "Text-color": "#e0e0e0",
+  "Accent-color": "#41cd52",
+  "Icons-color": "#41cd52",
+  "Default-Theme": true,
+  "Other-variables": {
+    "CARD_RADIUS": "12px",
+    "FOOTER_BG": "#111111",
+    "NAV_BG": "#1e1e1e",
+    "CARD_BG": "#2c2c2c",
+    "BORDER_COLOR": "rgba(65, 205, 82, 0.3)",
+    "HOVER_GLOW": "0 12px 32px rgba(65, 205, 82, 0.45)",
+    "GRADIENT": "linear-gradient(135deg, #41cd52, #2fa440)",
+    "SPACING_SM": "8px",
+    "SPACING_MD": "16px",
+    "SPACING_LG": "24px"
+  }
+},
+{
+  "Theme-name": "Qt-Light-Theme",
+  "Background-color": "#ffffff",
+  "Text-color": "#1e1e1e",
+  "Accent-color": "#41cd52",
+  "Icons-color": "#41cd52",
+  "Default-Theme": false,
+  "Other-variables": {
+    "CARD_RADIUS": "12px",
+    "FOOTER_BG": "#e5e5e5",
+    "NAV_BG": "#f5f5f5",
+    "CARD_BG": "#f8f8f8",
+    "BORDER_COLOR": "rgba(65, 205, 82, 0.2)",
+    "HOVER_GLOW": "0 12px 32px rgba(65, 205, 82, 0.25)",
+    "GRADIENT": "linear-gradient(135deg, #41cd52, #2fa440)",
+    "SPACING_SM": "8px",
+    "SPACING_MD": "16px",
+    "SPACING_LG": "24px"
+  }
+}
+```
+
+:::tip
+**Pro Tip**: Create a template of your custom variables and copy it to every theme in your JSON file to ensure consistency and avoid missing variable errors.
+:::
+
+## Using Custom Variables in QSS
+
+Once defined, these variables become available in your QSS/SCSS files and can be used just like the auto-generated theme variables:
+
+### Basic Usage Examples
+
+```scss
+// Card components using custom variables
+QFrame#card {
+    background-color: $CARD_BG;
+    border-radius: $CARD_RADIUS;
+    border: 1px solid $BORDER_COLOR;
+    margin: $SPACING_MD;
+    
+    &:hover {
+        box-shadow: $HOVER_GLOW;
+    }
+}
+
+// Navigation using custom background
+QWidget#navigation {
+    background-color: $NAV_BG;
+    border-right: 1px solid $BORDER_COLOR;
+    padding: $SPACING_MD;
+}
+
+// Footer styling
+QWidget#footer {
+    background-color: $FOOTER_BG;
+    border-top: 1px solid $BORDER_COLOR;
+    padding: $SPACING_MD;
+}
+```
+
+### Advanced Usage with Gradients
+
+```scss
+// Using custom gradient variables
+QMainWindow#gradientBackground {
+    background: $GRADIENT;
+}
+
+// Creating derived gradients
+QFrame#header {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:0,
+        stop:0 $CARD_BG,
+        stop:1 $NAV_BG
+    );
+    border-radius: $CARD_RADIUS;
+}
+```
+
+### Consistent Spacing System
+
+```scss
+// Using spacing variables for consistency
+QWidget#container {
+    padding: $SPACING_LG;
+}
+
+QPushButton {
+    padding: $SPACING_SM $SPACING_MD;
+    margin: $SPACING_SM;
+}
+
+QLabel {
+    margin: $SPACING_SM;
+}
+
+QVBoxLayout, QHBoxLayout {
+    spacing: $SPACING_MD;
+    margin: $SPACING_SM;
+}
+```
+
+## Complete Theme-Aware QSS Example
+
+Here's a complete QSS stylesheet that leverages both auto-generated and custom variables:
+
+```scss
+// ===================================================
+// APPLICATION LAYOUT STYLES
+// ===================================================
+
+QMainWindow, #centralwidget {
+    background-color: $COLOR_BACKGROUND_1;
+    padding: $SPACING_MD;
+}
+
+// ===================================================
+// CARD SYSTEM
+// ===================================================
+
+QFrame#card {
+    background-color: $CARD_BG;
+    border-radius: $CARD_RADIUS;
+    border: 1px solid $BORDER_COLOR;
+    padding: $SPACING_MD;
+    
+    &:hover {
+        box-shadow: $HOVER_GLOW;
+    }
+}
+
+QFrame#card QLabel#title {
+    color: $COLOR_TEXT_1;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: $SPACING_SM;
+}
+
+QFrame#card QLabel#content {
+    color: $COLOR_TEXT_2;
+    font-size: 14px;
+    margin-bottom: $SPACING_SM;
+}
+
+// ===================================================
+// NAVIGATION SYSTEM
+// ===================================================
+
+QWidget#navigation {
+    background-color: $NAV_BG;
+    border-right: 1px solid $BORDER_COLOR;
+    padding: $SPACING_MD;
+}
+
+QPushButton#navButton {
+    background-color: transparent;
+    color: $COLOR_TEXT_2;
+    text-align: left;
+    padding: $SPACING_MD;
+    border-radius: calc($CARD_RADIUS / 2);
+    margin: 2px $SPACING_SM;
+    
+    &:hover {
+        background-color: $COLOR_BACKGROUND_2;
+        color: $COLOR_TEXT_1;
+    }
+    
+    &:checked {
+        background-color: $COLOR_ACCENT_1;
+        color: $COLOR_BACKGROUND_1;
+    }
+}
+
+// ===================================================
+// FORM SYSTEM
+// ===================================================
+
+QLineEdit, QComboBox, QTextEdit {
+    background-color: $COLOR_BACKGROUND_2;
+    color: $COLOR_TEXT_1;
+    border: 1px solid $BORDER_COLOR;
+    border-radius: calc($CARD_RADIUS / 3);
+    padding: $SPACING_SM $SPACING_MD;
+    font-size: 14px;
+    margin-bottom: $SPACING_SM;
+    
+    &:focus {
+        border-color: $COLOR_ACCENT_1;
+        background-color: $COLOR_BACKGROUND_3;
+    }
+}
+
+// ===================================================
+// BUTTON VARIANTS
+// ===================================================
+
+QPushButton {
+    background-color: $COLOR_BACKGROUND_2;
+    color: $COLOR_TEXT_1;
+    border: 1px solid $BORDER_COLOR;
+    border-radius: calc($CARD_RADIUS / 2);
+    padding: $SPACING_SM $SPACING_MD;
+    font-weight: 500;
+    margin: $SPACING_SM;
+    
+    &:hover {
+        background-color: $COLOR_ACCENT_1;
+        color: $COLOR_BACKGROUND_1;
+    }
+}
+
+QPushButton#primaryButton {
+    background-color: $COLOR_ACCENT_1;
+    color: $COLOR_BACKGROUND_1;
+    font-weight: bold;
+}
+
+QPushButton#secondaryButton {
+    background-color: $CARD_BG;
+    color: $COLOR_TEXT_1;
+}
+
+// ===================================================
+// LAYOUT COMPONENTS
+// ===================================================
+
+QWidget#header {
+    background-color: $NAV_BG;
+    border-bottom: 1px solid $BORDER_COLOR;
+    padding: $SPACING_MD;
+}
+
+QWidget#footer {
+    background-color: $FOOTER_BG;
+    border-top: 1px solid $BORDER_COLOR;
+    padding: $SPACING_MD;
+}
+
+QWidget#sidebar {
+    background-color: $CARD_BG;
+    border-right: 1px solid $BORDER_COLOR;
+    padding: $SPACING_MD;
+}
+
+// ===================================================
+// UTILITY STYLES USING OBJECT NAMES
+// ===================================================
+
+// Text utilities
+QLabel#textTitle {
+    color: $COLOR_TEXT_1;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: $SPACING_MD;
+}
+
+QLabel#textSubtitle {
+    color: $COLOR_TEXT_2;
+    font-size: 14px;
+    margin-bottom: $SPACING_SM;
+}
+
+QLabel#textMuted {
+    color: $COLOR_TEXT_3;
+    font-size: 12px;
+}
+
+// Background utilities
+QWidget#bgCard {
+    background-color: $CARD_BG;
+    border-radius: $CARD_RADIUS;
+    padding: $SPACING_MD;
+}
+
+QWidget#bgNav {
+    background-color: $NAV_BG;
+}
+
+QWidget#bgFooter {
+    background-color: $FOOTER_BG;
+}
+
+// Border utilities
+QWidget#borderAll {
+    border: 1px solid $BORDER_COLOR;
+    border-radius: $CARD_RADIUS;
+}
+
+QWidget#borderBottom {
+    border-bottom: 1px solid $BORDER_COLOR;
+}
+
+QWidget#borderTop {
+    border-top: 1px solid $BORDER_COLOR;
+}
+```
+
+:::warning
+**Troubleshooting Tip**: If you encounter SCSS compilation errors when switching themes, check that all custom variables used in your QSS are defined in the currently active theme's `"Other-variables"` section.
+:::
+
+## Best Practices for Custom Variables
+
+### 1. Semantic Variable Names
+Use names that describe the purpose, not the value:
+```json
+"Other-variables": {
+    "CARD_RADIUS": "12px",           // Good
+    "HEADER_HEIGHT": "60px",         // Good
+    "PRIMARY_SPACING": "16px",       // Good
+    "blue_color": "#41cd52"          // Avoid - too specific
+}
+```
+
+### 2. Create a Design System
+Define a consistent set of variables and ensure they exist in all themes:
+```json
+"Other-variables": {
+    // Spacing scale
+    "SPACING_XS": "4px",
+    "SPACING_SM": "8px", 
+    "SPACING_MD": "16px",
+    "SPACING_LG": "24px",
+    "SPACING_XL": "32px",
+    
+    // Border radius scale
+    "RADIUS_SM": "4px",
+    "RADIUS_MD": "8px",
+    "RADIUS_LG": "12px",
+    "RADIUS_XL": "16px",
+    
+    // Component-specific
+    "CARD_BG": "#2c2c2c",
+    "NAV_BG": "#1e1e1e",
+    "HEADER_HEIGHT": "60px"
+}
+```
+
+:::tip
+**Consistency Tip**: Create a master list of your custom variables and use it as a checklist when adding new themes to ensure you don't miss any variables.
+:::
+
+### 3. Theme-Specific Adjustments
+You can override variables for specific themes while keeping the same variable names:
+```json
+{
+  "Theme-name": "Qt-Light-Theme",
+  "Background-color": "#ffffff",
+  "Text-color": "#1e1e1e",
+  "Other-variables": {
+    "CARD_BG": "#f8f8f8",
+    "NAV_BG": "#f5f5f5",
+    "FOOTER_BG": "#e5e5e5",
+    "BORDER_COLOR": "rgba(65, 205, 82, 0.2)",
+    "HOVER_GLOW": "0 12px 32px rgba(65, 205, 82, 0.25)",
+    // Keep all other variables the same as other themes
+    "SPACING_SM": "8px",
+    "SPACING_MD": "16px",
+    "CARD_RADIUS": "12px"
+  }
+}
+```
+
+### 4. Using Variables in Python Code
+You can also access these variables in your Python code:
+```python
+from Custom_Widgets.QAppSettings import QAppSettings
+
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        # Access theme variables
+        card_radius = self.theme.CARD_RADIUS
+        spacing_md = self.theme.SPACING_MD
+        
+        # Use in dynamic styling
+        self.ui.some_widget.setStyleSheet(f"""
+            border-radius: {card_radius};
+            padding: {spacing_md};
+        """)
+```
+
+:::warning
+**Development Note**: When adding new custom variables to your QSS, remember to update all themes in your JSON file with the new variables to prevent theme switching errors.
+:::
+
+## Benefits of Using Custom Variables
+
+1. **Consistency**: Ensure visual consistency across your application
+2. **Maintainability**: Change values in one place to update everywhere
+3. **Theme Cohesion**: Custom variables work seamlessly with theme switching
+4. **Developer Experience**: Clear, semantic variable names improve code readability
+5. **Scalability**: Easy to add new components that follow the same design system
+
+By leveraging custom variables in your JSON themes, you create a robust, maintainable styling system that scales with your application and provides a consistent user experience across different themes.

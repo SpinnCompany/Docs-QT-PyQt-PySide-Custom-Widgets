@@ -34,6 +34,7 @@ const sidebars = {
       collapsible: true,
       collapsed: false,
       items: [
+        'Widgets/QCustomHamburgerMenu',
         'Widgets/QCustomSidebar',
         'Widgets/QCustomSidebarButton',
         'Widgets/QCustomSidebarLabel',

@@ -1,0 +1,566 @@
+# QCustomHamburgerMenu
+
+## Overview
+
+`QCustomHamburgerMenu` is a customizable, animated sliding menu widget that provides smooth transitions between hidden and visible states. It supports four positioning options (left, right, top, bottom) and is perfect for creating modern navigation panels, sidebars, and sliding menus in Qt applications.
+
+---
+
+## Features
+
+- **Four Position Support**: Left, Right, Top, and Bottom positioning
+- **Smooth Animations**: Customizable slide transitions with various easing curves
+- **Auto-Sizing**: Optional content-based sizing with `sizeWrap` property
+- **Overlay Support**: Semi-transparent overlay when menu is open
+- **Auto-Hide**: Optional automatic closing when clicking outside
+- **Shadow Effects**: Customizable drop shadows
+- **Theme Integration**: Works with custom theme engine
+- **Button Integration**: Easy connection to toggle/show/hide buttons
+
+---
+
+## Installation
+
+```bash
+pip install QT-PyQt-PySide-Custom-Widgets
+```
+
+---
+
+## Basic Usage
+
+### Python Code
+
+```python
+from Custom_Widgets.QCustomHamburgerMenu import QCustomHamburgerMenu
+from qtpy.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QWidget, QPushButton, QLabel
+
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        
+        # Central widget
+        central = QWidget()
+        self.setCentralWidget(central)
+        layout = QVBoxLayout(central)
+        
+        # Create hamburger menu
+        self.hamburger_menu = QCustomHamburgerMenu(self)
+        
+        # Configure basic properties
+        self.hamburger_menu.position = "Left"
+        self.hamburger_menu.menuWidth = 300
+        self.hamburger_menu.animationDuration = 300
+        
+        # Add content to menu
+        menu_layout = QVBoxLayout(self.hamburger_menu)
+        menu_layout.addWidget(QLabel("Navigation Menu"))
+        menu_layout.addWidget(QPushButton("Home"))
+        menu_layout.addWidget(QPushButton("Settings"))
+        menu_layout.addWidget(QPushButton("About"))
+        
+        # Add toggle button
+        self.toggle_btn = QPushButton("Toggle Menu")
+        self.toggle_btn.clicked.connect(self.hamburger_menu.toggleMenu)
+        
+        layout.addWidget(self.toggle_btn)
+        
+app = QApplication([])
+window = MainWindow()
+window.show()
+app.exec_()
+```
+
+### Qt Designer Integration
+
+The widget is available as a plugin in Qt Designer:
+
+1. **Find in Widget Box**: Look for "QCustomHamburgerMenu" in the custom widgets section
+2. **Drag to Designer**: Drag the widget to your form
+3. **Configure Properties**: Use the property editor to customize appearance and behavior
+
+:::tip
+**Designer Tip**: You can also configure hamburger menus through the `customSideDrawers` property in `QCustomQMainWindow`. This allows you to load multiple hamburger menu UI files directly from Qt Designer's property editor.
+:::
+
+---
+
+## Property Reference
+
+### Position and Size
+
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| `position` | str | "Left" | Menu position: "Left", "Right", "Top", "Bottom" |
+| `menuWidth` | int | 300 | Menu width (for left/right positions) |
+| `menuHeight` | int | 400 | Menu height (for top/bottom positions) |
+| `sizeWrap` | bool | False | Auto-size to fit content |
+| `center` | bool | False | Center the menu in its position |
+| `margin` | int | 0 | Margin from edges |
+
+### Animation
+
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| `animationDuration` | int | 250 | Animation duration in milliseconds |
+| `animationEasingCurve` | str | "OutQuad" | Easing curve for animations |
+
+### Appearance
+
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| `backgroundColor` | QColor | White | Menu background color |
+| `shadowColor` | QColor | Black (80α) | Shadow color |
+| `shadowBlurRadius` | int | 30 | Shadow blur radius |
+| `cornerRadius` | int | 0 | Menu corner radius |
+| `overlayColor` | QColor | Black (64α) | Overlay color when menu is open |
+
+### Behavior
+
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| `autoHide` | bool | False | Auto-hide when clicking outside |
+| `toggleButtonName` | str | "" | Object name of toggle button |
+| `showButtonName` | str | "" | Object name of show button |
+| `hideButtonName` | str | "" | Object name of hide button |
+
+---
+
+## Method Reference
+
+### Control Methods
+
+```python
+# Show the menu with animation
+hamburger_menu.showMenu()
+
+# Hide the menu with animation  
+hamburger_menu.hideMenu()
+
+# Toggle between show/hide states
+hamburger_menu.toggleMenu()
+
+# Adjust size to fit content (when sizeWrap=True)
+hamburger_menu.adjustSizeToContent()
+
+# Get a widget by name from within the menu
+widget = hamburger_menu.getWidget("widgetName")
+```
+
+### Button Integration
+
+```python
+# Connect buttons by object name (recommended)
+hamburger_menu.toggleButtonName = "toggleButton"
+hamburger_menu.showButtonName = "showButton" 
+hamburger_menu.hideButtonName = "hideButton"
+
+# Or connect manually
+toggle_btn.clicked.connect(hamburger_menu.toggleMenu)
+show_btn.clicked.connect(hamburger_menu.showMenu)
+hide_btn.clicked.connect(hamburger_menu.hideMenu)
+```
+
+---
+
+## Advanced Configuration
+
+### Complete Setup Example
+
+```python
+from Custom_Widgets.QCustomHamburgerMenu import QCustomHamburgerMenu
+from qtpy.QtCore import QEasingCurve
+from qtpy.QtGui import QColor
+
+# Create and configure hamburger menu
+hamburger_menu = QCustomHamburgerMenu(parent_widget)
+
+# Position and size
+hamburger_menu.position = "Left"
+hamburger_menu.menuWidth = 350
+hamburger_menu.menuHeight = 600
+hamburger_menu.sizeWrap = True  # Auto-size to content
+hamburger_menu.center = True    # Center vertically
+hamburger_menu.margin = 10      # 10px margin
+
+# Animation
+hamburger_menu.animationDuration = 400
+hamburger_menu.animationEasingCurve = "OutCubic"
+
+# Appearance
+hamburger_menu.backgroundColor = QColor(45, 45, 45)
+hamburger_menu.shadowColor = QColor(0, 0, 0, 120)
+hamburger_menu.shadowBlurRadius = 40
+hamburger_menu.cornerRadius = 10
+hamburger_menu.overlayColor = QColor(0, 0, 0, 80)
+
+# Behavior
+hamburger_menu.autoHide = True
+hamburger_menu.toggleButtonName = "menuToggleBtn"
+```
+
+### Position Examples
+
+```python
+# Left side menu (default)
+hamburger_menu.position = "Left"
+
+# Right side menu  
+hamburger_menu.position = "Right"
+
+# Top sliding menu
+hamburger_menu.position = "Top"
+
+# Bottom sliding menu
+hamburger_menu.position = "Bottom"
+```
+
+### Easing Curves
+
+Available animation easing curves:
+- "Linear", "InQuad", "OutQuad", "InOutQuad"
+- "InCubic", "OutCubic", "InOutCubic" 
+- "InQuart", "OutQuart", "InOutQuart"
+- "InSine", "OutSine", "InOutSine"
+- "InExpo", "OutExpo", "InOutExpo"
+- "InBack", "OutBack", "InOutBack"
+- "InBounce", "OutBounce", "InOutBounce"
+
+---
+
+## JSON Styling Configuration
+
+You can also configure the hamburger menu through JSON styling:
+
+```json
+{
+  "QCustomHamburgerMenu": [{
+    "name": "mainMenu",
+    "position": "Left",
+    "menuWidth": 300,
+    "menuHeight": 400,
+    "animationDuration": 300,
+    "animationEasingCurve": "OutCubic",
+    "backgroundColor": "#2d2d2d",
+    "shadowColor": "#00000080",
+    "shadowBlurRadius": 30,
+    "cornerRadius": 8,
+    "autoHide": true,
+    "overlayColor": "#00000040",
+    "toggleButtonName": "menuToggleBtn"
+  }]
+}
+```
+
+---
+
+## Integration with Custom QMainWindow
+
+:::warning
+**Important**: When using `QCustomHamburgerMenu` with the custom `QMainWindow` class, ensure you properly load the hamburger menus through the `customSideDrawers` property in your JSON configuration or Qt Designer property editor.
+:::
+
+### Qt Designer Configuration
+
+In Qt Designer, you can configure hamburger menus directly through the `QCustomQMainWindow` properties:
+
+1. **Select your QCustomQMainWindow** in the object inspector
+2. **Open the property editor** and locate the `customSideDrawers` property
+3. **Enter comma-separated paths** to your hamburger menu UI files:
+   ```
+   src/ui_LeftHamburgerMenu.py, src/ui_RightHamburgerMenu.py, src/ui_TopHamburgerMenu.py, src/ui_BottomHamburgerMenu.py
+   ```
+
+### JSON Configuration for Multiple Menus
+
+```json
+{
+  "CustomMainWindow": [{
+    "customSideDrawers": "src/ui_LeftHamburgerMenu.py, src/ui_RightHamburgerMenu.py, src/ui_TopHamburgerMenu.py, src/ui_BottomHamburgerMenu.py"
+  }]
+}
+```
+
+### Accessing Hamburger Menus in Code
+
+```python
+from Custom_Widgets.QMainWindow import QMainWindow
+
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        
+        # Access hamburger menus by name
+        left_menu = self.getHamburgerMenu("leftHamburgerMenu")
+        right_menu = self.getHamburgerMenu("rightHamburgerMenu")
+        top_menu = self.getHamburgerMenu("topHamburgerMenu") 
+        bottom_menu = self.getHamburgerMenu("bottomHamburgerMenu")
+        
+        # Access widgets within hamburger menus
+        if left_menu:
+            settings_button = left_menu.getWidget("settingsButton")
+            if settings_button:
+                settings_button.clicked.connect(self.handle_settings)
+```
+
+### Complete Integration Example
+
+Based on the provided usage code, here's how to properly integrate multiple hamburger menus:
+
+```python
+def connect_drawer_buttons(self):
+    """Connect all drawer buttons to their respective actions"""
+    
+    # Get all hamburger menus
+    left_menu = self.getHamburgerMenu("leftHamburgerMenu")
+    right_menu = self.getHamburgerMenu("rightHamburgerMenu") 
+    top_menu = self.getHamburgerMenu("topHamburgerMenu")
+    bottom_menu = self.getHamburgerMenu("bottomHamburgerMenu")
+    
+    # Connect left menu buttons
+    if left_menu:
+        left_menu.getWidget("profileBtn").clicked.connect(
+            lambda: self.log_to_console("Left Drawer: Profile button clicked")
+        )
+        left_menu.getWidget("dashboardBtn").clicked.connect(
+            lambda: self.log_to_console("Left Drawer: Dashboard button clicked")
+        )
+        # ... connect other left menu buttons
+    
+    # Connect right menu buttons  
+    if right_menu:
+        right_menu.getWidget("shareBtn").clicked.connect(
+            lambda: self.log_to_console("Right Drawer: Share button clicked")
+        )
+        # ... connect other right menu buttons
+    
+    # Connect top menu buttons
+    if top_menu:
+        top_menu.getWidget("wifiBtn").clicked.connect(
+            lambda: self.log_to_console("Top Drawer: WiFi button clicked")
+        )
+        # ... connect other top menu buttons
+    
+    # Connect bottom menu buttons
+    if bottom_menu:
+        bottom_menu.getWidget("playBtn").clicked.connect(
+            lambda: self.log_to_console("Bottom Drawer: Play button clicked")
+        )
+        # ... connect other bottom menu buttons
+```
+
+:::tip
+**Pro Tip**: Use descriptive object names for widgets within your hamburger menus to make them easily accessible via the `getWidget()` method. This creates a clean separation between UI structure and business logic.
+:::
+
+### Button Connection Methods
+
+```python
+# Method 1: Direct connection via object names (Recommended)
+self.hamburger_menu.toggleButtonName = "menuToggleBtn"
+
+# Method 2: Manual connection
+toggle_btn = self.findChild(QPushButton, "menuToggleBtn")
+if toggle_btn:
+    toggle_btn.clicked.connect(self.hamburger_menu.toggleMenu)
+
+# Method 3: Using getHamburgerMenu for multiple menus
+left_menu = self.getHamburgerMenu("leftHamburgerMenu")
+if left_menu:
+    left_menu.toggleButtonName = "leftToggleBtn"
+```
+
+:::warning
+**Performance Note**: When using multiple hamburger menus, ensure that `autoHide` is properly configured to prevent overlapping overlays and unexpected behavior when multiple menus are open simultaneously.
+:::
+
+### Advanced Multi-Menu Management
+
+```python
+def manage_menu_states(self):
+    """Manage state between multiple hamburger menus"""
+    left_menu = self.getHamburgerMenu("leftHamburgerMenu")
+    right_menu = self.getHamburgerMenu("rightHamburgerMenu")
+    
+    # Ensure only one menu is open at a time
+    if left_menu and not left_menu._menuHidden:
+        right_menu.hideMenu()
+    
+    if right_menu and not right_menu._menuHidden:
+        left_menu.hideMenu()
+```
+
+---
+
+## Complete Example
+
+```python
+from Custom_Widgets.QCustomHamburgerMenu import QCustomHamburgerMenu
+from qtpy.QtWidgets import (QApplication, QMainWindow, QVBoxLayout, 
+                           QWidget, QPushButton, QLabel, QListWidget)
+from qtpy.QtCore import Qt
+from qtpy.QtGui import QColor
+
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Hamburger Menu Example")
+        self.resize(800, 600)
+        
+        # Central widget
+        central = QWidget()
+        self.setCentralWidget(central)
+        layout = QVBoxLayout(central)
+        
+        # Create header with toggle button
+        header = QWidget()
+        header_layout = QVBoxLayout(header)
+        
+        self.toggle_btn = QPushButton("Toggle Menu")
+        self.toggle_btn.setObjectName("menuToggleBtn")
+        self.toggle_btn.setFixedSize(100, 40)
+        
+        header_layout.addWidget(self.toggle_btn)
+        layout.addWidget(header)
+        
+        # Create main content
+        content = QLabel("Main Application Content")
+        content.setAlignment(Qt.AlignCenter)
+        content.setStyleSheet("font-size: 24px; color: #666;")
+        layout.addWidget(content)
+        
+        # Create hamburger menu
+        self.setupHamburgerMenu()
+        
+    def setupHamburgerMenu(self):
+        # Create and configure hamburger menu
+        self.hamburger_menu = QCustomHamburgerMenu(self)
+        self.hamburger_menu.setObjectName("mainMenu")
+        
+        # Configuration
+        self.hamburger_menu.position = "Left"
+        self.hamburger_menu.menuWidth = 280
+        self.hamburger_menu.animationDuration = 350
+        self.hamburger_menu.backgroundColor = QColor(45, 45, 45)
+        self.hamburger_menu.shadowBlurRadius = 40
+        self.hamburger_menu.cornerRadius = 0
+        self.hamburger_menu.autoHide = True
+        self.hamburger_menu.toggleButtonName = "menuToggleBtn"
+        
+        # Add content to menu
+        self.setupMenuContent()
+        
+    def setupMenuContent(self):
+        # Create menu layout
+        menu_layout = QVBoxLayout(self.hamburger_menu)
+        menu_layout.setContentsMargins(0, 0, 0, 0)
+        menu_layout.setSpacing(0)
+        
+        # Menu header
+        header = QLabel("Navigation")
+        header.setStyleSheet("""
+            background: #2d2d2d;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 20px;
+            border-bottom: 1px solid #444;
+        """)
+        menu_layout.addWidget(header)
+        
+        # Navigation list
+        nav_list = QListWidget()
+        nav_list.addItems(["Home", "Profile", "Settings", "Messages", "Help", "About"])
+        nav_list.setStyleSheet("""
+            QListWidget {
+                background: #2d2d2d;
+                border: none;
+                color: white;
+                font-size: 14px;
+            }
+            QListWidget::item {
+                padding: 15px 20px;
+                border-bottom: 1px solid #444;
+            }
+            QListWidget::item:hover {
+                background: #3d3d3d;
+            }
+            QListWidget::item:selected {
+                background: #41cd52;
+            }
+        """)
+        menu_layout.addWidget(nav_list)
+
+app = QApplication([])
+window = MainWindow()
+window.show()
+app.exec_()
+```
+
+---
+
+## Troubleshooting
+
+:::warning
+**Common Issue**: If hamburger menus don't appear, ensure that:
+1. The `customSideDrawers` property is correctly set in your JSON configuration or Qt Designer
+2. UI files are in the correct paths specified in `customSideDrawers`
+3. The `QMainWindow` class is properly initialized with JSON styles
+:::
+
+:::tip
+**Debugging Tip**: Use the `getHamburgerMenu()` method to check if menus are properly loaded. If it returns `None`, verify your JSON configuration and file paths.
+:::
+
+```python
+# Debug menu loading
+menu = self.getHamburgerMenu("menuName")
+if menu is None:
+    print("Menu not found - check JSON configuration")
+else:
+    print("Menu loaded successfully")
+```
+
+:::warning
+**Designer Note**: When using Qt Designer, make sure to set the `customSideDrawers` property on your `QCustomQMainWindow` instance, not on individual hamburger menu widgets. This property tells the main window which UI files to load as hamburger menus.
+:::
+
+## Example JSON Configuration
+
+Here's how the JSON configuration would look for hamburger menus:
+
+```json
+{
+  "QMainWindow": {
+    "customSideDrawers": "src/ui_LeftHamburgerMenu.py, src/ui_RightHamburgerMenu.py, src/ui_TopHamburgerMenu.py, src/ui_BottomHamburgerMenu.py"
+  },
+  "QCustomHamburgerMenu": [
+    {
+      "name": "leftHamburgerMenu",
+      "position": "Left",
+      "menuWidth": 300,
+      "animationDuration": 400,
+      "backgroundColor": "#2d2d2d",
+      "shadowBlurRadius": 40,
+      "autoHide": true,
+      "toggleButtonName": "leftMenuToggleBtn"
+    },
+    {
+      "name": "rightHamburgerMenu", 
+      "position": "Right",
+      "menuWidth": 280,
+      "animationDuration": 350,
+      "sizeWrap": true,
+      "toggleButtonName": "rightMenuToggleBtn"
+    }
+  ]
+}
+```
+
+---
+
+## Additional Resources
+
+- **Video Tutorials**: [SPINN TV YouTube Channel](https://www.youtube.com/channel/UCJVsWdUC3M8p-q67RXPujkg)
+
+The `QCustomHamburgerMenu` provides powerful, customizable sliding menu functionality perfect for modern application interfaces with smooth animations and flexible positioning options.
