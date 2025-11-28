@@ -113,7 +113,8 @@ const sidebars = {
         'Advanced/FileMonitor',
         'Advanced/QAppSettings',
         'Advanced/Logging',
-        'Advanced/WidgetsWorker'
+        'Advanced/WidgetsWorker',
+        'Advanced/AcrylicEffect'
       ]
     },
     {
