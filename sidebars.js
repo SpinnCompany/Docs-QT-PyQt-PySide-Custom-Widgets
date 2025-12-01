@@ -86,7 +86,8 @@ const sidebars = {
         'Widgets/QBadgeWidget',
         'Widgets/QCustomAnnotationWidget',
         'Widgets/QCustomQToolTip',
-        'Widgets/QCustomTipOverlay'
+        'Widgets/QCustomTipOverlay',
+        'Widgets/QCustomQRGenerator'
       ]
     },
     {
