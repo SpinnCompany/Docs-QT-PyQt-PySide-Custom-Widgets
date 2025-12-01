@@ -1,55 +1,91 @@
-# AcrylicEffect
+# AcrylicEffect - Complete Documentation
 
 ## Overview
 
 :::info
-**Windows 11 Fluent Design**: `AcrylicEffect` brings the signature frosted glass transparency from Microsoft's Fluent Design System to Qt applications, creating modern, professional user interfaces.
+**Cross-Platform Fluent Design**: `AcrylicEffect` brings Windows 11-style frosted glass transparency to Qt applications across all platforms, with intelligent fallbacks for Wayland, X11, Windows, and macOS.
 :::
 
-`AcrylicEffect` is a comprehensive implementation of Windows 11-style acrylic blur effects for Qt applications. It provides realistic frosted glass transparency with multiple layers including background blur, tint color, luminosity, and noise texture.
+`AcrylicEffect` is a comprehensive implementation of acrylic blur effects with full cross-platform compatibility. It provides realistic frosted glass transparency with automatic platform detection and appropriate fallback mechanisms for each environment.
 
 ---
 
 ## Features
 
 :::success
-**Professional Grade**: Production-ready acrylic effects with robust fallback mechanisms and multi-monitor support.
+**Professional & Robust**: Production-ready acrylic effects with intelligent platform detection, automatic fallbacks, and consistent performance across all operating systems.
 :::
 
-- **Realistic Acrylic Material**: Windows 11-style frosted glass effect
-- **Multi-Layer Composition**: Blur + tint + luminosity + noise layers
-- **Multi-Monitor Support**: Proper screen grabbing across multiple displays
-- **Performance Optimized**: Efficient blur algorithms with image scaling
-- **Programmatic Noise**: Dynamic noise texture generation
-- **Color Analysis**: Intelligent dominant color extraction
-- **Robust Fallbacks**: Graceful degradation when effects fail
+- **Multi-Platform Support**: Works on Wayland, X11, Windows, macOS with appropriate methods
+- **Platform Detection**: Automatic detection of display server and OS
+- **Intelligent Fallbacks**: Graceful degradation when screen grabbing is restricted
+- **Realistic Acrylic Material**: Multi-layer composition (blur + tint + luminosity + noise)
+- **Performance Optimized**: Efficient algorithms with scipy/PIL fallbacks
+- **Multi-Monitor Aware**: Proper handling across multiple displays
+- **Dynamic Adaptation**: Adjusts behavior based on platform capabilities
+- **Robust Error Handling**: Comprehensive fallback mechanisms
 
 ---
 
 ## Installation
 
 :::warning
-**Dependencies Required**: Ensure you have numpy and scipy installed for optimal performance. Basic functionality works without them but with reduced quality.
+**Platform Considerations**: Install scipy for optimal blur quality, but basic functionality works with PIL fallback. Some platforms (Wayland) have security restrictions that limit screen grabbing.
 :::
 
 ```bash
+# Required
 pip install QT-PyQt-PySide-Custom-Widgets
+
+# Optional for better blur quality
+pip install scipy numpy
+
+# For color analysis
+pip install colorthief pillow
 ```
+
+---
+
+## Platform-Specific Behavior
+
+### Linux (Wayland)
+- **Screen Grabbing**: Restricted by security policies
+- **Fallback**: Uses widget-based grabs or creates gradient backgrounds
+- **Performance**: Excellent with fallback methods
+- **Recommendation**: Use provided acrylic fallbacks or gradient backgrounds
+
+### Linux (X11)
+- **Screen Grabbing**: Full support
+- **Fallback**: Full screen capture available
+- **Performance**: Native screen blurring
+- **Recommendation**: All features available
+
+### Windows
+- **Screen Grabbing**: Full support
+- **Fallback**: Standard methods work reliably
+- **Performance**: Native screen blurring
+- **Recommendation**: All features available
+
+### macOS
+- **Screen Grabbing**: Limited support via Quartz
+- **Fallback**: Widget-based grabs or acrylic fallbacks
+- **Performance**: Good with fallback methods
+- **Recommendation**: May need fallback configuration
 
 ---
 
 ## Basic Usage
 
-### Simple Acrylic Effect
+### Simple Cross-Platform Example
 
 :::tip
-**Quick Start**: This basic example demonstrates the minimal setup required to apply acrylic effects to any widget.
+**Quick Start**: This basic example works across all platforms with automatic platform detection and appropriate fallbacks.
 :::
 
 ```python
 from Custom_Widgets.AcrylicEffect import AcrylicEffect
 from qtpy.QtWidgets import QApplication, QMainWindow, QWidget, QVBoxLayout, QLabel
-from qtpy.QtGui import QColor
+from qtpy.QtCore import Qt, QTimer
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -60,11 +96,17 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(central)
         layout = QVBoxLayout(central)
         
-        # Add some content
-        label = QLabel("Acrylic Effect Demo")
+        # Add content
+        label = QLabel("Cross-Platform Acrylic Demo")
         label.setAlignment(Qt.AlignCenter)
-        label.setStyleSheet("font-size: 24px; color: white;")
+        label.setStyleSheet("font-size: 24px; color: white; padding: 20px;")
         layout.addWidget(label)
+        
+        # Add platform info label
+        self.platform_label = QLabel()
+        self.platform_label.setAlignment(Qt.AlignCenter)
+        self.platform_label.setStyleSheet("color: #aaa; padding: 10px;")
+        layout.addWidget(self.platform_label)
         
         # Apply acrylic effect
         self.acrylic = AcrylicEffect(
@@ -74,24 +116,72 @@ class MainWindow(QMainWindow):
             luminosityColor=QColor(255, 255, 255, 10),
             noiseOpacity=0.03
         )
+        self.acrylic.applyToWidget()
         
-        # Grab background from screen
+        # Get platform info
+        platform_info = self.acrylic.getPlatformInfo()
+        self.platform_label.setText(
+            f"Platform: {platform_info['system'].upper()} | "
+            f"Display: {platform_info['display_server'].upper()} | "
+            f"Mode: {'Fallback' if self.acrylic.isUsingFallback() else 'Native'}"
+        )
+        
+        # Grab background after window is shown
+        QTimer.singleShot(100, self.setup_background)
+    
+    def setup_background(self):
+        """Setup acrylic background after window is visible"""
         self.acrylic.grabFromScreen()
+        
+        # Check if using fallback
+        if self.acrylic.isUsingFallback():
+            self.platform_label.setText(
+                self.platform_label.text() + " (Using Acrylic Fallback)"
+            )
 
 app = QApplication([])
 window = MainWindow()
 window.resize(600, 400)
+window.setWindowTitle("Cross-Platform Acrylic")
 window.show()
 app.exec_()
 ```
 
-### Automatic Widget Integration
+### Platform-Aware Setup
 
 ```python
-# Apply acrylic effect to any widget
-acrylic_effect = AcrylicEffect(widget=my_widget)
-acrylic_effect.applyToWidget()  # Automatically handles paint events
-acrylic_effect.grabFromScreen() # Capture background
+from Custom_Widgets.AcrylicEffect import AcrylicEffect, PlatformDetector
+
+# Check platform before setup
+platform_info = PlatformDetector.detect_platform()
+
+if platform_info['is_wayland']:
+    print("Running on Wayland - using acrylic fallbacks")
+    # Configure for Wayland compatibility
+    blur_radius = 10  # Lower blur for performance
+    use_fallback_colors = True
+elif platform_info['is_x11']:
+    print("Running on X11 - full screen blur available")
+    blur_radius = 20  # Higher blur quality
+    use_fallback_colors = False
+elif platform_info['is_windows']:
+    print("Running on Windows - full features available")
+    blur_radius = 25
+    use_fallback_colors = False
+elif platform_info['is_macos']:
+    print("Running on macOS - limited screen grabbing")
+    blur_radius = 15
+    use_fallback_colors = True
+
+# Create acrylic effect with platform-appropriate settings
+acrylic = AcrylicEffect(
+    widget=my_widget,
+    blurRadius=blur_radius,
+    tintColor=QColor(242, 242, 242, 150),
+    luminosityColor=QColor(255, 255, 255, 10),
+    noiseOpacity=0.03
+)
+acrylic.applyToWidget()
 ```
 
 ---
@@ -101,10 +191,10 @@ acrylic_effect.grabFromScreen() # Capture background
 ### AcrylicEffect
 
 :::info
-**Main Entry Point**: The `AcrylicEffect` class is the primary interface for applying acrylic effects to widgets. It manages the complete effect pipeline.
+**Smart Platform Detection**: The `AcrylicEffect` class automatically detects your platform and chooses the appropriate rendering method, providing consistent results across all operating systems.
 :::
 
-Main class for applying acrylic effects to widgets.
+Main class for applying cross-platform acrylic effects to widgets.
 
 #### Constructor
 
@@ -120,575 +210,859 @@ AcrylicEffect(
 
 **Parameters:**
 - `widget`: Target widget to apply the effect to
-- `blurRadius`: Gaussian blur radius (5-30 typical)
+- `blurRadius`: Gaussian blur radius (5-30 typical, adjust per platform)
 - `tintColor`: Base tint color with alpha
 - `luminosityColor`: Luminosity layer color
 - `noiseOpacity`: Noise texture opacity (0.0-1.0)
 
-### GaussianBlurUtils
+### PlatformDetector
 
 :::warning
-**Performance Critical**: The blur operations can be computationally expensive. Use the `blurPicSize` parameter to optimize performance for large images.
+**Essential for Debugging**: Use PlatformDetector to understand your runtime environment and troubleshoot platform-specific issues.
 :::
 
-Static utility class for image blur operations.
+Static utility class for platform and display server detection.
+
+```python
+# Detect current platform
+info = PlatformDetector.detect_platform()
+print(f"System: {info['system']}")
+print(f"Display Server: {info['display_server']}")
+print(f"Is Wayland: {info['is_wayland']}")
+print(f"Is X11: {info['is_x11']}")
+print(f"Is Windows: {info['is_windows']}")
+print(f"Is macOS: {info['is_macos']}")
+```
+
+### GaussianBlurUtils
+
+:::tip
+**Performance Across Platforms**: The blur utility automatically selects the best available method (scipy for quality, PIL for compatibility) and provides consistent results everywhere.
+:::
+
+Cross-platform image blur operations with automatic fallbacks.
 
 #### Methods
 
 ```python
-# Apply Gaussian blur to images
+# Platform-optimized blur
 blurred_pixmap = GaussianBlurUtils.gaussianBlur(
-    image,           # Path, QPixmap, or QImage
-    blurRadius=18,   # Blur intensity
+    image,           # Path, QPixmap, QImage, or PIL Image
+    blurRadius=18,   # Platform-appropriate blur intensity
     brightFactor=1,  # Brightness multiplier
-    blurPicSize=None # Optional size for optimization
+    blurPicSize=None # Optimization for performance-sensitive platforms
 )
 
-# Convert Qt images to PIL format
-pil_image = GaussianBlurUtils.fromQpixmap(qt_pixmap)
+# Universal image conversion
+pil_image = GaussianBlurUtils.fromQtImage(qt_image)  # Works with QImage or QPixmap
+qt_pixmap = GaussianBlurUtils.toQPixmap(pil_image)   # Convert back to Qt
 ```
 
 ### DominantColor
 
-:::tip
-**Smart Color Matching**: Use dominant color extraction to automatically create harmonious tint colors that complement your background content.
-:::
-
-Color analysis and extraction utilities.
-
-#### Methods
+Smart color extraction that works across all platforms.
 
 ```python
-# Extract dominant color from image
+# Works on all platforms with local files
 dominant_color = DominantColor.getDominantColor(
     "image.jpg", 
     defaultColor=(24, 24, 24)
 )
-
-# Color space conversions
-h, s, v = DominantColor.rgb2hsv((255, 128, 64))
-rgb = DominantColor.hsv2rgb(h, s, v)
-
-# Calculate colorfulness score
-score = DominantColor.colorfulness(255, 128, 64)
 ```
-
-### AcrylicBrush
-
-Low-level acrylic rendering engine.
-
-### AcrylicTextureLabel
-
-Specialized label for acrylic texture display.
 
 ---
 
-## Property Configuration
+## Property Configuration by Platform
 
-### Blur Properties
+### Recommended Settings
 
-| Property | Type | Default | Description |
-|----------|------|---------|-------------|
-| `blurRadius` | int | 15 | Gaussian blur radius (higher = more blur) |
-| `brightFactor` | float | 0.85 | Brightness adjustment after blur |
+| Platform | Blur Radius | Tint Opacity | Notes |
+|----------|-------------|--------------|-------|
+| **Wayland** | 10-15 | 120-180 | Use fallback-friendly settings |
+| **X11** | 20-25 | 100-150 | Full quality available |
+| **Windows** | 20-30 | 100-150 | Excellent performance |
+| **macOS** | 15-20 | 120-180 | Limited screen access |
 
-### Color Properties
+### Color Recommendations
 
-| Property | Type | Default | Description |
-|----------|------|---------|-------------|
-| `tintColor` | QColor | (242,242,242,150) | Main tint color with alpha |
-| `luminosityColor` | QColor | (255,255,255,10) | Luminosity layer color |
-| `noiseOpacity` | float | 0.03 | Noise texture opacity |
+```python
+# Platform-adaptive color settings
+def get_platform_colors(platform_info):
+    if platform_info['is_wayland']:
+        # Wayland: Brighter colors for better fallback visibility
+        return QColor(255, 255, 255, 180), QColor(255, 255, 255, 20)
+    elif platform_info['is_x11']:
+        # X11: Standard acrylic colors
+        return QColor(242, 242, 242, 150), QColor(255, 255, 255, 10)
+    elif platform_info['is_windows']:
+        # Windows: Windows 11 style
+        return QColor(240, 240, 240, 140), QColor(255, 255, 255, 15)
+    else:
+        # macOS/others: Slightly different tint
+        return QColor(245, 245, 245, 160), QColor(255, 255, 255, 12)
+
+# Usage
+platform_info = PlatformDetector.detect_platform()
+tint_color, luminosity_color = get_platform_colors(platform_info)
+```
 
 ---
 
 ## Method Reference
 
-### AcrylicEffect Methods
+### Platform-Aware Methods
 
 :::success
-**Complete Control**: The AcrylicEffect API provides full control over all aspects of the acrylic rendering, from initial setup to dynamic updates.
+**Smart Methods**: These methods automatically adapt to platform capabilities, using native features where available and graceful fallbacks where restricted.
 :::
 
 ```python
-# Apply effect to widget (handles paint events)
+# Apply effect (works everywhere)
 acrylic_effect.applyToWidget()
 
-# Grab background from screen
-acrylic_effect.grabFromScreen()           # Entire widget area
-acrylic_effect.grabFromScreen(QRect(x, y, w, h))  # Specific region
+# Grab background with platform intelligence
+acrylic_effect.grabFromScreen()  # Auto-chooses best method per platform
 
-# Dynamic property updates
-acrylic_effect.setBlurRadius(20)
-acrylic_effect.setTintColor(QColor(255, 200, 200, 100))
-acrylic_effect.setLuminosityColor(QColor(255, 255, 255, 20))
+# Platform-specific configuration
+acrylic_effect.setBlurRadius(20)  # Adjusted per platform capabilities
 
-# Set custom background image
-acrylic_effect.setImage("background.jpg")
-acrylic_effect.setImage(QPixmap(":/images/bg.png"))
+# Check current mode
+if acrylic_effect.isUsingFallback():
+    print("Using acrylic fallback mode")
+    # Adjust UI for fallback appearance
 
-# Custom clipping
-path = QPainterPath()
-path.addRoundedRect(QRectF(0, 0, 100, 100), 10, 10)
-acrylic_effect.setClipPath(path)
+# Get detailed platform info
+platform_info = acrylic_effect.getPlatformInfo()
+print(f"Running on: {platform_info}")
 ```
 
-### Static Utilities
+### Advanced Platform Handling
 
 ```python
-# Get dominant color from image
-color = AcrylicEffect.getDominantColor("image.jpg")
-
-# Apply blur to any image
-blurred = GaussianBlurUtils.gaussianBlur(image_path, blurRadius=10)
-```
-
----
-
-## Advanced Usage
-
-### Multi-Monitor Support
-
-:::info
-**Automatic Detection**: The system automatically detects and handles multiple monitor setups without any special configuration required.
-:::
-
-```python
-# AcrylicBrush automatically handles multi-monitor setups
-# No special configuration needed - it detects the correct screen
-acrylic_effect.grabFromScreen()  # Works across multiple monitors
-```
-
-### Performance Optimization
-
-:::warning
-**Large Widget Consideration**: For widgets larger than 500px in either dimension, consider using scaled blurring to maintain smooth performance.
-:::
-
-```python
-# For large widgets, optimize with scaled blur
-acrylic_effect = AcrylicEffect(widget=large_widget, blurRadius=10)
-
-# Use smaller blurPicSize for better performance
-blurred = GaussianBlurUtils.gaussianBlur(
-    image, 
-    blurRadius=15,
-    blurPicSize=(400, 400)  # Scale down before blurring
-)
-```
-
-### Custom Background Sources
-
-```python
-# From image file
-acrylic_effect.setImage("background.jpg")
-
-# From QPixmap
-pixmap = QPixmap(100, 100)
-pixmap.fill(QColor(100, 150, 200))
-acrylic_effect.setImage(pixmap)
-
-# From screen capture (with specific region)
-acrylic_effect.grabFromScreen(QRect(50, 50, 200, 200))
-```
-
-### Dynamic Updates
-
-```python
-# Update effect in real-time
-def on_slider_changed(value):
-    acrylic_effect.setBlurRadius(value)
+# Force specific behavior (advanced users only)
+class CustomAcrylicEffect(AcrylicEffect):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        
+        # Override platform detection for testing
+        if os.environ.get('FORCE_FALLBACK'):
+            self.acrylicBrush.platform_info['is_wayland'] = True
+            self.acrylicBrush.using_fallback = True
     
-def on_color_changed(color):
-    acrylic_effect.setTintColor(color)
+    def grabFromScreen(self, rect=None):
+        """Custom screen grab with platform-specific logic"""
+        if rect is None:
+            rect = self.widget.rect()
+        
+        # Custom platform handling
+        if self.platform_info['is_wayland']:
+            # Enhanced Wayland handling
+            self.handle_wayland_specially(rect)
+        else:
+            # Use standard method
+            super().grabFromScreen(rect)
 ```
 
 ---
 
-## Complete Examples
+## Complete Cross-Platform Examples
 
-### Sidebar with Acrylic Effect
+### Universal Acrylic Sidebar
 
 :::success
-**Ideal Use Case**: Sidebar navigation panels benefit greatly from acrylic effects, creating depth while maintaining context awareness.
+**Production-Ready Example**: This sidebar implementation works perfectly on all platforms with automatic adaptation to each environment's capabilities.
 :::
 
 ```python
-from Custom_Widgets.AcrylicEffect import AcrylicEffect
+from Custom_Widgets.AcrylicEffect import AcrylicEffect, PlatformDetector
 from qtpy.QtWidgets import *
-from qtpy.QtCore import Qt
-from qtpy.QtGui import QColor
+from qtpy.QtCore import Qt, QTimer
+from qtpy.QtGui import QColor, QFont
 
-class AcrylicSidebar(QWidget):
+class UniversalAcrylicSidebar(QWidget):
+    """Acrylic sidebar that works on all platforms"""
+    
     def __init__(self, parent=None):
         super().__init__(parent)
         self.setFixedWidth(300)
         
-        # Setup layout
+        # Detect platform for adaptive settings
+        self.platform_info = PlatformDetector.detect_platform()
+        
+        self.setup_ui()
+        self.setup_acrylic()
+    
+    def setup_ui(self):
+        """Setup UI with platform-adaptive styling"""
         layout = QVBoxLayout(self)
         layout.setContentsMargins(20, 50, 20, 20)
+        layout.setSpacing(10)
         
-        # Add content
+        # Platform indicator
+        platform_label = QLabel(
+            f"{self.platform_info['system'].upper()} - "
+            f"{self.platform_info['display_server'].upper()}"
+        )
+        platform_label.setStyleSheet("""
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 10px;
+            padding: 5px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 3px;
+        """)
+        platform_label.setAlignment(Qt.AlignCenter)
+        layout.addWidget(platform_label)
+        
+        # Title
         title = QLabel("Navigation")
-        title.setStyleSheet("font-size: 18px; font-weight: bold; color: white;")
+        title.setFont(QFont("Arial", 18, QFont.Bold))
+        title.setStyleSheet("color: white;")
+        title.setAlignment(Qt.AlignCenter)
         layout.addWidget(title)
         
-        buttons = ["Home", "Profile", "Settings", "Messages", "Help"]
-        for btn_text in buttons:
-            btn = QPushButton(btn_text)
-            btn.setFixedHeight(40)
-            btn.setStyleSheet("""
-                QPushButton {
-                    background: rgba(255,255,255,30);
-                    border: none;
-                    border-radius: 5px;
-                    color: white;
-                    font-size: 14px;
-                }
-                QPushButton:hover {
-                    background: rgba(255,255,255,50);
-                }
-            """)
+        layout.addSpacing(20)
+        
+        # Navigation buttons
+        nav_items = [
+            ("🏠 Home", "home"),
+            ("👤 Profile", "profile"),
+            ("⚙️ Settings", "settings"),
+            ("📨 Messages", "messages"),
+            ("🆘 Help", "help")
+        ]
+        
+        for icon_text, action in nav_items:
+            btn = QPushButton(icon_text)
+            btn.setFixedHeight(45)
+            btn.setObjectName(f"btn_{action}")
+            btn.setStyleSheet(self.get_button_style())
             layout.addWidget(btn)
         
         layout.addStretch()
         
-        # Apply acrylic effect
-        self.acrylic = AcrylicEffect(
-            widget=self,
-            blurRadius=20,
-            tintColor=QColor(120, 120, 200, 120),
-            luminosityColor=QColor(255, 255, 255, 15)
-        )
-        self.acrylic.applyToWidget()
-
-class MainWindow(QMainWindow):
-    def __init__(self):
-        super().__init__()
-        self.setWindowTitle("Acrylic Sidebar Demo")
-        self.resize(800, 600)
-        
-        # Central widget with background
-        central = QWidget()
-        central.setStyleSheet("background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #667eea, stop:1 #764ba2);")
-        self.setCentralWidget(central)
-        
-        layout = QHBoxLayout(central)
-        layout.setContentsMargins(0, 0, 0, 0)
-        
-        # Add acrylic sidebar
-        sidebar = AcrylicSidebar()
-        layout.addWidget(sidebar)
-        
-        # Add main content
-        content = QLabel("Main Content Area")
-        content.setAlignment(Qt.AlignCenter)
-        content.setStyleSheet("font-size: 24px; color: white;")
-        layout.addWidget(content)
-        
-        # Grab background after showing
-        QTimer.singleShot(100, self.setup_acrylic)
+        # Status label
+        self.status_label = QLabel("Ready")
+        self.status_label.setStyleSheet("color: rgba(255, 255, 255, 0.6); font-size: 11px;")
+        self.status_label.setAlignment(Qt.AlignCenter)
+        layout.addWidget(self.status_label)
+    
+    def get_button_style(self):
+        """Get platform-adaptive button styling"""
+        if self.platform_info['is_wayland']:
+            # Brighter for Wayland fallback
+            return """
+                QPushButton {
+                    background: rgba(255, 255, 255, 0.25);
+                    border: 1px solid rgba(255, 255, 255, 0.15);
+                    border-radius: 8px;
+                    color: white;
+                    font-size: 14px;
+                    padding: 10px;
+                    text-align: left;
+                }
+                QPushButton:hover {
+                    background: rgba(255, 255, 255, 0.35);
+                }
+                QPushButton:pressed {
+                    background: rgba(255, 255, 255, 0.2);
+                }
+            """
+        else:
+            # Standard styling for other platforms
+            return """
+                QPushButton {
+                    background: rgba(255, 255, 255, 0.15);
+                    border: none;
+                    border-radius: 8px;
+                    color: white;
+                    font-size: 14px;
+                    padding: 10px;
+                    text-align: left;
+                }
+                QPushButton:hover {
+                    background: rgba(255, 255, 255, 0.25);
+                }
+                QPushButton:pressed {
+                    background: rgba(255, 255, 255, 0.1);
+                }
+            """
     
     def setup_acrylic(self):
-        # Find sidebar and setup acrylic
-        sidebar = self.findChild(AcrylicSidebar)
-        if sidebar:
-            sidebar.acrylic.grabFromScreen()
-```
-
-### Dynamic Acrylic Dashboard
-
-:::tip
-**Dashboard Design**: Use varying tint colors for different dashboard panels to create visual distinction while maintaining cohesive acrylic aesthetics.
-:::
-
-```python
-class AcrylicDashboard(QMainWindow):
-    def __init__(self):
-        super().__init__()
-        self.setWindowTitle("Acrylic Dashboard")
-        self.resize(1000, 700)
-        
-        self.setup_ui()
-        self.setup_acrylic_effects()
-    
-    def setup_ui(self):
-        central = QWidget()
-        central.setStyleSheet("background: #1a1a1a;")
-        self.setCentralWidget(central)
-        
-        layout = QGridLayout(central)
-        
-        # Create multiple acrylic panels
-        panels = [
-            ("Statistics", 0, 0), ("Charts", 0, 1),
-            ("Recent Activity", 1, 0), ("Notifications", 1, 1)
-        ]
-        
-        self.acrylic_panels = []
-        
-        for title, row, col in panels:
-            panel = QWidget()
-            panel.setFixedSize(300, 200)
-            panel.setStyleSheet("border-radius: 10px;")
-            
-            panel_layout = QVBoxLayout(panel)
-            label = QLabel(title)
-            label.setStyleSheet("color: white; font-size: 16px; font-weight: bold;")
-            panel_layout.addWidget(label)
-            
-            layout.addWidget(panel, row, col)
-            self.acrylic_panels.append(panel)
-    
-    def setup_acrylic_effects(self):
-        colors = [
-            QColor(255, 100, 100, 80),   # Red tint
-            QColor(100, 255, 100, 80),   # Green tint  
-            QColor(100, 100, 255, 80),   # Blue tint
-            QColor(255, 255, 100, 80)    # Yellow tint
-        ]
-        
-        self.acrylic_effects = []
-        
-        for i, panel in enumerate(self.acrylic_panels):
-            effect = AcrylicEffect(
-                widget=panel,
-                blurRadius=25,
-                tintColor=colors[i],
-                luminosityColor=QColor(255, 255, 255, 20),
-                noiseOpacity=0.05
-            )
-            effect.applyToWidget()
-            self.acrylic_effects.append(effect)
-        
-        # Grab backgrounds after window is shown
-        QTimer.singleShot(100, self.grab_backgrounds)
-    
-    def grab_backgrounds(self):
-        for effect in self.acrylic_effects:
-            effect.grabFromScreen()
-```
-
-### Color-Aware Acrylic Effect
-
-:::info
-**Intelligent Adaptation**: This example demonstrates how to automatically adapt acrylic parameters based on background content for optimal visual results.
-:::
-
-```python
-class SmartAcrylicWidget(QWidget):
-    def __init__(self, background_image=None):
-        super().__init__()
-        self.background_image = background_image
-        self.setup_ui()
-    
-    def setup_ui(self):
-        layout = QVBoxLayout(self)
-        
-        # Content
-        label = QLabel("Smart Acrylic")
-        label.setAlignment(Qt.AlignCenter)
-        label.setStyleSheet("font-size: 18px; font-weight: bold; color: white;")
-        layout.addWidget(label)
-        
-        # Apply intelligent acrylic effect
-        self.apply_smart_acrylic()
-    
-    def apply_smart_acrylic(self):
-        if self.background_image:
-            # Extract dominant color from background
-            dominant_rgb = AcrylicEffect.getDominantColor(self.background_image)
-            dominant_color = QColor(*dominant_rgb)
-            
-            # Create tint color based on dominant color
-            tint_color = QColor(
-                dominant_color.red(),
-                dominant_color.green(), 
-                dominant_color.blue(),
-                80  # Semi-transparent
-            )
-            
-            # Adjust luminosity based on brightness
-            brightness = (dominant_color.red() * 0.299 + 
-                         dominant_color.green() * 0.587 + 
-                         dominant_color.blue() * 0.114)
-            
-            if brightness > 128:
-                luminosity_color = QColor(0, 0, 0, 10)  # Darker for bright backgrounds
-            else:
-                luminosity_color = QColor(255, 255, 255, 15)  # Lighter for dark backgrounds
-            
-        else:
-            # Default colors
-            tint_color = QColor(150, 150, 200, 100)
+        """Setup acrylic effect with platform-adaptive settings"""
+        # Platform-specific settings
+        if self.platform_info['is_wayland']:
+            blur_radius = 12
+            tint_color = QColor(45, 45, 45, 180)  # Darker for better fallback
+            luminosity_color = QColor(255, 255, 255, 20)
+        elif self.platform_info['is_x11']:
+            blur_radius = 22
+            tint_color = QColor(40, 40, 40, 150)
             luminosity_color = QColor(255, 255, 255, 15)
+        elif self.platform_info['is_windows']:
+            blur_radius = 25
+            tint_color = QColor(35, 35, 35, 140)
+            luminosity_color = QColor(255, 255, 255, 12)
+        else:  # macOS and others
+            blur_radius = 18
+            tint_color = QColor(50, 50, 50, 160)
+            luminosity_color = QColor(255, 255, 255, 18)
         
-        # Apply acrylic effect
+        # Create acrylic effect
         self.acrylic = AcrylicEffect(
             widget=self,
-            blurRadius=20,
+            blurRadius=blur_radius,
             tintColor=tint_color,
             luminosityColor=luminosity_color,
             noiseOpacity=0.04
         )
         self.acrylic.applyToWidget()
+    
+    def showEvent(self, event):
+        """Handle show event to setup background"""
+        super().showEvent(event)
         
-        if self.background_image:
-            self.acrylic.setImage(self.background_image)
+        # Delay background grab to ensure widget is visible
+        QTimer.singleShot(50, self.grab_background)
+    
+    def grab_background(self):
+        """Grab background and update status"""
+        self.acrylic.grabFromScreen()
+        
+        # Update status based on acrylic mode
+        if self.acrylic.isUsingFallback():
+            mode_text = "Fallback Mode"
+            color = "#ff9966"  # Orange for fallback
         else:
-            self.acrylic.grabFromScreen()
+            mode_text = "Native Mode"
+            color = "#66ff99"  # Green for native
+        
+        self.status_label.setText(
+            f"<span style='color: {color}; font-weight: bold;'>{mode_text}</span>"
+        )
+        self.status_label.setToolTip(f"Acrylic effect running in {mode_text.lower()}")
+
+class MainWindow(QMainWindow):
+    """Main window with platform-adaptive acrylic sidebar"""
+    
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Universal Acrylic Demo")
+        self.resize(900, 600)
+        
+        # Set window icon based on platform
+        self.set_platform_icon()
+        
+        self.setup_ui()
+    
+    def set_platform_icon(self):
+        """Set platform-appropriate window icon"""
+        # In real implementation, load appropriate icon files
+        pass
+    
+    def setup_ui(self):
+        """Setup main UI"""
+        central = QWidget()
+        
+        # Platform-adaptive background
+        if PlatformDetector.detect_platform()['is_wayland']:
+            # Simpler gradient for Wayland
+            central.setStyleSheet("""
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                    stop:0 #4a6fa5, stop:1 #2e4a76);
+            """)
+        else:
+            # More complex gradient for other platforms
+            central.setStyleSheet("""
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                    stop:0 #667eea, stop:1 #764ba2);
+            """)
+        
+        self.setCentralWidget(central)
+        
+        layout = QHBoxLayout(central)
+        layout.setContentsMargins(0, 0, 0, 0)
+        layout.setSpacing(0)
+        
+        # Add acrylic sidebar
+        self.sidebar = UniversalAcrylicSidebar()
+        layout.addWidget(self.sidebar)
+        
+        # Main content area
+        content = QWidget()
+        content_layout = QVBoxLayout(content)
+        content_layout.setContentsMargins(40, 40, 40, 40)
+        
+        # Platform info display
+        platform_info = PlatformDetector.detect_platform()
+        info_text = f"""
+        <h2>Cross-Platform Acrylic Demo</h2>
+        <p><b>Platform:</b> {platform_info['system'].upper()}</p>
+        <p><b>Display Server:</b> {platform_info['display_server'].upper()}</p>
+        <p><b>Acrylic Mode:</b> {'Fallback' if self.sidebar.acrylic.isUsingFallback() else 'Native'}</p>
+        <p><b>Blur Radius:</b> {self.sidebar.acrylic.acrylicBrush.blurRadius}</p>
+        <hr>
+        <p style='color: #aaa; font-size: 12px;'>
+        The acrylic effect automatically adapts to your platform.<br>
+        On Wayland, it uses fallback methods when screen grabbing is restricted.
+        </p>
+        """
+        
+        info_label = QLabel(info_text)
+        info_label.setStyleSheet("""
+            color: white;
+            font-size: 14px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+        """)
+        info_label.setWordWrap(True)
+        content_layout.addWidget(info_label)
+        
+        content_layout.addStretch()
+        layout.addWidget(content)
+
+# Application entry point
+if __name__ == "__main__":
+    app = QApplication([])
+    
+    # Set application style based on platform
+    platform = PlatformDetector.detect_platform()
+    if platform['is_windows']:
+        app.setStyle("Fusion")
+    elif platform['is_macos']:
+        app.setStyle("macos")
+    
+    window = MainWindow()
+    window.show()
+    
+    app.exec_()
 ```
 
----
+### Platform-Adaptive Dashboard
 
-## Integration with Other Components
-
-### With Hamburger Menu
-
-:::success
-**Seamless Integration**: The acrylic effect system integrates perfectly with the QCustomHamburgerMenu for modern navigation experiences.
+:::tip
+**Adaptive Design**: This dashboard example shows how to create UI components that automatically adjust their appearance and behavior based on the underlying platform.
 :::
 
 ```python
-from Custom_Widgets.QCustomHamburgerMenu import QCustomHamburgerMenu
-from Custom_Widgets.AcrylicEffect import AcrylicEffect
-
-class AcrylicHamburgerMenu(QCustomHamburgerMenu):
-    def __init__(self, parent=None):
-        super().__init__(parent)
-        self.setup_acrylic()
+class AdaptiveAcrylicCard(QWidget):
+    """Acrylic card that adapts to platform capabilities"""
     
-    def setup_acrylic(self):
-        # Enable acrylic effect
-        self._acrylicEnabled = True
-        self._acrylicBlurRadius = 20
-        self._acrylicTintColor = QColor(45, 45, 45, 200)
-        self._acrylicLuminosityColor = QColor(255, 255, 255, 10)
-        self._acrylicNoiseOpacity = 0.03
-        
-        # The overlay will automatically handle acrylic rendering
-```
-
-### With Custom Widgets
-
-```python
-from Custom_Widgets.AcrylicEffect import AcrylicEffect
-
-class AcrylicCard(QWidget):
-    def __init__(self, title="Card", parent=None):
+    def __init__(self, title="Card", content="", parent=None):
         super().__init__(parent)
         self.title = title
+        self.content = content
+        self.platform_info = PlatformDetector.detect_platform()
+        
         self.setup_ui()
         self.setup_acrylic()
     
     def setup_ui(self):
-        self.setFixedSize(200, 150)
-        layout = QVBoxLayout(self)
+        """Setup UI with platform-adaptive design"""
+        self.setMinimumSize(200, 150)
+        self.setMaximumSize(400, 300)
         
+        layout = QVBoxLayout(self)
+        layout.setContentsMargins(20, 20, 20, 20)
+        
+        # Title with platform-appropriate styling
         title_label = QLabel(self.title)
-        title_label.setStyleSheet("color: white; font-weight: bold; font-size: 16px;")
-        title_label.setAlignment(Qt.AlignCenter)
+        if self.platform_info['is_wayland']:
+            title_label.setStyleSheet("""
+                color: white;
+                font-size: 18px;
+                font-weight: bold;
+                padding-bottom: 5px;
+                border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+            """)
+        else:
+            title_label.setStyleSheet("""
+                color: white;
+                font-size: 18px;
+                font-weight: bold;
+                padding-bottom: 10px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            """)
         
         layout.addWidget(title_label)
+        
+        # Content
+        content_label = QLabel(self.content)
+        content_label.setWordWrap(True)
+        content_label.setStyleSheet("color: rgba(255, 255, 255, 0.9);")
+        layout.addWidget(content_label)
+        
         layout.addStretch()
+        
+        # Platform indicator
+        indicator = QLabel(self.get_platform_indicator())
+        indicator.setAlignment(Qt.AlignRight)
+        indicator.setStyleSheet("""
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 9px;
+            font-family: monospace;
+        """)
+        layout.addWidget(indicator)
+    
+    def get_platform_indicator(self):
+        """Get platform indicator text"""
+        platform_map = {
+            'wayland': 'WL',
+            'x11': 'X11',
+            'windows': 'WIN',
+            'darwin': 'MAC'
+        }
+        return platform_map.get(self.platform_info['display_server'], 
+                               self.platform_info['system'][:3].upper())
     
     def setup_acrylic(self):
-        self.acrylic_effect = AcrylicEffect(
+        """Setup acrylic effect with platform-specific settings"""
+        # Platform-specific colors
+        colors = {
+            'wayland': QColor(60, 80, 120, 180),
+            'x11': QColor(70, 90, 130, 160),
+            'windows': QColor(80, 100, 140, 150),
+            'darwin': QColor(90, 110, 150, 170)
+        }
+        
+        # Platform-specific blur radius
+        blur_radius = {
+            'wayland': 10,
+            'x11': 22,
+            'windows': 25,
+            'darwin': 18
+        }
+        
+        # Get settings for current platform
+        tint_color = colors.get(self.platform_info['display_server'], 
+                               QColor(80, 100, 140, 160))
+        radius = blur_radius.get(self.platform_info['display_server'], 20)
+        
+        # Create acrylic effect
+        self.acrylic = AcrylicEffect(
             widget=self,
-            blurRadius=25,
-            tintColor=QColor(100, 100, 150, 120),
-            luminosityColor=QColor(255, 255, 255, 15)
+            blurRadius=radius,
+            tintColor=tint_color,
+            luminosityColor=QColor(255, 255, 255, 15),
+            noiseOpacity=0.035
         )
-        self.acrylic_effect.applyToWidget()
+        self.acrylic.applyToWidget()
     
     def showEvent(self, event):
+        """Handle show event"""
         super().showEvent(event)
-        QTimer.singleShot(50, lambda: self.acrylic_effect.grabFromScreen())
+        QTimer.singleShot(50, self.acrylic.grabFromScreen)
+    
+    def enterEvent(self, event):
+        """Handle mouse enter for interactivity"""
+        if not self.platform_info['is_wayland']:
+            # Only animate on platforms with good performance
+            self.animate_hover(True)
+        super().enterEvent(event)
+    
+    def leaveEvent(self, event):
+        """Handle mouse leave"""
+        if not self.platform_info['is_wayland']:
+            self.animate_hover(False)
+        super().leaveEvent(event)
+    
+    def animate_hover(self, hover):
+        """Animate card on hover"""
+        # Implementation depends on animation library
+        pass
 ```
 
 ---
 
-## Troubleshooting
+## Platform-Specific Troubleshooting
 
-### Common Issues
+### Wayland Issues
 
 :::danger
-**Critical Issues**: Address these common problems immediately if your acrylic effects are not working as expected.
+**Wayland Security**: Wayland intentionally restricts screen grabbing for security. This is not a bug but a design decision.
 :::
 
-**Effect not appearing:**
-- Ensure `applyToWidget()` is called
-- Verify widget has proper size and is visible
-- Check that `grabFromScreen()` is called after widget is shown
+**Symptoms:**
+- Acrylic effect shows solid color instead of blur
+- Status shows "Fallback Mode"
+- No screen content visible through acrylic
 
-**Performance problems:**
-- Reduce `blurRadius` (15-25 is typical)
-- Use `blurPicSize` parameter to scale down large images
-- Avoid applying to very large widgets
+**Solutions:**
+1. **Accept fallback mode** - The gradient fallback looks good
+2. **Use X11 session** - Run with `QT_QPA_PLATFORM=xcb`
+3. **Adjust expectations** - Wayland provides security over features
+4. **Use alternative effects** - Consider CSS backdrop-filter if available
 
-**Multi-monitor issues:**
-- AcrylicBrush automatically handles multi-monitor setups
-- Ensure widgets are properly positioned on their screens
+```python
+# Check if running on Wayland
+if PlatformDetector.detect_platform()['is_wayland']:
+    print("Wayland detected - using acrylic fallbacks")
+    # Configure UI for fallback mode
+    widget.setStyleSheet("""
+        /* Additional styling for fallback mode */
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    """)
+```
 
-**Memory leaks:**
-- AcrylicEffect objects are designed to be owned by their parent widgets
-- No special cleanup needed when parent is destroyed
+### X11 Issues
 
-### Debugging
+**Symptoms:**
+- Screen grabbing works but is slow
+- Multi-monitor coordinates incorrect
+- Blur quality poor
+
+**Solutions:**
+1. **Optimize blur radius** - Use 20-25 for best performance/quality
+2. **Check screen geometry** - Verify multi-monitor setup
+3. **Update graphics drivers** - Ensure proper X11 acceleration
+
+### Windows Issues
+
+**Symptoms:**
+- DWM compatibility problems
+- Performance issues on older hardware
+- Alpha channel problems
+
+**Solutions:**
+1. **Enable DWM composition** - Ensure Aero/Desktop composition is enabled
+2. **Adjust blur radius** - Windows handles blur efficiently at 25-30
+3. **Check transparency** - Verify window has WA_TranslucentBackground
+
+### macOS Issues
+
+**Symptoms:**
+- Limited screen access
+- Quartz-specific issues
+- Performance on Retina displays
+
+**Solutions:**
+1. **Use appropriate blur radius** - 15-20 works best
+2. **Check permissions** - Ensure screen recording permissions
+3. **Retina scaling** - Account for device pixel ratio
+
+---
+
+## Debugging and Diagnostics
 
 :::tip
-**Debugging Helper**: Use this diagnostic function to identify common setup issues with acrylic effects.
+**Comprehensive Debugging**: Use this diagnostic function to get complete information about your acrylic setup across all platforms.
 :::
 
 ```python
-# Check if effect is applied
-if hasattr(widget, 'acrylic_effect'):
-    print("Acrylic effect is active")
+def diagnose_acrylic_environment():
+    """Print comprehensive diagnostics about acrylic environment"""
+    from Custom_Widgets.AcrylicEffect import PlatformDetector
+    import sys
     
-# Force background update
-acrylic_effect.grabFromScreen()
+    print("=" * 60)
+    print("ACRYLIC EFFECT DIAGNOSTICS")
+    print("=" * 60)
+    
+    # Platform info
+    platform_info = PlatformDetector.detect_platform()
+    print(f"\n1. PLATFORM INFORMATION:")
+    print(f"   System: {platform_info['system']}")
+    print(f"   Display Server: {platform_info['display_server']}")
+    print(f"   Is Wayland: {platform_info['is_wayland']}")
+    print(f"   Is X11: {platform_info['is_x11']}")
+    
+    # Environment variables
+    print(f"\n2. ENVIRONMENT VARIABLES:")
+    wayland_vars = ['WAYLAND_DISPLAY', 'XDG_SESSION_TYPE', 'DESKTOP_SESSION']
+    for var in wayland_vars:
+        value = os.environ.get(var, 'Not set')
+        print(f"   {var}: {value}")
+    
+    # Qt information
+    print(f"\n3. QT INFORMATION:")
+    print(f"   Qt Version: {QtCore.QT_VERSION_STR}")
+    print(f"   PySide/PyQt: {QtCore.__name__}")
+    
+    # Dependencies
+    print(f"\n4. DEPENDENCIES:")
+    try:
+        import scipy
+        print(f"   scipy: {scipy.__version__} ✓")
+    except ImportError:
+        print(f"   scipy: Not installed (using PIL fallback)")
+    
+    try:
+        import numpy
+        print(f"   numpy: {numpy.__version__} ✓")
+    except ImportError:
+        print(f"   numpy: Not installed")
+    
+    try:
+        from PIL import Image
+        print(f"   PIL: {Image.__version__} ✓")
+    except ImportError:
+        print(f"   PIL: Not installed")
+    
+    # Recommendations
+    print(f"\n5. RECOMMENDATIONS:")
+    if platform_info['is_wayland']:
+        print(f"   • Use blur radius 10-15")
+        print(f"   • Expect fallback mode")
+        print(f"   • Consider QT_QPA_PLATFORM=xcb for X11 session")
+    elif platform_info['is_x11']:
+        print(f"   • Use blur radius 20-25")
+        print(f"   • Full screen blur available")
+    elif platform_info['is_windows']:
+        print(f"   • Use blur radius 25-30")
+        print(f"   • Ensure DWM composition enabled")
+    elif platform_info['is_macos']:
+        print(f"   • Use blur radius 15-20")
+        print(f"   • Check screen recording permissions")
+    
+    print("=" * 60)
 
-# Check screen information
-screen = QApplication.primaryScreen()
-print(f"Screen geometry: {screen.geometry()}")
+# Usage
+diagnose_acrylic_environment()
 ```
 
 ---
 
-## Performance Tips
+## Performance Optimization by Platform
 
-:::warning
-**Performance Guidelines**: Follow these recommendations to ensure smooth performance while maintaining visual quality.
-:::
+### Wayland Optimization
+```python
+# Wayland: Focus on fallback performance
+acrylic = AcrylicEffect(
+    widget=widget,
+    blurRadius=10,  # Lower blur for performance
+    tintColor=QColor(50, 50, 50, 180),  # Stronger tint
+    luminosityColor=QColor(255, 255, 255, 25)  # More luminosity
+)
 
-1. **Use appropriate blur radius**: 15-25 for most cases, 30+ for heavy blur
-2. **Scale large images**: Use `blurPicSize` parameter for optimization
-3. **Avoid frequent updates**: Only grab screen when necessary
-4. **Use smaller widgets**: Apply effects to specific regions rather than entire windows
-5. **Cache backgrounds**: Reuse blurred images when possible
+# Use smaller widgets
+widget.setFixedSize(300, 200)  # Smaller = faster
+```
+
+### X11 Optimization
+```python
+# X11: Full quality available
+acrylic = AcrylicEffect(
+    widget=widget,
+    blurRadius=25,  # Higher quality blur
+    tintColor=QColor(40, 40, 40, 140),  # Standard tint
+    luminosityColor=QColor(255, 255, 255, 10)
+)
+
+# Can use larger widgets
+widget.setMinimumSize(400, 300)
+```
+
+### Windows Optimization
+```python
+# Windows: Excellent DWM integration
+acrylic = AcrylicEffect(
+    widget=widget,
+    blurRadius=30,  # Windows handles high blur well
+    tintColor=QColor(35, 35, 35, 130),
+    luminosityColor=QColor(255, 255, 255, 8)
+)
+```
+
+### macOS Optimization
+```python
+# macOS: Balance quality and compatibility
+acrylic = AcrylicEffect(
+    widget=widget,
+    blurRadius=18,  # Moderate blur
+    tintColor=QColor(45, 45, 45, 160),
+    luminosityColor=QColor(255, 255, 255, 15)
+)
+
+# Account for Retina displays
+if widget.devicePixelRatio() > 1.5:
+    acrylic.setBlurRadius(14)  # Slightly less blur on Retina
+```
 
 ---
 
-## Browser Compatibility
+## Migration Guide
+
+### From Older Versions
 
 :::info
-**Cross-Platform Support**: The acrylic effect system provides consistent performance across all major Qt Python bindings.
+**Seamless Migration**: The new cross-platform version maintains backward compatibility while adding intelligent platform detection.
 :::
 
-The acrylic effect system works with:
-- **PyQt5**: Full support
-- **PyQt6**: Full support  
-- **PySide2**: Full support
-- **PySide6**: Full support
+```python
+# OLD VERSION (platform-specific)
+acrylic = AcrylicEffect(widget)
+acrylic.grabFromScreen()  # Might fail on Wayland
+
+# NEW VERSION (cross-platform)
+acrylic = AcrylicEffect(widget)
+acrylic.grabFromScreen()  # Automatically uses appropriate method
+
+# Check if migration needed
+if hasattr(acrylic, 'isUsingFallback'):
+    print("Using new cross-platform version")
+else:
+    print("Consider updating to cross-platform version")
+```
+
+### Platform-Specific Code Migration
+
+```python
+# Before: Platform-specific workarounds
+if sys.platform == "linux":
+    if "wayland" in os.environ.get("XDG_SESSION_TYPE", ""):
+        # Wayland-specific code
+        use_fallback = True
+    else:
+        # X11-specific code
+        use_fallback = False
+elif sys.platform == "win32":
+    # Windows-specific code
+    pass
+elif sys.platform == "darwin":
+    # macOS-specific code
+    pass
+
+# After: Automatic platform detection
+acrylic = AcrylicEffect(widget)  # Handles everything automatically
+if acrylic.isUsingFallback():
+    print("Using fallback mode on this platform")
+```
+
+---
+
+## Frequently Asked Questions
+
+### Q: Why doesn't screen blur work on Wayland?
+**A:** Wayland intentionally restricts screen grabbing for security. This is a feature, not a bug. The acrylic effect automatically uses high-quality fallbacks on Wayland.
+
+### Q: How do I force X11 mode on Wayland?
+**A:** Run your application with:
+```bash
+QT_QPA_PLATFORM=xcb python your_app.py
+```
+
+### Q: What's the performance impact?
+**A:** Performance varies by platform:
+- **Wayland**: Excellent (uses optimized fallbacks)
+- **X11**: Good to excellent (native blurring)
+- **Windows**: Excellent (DWM optimized)
+- **macOS**: Good (balanced approach)
+
+### Q: Can I customize fallback appearance?
+**A:** Yes, the fallback creates beautiful gradient backgrounds that you can customize via tint and luminosity colors.
+
+### Q: How do I know which mode is active?
+**A:** Use `acrylic_effect.isUsingFallback()` or check the platform info.
 
 ---
 
 ## Additional Resources
 
-- **Source Code**: [GitHub Repository](https://github.com/SpinnCompany/QT-PyQt-PySide-Custom-Widgets)
+- **GitHub Repository**: [QT-PyQt-PySide-Custom-Widgets](https://github.com/SpinnCompany/QT-PyQt-PySide-Custom-Widgets)
+- **Platform Compatibility Guide**: Included in repository docs
 - **Video Tutorials**: [SPINN TV YouTube Channel](https://www.youtube.com/channel/UCJVsWdUC3M8p-q67RXPujkg)
-- **Examples**: See the `examples/` directory in the repository
+- **Example Gallery**: See cross-platform examples in the repository
 
 :::success
-**Professional Results**: The `AcrylicEffect` system provides professional-grade frosted glass effects that can significantly enhance the visual appeal of your Qt applications with realistic material design aesthetics.
+**Universal Acrylic**: The updated `AcrylicEffect` system provides beautiful, performant frosted glass effects that work consistently across all major platforms, with intelligent adaptation to each environment's capabilities and restrictions.
 :::
