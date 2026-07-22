@@ -112,6 +112,7 @@ const sidebars = {
       collapsed: false,
       items: [
         'Advanced/Plugins',
+        'Advanced/designer-tools',
         'Advanced/FileMonitor',
         'Advanced/QAppSettings',
         'Advanced/Logging',
