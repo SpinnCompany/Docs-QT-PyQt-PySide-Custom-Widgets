@@ -13,10 +13,21 @@ Custom_Widgets --start-designer --plugins    # run from your project folder
 Python re-implementations of the classic
 [QtDesignerPlugins](https://github.com/PyQt5/QtDesignerPlugins) suite:
 
-- **UI Workspace** — your project's `.ui` files; double-click to open
-- **QSS Editor** — syntax highlighting, property autocomplete, basic lint
-  (`Check`), and `Apply to forms` for instant preview styling
-- **Logs** — library and plugin messages, live
+- **UI Workspace** — the `.ui` files of one chosen folder (defaults to the
+  project's `ui/`), deduplicated; **Set Folder** and **New Form** buttons; a
+  right-click menu (Open, Reveal, Copy Path). Forms open in a Designer window
+  (PySide6 can't open a form into the already-running instance's workspace).
+- **QSS Editor** — opens the project's `Qss/scss/defaultStyle.scss` by
+  default; **New Style File** creates an scss file and auto-`@import`s it into
+  `defaultStyle.scss`. Editor keys: Tab/Shift+Tab indent, Ctrl+/ comment,
+  Ctrl+D duplicate, Ctrl+S save, plus property autocomplete. **Auto-compile &
+  apply on change** compiles the SCSS (qtsass) and applies it live to open
+  form previews; **Repaint entire Designer window** extends that to the whole
+  Designer. Styles live in scss — never inline in `.ui` files.
+- **Logs** — library and plugin messages, live, with a footer: level filter
+  (All/Info/Warn/Error), search, clear, and warning/error counts. A status-bar
+  footer adds a Logs button and error count.
+- Show/hide any pane from the **View** menu.
 
 ## The live bridge
 

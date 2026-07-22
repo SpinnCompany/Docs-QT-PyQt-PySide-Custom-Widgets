@@ -101,6 +101,7 @@ const sidebars = {
         'Theming/QCustomThemeList',
         'Theming/StylingGuide',
         'Theming/svg-icons',
+        'Theming/designer-properties',
         'Appendices/json-styles',
         'Appendices/qss-guide'
       ]

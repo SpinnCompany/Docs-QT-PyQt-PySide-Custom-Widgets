@@ -263,6 +263,44 @@ Always check the warning messages printed during conversion and adapt accordingl
 
 ---
 
+### Chart Designer Properties Are Typed Enums (int)
+
+Chart state properties that used to be exposed to Qt Designer as free-form
+**strings** are now exposed as **int**, backed by the `QCustomChartEnums`
+`IntEnum` classes. This makes them appear as proper dropdowns in Designer and
+keeps `.ui` files stable. Affected properties include `theme`,
+`legendPosition`, `labelsPosition`, `barPattern`, `barSelectionMode`, and — on
+`QCustomHorizontalBarSeries` / `QCustomVerticalBarSeries` — `valueLabelsPosition`
+and `labelsPosition`.
+
+The rendering code still uses string constants internally; the properties map
+`int ↔ string` at the boundary, and **legacy string values are still accepted**
+when set programmatically:
+
+```python
+from Custom_Widgets.QCustomCharts.QCustomChartConstants import QCustomChartEnums as E
+
+series.valueLabelsPosition = int(E.BarLabelsPosition.OutsideEnd)  # preferred
+series.valueLabelsPosition = "outside_end"                        # still coerced
+```
+
+`BarLabelsPosition` values map as follows:
+
+| int | Enum member  | String constant |
+| --- | ------------ | --------------- |
+| 0   | `Center`     | `"center"`      |
+| 1   | `InsideBase` | `"inside_base"` |
+| 2   | `InsideEnd`  | `"inside_end"`  |
+| 3   | `OutsideEnd` | `"outside_end"` |
+
+**Note:** older builds had a getter/setter mismatch where the center position
+was written as `"inside_center"` but read back as `"center"`, so a get→set
+round-trip of that value silently failed. The value is now consistently
+`"center"` (int `0`). If you stored the string `"inside_center"` anywhere,
+replace it with `"center"`.
+
+---
+
 ### Recommended Environment Setup
 
 To create a reliable and isolated environment:
