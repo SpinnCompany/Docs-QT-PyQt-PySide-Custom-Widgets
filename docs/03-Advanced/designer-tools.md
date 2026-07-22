@@ -15,8 +15,10 @@ Python re-implementations of the classic
 
 - **UI Workspace** — the `.ui` files of one chosen folder (defaults to the
   project's `ui/`), deduplicated; **Set Folder** and **New Form** buttons; a
-  right-click menu (Open, Reveal, Copy Path). Forms open in a Designer window
-  (PySide6 can't open a form into the already-running instance's workspace).
+  right-click menu (Open, Open in Editor, Reveal, Copy Path). Double-click
+  opens the form **in the current Designer window** (via a synthetic
+  file-drop onto the workbench — the one visible-open route PySide6 leaves
+  available); a separate window is used only if Designer refuses the drop.
 - **QSS Editor** — opens the project's `Qss/scss/defaultStyle.scss` by
   default; **New Style File** creates an scss file and auto-`@import`s it into
   `defaultStyle.scss`. Editor keys: Tab/Shift+Tab indent, Ctrl+/ comment,
