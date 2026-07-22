@@ -2,7 +2,7 @@
 
 `AnalogGaugeWidget` is a highly customizable analog gauge meter widget that provides a visually appealing way to display numerical values with analog-style indicators. It features multiple themes, smooth animations, and extensive customization options.
 
-![Custom Analog Gauge](https://github.com/KhamisiKibet/Docs-QT-PyQt-PySide-Custom-Widgets/blob/main/images/qt-pyqt-pyside-analog-gauge.png?raw=true)
+![Custom Analog Gauge](https://github.com/SpinnCompany/Docs-QT-PyQt-PySide-Custom-Widgets/blob/main/images/qt-pyqt-pyside-analog-gauge.png?raw=true)
 
 ---
 

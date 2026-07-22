@@ -2,7 +2,7 @@
 
 `QCustomQDialog` is a highly customizable dialog widget that provides modern UI features, smooth animations, and extensive customization options. It extends Qt's standard dialog with enhanced visual effects and flexible content management.
 
-![Custom Dialog GIF](https://github.com/KhamisiKibet/Docs-QT-PyQt-PySide-Custom-Widgets/raw/main/images/custom-dialog.gif)
+![Custom Dialog GIF](https://github.com/SpinnCompany/Docs-QT-PyQt-PySide-Custom-Widgets/raw/main/images/custom-dialog.gif)
 
 ---
 

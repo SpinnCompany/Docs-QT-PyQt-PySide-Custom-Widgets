@@ -30,9 +30,9 @@ pip install QT-PyQt-PySide-Custom-Widgets
 
 ## Visual Examples
 
-![QT Cards](https://github.com/KhamisiKibet/Docs-QT-PyQt-PySide-Custom-Widgets/blob/main/images/qt-cards-on-dashboard.png?raw=true)
+![QT Cards](https://github.com/SpinnCompany/Docs-QT-PyQt-PySide-Custom-Widgets/blob/main/images/qt-cards-on-dashboard.png?raw=true)
 
-![QT Cards Example](https://github.com/KhamisiKibet/Docs-QT-PyQt-PySide-Custom-Widgets/blob/main/images/Screenshot_20230923_074144.png?raw=true)
+![QT Cards Example](https://github.com/SpinnCompany/Docs-QT-PyQt-PySide-Custom-Widgets/blob/main/images/Screenshot_20230923_074144.png?raw=true)
 
 ## Basic Configuration
 

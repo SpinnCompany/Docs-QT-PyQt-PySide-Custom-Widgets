@@ -12,7 +12,7 @@
 
 ---
 
-![Custom Embeded Window GIF](https://github.com/KhamisiKibet/Docs-QT-PyQt-PySide-Custom-Widgets/raw/main/images/custom-spinner.gif)
+![Custom Embeded Window GIF](https://github.com/SpinnCompany/Docs-QT-PyQt-PySide-Custom-Widgets/raw/main/images/custom-spinner.gif)
 
 
 ## Features

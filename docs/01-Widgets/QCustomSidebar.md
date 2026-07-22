@@ -2,7 +2,7 @@
 
 `QCustomSidebar` and `QCustomSlideMenu` are customizable, animated sidebar and sliding menu widgets that provide smooth transitions between collapsed and expanded states. They are perfect for creating responsive navigation panels, collapsible sidebars, and sliding menus in modern applications.
 
-![Custom Qt Sidebar](https://github.com/KhamisiKibet/Docs-QT-PyQt-PySide-Custom-Widgets/blob/main/images/responsive-qt-gui-python-intarface.png?raw=true)
+![Custom Qt Sidebar](https://github.com/SpinnCompany/Docs-QT-PyQt-PySide-Custom-Widgets/blob/main/images/responsive-qt-gui-python-intarface.png?raw=true)
 
 ---
 
@@ -294,7 +294,7 @@ Available positions for floating menus:
 - **"center-left"** - Center left edge
 - **"center-right"** - Center right edge
 
-![Floating Menu Positions](https://github.com/KhamisiKibet/Docs-QT-PyQt-PySide-Custom-Widgets/blob/main/images/floating_qt_widget_1.png?raw=true)
+![Floating Menu Positions](https://github.com/SpinnCompany/Docs-QT-PyQt-PySide-Custom-Widgets/blob/main/images/floating_qt_widget_1.png?raw=true)
 
 ---
 

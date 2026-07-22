@@ -4,9 +4,9 @@ This guide will help you get started using QT-PyQt-PySide-Custom-Widgets in your
 
 ## Testing the Installation
 
-To confirm the installation was successful, refer to the examples provided in the [`examples`](https://github.com/KhamisiKibet/QT-PyQt-PySide-Custom-Widgets/tree/main/examples) folder within this [repository](https://github.com/KhamisiKibet/QT-PyQt-PySide-Custom-Widgets). These examples demonstrate how to integrate and use the custom widgets.
+To confirm the installation was successful, refer to the examples provided in the [`examples`](https://github.com/SpinnCompany/QT-PyQt-PySide-Custom-Widgets/tree/main/examples) folder within this [repository](https://github.com/SpinnCompany/QT-PyQt-PySide-Custom-Widgets). These examples demonstrate how to integrate and use the custom widgets.
 
-![QCustomArcLoader GIF](https://github.com/KhamisiKibet/Docs-QT-PyQt-PySide-Custom-Widgets/raw/main/images/24-modern-ui.gif)
+![QCustomArcLoader GIF](https://github.com/SpinnCompany/Docs-QT-PyQt-PySide-Custom-Widgets/raw/main/images/24-modern-ui.gif)
 
 ## Project Structure and Best Practices
 

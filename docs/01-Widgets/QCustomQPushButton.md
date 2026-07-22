@@ -2,7 +2,7 @@
 
 `QCustomQPushButton` is a highly customizable button widget that extends Qt's standard `QPushButton` with advanced animations, themes, icons, and shadow effects. It provides a modern, interactive button experience with extensive styling options.
 
-![Custom QPushButtons](https://github.com/KhamisiKibet/Docs-QT-PyQt-PySide-Custom-Widgets/blob/main/images/qpushbutton.png?raw=true)
+![Custom QPushButtons](https://github.com/SpinnCompany/Docs-QT-PyQt-PySide-Custom-Widgets/blob/main/images/qpushbutton.png?raw=true)
 
 ---
 
@@ -47,7 +47,7 @@ pip install QT-PyQt-PySide-Custom-Widgets
   - **Promote class name:** `QCustomQPushButton`
   - **Header file:** `Custom_Widgets.QCustomQPushButton.h`
 
-![QT Designer Promotion](https://github.com/KhamisiKibet/Docs-QT-PyQt-PySide-Custom-Widgets/blob/main/images/1.png?raw=true)
+![QT Designer Promotion](https://github.com/SpinnCompany/Docs-QT-PyQt-PySide-Custom-Widgets/blob/main/images/1.png?raw=true)
 
 ### 2. Basic Usage
 
@@ -427,7 +427,7 @@ app.exec_()
 
 ### Example Downloads
 
-[Download complete examples](https://github.com/KhamisiKibet/QT-PyQt-PySide-Custom-Widgets/tree/main/examples)
+[Download complete examples](https://github.com/SpinnCompany/QT-PyQt-PySide-Custom-Widgets/tree/main/examples)
 
 ---
 
