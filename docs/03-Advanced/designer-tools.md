@@ -24,10 +24,40 @@ Python re-implementations of the classic
   apply on change** compiles the SCSS (qtsass) and applies it live to open
   form previews; **Repaint entire Designer window** extends that to the whole
   Designer. Styles live in scss — never inline in `.ui` files.
+- **Custom Properties** — a selection-following panel of *rich* editors for
+  custom widget properties: theme-name dropdowns, widget-reference dropdowns
+  (filtered by type from the open form), easing-curve and choice dropdowns,
+  color pickers and file pickers. It docks as a tab **next to Designer's own
+  Property Editor**. Every registered widget declares its editors in a
+  `DESIGNER_CUSTOM_PROPS` spec; right-click any custom widget →
+  *Custom Properties…* to raise the panel. Edits go through the form cursor,
+  so undo/redo works and values persist to the `.ui`.
 - **Logs** — library and plugin messages, live, with a footer: level filter
-  (All/Info/Warn/Error), search, clear, and warning/error counts. A status-bar
-  footer adds a Logs button and error count.
-- Show/hide any pane from the **View** menu.
+  (All/Info/Warn/Error), search, clear, and warning/error counts. Hidden by
+  default — the status-bar chip reopens it, and it raises itself when your
+  app crashes. Output of the app you run from Designer streams here as
+  `[app]` lines.
+- Show/hide any pane from the **View** menu. Your dock arrangement is
+  remembered between sessions; *View → Reset Custom Widgets Layout* restores
+  the defaults.
+
+## Run your app from Designer
+
+The **Custom Widgets toolbar** closes the design loop without leaving
+Designer:
+
+- **▶ Run (F5)** starts the project's `main.py` under the dev-server
+  supervisor. While it runs, **saving a form regenerates `src/ui_*.py` and
+  hot-restarts the app** — design, Ctrl+S, see it live.
+- **⏹ Stop (Shift+F5)** / **↻ Restart**, with a ●/○ state indicator.
+- The **Theme** combo previews any `style.json` theme on the open form
+  (undo-aware; Designer's own chrome is untouched).
+- App output lands in the Logs dock; crashes raise it automatically.
+
+**New Form…** in the UI Workspace offers starting templates — *Dashboard*
+(sidebar + stacked pages), *Login*, *Settings page*, or *Blank* with the
+theme-icons resource prewired — and the context menu can open any file in
+your code editor.
 
 ## The live bridge
 
@@ -54,6 +84,10 @@ Protocol (newline-delimited JSON, for your own tooling):
 | `getScreenShot` | `type`: `current`/`all`/`main` | base64 PNG |
 
 ## MCP server for AI agents
+
+Agents get the same run loop as the toolbar: `designer_run_app`,
+`designer_stop_app`, `designer_restart_app`, `designer_app_status` and
+`designer_app_logs` (last stdout/stderr lines, including tracebacks).
 
 Expose the bridge and project workflow to agents (Claude Code, etc.) over
 the Model Context Protocol:
