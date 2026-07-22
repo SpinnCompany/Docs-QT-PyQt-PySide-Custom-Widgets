@@ -100,6 +100,7 @@ const sidebars = {
         'Theming/QCustomThemeDarkLightToggle',
         'Theming/QCustomThemeList',
         'Theming/StylingGuide',
+        'Theming/svg-icons',
         'Appendices/json-styles',
         'Appendices/qss-guide'
       ]

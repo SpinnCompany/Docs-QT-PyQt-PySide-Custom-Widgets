@@ -16,18 +16,19 @@ Make sure your Python version and Qt binding (PyQt or PySide) versions are compa
 
 #### Q3. I get an error like `OSError: no library called "libcairo.so.2"` or similar. What’s wrong?
 
-**A:** This may occur when using modules inside the custom-widgets package that rely on external libraries (e.g., `cairosvg` which in turn uses `cairo`). For example:
+**A:** Older versions of the library rasterized theme icons through `cairosvg`, which requires the native `cairo` library:
 
 ```
 OSError: no library called "cairo-2" was found
 ```
 
-([Stack Overflow][3])
-**Solution:**
+**Solution:** Upgrade the package. Theme icons are now generated as SVG (see [SVG Theme Icons](../Theming/svg-icons.md)) and `cairosvg`/Cairo is no longer a dependency:
 
-* On Windows, ensure `libcairo-2.dll` exists and is in your PATH (or installed via a binary distribution). ([Qt Forum][4])
-* On Linux/macOS, install the platform package (e.g., `sudo apt-get install libcairo2-dev` or equivalent).
-* Alternatively, if you don’t need the feature depending on Cairo, try disabling it or using a simpler widget that doesn’t require that library.
+```bash
+pip install --upgrade QT-PyQt-PySide-Custom-Widgets
+```
+
+If you must stay on an old version: on Windows ensure `libcairo-2.dll` is in your PATH; on Linux/macOS install the platform package (e.g., `sudo apt-get install libcairo2-dev`).
 
 #### Q4. I’m seeing a deprecation warning: `sipPyTypeDict() is deprecated…`. Should I worry?
 

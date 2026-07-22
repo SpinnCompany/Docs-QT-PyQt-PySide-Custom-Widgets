@@ -354,7 +354,7 @@ pip install QT-PyQt-PySide-Custom-Widgets
 Optional visual libraries:
 
 ```bash
-pip install cairosvg pillow qt-material
+pip install pillow qt-material
 ```
 
 ---
@@ -401,7 +401,7 @@ Custom_Widgets --create-project MyApp
 | Platform    | Recommendation                                                           |
 | ----------- | ------------------------------------------------------------------------ |
 | **Windows** | Use `py -m venv venv` and run apps with `pythonw.exe` for GUI-only mode. |
-| **Linux**   | Install `libxcb-xinerama0` and `cairo` if missing.                       |
+| **Linux**   | Install `libxcb-xinerama0` if missing.                                   |
 | **macOS**   | Always run with a GUI session (`pythonw` or `.app` bundle).              |
 
 ---

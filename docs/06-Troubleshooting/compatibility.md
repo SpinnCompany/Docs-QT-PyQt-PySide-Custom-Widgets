@@ -53,9 +53,15 @@ If using PyQt, ensure `PyQt6.QtWidgets.QGraphicsEffect` exists in your version.
 
 #### 3. `OSError: no library called "cairo-2" was found`
 
-Some widgets (animated buttons, radial indicators, curved progress bars) require **Cairo** or **CairoSVG** for vector rendering.
+Older versions rasterized theme icons through **CairoSVG**, which required the native Cairo library. Current versions generate icons as **SVG** and no longer depend on Cairo — see [SVG Theme Icons](../Theming/svg-icons.md).
 
-**Fix by OS:**
+**Fix:**
+
+```bash
+pip install --upgrade QT-PyQt-PySide-Custom-Widgets
+```
+
+If you must stay on an older version:
 
 **Windows:**
 
@@ -73,8 +79,6 @@ sudo apt install libcairo2-dev
 ```bash
 brew install cairo
 ```
-
-If you cannot install Cairo, disable those widgets or replace them with non-Cairo equivalents.
 
 ---
 
