@@ -56,6 +56,12 @@ Designer:
   (undo-aware; Designer's own chrome is untouched).
 - App output lands in the Logs dock; crashes raise it automatically.
 
+A **Workspace menu** switches the whole session to another project
+without restarting Designer — ui listing, styles, themes, bridge and the
+Run target all follow — with a recent-workspaces list. *Open Workspace…*
+also lives in the UI Workspace dock (while *Set Folder…* only changes
+which folder's `.ui` files are listed).
+
 **New Form…** in the UI Workspace offers starting templates — *Dashboard*
 (sidebar + stacked pages), *Login*, *Settings page*, or *Blank* with the
 theme-icons resource prewired — and the context menu can open any file in
