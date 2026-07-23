@@ -38,14 +38,25 @@ pip install QT-PyQt-PySide-Custom-Widgets
 
 ## Quick Start
 
-### 1. Promote QPushButton in Qt Designer
+### 1. Add it in Qt Designer
 
-- Add a `QPushButton` to your interface
-- Right-click and select "Promote widgets..."
-- Configure promotion:
-  - **Base class name:** `QPushButton`
-  - **Promote class name:** `QCustomQPushButton`
-  - **Header file:** `Custom_Widgets.QCustomQPushButton.h`
+`QCustomQPushButton` is **registered as a native custom widget**, so once the
+Custom Widgets Designer plugin is active you can drag it straight from the
+widget box — no promotion step required.
+
+- Open Qt Designer through the package's Designer launcher (which loads the
+  Custom Widgets plugin).
+- In the **widget box**, find **QCustomQPushButton** under the **Buttons**
+  group and drag it onto your form.
+- Select it and use the **property editor** to set its
+  [`variant` and `sizeVariant`](#variants--sizes-design-tokens) — the styling
+  updates live from the design tokens.
+
+> **Promotion (alternative / no plugin):** if you are not running the Custom
+> Widgets Designer plugin, you can still use the classic promotion route — add a
+> `QPushButton`, right-click → **Promote widgets…**, with **Base class name**
+> `QPushButton`, **Promoted class name** `QCustomQPushButton`, and **Header
+> file** `Custom_Widgets.QCustomQPushButton.h`.
 
 ![QT Designer Promotion](https://github.com/SpinnCompany/Docs-QT-PyQt-PySide-Custom-Widgets/blob/main/images/1.png?raw=true)
 
@@ -63,6 +74,51 @@ button.setObjectTheme(2)  # Theme number 2
 # Set animation trigger
 button.setObjectAnimateOn("hover")
 ```
+
+---
+
+## Variants & sizes (design tokens)
+
+Alongside the classic gradient themes, `QCustomQPushButton` exposes two
+**declared Qt properties** that style it from the design-token system — the same
+tokens the rest of the modern widget catalog uses. They are set from the Qt
+Designer property editor (or in code) and follow the active theme.
+
+| Property | Type | Values | Default | Description |
+|---|---|---|---|---|
+| `variant` | str | `primary` / `secondary` / `outline` / `ghost` / `destructive` | `primary` | Semantic role — colour comes from the matching token. |
+| `sizeVariant` | str | `sm` / `md` / `lg` | `md` | Padding / font size. Named `sizeVariant` (not `size`) so it does not shadow `QWidget.size()`. |
+
+```python
+from qtpy.QtWidgets import QApplication, QWidget, QHBoxLayout
+from Custom_Widgets.QCustomQPushButton import QCustomQPushButton
+from Custom_Widgets.JSonStyles.tokens import DesignTokens, applyDesignTokens
+
+app = QApplication([])
+applyDesignTokens(app, tokens=DesignTokens(theme="light"))
+
+w = QWidget()
+row = QHBoxLayout(w)
+for variant in ("primary", "secondary", "outline", "ghost", "destructive"):
+    b = QCustomQPushButton(variant.capitalize())
+    b.variant = variant
+    row.addWidget(b)
+
+# sizes
+small = QCustomQPushButton("Small"); small.sizeVariant = "sm"
+large = QCustomQPushButton("Large"); large.sizeVariant = "lg"
+row.addWidget(small)
+row.addWidget(large)
+
+w.show()
+app.exec()
+```
+
+These are driven by tokenized QSS attribute selectors
+(`QCustomQPushButton[variant="…"]`, see `button_qss` in
+`Custom_Widgets/JSonStyles/tokens.py`) using the `primary`, `secondary`,
+`outline`, `destructive`, and related roles. They work independently of the
+gradient themes below — use whichever fits your design.
 
 ---
 
