@@ -146,7 +146,12 @@ const sidebars = {
       items: [
         'Usage-Examples/BasicUsage',
         'Usage-Examples/AdvancedLayouts',
-        'Usage-Examples/RealWorldScenarios'
+        'Usage-Examples/RealWorldScenarios',
+        'Usage-Examples/DataTableBasics',
+        'Usage-Examples/DataTableVirtualization',
+        'Usage-Examples/DataTableEditing',
+        'Usage-Examples/DataTableGroupingPivot',
+        'Usage-Examples/DataTableFrozenExport'
       ]
     },
     {
