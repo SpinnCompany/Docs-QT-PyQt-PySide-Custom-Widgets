@@ -83,6 +83,7 @@ const sidebars = {
       items: [
         'Widgets/QCardWidget',
         'Widgets/QAvatarWidget',
+        'Widgets/QCustomBadge',
         'Widgets/QBadgeWidget',
         'Widgets/QCustomAnnotationWidget',
         'Widgets/QCustomQToolTip',

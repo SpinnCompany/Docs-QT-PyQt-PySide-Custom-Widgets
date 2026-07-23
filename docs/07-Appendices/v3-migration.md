@@ -56,6 +56,79 @@ class MainWindow(QCustomMainWindow):
         ...
 ```
 
+## Modernized widget: `QBadgeWidget` → `QCustomBadge` {#qbadgewidget-to-qcustombadge}
+
+The old `QBadgeWidget` (a hand-painted `QFrame` with per-instance `QColor`
+properties) is **removed** and replaced by [`QCustomBadge`](../01-Widgets/QCustomBadge.md) —
+a themed badge whose colour comes from a **semantic variant** (so it follows
+your light/dark theme automatically), plus new **count** and **dot** modes and
+an **overlay** helper. There is no alias; update the import and the API.
+
+### Import
+
+```python
+# old
+from Custom_Widgets.QBadgeWidget import QBadgeWidget
+# new
+from Custom_Widgets.QCustomBadge import QCustomBadge
+```
+
+### Property / API map
+
+| Old (`QBadgeWidget`) | New (`QCustomBadge`) |
+|---|---|
+| `QBadgeWidget(text="…", background_color=QColor(…), text_color=QColor(…))` | `QCustomBadge("…", variant="success")` |
+| `badge.text = "New"` | `badge.setText("New")` |
+| `badge.backgroundColor = QColor("#e74c3c")` | `badge.variant = "destructive"` *(semantic, theme-aware)* |
+| `badge.textColor = QColor("#fff")` | — handled by the variant's `on-*` token |
+| *(n/a)* | `badge.setCount(12, maxCount=99)` → `"12"` / `"99+"`, hidden at `0` |
+| *(n/a)* | `badge.setDot(True)` — a small status dot |
+| *(n/a)* | `badge.sizeVariant = "sm" \| "md" \| "lg"` |
+| *(n/a)* | `badge.attachTo(button, corner="topright")` — float over a widget |
+| `clicked` signal | `clicked` signal *(unchanged)* |
+
+The eight variants map to the design-token colour roles:
+`default`, `primary`, `secondary`, `success`, `warning`, `destructive`,
+`info`, `outline`.
+
+### Before / after
+
+```python
+# --- v2: per-instance colours ---
+from Custom_Widgets.QBadgeWidget import QBadgeWidget
+from qtpy.QtGui import QColor
+
+active   = QBadgeWidget(text="Active",  background_color=QColor(46, 204, 113),
+                        text_color=QColor(255, 255, 255))
+error    = QBadgeWidget(text="Error",   background_color=QColor(231, 76, 60),
+                        text_color=QColor(255, 255, 255))
+count    = QBadgeWidget(text="5",       background_color=QColor(231, 76, 60),
+                        text_color=QColor(255, 255, 255))
+```
+
+```python
+# --- v3: semantic variants + count/dot ---
+from Custom_Widgets.QCustomBadge import QCustomBadge
+
+active = QCustomBadge("Active", variant="success")
+error  = QCustomBadge("Error",  variant="destructive")
+
+count  = QCustomBadge(variant="destructive")
+count.setCount(5, maxCount=99)          # shows "5", or "99+" past the cap
+
+dot    = QCustomBadge(variant="success")
+dot.setDot(True)                        # a small status dot, no text
+
+# float a count over a button's corner
+count.attachTo(inbox_button, corner="topright")
+```
+
+:::tip Need an arbitrary colour?
+Prefer a variant so the badge tracks the theme. If you truly need a one-off
+colour, target it in QSS by object name instead of a Python `QColor`:
+`QCustomBadge#myBadge { background-color: #ff8800; color: white; }`.
+:::
+
 ## New: explicit project root
 
 Apps were previously tied to being launched from the project folder
