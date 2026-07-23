@@ -53,7 +53,7 @@ If using PyQt, ensure `PyQt6.QtWidgets.QGraphicsEffect` exists in your version.
 
 #### 3. `OSError: no library called "cairo-2" was found`
 
-Older versions rasterized theme icons through **CairoSVG**, which required the native Cairo library. Current versions generate icons as **SVG** and no longer depend on Cairo — see [SVG Theme Icons](../Theming/svg-icons.md).
+Older versions rasterized theme icons through **CairoSVG**, which required the native Cairo library. Current versions generate icons as **SVG** and no longer depend on Cairo — see [SVG Theme Icons](../02-Theming/svg-icons.md).
 
 **Fix:**
 

@@ -22,7 +22,7 @@ Make sure your Python version and Qt binding (PyQt or PySide) versions are compa
 OSError: no library called "cairo-2" was found
 ```
 
-**Solution:** Upgrade the package. Theme icons are now generated as SVG (see [SVG Theme Icons](../Theming/svg-icons.md)) and `cairosvg`/Cairo is no longer a dependency:
+**Solution:** Upgrade the package. Theme icons are now generated as SVG (see [SVG Theme Icons](../02-Theming/svg-icons.md)) and `cairosvg`/Cairo is no longer a dependency:
 
 ```bash
 pip install --upgrade QT-PyQt-PySide-Custom-Widgets
