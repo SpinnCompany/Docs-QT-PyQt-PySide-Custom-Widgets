@@ -58,6 +58,12 @@ New "Data & Tables" sidebar category with two pages:
 
 _Commit: fddaa72._
 
+### DataTable usage-example recipes (2026-07-23)
+
+Five runnable recipe pages under Usage Examples: DataTableBasics (free),
+DataTableVirtualization, DataTableEditing, DataTableGroupingPivot,
+DataTableFrozenExport (Pro). _Commit: 0f10544._
+
 ## Pending / owed
 
 - **Update the Licensing page when the GPLv3 → LGPLv3 relicense lands** (change
@@ -66,5 +72,3 @@ _Commit: fddaa72._
   `docs/relicense/changeset/` runbook.
 - A published changelog/blog entry (`blog/`) can announce the new widget +
   DataTable docs when the release goes out — separate from this internal tracker.
-- Optional: usage-example / recipe pages under `05-Usage-Examples` for the grid
-  (grouping, virtualization, export) once the Pro add-on is on sale.
