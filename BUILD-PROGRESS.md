@@ -72,6 +72,13 @@ DataTable; notes DataTable Pro as coming. No LGPL/pricing claims. Flip
 `draft:false` + set the final version/date to publish once the release,
 relicense, and Pro availability are real. _Commit: 15fa832._
 
+### Full-site build verified (2026-07-23)
+
+`npm ci && npm run build` **passes** (Docusaurus `onBrokenLinks: throw`) with all
+the new pages + the draft blog post. Fixed two **pre-existing** broken links in
+the Troubleshooting pages (`../Theming/svg-icons.md` → `../02-Theming/…`) that had
+been failing the build. _Commit: f3384f8._
+
 ## Pending / owed
 
 - **Update the Licensing page when the GPLv3 → LGPLv3 relicense lands** (change
