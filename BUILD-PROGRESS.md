@@ -33,14 +33,27 @@ is ready.
 - Designer IDE round documented; UI Workspace (drop-event route) + the Workspace
   menu / project switcher.
 
+### New free-widget reference pages (2026-07-23)
+
+Added reference pages (Overview / Constructor / Properties / Methods / Signals /
+Usage / Theming) matching the QCustomBadge page style, with sidebar entries:
+
+- QCustomSwitch — Input & Controls
+- QCustomNumberInput — Input & Controls
+- QCustomAlert — Display & Information
+- QCustomStatCard — Display & Information
+- QCustomProgressRing — Progress & Loading
+- QCustomCard — Display & Information
+
+_Commit: dc26908._
+
 ## Pending / owed
 
 - **Update the Licensing page when the GPLv3 → LGPLv3 relicense lands** (change
   the license wording; publish commercial terms only once counsel-reviewed and
   the Pro add-on is on sale). Tracked in the code repo's
   `docs/relicense/changeset/` runbook.
-- Widget reference pages for the new free widgets shipped in the code repo but
-  not yet documented here: Switch, NumberInput, Alert, StatCard, ProgressRing,
-  Card (Badge is done). DataTable + DataTable Pro user docs.
+- **DataTable + DataTable Pro user docs** (free table + the Pro grouping/pivot/
+  virtualization/export/frozen/edit features) — still undocumented here.
 - A published changelog/blog entry (`blog/`) can announce the above when the
   release goes out — separate from this internal tracker.
