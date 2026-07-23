@@ -162,7 +162,8 @@ const sidebars = {
       collapsible: true,
       collapsed: true,
       items: [
-        'Appendices/resources'
+        'Appendices/resources',
+        'Appendices/licensing'
       ]
     }
   ]
