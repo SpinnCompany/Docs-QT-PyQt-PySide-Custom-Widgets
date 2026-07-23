@@ -54,6 +54,8 @@ const sidebars = {
         'Widgets/QCustomQPushButtonGroup',
         'Widgets/QCustomQSlider',
         'Widgets/QCustomCheckBox',
+        'Widgets/QCustomSwitch',
+        'Widgets/QCustomNumberInput',
         'Widgets/QCustomTagEdit',
         'Widgets/QCustomEmojiPicker',
         'Widgets/AnalogGaugeWidget'
@@ -71,6 +73,7 @@ const sidebars = {
         'Widgets/QCustomSpinner',
         'Widgets/QCustomQProgressBar',
         'Widgets/QCustomProgressIndicator',
+        'Widgets/QCustomProgressRing',
         'Widgets/QCustomRoundProgressBar',
         'Widgets/QFlowProgressBar'
       ]
@@ -81,10 +84,13 @@ const sidebars = {
       collapsible: true,
       collapsed: false,
       items: [
+        'Widgets/QCustomCard',
         'Widgets/QCardWidget',
         'Widgets/QAvatarWidget',
         'Widgets/QCustomBadge',
         'Widgets/QBadgeWidget',
+        'Widgets/QCustomStatCard',
+        'Widgets/QCustomAlert',
         'Widgets/QCustomAnnotationWidget',
         'Widgets/QCustomQToolTip',
         'Widgets/QCustomTipOverlay',
