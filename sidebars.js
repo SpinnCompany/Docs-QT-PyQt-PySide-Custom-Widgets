@@ -134,6 +134,7 @@ const sidebars = {
       items: [
         'Advanced/Plugins',
         'Advanced/designer-tools',
+        'Advanced/hot-reload',
         'Advanced/FileMonitor',
         'Advanced/QAppSettings',
         'Advanced/Logging',

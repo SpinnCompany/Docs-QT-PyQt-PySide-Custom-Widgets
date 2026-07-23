@@ -108,14 +108,66 @@ claude mcp add custom-widgets -- Custom_Widgets-mcp --project-dir .
 
 Tools an agent gets:
 
-- `designer_status`, `designer_launch`
+**Session & forms**
+- `designer_status`, `designer_launch`, `designer_quit`
 - `designer_open_files`, `designer_close_files`, `designer_reload_forms`
+- `designer_list_templates`, `designer_new_form` — list the starting
+  templates (Dashboard / Login / Settings / Blank) and create a form from one
+- `designer_set_form_xml`, `designer_new_form_xml` — build or replace a form
+  live from `.ui` XML
 - `designer_screenshot` — the agent's eyes on your forms
 - `designer_get_ui_code`, `designer_get_object_info` — form source & tree
+- `designer_set_widget_property` — set a widget property (undoable)
+
+**Styling & theme**
 - `designer_set_stylesheet`, `designer_refresh_icons`
-- `project_list_ui_files`, `project_new_ui`, `project_convert_ui`
+- `designer_qss_window`, `designer_qss_screenshot` — drive the QSS / Theme
+  editor window (see below)
+
+**Designer chrome**
+- `designer_list_docks`, `designer_arrange_dock` — show / hide / move panes
+- `designer_list_dialogs`, `designer_dismiss_dialog` — see and dismiss modal
+  dialogs that would otherwise block automation
+- `designer_list_actions`, `designer_trigger_action`, `designer_window`
+
+**Project**
+- `project_list_ui_files`, `project_new_ui`, `project_convert_ui`,
+  `project_write_style`
+
+### Driving the QSS / Theme editor
+
+The QSS / Theme editor is a separate floating top-level window the dock tools
+can't reach, so it has its own driver:
+
+```
+designer_qss_window(action, enabled)
+   action='open'    show + raise the window
+   action='close'   hide it
+   action='status'  report { open, paintEntireDesigner, currentFile }
+   action='paint'   toggle "Paint entire Designer" (apply the full current
+                    theme app-wide, or clear it) via `enabled`
+designer_qss_screenshot()   capture the window
+```
+
+This makes the whole theming surface — opening the editor, toggling
+**Paint entire Designer**, and verifying the result with a screenshot —
+scriptable end-to-end.
+
+### Observe & drive the *running* app
+
+The app launched by **▶ Run** / `designer_run_app` is a separate process. When
+it runs under the dev server it hosts an in-app control server, so agents can
+see into and drive the live app — not just the Designer canvas:
+
+- `app_status`, `app_list_windows`, `app_screenshot` — is it up, what windows,
+  what does it look like
+- `app_object_tree`, `app_find` — the live widget tree and locate widgets
+- `app_click`, `app_set_text`, `app_set_property`, `app_invoke` — interact:
+  click a button, type into a field, set a property, call a slot
+- `app_window` — move / raise the app window
 
 A typical autonomous loop: the agent edits a `.ui` file on disk →
 `designer_reload_forms` → `designer_screenshot` to verify visually →
-`project_convert_ui` → run the app. Combined with the theme engine, the
-agent designs with the exact SVG icons and styles your app ships.
+`project_convert_ui` → `designer_run_app` → `app_screenshot` / `app_click` to
+exercise the live app. Combined with the theme engine, the agent designs with
+the exact SVG icons and styles your app ships, then drives the result.

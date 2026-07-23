@@ -86,6 +86,21 @@ the new pages + the draft blog post. Fixed two **pre-existing** broken links in
 the Troubleshooting pages (`../Theming/svg-icons.md` → `../02-Theming/…`) that had
 been failing the build. _Commit: f3384f8._
 
+### Designer feature docs (2026-07-23)
+
+Documented the Designer dev-workflow features shipped in the code repo:
+
+- New **`03-Advanced/hot-reload.md`** — component hot reload (container
+  `hotReload` + `.ui`→`.py` auto-resolve) and main-window hot reload
+  (`enable_hot_reload`), plus how it fits the dev loop.
+- Refreshed **`03-Advanced/designer-tools.md`** MCP section — complete/current
+  tool list, driving the QSS / Theme editor window
+  (`designer_qss_window` / `designer_qss_screenshot`, "Paint entire Designer"),
+  and observing/driving the running app (`app_*` tools).
+- Updated **`QCustomComponentContainer.md`** — `.ui` auto-resolve + `hotReload`.
+
+Sidebar entry added; full-site build re-verified green.
+
 ## Pending / owed
 
 - **Update the Licensing page when the GPLv3 → LGPLv3 relicense lands** (change

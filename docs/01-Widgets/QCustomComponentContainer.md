@@ -38,7 +38,8 @@ QCustomComponentContainer(parent=None)
 
 ### `filePath` (str)
 - **Purpose:**  
-  Path to the Python file containing the UI class to be loaded.
+  Path to the **compiled** UI module (`ui_<name>.py`, produced by
+  `Custom_Widgets --convert-ui`) containing the UI class to be loaded.
 
 - **Getter:**  
   Returns the current file path.
@@ -46,9 +47,17 @@ QCustomComponentContainer(parent=None)
 - **Setter:**  
   Updates the file path and automatically reloads the component.
 
+- **`.ui` paths resolve automatically:**  
+  You may point `filePath` at a raw `.ui` file — it is transparently resolved to
+  the sibling `ui_<stem>.py` (checked next to the `.ui`, then in the default
+  `src/` output directory). Only a form with **no** compiled module is rejected,
+  with a message telling you to run `--convert-ui`. Existing projects that still
+  reference `.ui` files keep working unchanged.
+
 - **Example:**  
   ```python
-  container.filePath = "components/user_profile.py"
+  container.filePath = "src/ui_user_profile.py"   # compiled module
+  container.filePath = "ui/user_profile.ui"       # also OK -> ui_user_profile.py
   ```
 
 ### `formClassName` (str)
@@ -80,6 +89,21 @@ QCustomComponentContainer(parent=None)
   ```python
   container.previewComponent = True
   ```
+
+### `hotReload` (bool)
+- **Purpose:**  
+  When `True` (**the default**), the embedded component rebuilds itself in place
+  whenever its compiled `.py` source changes — no application or Designer
+  restart. Pairs with the dev server / `--monitor-ui` / Designer **▶ Run**, which
+  regenerate `ui_*.py` when you save a `.ui` file.
+
+- **Example:**  
+  ```python
+  container.hotReload = True   # default; rebuilds the form on source change
+  ```
+
+  See [Hot Reload](../03-Advanced/hot-reload.md) for the full workflow
+  (component **and** main-window).
 
 ---
 
