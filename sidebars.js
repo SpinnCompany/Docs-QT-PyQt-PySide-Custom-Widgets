@@ -40,6 +40,8 @@ const sidebars = {
         'Widgets/QCustomSidebarLabel',
         'Widgets/QCustomQStackedWidget',
         'Widgets/QCustomFlowLayout',
+        'Widgets/QCustomSplitter',
+        'Widgets/QCustomCarousel',
         'Widgets/QCustomHorizontalSeparator',
         'Widgets/QDraggableWidget'
       ]
@@ -94,7 +96,8 @@ const sidebars = {
         'Widgets/QCustomAnnotationWidget',
         'Widgets/QCustomQToolTip',
         'Widgets/QCustomTipOverlay',
-        'Widgets/QCustomQRGenerator'
+        'Widgets/QCustomQRGenerator',
+        'Widgets/QCustomKbd'
       ]
     },
     {

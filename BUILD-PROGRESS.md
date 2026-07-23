@@ -47,6 +47,13 @@ Usage / Theming) matching the QCustomBadge page style, with sidebar entries:
 
 _Commit: dc26908._
 
+Three more (2026-07-23), same page style + sidebar entries; full-site build
+re-verified green (`onBrokenLinks: throw`):
+
+- QCustomKbd — Display & Information
+- QCustomSplitter — Navigation & Layout
+- QCustomCarousel — Navigation & Layout
+
 ### DataTable + DataTable Pro pages (2026-07-23)
 
 New "Data & Tables" sidebar category with two pages:
