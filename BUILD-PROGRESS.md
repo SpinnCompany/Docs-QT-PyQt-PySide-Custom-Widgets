@@ -47,13 +47,24 @@ Usage / Theming) matching the QCustomBadge page style, with sidebar entries:
 
 _Commit: dc26908._
 
+### DataTable + DataTable Pro pages (2026-07-23)
+
+New "Data & Tables" sidebar category with two pages:
+- `QCustomDataTable` (free) — columns/data, sort/filter/paginate, selection,
+  signals, properties, theming.
+- `QCustomDataTablePro` (commercial add-on) — virtualization + DataProvider,
+  server-side push-down, frozen columns, inline editing, grouping+aggregation,
+  pivot, CSV/XLSX export; links the Licensing page (no prices).
+
+_Commit: fddaa72._
+
 ## Pending / owed
 
 - **Update the Licensing page when the GPLv3 → LGPLv3 relicense lands** (change
   the license wording; publish commercial terms only once counsel-reviewed and
   the Pro add-on is on sale). Tracked in the code repo's
   `docs/relicense/changeset/` runbook.
-- **DataTable + DataTable Pro user docs** (free table + the Pro grouping/pivot/
-  virtualization/export/frozen/edit features) — still undocumented here.
-- A published changelog/blog entry (`blog/`) can announce the above when the
-  release goes out — separate from this internal tracker.
+- A published changelog/blog entry (`blog/`) can announce the new widget +
+  DataTable docs when the release goes out — separate from this internal tracker.
+- Optional: usage-example / recipe pages under `05-Usage-Examples` for the grid
+  (grouping, virtualization, export) once the Pro add-on is on sale.
