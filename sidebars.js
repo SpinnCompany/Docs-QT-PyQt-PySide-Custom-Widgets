@@ -99,6 +99,16 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Data & Tables',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        'Widgets/QCustomDataTable',
+        'Widgets/QCustomDataTablePro'
+      ]
+    },
+    {
+      type: 'category',
       label: 'Theming & Styling',
       collapsible: true,
       collapsed: false,
