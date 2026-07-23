@@ -64,11 +64,19 @@ Five runnable recipe pages under Usage Examples: DataTableBasics (free),
 DataTableVirtualization, DataTableEditing, DataTableGroupingPivot,
 DataTableFrozenExport (Pro). _Commit: 0f10544._
 
+### Release blog post — DRAFT (2026-07-23)
+
+`blog/2026-07-23-modern-widget-catalog-and-datatable.md`, `draft: true` (excluded
+from production builds). Announces the design-token system, 30+ widgets, and the
+DataTable; notes DataTable Pro as coming. No LGPL/pricing claims. Flip
+`draft:false` + set the final version/date to publish once the release,
+relicense, and Pro availability are real. _Commit: 15fa832._
+
 ## Pending / owed
 
 - **Update the Licensing page when the GPLv3 → LGPLv3 relicense lands** (change
   the license wording; publish commercial terms only once counsel-reviewed and
   the Pro add-on is on sale). Tracked in the code repo's
   `docs/relicense/changeset/` runbook.
-- A published changelog/blog entry (`blog/`) can announce the new widget +
-  DataTable docs when the release goes out — separate from this internal tracker.
+- **Publish the release blog post** (flip `draft:false`, set version/date) when
+  the release actually ships.
