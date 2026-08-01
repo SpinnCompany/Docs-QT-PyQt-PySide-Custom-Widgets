@@ -10,7 +10,7 @@ permalink: /docs/other-functions/qpushbutton-group
 
 Create organized button groups with active/inactive state management using QT-PyQt-PySide-Custom-Widgets.
 
-![QT Grouped Buttons](https://github.com/SpinnCompany/Docs-QT-PyQt-PySide-Custom-Widgets/blob/main/images/qt-nav-buttons.png?raw=true)
+![QT Grouped Buttons](/img/showcase/buttongroup.png)
 
 ## Overview
 

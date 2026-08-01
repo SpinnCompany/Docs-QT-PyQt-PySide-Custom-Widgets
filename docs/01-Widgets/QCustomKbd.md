@@ -1,5 +1,7 @@
 # QCustomKbd
 
+![QCustomKbd screenshot](/img/showcase/kbd.png)
+
 `QCustomKbd` renders a **keyboard shortcut as styled keycaps** — the desktop
 equivalent of the HTML `<kbd>` element. Pass a shortcut string like `"Ctrl+K"`
 (or a list of keys) and each key is drawn as a small, tokenized cap joined by

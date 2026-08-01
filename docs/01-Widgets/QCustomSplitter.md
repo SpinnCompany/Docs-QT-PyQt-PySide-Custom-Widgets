@@ -1,5 +1,7 @@
 # QCustomSplitter
 
+![QCustomSplitter screenshot](/img/showcase/splitter.png)
+
 `QCustomSplitter` is a drop-in **`QSplitter`** whose resize handle is styled
 from the design tokens — subtle by default, and highlighted with the accent
 colour on hover. Everything else is standard `QSplitter`: add widgets, set

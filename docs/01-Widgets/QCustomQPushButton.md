@@ -2,7 +2,7 @@
 
 `QCustomQPushButton` is a highly customizable button widget that extends Qt's standard `QPushButton` with advanced animations, themes, icons, and shadow effects. It provides a modern, interactive button experience with extensive styling options.
 
-![Custom QPushButtons](https://github.com/SpinnCompany/Docs-QT-PyQt-PySide-Custom-Widgets/blob/main/images/qpushbutton.png?raw=true)
+![Custom QPushButtons](/img/showcase/qpushbutton.png)
 
 ---
 

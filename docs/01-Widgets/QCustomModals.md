@@ -2,7 +2,7 @@
 
 `QCustomModals` is a comprehensive modal dialog system that provides beautifully animated, customizable notification dialogs for PySide/PyQt applications. It includes various modal types with automatic positioning, smooth animations, and theme-aware styling.
 
-![Screenshot_20240223_213723.png](https://www.dropbox.com/scl/fi/2q34mj8hdg6xymu6ctoyb/Screenshot_20240223_213723.png?rlkey=5bu7vo89jyohloui5rlqld5da&dl=0&raw=1)
+![QCustomModals screenshot](/img/showcase/modal.png)
 
 ---
 

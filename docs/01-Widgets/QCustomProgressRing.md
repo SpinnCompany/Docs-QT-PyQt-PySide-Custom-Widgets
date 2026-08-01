@@ -1,5 +1,7 @@
 # QCustomProgressRing
 
+![QCustomProgressRing screenshot](/img/showcase/progressring.png)
+
 `QCustomProgressRing` is a **circular (determinate) progress indicator** — a
 painted ring with a track arc and a progress arc that sweeps clockwise from 12
 o'clock, plus an optional percentage in the centre. Unlike the indeterminate

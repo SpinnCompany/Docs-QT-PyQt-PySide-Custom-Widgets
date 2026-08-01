@@ -1,5 +1,7 @@
 # QCustomAlert
 
+![QCustomAlert screenshot](/img/showcase/alert.png)
+
 `QCustomAlert` is an inline **callout / banner** — a static message block with a
 leading glyph, an optional title, the message text, and an optional close button.
 Unlike a transient toast, it stays on the page. Four semantic variants colour it

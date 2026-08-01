@@ -1,5 +1,7 @@
 # QCustomDataTable
 
+![QCustomDataTable screenshot](/img/showcase/datatable.png)
+
 `QCustomDataTable` is a modern, tokenized **data grid** built on Qt's model/view
 framework. It takes a list of row dictionaries and column descriptors and gives
 you client-side **sorting**, **filtering**, **pagination**, and **selection** out

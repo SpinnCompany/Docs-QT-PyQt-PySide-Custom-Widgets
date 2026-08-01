@@ -6,7 +6,7 @@
 
 ---
 
-![QCustomArcLoader GIF](https://github.com/SpinnCompany/Docs-QT-PyQt-PySide-Custom-Widgets/raw/main/images/custom-qprogressbar.gif)
+![QCustomQProgressBar screenshot](/img/showcase/progressbar.png)
 
 # QCustomQProgressBar
 

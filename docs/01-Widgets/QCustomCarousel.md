@@ -1,5 +1,7 @@
 # QCustomCarousel
 
+![QCustomCarousel screenshot](/img/showcase/carousel.png)
+
 `QCustomCarousel` is a **slideshow container** — it shows one slide at a time
 with previous / next navigation and a row of clickable dot indicators. Slides
 can be any widget. It supports wrap-around navigation and optional auto-advance,

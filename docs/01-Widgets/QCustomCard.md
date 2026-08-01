@@ -1,5 +1,7 @@
 # QCustomCard
 
+![QCustomCard screenshot](/img/showcase/card.png)
+
 `QCustomCard` is a **surface container** — a rounded, bordered panel with an
 optional header (title + subtitle) above a body area you fill with your own
 widgets. It's the base other cards compose, and a Qt Designer container.

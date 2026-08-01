@@ -1,5 +1,7 @@
 # QCustomNumberInput
 
+![QCustomNumberInput screenshot](/img/showcase/numberinput.png)
+
 `QCustomNumberInput` is a **number stepper** (spin box): a numeric field flanked
 by `−` / `+` step buttons. It is range-clamped, works with integers or fixed
 decimals, and commits edits on Enter / focus-out.

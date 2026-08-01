@@ -1,5 +1,7 @@
 # QCustomQSlider
 
+![QCustomQSlider screenshot](/img/showcase/slider.png)
+
 `QCustomQSlider` is an enhanced QSlider widget that provides improved click-to-set functionality, allowing users to click anywhere on the slider track to instantly set the slider value to that position.
 
 ---

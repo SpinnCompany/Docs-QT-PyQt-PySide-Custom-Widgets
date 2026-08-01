@@ -1,5 +1,7 @@
 # QCustomBadge
 
+![QCustomBadge screenshot](/img/showcase/badge.png)
+
 `QCustomBadge` is a small, themed status indicator — a rounded pill for a short
 label, a **count** (with an overflow cap), or a tiny **dot**. Its colour comes
 from a **semantic variant** that follows the active light/dark theme, so you

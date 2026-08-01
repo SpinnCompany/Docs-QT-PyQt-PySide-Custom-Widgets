@@ -1,5 +1,7 @@
 # QCustomStatCard
 
+![QCustomStatCard screenshot](/img/showcase/statcard.png)
+
 `QCustomStatCard` is a **KPI / metric card** — a compact dashboard tile showing a
 small label, a large value, an optional trend-coloured delta, and an optional
 caption.

@@ -1,5 +1,7 @@
 # QAvatarWidget
 
+![QCustomAvatar screenshot](/img/showcase/avatar.png)
+
 `QAvatarWidget` is a custom circular avatar widget that displays profile pictures or user images with rounded borders and customizable styling. It provides a visually appealing way to display user avatars with smooth rounded corners and border effects.
 
 ---
