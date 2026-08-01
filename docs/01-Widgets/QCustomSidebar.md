@@ -388,7 +388,7 @@ class MainWindow(QMainWindow):
         sidebar_layout.addWidget(QPushButton("About"))
         
         # Add toggle button
-        self.toggle_btn = QPushButton("☰")
+ self.toggle_btn = QPushButton("")
         self.toggle_btn.clicked.connect(self.sidebar.slideMenu)
         
         layout.addWidget(self.toggle_btn)
@@ -399,10 +399,10 @@ class MainWindow(QMainWindow):
         self.sidebar.onCollapsed.connect(self.on_sidebar_collapsed)
     
     def on_sidebar_expanded(self):
-        self.toggle_btn.setText("✕")
+ self.toggle_btn.setText("")
     
     def on_sidebar_collapsed(self):
-        self.toggle_btn.setText("☰")
+ self.toggle_btn.setText("")
 
 app = QApplication([])
 window = MainWindow()

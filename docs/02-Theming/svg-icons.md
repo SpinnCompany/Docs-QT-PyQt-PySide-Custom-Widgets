@@ -6,10 +6,10 @@ Theme icons are now generated and consumed as **SVG** instead of rasterized PNG.
 
 ### What you get
 
-* ⚡ **Fast theme switching** — a full icon set (2,400+ icons) generates in well under a second
-* 🔍 **Crisp icons at any scale** — SVG renders sharp on high-DPI displays; PNGs did not
-* 📦 **Simpler installs and deployment** — `cairosvg`/Cairo is no longer a dependency, removing the common `OSError: no library called "cairo-2" was found` problem on Windows
-* 🎨 **Qt Designer uses the same vectors** — the Designer icon set and its `.qrc` file are generated as SVG too
+* **Fast theme switching** — a full icon set (2,400+ icons) generates in well under a second
+* **Crisp icons at any scale** — SVG renders sharp on high-DPI displays; PNGs did not
+* **Simpler installs and deployment** — `cairosvg`/Cairo is no longer a dependency, removing the common `OSError: no library called "cairo-2" was found` problem on Windows
+* **Qt Designer uses the same vectors** — the Designer icon set and its `.qrc` file are generated as SVG too
 
 ### How it works
 

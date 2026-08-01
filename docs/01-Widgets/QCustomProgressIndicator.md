@@ -272,9 +272,9 @@ progress.updateFormProgressIndicator(formProgressAnimationDuration=800)
 
 ### Step Indicators
 - **Normal:** Number display with primary fill color
-- **Success:** Checkmark (✔) with success color
+- **Success:** Checkmark (Yes) with success color
 - **Warning:** Exclamation (!) with warning color  
-- **Error:** Cross (✘) with error color
+- **Error:** Cross (No) with error color
 
 ### Progress Bar
 - Animated background bar showing overall progress

@@ -6,7 +6,7 @@
 This feature in Custom Widgets allows you to create multiple themes for QT for Python apps
 - Generate a modern stylesheet
 - Generate new icons for your theme
-- ✨Remember theme settings event after you close the app
+- Remember theme settings event after you close the app
 - Get current theme colors
 - Dynamically change your theme
 

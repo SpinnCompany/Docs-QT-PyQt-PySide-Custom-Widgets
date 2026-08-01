@@ -48,10 +48,11 @@ Python re-implementations of the classic
 The **Custom Widgets toolbar** closes the design loop without leaving
 Designer:
 
-- **▶ Run (F5)** starts the project's `main.py` under the dev-server
+- **Run (F5)** starts the project's `main.py` under the dev-server
   supervisor. While it runs, **saving a form regenerates `src/ui_*.py` and
   hot-restarts the app** — design, Ctrl+S, see it live.
-- **⏹ Stop (Shift+F5)** / **↻ Restart**, with a ●/○ state indicator.
+- **Stop (Shift+F5)** / **Restart**, with a status dot that is filled
+  while the app is running and hollow when it is not.
 - The **Theme** combo previews any `style.json` theme on the open form
   (undo-aware; Designer's own chrome is untouched).
 - App output lands in the Logs dock; crashes raise it automatically.
@@ -155,7 +156,7 @@ scriptable end-to-end.
 
 ### Observe & drive the *running* app
 
-The app launched by **▶ Run** / `designer_run_app` is a separate process. When
+The app launched by **Run** / `designer_run_app` is a separate process. When
 it runs under the dev server it hosts an in-app control server, so agents can
 see into and drive the live app — not just the Designer canvas:
 

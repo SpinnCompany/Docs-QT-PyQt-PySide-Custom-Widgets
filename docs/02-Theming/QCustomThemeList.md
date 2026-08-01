@@ -7,7 +7,7 @@ Part of the [`QCustomTheme`](./QCustomTheme) system.
 
 ---
 
-### ✨ Features
+### Features
 
 * Populates themes from JSON on startup.
 * Emits `themeChanged(str)` when selection changes.
@@ -17,7 +17,7 @@ Part of the [`QCustomTheme`](./QCustomTheme) system.
 
 ---
 
-### 🔧 Usage in Python
+### Usage in Python
 
 ```python
 from Custom_Widgets.QCustomThemeList import QCustomThemeList
@@ -31,7 +31,7 @@ theme_dropdown.themeChanged.connect(lambda name: print("Theme selected:", name))
 
 ---
 
-### 🧩 Usage in Qt Designer
+### Usage in Qt Designer
 
 You can **drag and drop** this widget in Qt Designer after installing the [Custom Widgets plugin](/Advanced/Plugins).
 
@@ -42,7 +42,7 @@ You can **drag and drop** this widget in Qt Designer after installing the [Custo
 
 ---
 
-### ⚙️ How It Works
+### How It Works
 
 * Reads theme names from `QCustomTheme().themes`.
 * Automatically sets the current theme when selected.
@@ -51,7 +51,7 @@ You can **drag and drop** this widget in Qt Designer after installing the [Custo
 
 ---
 
-### 📦 Signals
+### Signals
 
 | Signal              | Description                                              |
 | ------------------- | -------------------------------------------------------- |
@@ -59,7 +59,7 @@ You can **drag and drop** this widget in Qt Designer after installing the [Custo
 
 ---
 
-### 🔄 Dynamic Theme Updates
+### Dynamic Theme Updates
 
 The widget supports **real-time updates** using:
 
@@ -71,14 +71,14 @@ This re-reads the available themes and refreshes the list if changes are detecte
 
 ---
 
-### 🧠 Tips
+### Tips
 
 * Ideal for users who want to browse and apply themes without restarting the app.
 * Supports integration with both `QCustomThemeDarkLightToggle` and manual `QSettings` changes.
 
 ---
 
-### 🧪 Example Integration
+### Example Integration
 
 ```python
 from PySide6.QtWidgets import QMainWindow

@@ -5,7 +5,7 @@ Part of the `QCustomTheme` engine.
 
 ---
 
-### ✨ Features
+### Features
 
 * One-click toggle between Light/Dark themes.
 * Automatically updates:
@@ -18,7 +18,7 @@ Part of the `QCustomTheme` engine.
 
 ---
 
-### 🔧 Usage in Python Code
+### Usage in Python Code
 
 ```python
 from Custom_Widgets.QCustomThemeDarkLightToggle import QCustomThemeDarkLightToggle
@@ -35,11 +35,11 @@ self.ui.headerLayout.addWidget(theme_toggle)
 
 ---
 
-### 🧩 Usage in Qt Designer (RECOMMENDED)
+### Usage in Qt Designer (RECOMMENDED)
 
 You can also **drag & drop** this button in **Qt Designer** after loading the **Custom Widgets plugin**.
 
-> 📚 **See the plugin setup guide:**
+> **See the plugin setup guide:**
 > [How to Load Custom Widgets in Qt Designer](/Advanced/Plugins)
 
 After dropping it into the UI:
@@ -49,7 +49,7 @@ After dropping it into the UI:
 
 ---
 
-### ⚙️ Available Properties
+### Available Properties
 
 | Property           | Type    | Description                                           |
 | ------------------ | ------- | ----------------------------------------------------- |
@@ -60,7 +60,7 @@ After dropping it into the UI:
 
 ---
 
-### 🔄 Behavior
+### Behavior
 
 * Clicking the button will:
 
@@ -69,7 +69,7 @@ After dropping it into the UI:
 
 ---
 
-### 💡 Customization Tips
+### Customization Tips
 
 * Set the theme manually via:
 

@@ -6,12 +6,12 @@ This section helps you resolve common **environment, runtime, and compatibility 
 
 ### Python and Qt Version Compatibility
 
-| Python Version | PyQt5 | PyQt6 | PySide2 | PySide6 | Status             |
-| -------------- | ----- | ----- | ------- | ------- | ------------------ |
-| 3.8 – 3.9      | ✅     | ⚠️    | ✅       | ⚠️      | Legacy builds only |
-| 3.10 – 3.11    | ✅     | ✅     | ⚠️      | ✅       | Recommended stable |
-| 3.12           | ⚠️    | ✅     | ⚠️      | ✅       | Partial support    |
-| 3.13 +         | ⚠️    | ✅     | ⚠️      | ⚠️      | Experimental       |
+| Python Version | PyQt5   | PyQt6   | PySide2 | PySide6 | Status             |
+| -------------- | ------- | ------- | ------- | ------- | ------------------ |
+| 3.8 – 3.9      | Yes     | Partial | Yes     | Partial | Legacy builds only |
+| 3.10 – 3.11    | Yes     | Yes     | Partial | Yes     | Recommended stable |
+| 3.12           | Partial | Yes     | Partial | Yes     | Partial support    |
+| 3.13 +         | Partial | Yes     | Partial | Partial | Experimental       |
 
 **Tip:** Use **Python 3.10 + with PySide6 ≥ 6.5** or **PyQt6 ≥ 6.5** for best results.
 Older bindings may lack modern QSS, blur, and resource-handling features required by newer widgets.

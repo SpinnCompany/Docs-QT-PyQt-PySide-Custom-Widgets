@@ -94,7 +94,7 @@ QCustomComponentContainer(parent=None)
 - **Purpose:**  
   When `True` (**the default**), the embedded component rebuilds itself in place
   whenever its compiled `.py` source changes — no application or Designer
-  restart. Pairs with the dev server / `--monitor-ui` / Designer **▶ Run**, which
+ restart. Pairs with the dev server / `--monitor-ui` / Designer **Run**, which
   regenerate `ui_*.py` when you save a `.ui` file.
 
 - **Example:**  

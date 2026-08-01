@@ -14,9 +14,9 @@ find-and-replace edits.
 
 | Binding | v2 claim | v3 reality |
 |---|---|---|
-| PySide6 | ✅ | ✅ everything (widgets, theming, Designer plugins, bridge, MCP) |
-| PyQt6 | ✅ | ✅ widgets, theming, ui conversion (Designer integration is PySide6-only) |
-| PySide2 / PyQt5 | claimed | ❌ removed (importing already crashed on PySide2 in v2) |
+| PySide6 | Supported | Fully supported — widgets, theming, Designer plugins, bridge, MCP |
+| PyQt6 | Supported | Widgets, theming and ui conversion. Designer integration is PySide6-only |
+| PySide2 / PyQt5 | Claimed | Removed — importing already crashed on PySide2 in v2 |
 
 ## Renamed: `style.json` keys
 

@@ -1,10 +1,10 @@
-## 🎨 Styling Guide
+## Styling Guide
 
 This guide explains how to **customize the visual appearance** of your PyQt/PySide app using the built-in theming engine powered by `QCustomTheme`, QSS (Qt Style Sheets), and dynamic SCSS variables.
 
 ---
 
-## 🧱 Overview
+## Overview
 
 Styling in your Custom Widgets framework is:
 
@@ -15,7 +15,7 @@ Styling in your Custom Widgets framework is:
 
 ---
 
-## 📁 Styling Structure
+## Styling Structure
 
 Your project uses the following style-related files:
 
@@ -24,7 +24,7 @@ Your project uses the following style-related files:
 ├── scss/
 │   ├── _variables.scss     # Auto-generated theme variables (DO NOT EDIT)
 │   ├── _styles.scss        # Core widget styling (read-only)
-│   ├── defaultStyle.scss   # 🔧 Your app's custom overrides
+│ ├── defaultStyle.scss # Your app's custom overrides
 │   └── main.scss           # SCSS entry point
 ├── icons/                  # Auto-generated icons for each theme color
 ├── fonts/                  # Optional custom fonts (e.g., Rosario)
@@ -32,7 +32,7 @@ Your project uses the following style-related files:
 
 ---
 
-## 🔁 How It Works
+## How It Works
 
 1. A theme is selected via `QSettings` or a widget like `QCustomThemeList`.
 2. The app reads variables from your JSON theme definition (colors, radius, etc.).
@@ -42,7 +42,7 @@ Your project uses the following style-related files:
 
 ---
 
-## 🧩 Theme Variables (`_variables.scss`)
+## Theme Variables (`_variables.scss`)
 
 Variables like the following are auto-injected based on your JSON `CustomTheme`:
 
@@ -55,11 +55,11 @@ $CARD_RADIUS: 12px;
 $FOOTER_BG: #0f0f0f;
 ```
 
-> ❗ Do not manually edit `_variables.scss`. Instead, define new variables in your theme JSON under `"Other-variables"`.
+> **Note:** Do not manually edit `_variables.scss`. Instead, define new variables in your theme JSON under `"Other-variables"`.
 
 ---
 
-## ✏️ `defaultStyle.scss` – Your Playground
+## `defaultStyle.scss` – Your Playground
 
 This is the file where you write your own styles.
 
@@ -71,11 +71,11 @@ QFrame#card {
 }
 ```
 
-💡 You can reference any variable from `_variables.scss` in here.
+ You can reference any variable from `_variables.scss` in here.
 
 ---
 
-## ✅ Styling Best Practices
+## Yes Styling Best Practices
 
 | Goal                          | Do this...                                                    |
 | ----------------------------- | ------------------------------------------------------------- |
@@ -87,7 +87,7 @@ QFrame#card {
 
 ---
 
-## 🧪 Live Testing Tips
+## Live Testing Tips
 
 You can force recompile and apply styles manually:
 
@@ -106,7 +106,7 @@ QAppSettings.updateAppSettings(self)
 
 ---
 
-## 🔧 Icon Styling (Optional)
+## Icon Styling (Optional)
 
 Icons are automatically recolored using the theme’s `Icons-color` or `Accent-color`.
 You can override them in your QSS using styles like:
@@ -119,7 +119,7 @@ QPushButton#refreshBtn {
 
 ---
 
-## 💬 Need More?
+## Need More?
 
 Refer to the following:
 

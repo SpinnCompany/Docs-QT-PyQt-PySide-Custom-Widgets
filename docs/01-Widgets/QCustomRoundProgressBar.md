@@ -21,16 +21,16 @@ A custom circular progress bar with smooth animation, percentage text display, a
 
 | Property            | Type     | Description                               | Designer Support |
 | ------------------- | -------- | ----------------------------------------- | ---------------- |
-| `value`             | `int`    | The current progress value                | ✅ Yes           |
-| `minimum`           | `int`    | Minimum value (default `0`)               | ✅ Yes           |
-| `maximum`           | `int`    | Maximum value (default `100`)             | ✅ Yes           |
-| `textVisible`       | `bool`   | Whether to show percentage text           | ✅ Yes           |
-| `clockwise`         | `bool`   | Direction of the arc                      | ✅ Yes           |
-| `animationDuration` | `int`    | Duration of the animation in milliseconds | ✅ Yes           |
-| `progressColor`     | `QColor` | Foreground arc color                      | ❌ Programmatic  |
-| `progressBaseColor` | `QColor` | Background arc color                      | ❌ Programmatic  |
-| `textColor`         | `QColor` | Text color                                | ❌ Programmatic  |
-| `progressBarWidth`  | `int`    | Stroke thickness                          | ❌ Programmatic  |
+| `value`             | `int`    | The current progress value                | Yes Yes           |
+| `minimum`           | `int`    | Minimum value (default `0`)               | Yes Yes           |
+| `maximum`           | `int`    | Maximum value (default `100`)             | Yes Yes           |
+| `textVisible`       | `bool`   | Whether to show percentage text           | Yes Yes           |
+| `clockwise`         | `bool`   | Direction of the arc                      | Yes Yes           |
+| `animationDuration` | `int`    | Duration of the animation in milliseconds | Yes Yes           |
+| `progressColor`     | `QColor` | Foreground arc color                      | No Programmatic  |
+| `progressBaseColor` | `QColor` | Background arc color                      | No Programmatic  |
+| `textColor`         | `QColor` | Text color                                | No Programmatic  |
+| `progressBarWidth`  | `int`    | Stroke thickness                          | No Programmatic  |
 
 ---
 

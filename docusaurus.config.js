@@ -28,7 +28,13 @@ const config = {
   },
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      // Moved here from the deprecated top-level onBrokenMarkdownLinks,
+      // which Docusaurus v4 removes.
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
 
   i18n: {
     defaultLocale: 'en',
@@ -124,7 +130,7 @@ const config = {
       
       announcementBar: {
         id: 'support_us',
-        content: '⭐️ If you like Qt Custom Widgets, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/SpinnCompany/QT-PyQt-PySide-Custom-Widgets">GitHub</a>! ⭐️',
+        content: 'If you like Qt Custom Widgets, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/SpinnCompany/QT-PyQt-PySide-Custom-Widgets">GitHub</a>.',
         backgroundColor: 'var(--qt-green)',
         textColor: 'white',
         isCloseable: true,

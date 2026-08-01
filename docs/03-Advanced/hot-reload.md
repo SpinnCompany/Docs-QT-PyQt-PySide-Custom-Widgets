@@ -11,7 +11,7 @@ process restart, no lost window state. The library provides it at two levels:
 
 Both pair with the dev workflow that regenerates `src/ui_*.py` from your `.ui`
 files — the [dev server](../04-API-Reference/CMD.md), `--monitor-ui`, or the
-**▶ Run** button in [Designer](designer-tools.md). Edit a form, save, and the
+**Run** button in [Designer](designer-tools.md). Edit a form, save, and the
 running app updates.
 
 ---
@@ -118,7 +118,7 @@ so main-window hot reload works out of the box.
 
 ## How it fits the dev loop
 
-When you run your app under the dev server (the CLI, or **▶ Run** in Designer),
+When you run your app under the dev server (the CLI, or **Run** in Designer),
 changes are classified so the right thing happens:
 
 - **`.scss` / `.json`** — the app live-reloads styles.

@@ -1,19 +1,282 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+# Blog tags. A tag used in a post's front matter must be declared here,
+# or Docusaurus warns about it on every build.
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+Acrylic Effect:
+  label: Acrylic Effect
+  permalink: /acrylic-effect
+  description: Posts about Acrylic Effect
 
-docusaurus:
+Custom Widgets:
+  label: Custom Widgets
+  permalink: /custom-widgets
+  description: Posts about Custom Widgets
+
+Dashboard:
+  label: Dashboard
+  permalink: /dashboard
+  description: Posts about Dashboard
+
+DataTable:
+  label: DataTable
+  permalink: /datatable
+  description: Posts about DataTable
+
+Design:
+  label: Design
+  permalink: /design
+  description: Posts about Design
+
+Design Tokens:
+  label: Design Tokens
+  permalink: /design-tokens
+  description: Posts about Design Tokens
+
+Desktop:
+  label: Desktop
+  permalink: /desktop
+  description: Posts about Desktop
+
+Docusaurus:
   label: Docusaurus
   permalink: /docusaurus
-  description: Docusaurus tag description
+  description: Posts about Docusaurus
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+Fluent Design:
+  label: Fluent Design
+  permalink: /fluent-design
+  description: Posts about Fluent Design
+
+GUI:
+  label: GUI
+  permalink: /gui
+  description: Posts about GUI
+
+GUI Development:
+  label: GUI Development
+  permalink: /gui-development
+  description: Posts about GUI Development
+
+Gui. Interface:
+  label: Gui. Interface
+  permalink: /gui-interface
+  description: Posts about Gui. Interface
+
+Hamburger Menu:
+  label: Hamburger Menu
+  permalink: /hamburger-menu
+  description: Posts about Hamburger Menu
+
+PyQt:
+  label: PyQt
+  permalink: /pyqt
+  description: Posts about PyQt
+
+PyQt6:
+  label: PyQt6
+  permalink: /pyqt6
+  description: Posts about PyQt6
+
+PySide:
+  label: PySide
+  permalink: /pyside
+  description: Posts about PySide
+
+PySide6:
+  label: PySide6
+  permalink: /pyside6
+  description: Posts about PySide6
+
+Python:
+  label: Python
+  permalink: /python
+  description: Posts about Python
+
+Qt:
+  label: Qt
+  permalink: /qt
+  description: Posts about Qt
+
+Release:
+  label: Release
+  permalink: /release
+  description: Posts about Release
+
+Side Drawer:
+  label: Side Drawer
+  permalink: /side-drawer
+  description: Posts about Side Drawer
+
+Sidebar:
+  label: Sidebar
+  permalink: /sidebar
+  description: Posts about Sidebar
+
+Tutorial:
+  label: Tutorial
+  permalink: /tutorial
+  description: Posts about Tutorial
+
+UI Design:
+  label: UI Design
+  permalink: /ui-design
+  description: Posts about UI Design
+
+json stylesheet:
+  label: json stylesheet
+  permalink: /json-stylesheet
+  description: Posts about json stylesheet
+
+news:
+  label: news
+  permalink: /news
+  description: Posts about news
+
+pyqt styling:
+  label: pyqt styling
+  permalink: /pyqt-styling
+  description: Posts about pyqt styling
+
+pyside theming:
+  label: pyside theming
+  permalink: /pyside-theming
+  description: Posts about pyside theming
+
+python qt:
+  label: python qt
+  permalink: /python-qt
+  description: Posts about python qt
+
+qss styling:
+  label: qss styling
+  permalink: /qss-styling
+  description: Posts about qss styling
+
+qt application styling:
+  label: qt application styling
+  permalink: /qt-application-styling
+  description: Posts about qt application styling
+
+qt best practices:
+  label: qt best practices
+  permalink: /qt-best-practices
+  description: Posts about qt best practices
+
+qt color variables:
+  label: qt color variables
+  permalink: /qt-color-variables
+  description: Posts about qt color variables
+
+qt css:
+  label: qt css
+  permalink: /qt-css
+  description: Posts about qt css
+
+qt custom variables:
+  label: qt custom variables
+  permalink: /qt-custom-variables
+  description: Posts about qt custom variables
+
+qt custom widgets:
+  label: qt custom widgets
+  permalink: /qt-custom-widgets
+  description: Posts about qt custom widgets
+
+qt dark theme:
+  label: qt dark theme
+  permalink: /qt-dark-theme
+  description: Posts about qt dark theme
+
+qt design system:
+  label: qt design system
+  permalink: /qt-design-system
+  description: Posts about qt design system
+
+qt design tokens:
+  label: qt design tokens
+  permalink: /qt-design-tokens
+  description: Posts about qt design tokens
+
+qt desktop apps:
+  label: qt desktop apps
+  permalink: /qt-desktop-apps
+  description: Posts about qt desktop apps
+
+qt development:
+  label: qt development
+  permalink: /qt-development
+  description: Posts about qt development
+
+qt json configuration:
+  label: qt json configuration
+  permalink: /qt-json-configuration
+  description: Posts about qt json configuration
+
+qt light theme:
+  label: qt light theme
+  permalink: /qt-light-theme
+  description: Posts about qt light theme
+
+qt qss variables:
+  label: qt qss variables
+  permalink: /qt-qss-variables
+  description: Posts about qt qss variables
+
+qt scss:
+  label: qt scss
+  permalink: /qt-scss
+  description: Posts about qt scss
+
+qt stylesheets:
+  label: qt stylesheets
+  permalink: /qt-stylesheets
+  description: Posts about qt stylesheets
+
+qt styling guide:
+  label: qt styling guide
+  permalink: /qt-styling-guide
+  description: Posts about qt styling guide
+
+qt styling system:
+  label: qt styling system
+  permalink: /qt-styling-system
+  description: Posts about qt styling system
+
+qt styling variables:
+  label: qt styling variables
+  permalink: /qt-styling-variables
+  description: Posts about qt styling variables
+
+qt theme consistency:
+  label: qt theme consistency
+  permalink: /qt-theme-consistency
+  description: Posts about qt theme consistency
+
+qt theme engine:
+  label: qt theme engine
+  permalink: /qt-theme-engine
+  description: Posts about qt theme engine
+
+qt theme switching:
+  label: qt theme switching
+  permalink: /qt-theme-switching
+  description: Posts about qt theme switching
+
+qt theming:
+  label: qt theming
+  permalink: /qt-theming
+  description: Posts about qt theming
+
+qt ui design:
+  label: qt ui design
+  permalink: /qt-ui-design
+  description: Posts about qt ui design
+
+qt variables:
+  label: qt variables
+  permalink: /qt-variables
+  description: Posts about qt variables
+
+version:
+  label: version
+  permalink: /version
+  description: Posts about version

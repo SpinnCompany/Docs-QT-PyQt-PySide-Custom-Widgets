@@ -424,11 +424,11 @@ class UniversalAcrylicSidebar(QWidget):
         
         # Navigation buttons
         nav_items = [
-            ("🏠 Home", "home"),
-            ("👤 Profile", "profile"),
-            ("⚙️ Settings", "settings"),
-            ("📨 Messages", "messages"),
-            ("🆘 Help", "help")
+ (" Home", "home"),
+ (" Profile", "profile"),
+ (" Settings", "settings"),
+ (" Messages", "messages"),
+ (" Help", "help")
         ]
         
         for icon_text, action in nav_items:
@@ -882,19 +882,19 @@ def diagnose_acrylic_environment():
     print(f"\n4. DEPENDENCIES:")
     try:
         import scipy
-        print(f"   scipy: {scipy.__version__} ✓")
+        print(f"   scipy: {scipy.__version__} Yes")
     except ImportError:
         print(f"   scipy: Not installed (using PIL fallback)")
     
     try:
         import numpy
-        print(f"   numpy: {numpy.__version__} ✓")
+        print(f"   numpy: {numpy.__version__} Yes")
     except ImportError:
         print(f"   numpy: Not installed")
     
     try:
         from PIL import Image
-        print(f"   PIL: {Image.__version__} ✓")
+        print(f"   PIL: {Image.__version__} Yes")
     except ImportError:
         print(f"   PIL: Not installed")
     

@@ -346,7 +346,7 @@ class AnalyticsTagEditor(QTagEdit):
 ### Tag Appearance
 The internal `__QTagFrame` class handles tag visualization:
 - Rounded rectangle background
-- Delete button with "✕" icon
+- Delete button with "" icon
 - Custom painting with anti-aliasing
 - Dynamic sizing based on content
 
