@@ -1,5 +1,7 @@
 # QTagEdit
 
+![QCustomTagEdit](/img/showcase/tagedit.png)
+
 `QTagEdit` is a custom tag-based input widget that allows users to create, manage, and remove tags with a visually appealing interface. It supports tag suggestions, duplicate checking, and dynamic layout management.
 
 ---

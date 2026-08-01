@@ -1,5 +1,7 @@
 # QCustomTipOverlay
 
+![QCustomTipOverlay](/img/showcase/tipoverlay.png)
+
 `QCustomTipOverlay` is a highly customizable tooltip overlay widget that provides rich, animated tooltips with multiple positioning options, theme integration, and extensive customization capabilities.
 
 ![Custom Tool Tip Overlay GIF](https://github.com/SpinnCompany/Docs-QT-PyQt-PySide-Custom-Widgets/raw/main/images/custom-tool-tip-overlay.gif)

@@ -1,5 +1,7 @@
 # QCustomHorizontalSeparator
 
+![QCustomHorizontalSeparator](/img/showcase/horizontalseparator.png)
+
 `QCustomHorizontalSeparator` is a custom horizontal separator widget that provides a themable, configurable dividing line for organizing UI layouts. It automatically adapts to the application's theme and offers flexible styling options.
 
 ---

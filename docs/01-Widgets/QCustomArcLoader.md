@@ -1,5 +1,7 @@
 # QCustomArcLoader
 
+![QCustomArcLoader](/img/showcase/arcloader.png)
+
 > **Copyright 2021**  
 > by Parham Oyan and Oleg Frolov  
 > **Edits and improvements:** Khamisi Kibet  

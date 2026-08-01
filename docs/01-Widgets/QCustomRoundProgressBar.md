@@ -1,5 +1,7 @@
 # QCustomRoundProgressBar
 
+![QCustomRoundProgressBar](/img/showcase/roundprogressbar.png)
+
 A custom circular progress bar with smooth animation, percentage text display, and partial Qt Designer support.
 
 ---

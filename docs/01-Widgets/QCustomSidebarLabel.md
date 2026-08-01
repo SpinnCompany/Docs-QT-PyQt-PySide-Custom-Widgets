@@ -1,5 +1,7 @@
 # QCustomSidebarLabel
 
+![QCustomSidebarLabel](/img/showcase/sidebarlabel.png)
+
 `QCustomSidebarLabel` is a specialized label widget designed to work seamlessly with `QCustomSidebar` and `QCustomSlideMenu`. It provides intelligent visibility management with smooth animations, icon support, and automatic response to sidebar state changes.
 
 ---

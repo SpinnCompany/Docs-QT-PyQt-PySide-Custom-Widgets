@@ -1,5 +1,7 @@
 # QCustom3CirclesLoader
 
+![QCustom3CirclesLoader](/img/showcase/3circlesloader.png)
+
 > **Copyright 2021**  
 > by Parham Oyan and Oleg Frolov  
 > **Edits and improvements:** Khamisi Kibet  

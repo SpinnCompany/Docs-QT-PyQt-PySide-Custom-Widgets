@@ -1,5 +1,7 @@
 # QCustomProgressIndicator
 
+![QCustomProgressIndicator](/img/showcase/progressindicator.png)
+
 `QCustomProgressIndicator` is a custom multi-step progress indicator widget that provides visual feedback for form completion, multi-step processes, or workflow progression. It displays progress through numbered steps with animated transitions and status indicators.
 
 ---

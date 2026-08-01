@@ -1,5 +1,7 @@
 # QCustomSidebarButton
 
+![QCustomSidebarButton](/img/showcase/sidebarbutton.png)
+
 `QCustomSidebarButton` is a specialized button widget designed to work seamlessly with `QCustomSidebar` and `QCustomSlideMenu`. It provides intelligent label hiding/showing behavior, floating tooltips, and smooth transitions when the parent sidebar collapses or expands.
 
 ---

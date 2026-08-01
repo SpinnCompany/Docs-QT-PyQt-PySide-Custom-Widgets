@@ -1,5 +1,7 @@
 # QCustomCodeEditor
 
+![QCustomCodeEditor](/img/showcase/codeeditor.png)
+
 > **Note:**  
 > This class is part of the *qtpy Custom Widgets* project (GPL 3.0 - Kadir Aksoy).  
 > It relies on JSON files located in the **themes** and **syntax** folders (with pre-defined syntax rules and themes).  

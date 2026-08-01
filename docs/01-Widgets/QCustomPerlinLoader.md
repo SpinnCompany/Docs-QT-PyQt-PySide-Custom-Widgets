@@ -1,5 +1,7 @@
 # QCustomPerlinLoader
 
+![QCustomPerlinLoader](/img/showcase/perlinloader.png)
+
 > **Reference Video:** [YouTube](https://www.youtube.com/watch?v=daVpOpvsCKQ&t=20s)  
 > **All Rights Reserved**  
 > **Edits and improvements:** Khamisi Kibet  

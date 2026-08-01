@@ -1,5 +1,7 @@
 # QCustomEmojiPicker
 
+![QCustomEmojiPicker](/img/showcase/emojipicker.png)
+
 `QCustomEmojiPicker` is a comprehensive emoji selection widget that provides a user-friendly interface for browsing and selecting emojis from a complete emoji library. It features search capabilities, categorized display, and seamless integration with text input widgets.
 
 ---

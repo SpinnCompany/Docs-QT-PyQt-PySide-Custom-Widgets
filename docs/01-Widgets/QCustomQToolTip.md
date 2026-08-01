@@ -1,5 +1,7 @@
 # QCustomQToolTip
 
+![QCustomQToolTip](/img/showcase/qtooltip.png)
+
 `QCustomQToolTip` is a highly customizable tooltip widget that provides modern, animated tooltips with multiple tail positions, icons, and automatic positioning. It replaces standard Qt tooltips with a visually appealing alternative.
 
 ---
