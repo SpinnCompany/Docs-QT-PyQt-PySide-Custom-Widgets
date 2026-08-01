@@ -6,6 +6,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomTypewriterText
 
+![QCustomTypewriterText screenshot](/img/showcase/typewritertext.png)
+
 `QCustomTypewriterText` — text that types itself in.
 
 The hero headline that writes itself, or a rotating list of taglines. A
@@ -90,6 +92,10 @@ QCustomTypewriterText(parent=None, phrases=None, autoStart=True)
 Colours come from the design tokens, so they follow the active theme. Roles used: `on-surface`, `accent`.
 
 See [Design tokens](../02-Theming/DesignTokens.md).
+
+### Dark theme
+
+![QCustomTypewriterText dark](/img/showcase/typewritertext-dark.png)
 
 ## Example
 
