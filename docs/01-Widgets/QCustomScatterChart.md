@@ -3,6 +3,7 @@ title: QCustomScatterChart
 description: A painted x/y scatter plot.
 mdx:
   format: md
+sidebar_class_name: sidebar-pro
 ---
 
 <!-- generated:widget-reference -->

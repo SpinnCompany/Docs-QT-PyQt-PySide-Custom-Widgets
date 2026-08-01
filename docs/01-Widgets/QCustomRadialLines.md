@@ -3,6 +3,7 @@ title: QCustomRadialLines
 description: A painted polar line chart.
 mdx:
   format: md
+sidebar_class_name: sidebar-pro
 ---
 
 <!-- generated:widget-reference -->

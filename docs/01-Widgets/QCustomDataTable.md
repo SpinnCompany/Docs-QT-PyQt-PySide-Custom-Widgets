@@ -1,3 +1,7 @@
+---
+sidebar_class_name: sidebar-pro
+---
+
 # QCustomDataTable
 
 ![QCustomDataTable screenshot](/img/showcase/datatable.png)

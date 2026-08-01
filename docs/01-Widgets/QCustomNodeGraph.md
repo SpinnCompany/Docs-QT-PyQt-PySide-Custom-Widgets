@@ -3,6 +3,7 @@ title: QCustomNodeGraph
 description: A node-based visual editor canvas.
 mdx:
   format: md
+sidebar_class_name: sidebar-pro
 ---
 
 <!-- generated:widget-reference -->

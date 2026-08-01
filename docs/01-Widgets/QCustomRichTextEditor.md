@@ -3,6 +3,7 @@ title: QCustomRichTextEditor
 description: A WYSIWYG rich-text editor.
 mdx:
   format: md
+sidebar_class_name: sidebar-pro
 ---
 
 <!-- generated:widget-reference -->

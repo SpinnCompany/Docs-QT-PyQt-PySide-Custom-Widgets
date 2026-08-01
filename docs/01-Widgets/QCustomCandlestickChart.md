@@ -3,6 +3,7 @@ title: QCustomCandlestickChart
 description: A painted OHLC / candlestick price chart.
 mdx:
   format: md
+sidebar_class_name: sidebar-pro
 ---
 
 <!-- generated:widget-reference -->

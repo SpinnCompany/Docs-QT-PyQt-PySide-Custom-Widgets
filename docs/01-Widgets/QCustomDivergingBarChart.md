@@ -3,6 +3,7 @@ title: QCustomDivergingBarChart
 description: A diverging (bipolar / up-down) bar chart.
 mdx:
   format: md
+sidebar_class_name: sidebar-pro
 ---
 
 <!-- generated:widget-reference -->

@@ -3,6 +3,7 @@ title: QCustomGanttChart
 description: A horizontal timeline / gantt of rounded pill bars.
 mdx:
   format: md
+sidebar_class_name: sidebar-pro
 ---
 
 <!-- generated:widget-reference -->

@@ -1,3 +1,7 @@
+---
+sidebar_class_name: sidebar-pro
+---
+
 # QCustomCodeEditor
 
 ![QCustomCodeEditor](/img/showcase/codeeditor.png)

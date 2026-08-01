@@ -3,6 +3,7 @@ title: QCustomRadarChart
 description: A painted radar / spider chart.
 mdx:
   format: md
+sidebar_class_name: sidebar-pro
 ---
 
 <!-- generated:widget-reference -->

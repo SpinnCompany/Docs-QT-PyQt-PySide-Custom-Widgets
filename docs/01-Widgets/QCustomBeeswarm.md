@@ -3,6 +3,7 @@ title: QCustomBeeswarm
 description: A column beeswarm / bubble-stack chart.
 mdx:
   format: md
+sidebar_class_name: sidebar-pro
 ---
 
 <!-- generated:widget-reference -->

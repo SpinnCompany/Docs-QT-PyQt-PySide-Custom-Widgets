@@ -3,6 +3,7 @@ title: QCustomSankey
 description: A painted Sankey flow diagram.
 mdx:
   format: md
+sidebar_class_name: sidebar-pro
 ---
 
 <!-- generated:widget-reference -->

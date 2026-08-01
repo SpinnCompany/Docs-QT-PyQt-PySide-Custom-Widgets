@@ -3,6 +3,7 @@ title: QCustomMediaTimeline
 description: A horizontal multi-track clip / scrubber timeline.
 mdx:
   format: md
+sidebar_class_name: sidebar-pro
 ---
 
 <!-- generated:widget-reference -->

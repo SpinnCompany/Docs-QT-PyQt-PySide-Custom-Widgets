@@ -3,6 +3,7 @@ title: QCustomFunnelChart
 description: A painted funnel / pyramid chart.
 mdx:
   format: md
+sidebar_class_name: sidebar-pro
 ---
 
 <!-- generated:widget-reference -->

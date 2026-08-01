@@ -3,6 +3,7 @@ title: QCustomMediaGrid
 description: A data-driven thumbnail gallery.
 mdx:
   format: md
+sidebar_class_name: sidebar-pro
 ---
 
 <!-- generated:widget-reference -->

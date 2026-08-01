@@ -3,6 +3,7 @@ title: QCustomRangeBarChart
 description: A painted floating-bar / range chart.
 mdx:
   format: md
+sidebar_class_name: sidebar-pro
 ---
 
 <!-- generated:widget-reference -->

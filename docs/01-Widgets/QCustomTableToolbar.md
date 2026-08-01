@@ -3,6 +3,7 @@ title: QCustomTableToolbar
 description: A rich filter/search bar for data tables.
 mdx:
   format: md
+sidebar_class_name: sidebar-pro
 ---
 
 <!-- generated:widget-reference -->

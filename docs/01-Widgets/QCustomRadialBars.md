@@ -3,6 +3,7 @@ title: QCustomRadialBars
 description: A painted radial bar chart.
 mdx:
   format: md
+sidebar_class_name: sidebar-pro
 ---
 
 <!-- generated:widget-reference -->

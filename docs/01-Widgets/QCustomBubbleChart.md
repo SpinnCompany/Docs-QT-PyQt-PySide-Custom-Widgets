@@ -3,6 +3,7 @@ title: QCustomBubbleChart
 description: An interactive packed-circle (bubble) chart.
 mdx:
   format: md
+sidebar_class_name: sidebar-pro
 ---
 
 <!-- generated:widget-reference -->
