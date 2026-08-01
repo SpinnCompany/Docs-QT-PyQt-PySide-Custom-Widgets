@@ -10,8 +10,13 @@ mdx:
 
 `QCustomEmptyState` — a centered "nothing here yet" placeholder.
 
-A large glyph (or pixmap) + title + description + an optional action
-button. Tokenized. Emits actionClicked.
+A mark + title + description + an optional action button. Tokenized.
+Emits actionClicked.
+
+The default mark is PAINTED, not a glyph. An emoji does not tint with the
+theme, does not scale cleanly, and renders as a different picture on every
+platform - the same reasoning as QCustomSparklesText's drawn star. setIcon()
+still accepts a string for anyone who wants one.
 
 ---
 
@@ -26,8 +31,15 @@ Also available from the **Qt Designer** palette — every property below is sett
 ## Constructor
 
 ```python
-QCustomEmptyState(parent=None, icon='📭', title='Nothing here yet', description='')
+QCustomEmptyState(parent=None, icon=None, title='Nothing here yet', description='')
 ```
+
+## Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `markSize` | `int` | `56` |
+| `markColor` | `color` | `#cbd5e1` |
 
 ## Methods
 
@@ -35,9 +47,11 @@ QCustomEmptyState(parent=None, icon='📭', title='Nothing here yet', descriptio
 |---|---|
 | `actionButton()` |  |
 | `actionClicked(...)` |  |
+| `markColor(*args, **kwargs)` |  |
+| `markSize(*args, **kwargs)` |  |
 | `setActionText(text)` |  |
 | `setDescription(description)` |  |
-| `setIcon(glyph_or_pixmap)` |  |
+| `setIcon(glyph_or_pixmap)` | A string, a pixmap, or None to go back to the painted default. |
 | `setTitle(title)` |  |
 
 ## Signals

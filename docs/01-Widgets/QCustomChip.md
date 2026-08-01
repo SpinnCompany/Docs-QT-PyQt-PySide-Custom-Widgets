@@ -6,6 +6,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomChip
 
+![QCustomChip screenshot](/img/showcase/chip.png)
+
 `QCustomChip` — / QCustomChipGroup - compact tags / filter chips.
 
 A chip is a small rounded label, optionally closable (x) and/or
@@ -45,6 +47,10 @@ QCustomChip(text, closable=False, selectable=False, data=None, parent=None)
 | `clicked()` |  |
 | `removed()` |  |
 | `toggled(bool)` |  |
+
+### Dark theme
+
+![QCustomChip dark](/img/showcase/chip-dark.png)
 
 ---
 

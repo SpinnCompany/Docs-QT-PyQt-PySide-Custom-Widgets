@@ -39,6 +39,8 @@ QTagEdit(parent: <module 'qtpy.QtWidgets' from '/home/p/.local/lib/python3.14/si
 | `sizeAdjustPolicy` | `QAbstractScrollArea::SizeAdjustPolicy` | — |
 | `widgetResizable` | `bool` | — |
 | `alignment` | `QFlags<Qt::AlignmentFlag>` | — |
+| `tagColor` | `color` | — |
+| `tagTextColor` | `color` | — |
 
 ## Methods
 
@@ -52,6 +54,8 @@ QTagEdit(parent: <module 'qtpy.QtWidgets' from '/home/p/.local/lib/python3.14/si
 | `removeTag(tag: str) -> None` | Removes a tag |
 | `setTagSuggestions(suggestions: List[str]) -> None` | Sets the tag suggestions. They will be used if `self._tag_suggestions` is True (can be set via `enableTagSuggestions(...)`) |
 | `setTags(tags: List[str]) -> None` | Replaces all current tags with tag from the `tags` argument |
+| `tagColor(*args, **kwargs)` |  |
+| `tagTextColor(*args, **kwargs)` |  |
 | `tags() -> List[str]` | Returns all tag names |
 
 ### Dark theme
