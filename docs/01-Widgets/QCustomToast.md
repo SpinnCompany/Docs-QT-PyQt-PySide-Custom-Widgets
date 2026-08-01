@@ -6,6 +6,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomToast
 
+![QCustomToast screenshot](/img/showcase/toast.png)
+
 `QCustomToast` — non-blocking, auto-dismissing, corner-stacked
 
 notifications (success / error / warning / info).
@@ -57,6 +59,10 @@ QCustomToast(parent, message, variant='info', title=None, duration=4000, closabl
 Colours come from the design tokens, so they follow the active theme. Roles used: `surface`, `on-surface`, `surface-muted`, `outline`, `success`, `destructive`, `warning`, `info`.
 
 See [Design tokens](../02-Theming/DesignTokens.md).
+
+### Dark theme
+
+![QCustomToast dark](/img/showcase/toast-dark.png)
 
 ## Example
 

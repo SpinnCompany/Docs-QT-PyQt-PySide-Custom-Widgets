@@ -6,6 +6,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomCommandPalette
 
+![QCustomCommandPalette screenshot](/img/showcase/commandpalette.png)
+
 `QCustomCommandPalette` — a fuzzy-searchable command launcher (Ctrl/Cmd+K).
 
 A dimmed overlay with a search field and a fuzzy-filtered, keyboard-
@@ -54,6 +56,10 @@ QCustomCommandPalette(parent)
 Colours come from the design tokens, so they follow the active theme. Roles used: `surface`, `on-surface`, `surface-muted`, `outline`, `accent`, `on-primary`.
 
 See [Design tokens](../02-Theming/DesignTokens.md).
+
+### Dark theme
+
+![QCustomCommandPalette dark](/img/showcase/commandpalette-dark.png)
 
 ## Example
 

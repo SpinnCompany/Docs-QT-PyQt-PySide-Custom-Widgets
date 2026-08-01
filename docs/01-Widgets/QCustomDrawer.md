@@ -6,6 +6,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomDrawer
 
+![QCustomDrawer screenshot](/img/showcase/drawer.png)
+
 `QCustomDrawer` — a slide-in side panel / sheet.
 
 A dimmed overlay with a panel that slides in from an edge (left / right /
@@ -53,6 +55,10 @@ QCustomDrawer(parent, side='left', size=300)
 Colours come from the design tokens, so they follow the active theme. Roles used: `surface`, `on-surface`, `outline`.
 
 See [Design tokens](../02-Theming/DesignTokens.md).
+
+### Dark theme
+
+![QCustomDrawer dark](/img/showcase/drawer-dark.png)
 
 ---
 
