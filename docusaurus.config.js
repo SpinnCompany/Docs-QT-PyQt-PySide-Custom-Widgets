@@ -12,9 +12,10 @@ const config = {
 
   // Dynamic configuration
   url: 'https://SpinnCompany.github.io',
-  // baseUrl: isGitHubPages ? '/Docs-QT-PyQt-PySide-Custom-Widgets/' : '/',
-  // baseUrl: '/Docs-QT-PyQt-PySide-Custom-Widgets/',
-  baseUrl: '/',
+  // The published site is a GitHub *project* page, so it is served from
+  // /Docs-QT-PyQt-PySide-Custom-Widgets/ — deploying with '/' 404s every
+  // asset. CI sets DEPLOY_ENV=gh-pages; a bare local build keeps '/'.
+  baseUrl: isGitHubPages ? '/Docs-QT-PyQt-PySide-Custom-Widgets/' : '/',
   
   // GitHub repo information
   organizationName: 'SpinnCompany',
