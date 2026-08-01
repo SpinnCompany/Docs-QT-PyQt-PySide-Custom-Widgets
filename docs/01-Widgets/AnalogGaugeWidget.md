@@ -475,3 +475,132 @@ gauge.setGaugeColorInnerRadiusFactor(900)   # 0-1000
 ---
 
 The `AnalogGaugeWidget` is perfect for dashboards, control panels, monitoring applications, and any interface requiring intuitive analog-style value representation with modern styling and smooth interactions.
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `themeNumber` | `int` | — |
+| `units` | `string` | — |
+| `needleColor` | `color` | — |
+| `needleColorOnDrag` | `color` | — |
+| `scaleValueColor` | `color` | — |
+| `fineScaleColor` | `color` | — |
+| `displayValueColor` | `color` | — |
+| `centerPointColor` | `color` | — |
+| `value` | `int` | — |
+| `minValue` | `int` | — |
+| `maxValue` | `int` | — |
+| `scaleFontFamily` | `QFont` | — |
+| `valueFontFamily` | `QFont` | — |
+| `bigScaleColor` | `color` | — |
+| `enableNeedlePolygon` | `bool` | — |
+| `enableScaleText` | `bool` | — |
+| `enableBarGraph` | `bool` | — |
+| `enableValueText` | `bool` | — |
+| `enableCenterPoint` | `bool` | — |
+| `enableScalePolygon` | `bool` | — |
+| `enableBigScaleGrid` | `bool` | — |
+| `enableFineScaleGrid` | `bool` | — |
+| `scalaCount` | `int` | — |
+| `scaleStartAngle` | `float` | — |
+| `totalScaleAngleSize` | `float` | — |
+| `angleOffset` | `float` | — |
+| `gaugeColorOuterRadiusFactor` | `float` | — |
+| `gaugeColorInnerRadiusFactor` | `float` | — |
+
+### Signals
+
+| Signal |
+|---|
+| `valueChanged(int)` |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `angleOffset(*args, **kwargs)` |  |
+| `bigScaleColor(*args, **kwargs)` |  |
+| `centerPointColor(*args, **kwargs)` |  |
+| `center_horizontal(value)` |  |
+| `center_vertical(value)` |  |
+| `change_value_needle_style(design)` |  |
+| `create_fine_scaled_marker()` |  |
+| `create_polygon_pie(outer_radius, inner_raduis, start, lenght, bar_graph=True)` |  |
+| `create_scale_marker_values_text()` |  |
+| `create_units_text()` |  |
+| `create_values_text()` |  |
+| `displayValueColor(*args, **kwargs)` |  |
+| `draw_big_needle_center_point(diameter=30)` |  |
+| `draw_big_scaled_marker()` |  |
+| `draw_filled_polygon(outline_pen_with=0)` |  |
+| `draw_icon_image()` |  |
+| `draw_needle()` |  |
+| `draw_outer_circle(diameter=30)` |  |
+| `enableBarGraph(*args, **kwargs)` |  |
+| `enableBigScaleGrid(*args, **kwargs)` |  |
+| `enableCenterPoint(*args, **kwargs)` |  |
+| `enableFineScaleGrid(*args, **kwargs)` |  |
+| `enableNeedlePolygon(*args, **kwargs)` |  |
+| `enableScalePolygon(*args, **kwargs)` |  |
+| `enableScaleText(*args, **kwargs)` |  |
+| `enableValueText(*args, **kwargs)` |  |
+| `fineScaleColor(*args, **kwargs)` |  |
+| `gaugeColorInnerRadiusFactor(*args, **kwargs)` |  |
+| `gaugeColorOuterRadiusFactor(*args, **kwargs)` |  |
+| `maxValue(*args, **kwargs)` |  |
+| `minValue(*args, **kwargs)` |  |
+| `needleColor(*args, **kwargs)` |  |
+| `needleColorOnDrag(*args, **kwargs)` |  |
+| `rescale_method()` |  |
+| `scalaCount(*args, **kwargs)` |  |
+| `scaleFontFamily(*args, **kwargs)` |  |
+| `scaleStartAngle(*args, **kwargs)` |  |
+| `scaleValueColor(*args, **kwargs)` |  |
+| `setAngleOffset(offset: float)` |  |
+| `setBigScaleColor(color: PySide6.QtGui.QColor)` |  |
+| `setCenterPointColor(color: PySide6.QtGui.QColor)` |  |
+| `setCustomGaugeTheme(custom_theme: list)` |  |
+| `setDisplayValueColor(color: PySide6.QtGui.QColor)` |  |
+| `setEnableBarGraph(enable=True)` |  |
+| `setEnableBigScaleGrid(enable=True)` |  |
+| `setEnableCenterPoint(enable=True)` |  |
+| `setEnableFineScaleGrid(enable=True)` |  |
+| `setEnableNeedlePolygon(enable: bool = True)` |  |
+| `setEnableScalePolygon(enable=True)` |  |
+| `setEnableScaleText(enable=True)` |  |
+| `setEnableValueText(enable=True)` |  |
+| `setFineScaleColor(color: PySide6.QtGui.QColor)` |  |
+| `setGaugeColorInnerRadiusFactor(value)` |  |
+| `setGaugeColorOuterRadiusFactor(value)` |  |
+| `setGaugeTheme(Theme=0)` |  |
+| `setMaxValue(value: int)` |  |
+| `setMinValue(value: int)` |  |
+| `setMouseTracking(flag)` |  |
+| `setNeedleCenterColor(**color_positions)` |  |
+| `setNeedleColor(color: PySide6.QtGui.QColor)` |  |
+| `setNeedleColorOnDrag(color: PySide6.QtGui.QColor)` |  |
+| `setOuterCircleColor(**color_positions)` |  |
+| `setScalaCount(count)` |  |
+| `setScaleFontFamily(font: PySide6.QtGui.QFont | str)` |  |
+| `setScalePolygonColor(**color_positions)` |  |
+| `setScaleStartAngle(value)` |  |
+| `setScaleValueColor(color: PySide6.QtGui.QColor)` |  |
+| `setTotalScaleAngleSize(value: float)` |  |
+| `setUnits(value: str)` |  |
+| `setValue(value: int)` |  |
+| `setValueFontFamily(font: PySide6.QtGui.QFont | str)` |  |
+| `themeNumber(*args, **kwargs)` |  |
+| `totalScaleAngleSize(*args, **kwargs)` |  |
+| `units(*args, **kwargs)` |  |
+| `value(*args, **kwargs)` |  |
+| `valueChanged(...)` |  |
+| `valueFontFamily(*args, **kwargs)` |  |
+
+<!-- /generated:api-reference -->

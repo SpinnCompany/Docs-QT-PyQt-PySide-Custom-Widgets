@@ -354,3 +354,32 @@ separator.margin = 24
 ---
 
 The `QCustomHorizontalSeparator` is ideal for organizing forms, settings dialogs, list views, card layouts, and any UI that requires clear visual separation between content sections with theme-aware styling.
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `color` | `color` | — |
+| `margin` | `int` | — |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `color(*args, **kwargs)` |  |
+| `getColor()` |  |
+| `getHeight()` |  |
+| `getMargin()` |  |
+| `height(*args, **kwargs)` |  |
+| `margin(*args, **kwargs)` |  |
+| `setColor(color)` | Sets the color of the separator. |
+| `setHeight(height)` | Sets the height (thickness) of the separator. |
+| `setMargin(margin)` | Sets the vertical margin around the separator line. |
+
+<!-- /generated:api-reference -->

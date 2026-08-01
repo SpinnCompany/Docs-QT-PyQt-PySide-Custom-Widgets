@@ -184,3 +184,60 @@ QCustomBadge#promoBadge { background-color: #ff8800; color: white; }
 ```
 
 See [Theming](../02-Theming/designer-properties.md) for the token system.
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `frameShape` | `QFrame::Shape` | — |
+| `frameShadow` | `QFrame::Shadow` | — |
+| `lineWidth` | `int` | — |
+| `midLineWidth` | `int` | — |
+| `frameWidth` | `int` | — |
+| `frameRect` | `QRect` | — |
+| `text` | `string` | — |
+| `textFormat` | `Qt::TextFormat` | — |
+| `pixmap` | `QPixmap` | — |
+| `scaledContents` | `bool` | — |
+| `alignment` | `QFlags<Qt::AlignmentFlag>` | — |
+| `wordWrap` | `bool` | — |
+| `margin` | `int` | — |
+| `indent` | `int` | — |
+| `openExternalLinks` | `bool` | — |
+| `textInteractionFlags` | `QFlags<Qt::TextInteractionFlag>` | — |
+| `hasSelectedText` | `bool` | — |
+| `selectedText` | `string` | — |
+| `variant` | `enum: `default` / `primary` / `secondary` / `success` / `warning` / `destructive` / `info` / `outline`` | `default` |
+| `sizeVariant` | `enum: `sm` / `md` / `lg`` | `md` |
+| `dot` | `bool` | `False` |
+
+### Signals
+
+| Signal |
+|---|
+| `clicked()` |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `attachTo(target, corner='topright', xOffset=0, yOffset=0)` | Float this badge over ``target``'s corner (topright / topleft / |
+| `clicked(...)` |  |
+| `count()` |  |
+| `dot(*args, **kwargs)` |  |
+| `eventFilter(obj, event)` |  |
+| `isDot()` |  |
+| `setCount(count, maxCount=None)` | Numeric badge. Shows ``maxCount+`` past the cap; hidden at 0 unless |
+| `setDot(on=True)` | Dot mode: a small coloured circle with no text. |
+| `setShowZero(show)` |  |
+| `setText(text)` | Plain-text badge (clears count / dot mode). |
+| `sizeVariant(*args, **kwargs)` |  |
+| `variant(*args, **kwargs)` |  |
+
+<!-- /generated:api-reference -->

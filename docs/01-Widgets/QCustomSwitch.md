@@ -79,3 +79,43 @@ Styled from the design tokens (`switch_qss` in
 `Custom_Widgets/JSonStyles/tokens.py`), applied via `applyDesignTokens` — the same
 system every modern widget uses. The track/thumb colours come from the `accent`,
 `outline`, and `surface` roles. See [Theming](../02-Theming/designer-properties.md).
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `checked` | `bool` | `False` |
+| `sizeVariant` | `enum: `sm` / `md` / `lg`` | `md` |
+| `thumbPosition` | `float` | — |
+| `trackOnColor` | `color` | — |
+| `trackOffColor` | `color` | — |
+| `thumbColor` | `color` | — |
+
+### Signals
+
+| Signal |
+|---|
+| `toggled(bool)` |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `checked(*args, **kwargs)` |  |
+| `isChecked()` |  |
+| `setChecked(checked)` |  |
+| `sizeVariant(*args, **kwargs)` |  |
+| `thumbColor(*args, **kwargs)` |  |
+| `thumbPosition(*args, **kwargs)` |  |
+| `toggle()` |  |
+| `toggled(...)` |  |
+| `trackOffColor(*args, **kwargs)` |  |
+| `trackOnColor(*args, **kwargs)` |  |
+
+<!-- /generated:api-reference -->

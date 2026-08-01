@@ -460,3 +460,36 @@ QCustomQDialog {
 ---
 
 The `QCustomQDialog` is perfect for modern applications requiring sophisticated dialog interfaces, confirmation dialogs, settings panels, data entry forms, and any scenario where a polished, animated dialog enhances user experience.
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `sizeGripEnabled` | `bool` | — |
+| `modal` | `bool` | — |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `accepted(...)` |  |
+| `addWidget(widget, alignment=None)` |  |
+| `adjustSizeToContent()` |  |
+| `adjustToParentSize()` | Adjust the dialog to the size and position of the parent. |
+| `checkAppTheme()` |  |
+| `done(code)` | fade out |
+| `eventFilter(obj, e: PySide6.QtCore.QEvent)` |  |
+| `hideCancelButton()` |  |
+| `hideYesButton()` |  |
+| `isDark()` |  |
+| `rejected(...)` |  |
+| `setMovable(movable: bool)` |  |
+| `setShadowEffect(blurRadius=60, offset=(0, 10), color=PySide6.QtGui.QColor.fromRgbF(0.000000, 0.000000, 0.000000, 0.392157))` |  |
+
+<!-- /generated:api-reference -->

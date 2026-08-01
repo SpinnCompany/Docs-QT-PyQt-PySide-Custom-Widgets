@@ -297,6 +297,7 @@ const sidebars = {
       items: [
         'Advanced/Plugins',
         'Advanced/designer-tools',
+        'Advanced/mcp-server',
         'Advanced/hot-reload',
         'Advanced/FileMonitor',
         'Advanced/QAppSettings',

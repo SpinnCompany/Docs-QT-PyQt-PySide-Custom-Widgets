@@ -80,3 +80,34 @@ app.exec()
 Styled from the design tokens (`statcard_qss`) via `applyDesignTokens`; the trend
 colours use the `success` / `destructive` / `outline` roles. See
 [Theming](../02-Theming/designer-properties.md).
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `label` | `string` | — |
+| `value` | `string` | — |
+| `caption` | `string` | — |
+| `trend` | `enum: `up` / `down` / `flat`` | `flat` |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `caption(*args, **kwargs)` |  |
+| `label(*args, **kwargs)` |  |
+| `setCaption(text)` |  |
+| `setDelta(text, trend=None)` | Set the delta text (e.g. "+12.5%") and, optionally, the trend |
+| `setLabel(text)` |  |
+| `setTrend(trend)` |  |
+| `setValue(text)` |  |
+| `trend(*args, **kwargs)` |  |
+| `value(*args, **kwargs)` |  |
+
+<!-- /generated:api-reference -->

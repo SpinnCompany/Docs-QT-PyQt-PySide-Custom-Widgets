@@ -329,3 +329,22 @@ Each step includes descriptive tooltips:
 ---
 
 The `QCustomProgressIndicator` is ideal for multi-step forms, installation wizards, workflow trackers, and any application requiring visual progress tracking through sequential steps with status feedback.
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `animateFormProgress(percentage)` |  |
+| `createFormProgressIndicator()` |  |
+| `selectFormProgressIndicatorTheme(themeNumber)` |  |
+| `setStepStatus(**stepStatus)` |  |
+| `updateFormProgress(value)` |  |
+| `updateFormProgressIndicator(**values)` |  |
+
+<!-- /generated:api-reference -->

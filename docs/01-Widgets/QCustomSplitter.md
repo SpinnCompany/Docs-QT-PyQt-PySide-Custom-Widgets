@@ -94,3 +94,33 @@ Styled from the design tokens (`splitter_qss` in
 `Custom_Widgets/JSonStyles/tokens.py`), applied via `applyDesignTokens` — the
 same system every modern widget uses. The handle uses the `surface-muted` and
 `accent` roles. See [Theming](../02-Theming/designer-properties.md).
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `frameShape` | `QFrame::Shape` | — |
+| `frameShadow` | `QFrame::Shadow` | — |
+| `lineWidth` | `int` | — |
+| `midLineWidth` | `int` | — |
+| `frameWidth` | `int` | — |
+| `frameRect` | `QRect` | — |
+| `orientation` | `enum: `horizontal` / `vertical`` | `horizontal` |
+| `opaqueResize` | `bool` | — |
+| `handleWidth` | `int` | — |
+| `childrenCollapsible` | `bool` | — |
+| `orientationName` | `string` | — |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `orientationName(*args, **kwargs)` |  |
+
+<!-- /generated:api-reference -->

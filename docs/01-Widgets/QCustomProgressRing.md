@@ -84,3 +84,48 @@ app.exec()
 Styled from the design tokens (`progressring_qss`) via `applyDesignTokens`; the
 ring/track/text colours use the `accent` / `surface-muted` / `on-surface` roles.
 See [Theming](../02-Theming/designer-properties.md).
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `minimum` | `int` | `0` |
+| `maximum` | `int` | `100` |
+| `showText` | `bool` | `True` |
+| `ringColor` | `color` | — |
+| `trackColor` | `color` | — |
+| `textColor` | `color` | — |
+| `thickness` | `int` | — |
+
+### Signals
+
+| Signal |
+|---|
+| `valueChanged(int)` |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `maximum(*args, **kwargs)` |  |
+| `minimum(*args, **kwargs)` |  |
+| `ringColor(*args, **kwargs)` |  |
+| `setMaximum(m)` |  |
+| `setMinimum(m)` |  |
+| `setRange(minimum, maximum)` |  |
+| `setShowText(show)` |  |
+| `setValue(value)` |  |
+| `showText(*args, **kwargs)` |  |
+| `textColor(*args, **kwargs)` |  |
+| `thickness(*args, **kwargs)` |  |
+| `trackColor(*args, **kwargs)` |  |
+| `value()` |  |
+| `valueChanged(...)` |  |
+
+<!-- /generated:api-reference -->

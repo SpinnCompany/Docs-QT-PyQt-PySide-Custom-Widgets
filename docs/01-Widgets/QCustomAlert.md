@@ -88,3 +88,41 @@ app.exec()
 Styled from the design tokens (`alert_qss`) via `applyDesignTokens`; each variant
 maps to a semantic role (`info` / `success` / `warning` / `destructive`). See
 [Theming](../02-Theming/designer-properties.md).
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `variant` | `enum: `info` / `success` / `warning` / `destructive`` | `info` |
+| `title` | `string` | — |
+| `text` | `string` | — |
+| `dismissible` | `bool` | `False` |
+
+### Signals
+
+| Signal |
+|---|
+| `closed()` |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `closeButton()` |  |
+| `closed(...)` |  |
+| `dismissible(*args, **kwargs)` |  |
+| `isDismissible()` |  |
+| `setDismissible(dismissible)` |  |
+| `setText(text)` |  |
+| `setTitle(title)` |  |
+| `text(*args, **kwargs)` |  |
+| `title(*args, **kwargs)` |  |
+| `variant(*args, **kwargs)` |  |
+
+<!-- /generated:api-reference -->

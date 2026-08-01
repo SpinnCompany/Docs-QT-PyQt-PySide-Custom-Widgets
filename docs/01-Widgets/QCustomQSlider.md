@@ -325,3 +325,35 @@ All standard QSlider signals are available:
 ---
 
 The `QCustomQSlider` is ideal for media players, configuration dialogs, settings panels, and any application where quick and precise value selection improves user experience.
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `minimum` | `int` | — |
+| `maximum` | `int` | — |
+| `singleStep` | `int` | — |
+| `pageStep` | `int` | — |
+| `value` | `int` | — |
+| `sliderPosition` | `int` | — |
+| `tracking` | `bool` | — |
+| `orientation` | `Qt::Orientation` | — |
+| `invertedAppearance` | `bool` | — |
+| `invertedControls` | `bool` | — |
+| `sliderDown` | `bool` | — |
+| `tickPosition` | `QSlider::TickPosition` | — |
+| `tickInterval` | `int` | — |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `pixelPosToRangeValue(pos)` |  |
+
+<!-- /generated:api-reference -->

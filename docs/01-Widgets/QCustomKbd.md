@@ -83,3 +83,27 @@ Styled from the design tokens (`kbd_qss` in
 same system every modern widget uses. Keycaps use the `surface-muted`,
 `on-surface`, and `outline` roles. See
 [Theming](../02-Theming/designer-properties.md).
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `keys` | `string` | `Ctrl+K` |
+| `separator` | `string` | `+` |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `keys(*args, **kwargs)` |  |
+| `keysList()` |  |
+| `separator(*args, **kwargs)` |  |
+| `setKeys(keys)` | Accept a shortcut string ("Ctrl+K") split on the separator, or an |
+
+<!-- /generated:api-reference -->

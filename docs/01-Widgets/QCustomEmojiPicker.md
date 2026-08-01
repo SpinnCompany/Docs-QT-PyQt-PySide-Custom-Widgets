@@ -310,3 +310,34 @@ The picker automatically detects and supports:
 ---
 
 The `QCustomEmojiPicker` is perfect for chat applications, social media interfaces, comment systems, note-taking apps, and any application that benefits from easy emoji insertion with a modern, user-friendly interface.
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Signals
+
+| Signal |
+|---|
+| `emojiSelected(QString)` |
+| `emojisUpdated(int)` |
+| `updateFailed(QString)` |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `closeEvent(e)` |  |
+| `datasetInfo() -> dict` |  |
+| `emojiSelected(...)` |  |
+| `emojisUpdated(...)` |  |
+| `isLocalOutdated() -> bool` | True if the active dataset is the bundled one or older than the |
+| `on_input(text: str)` |  |
+| `recentEmojis()` |  |
+| `select() -> str | None` | The last selected emoji (or None). |
+| `updateEmojisOnline(force: bool = False)` | Fetch the latest emoji dataset online (off the GUI thread) and, on |
+| `updateFailed(...)` |  |
+
+<!-- /generated:api-reference -->

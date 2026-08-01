@@ -387,3 +387,48 @@ The label automatically uses the parent sidebar's animation duration.
 ---
 
 The `QCustomSidebarLabel` is an essential component for creating polished sidebar interfaces, providing intelligent visibility management with smooth animations and flexible content display that seamlessly integrates with the `QCustomSidebar` ecosystem.
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `text` | `string` | — |
+| `icon` | `QIcon` | — |
+| `iconSize` | `QSize` | — |
+| `hideOnCollapse` | `bool` | — |
+| `showOnCollapse` | `bool` | — |
+
+### Signals
+
+| Signal |
+|---|
+| `visibilityChanged(bool)` |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `connect_to_parent()` | Connect to the closest QCustomSidebar parent to listen for collapse/expand signals. |
+| `hideLabel()` | Start the hide animation. |
+| `hideOnCollapse(*args, **kwargs)` | Whether to hide this label when the sidebar collapses. |
+| `icon(*args, **kwargs)` | Get the icon of the label. |
+| `iconSize(*args, **kwargs)` | Get the size of the icon. |
+| `on_animation_finished()` | Handle the visibility of the widget after the animation finishes. |
+| `setIcon(icon: PySide6.QtGui.QIcon)` | Set the icon in the QLabel and hide text if an icon is set. |
+| `setNewIcon(url)` |  |
+| `setText(new_text: str)` | Set the text of the label. |
+| `showLabel()` | Start the show animation. |
+| `showOnCollapse(*args, **kwargs)` | Whether to show this label when the sidebar collapses (opposite of hideOnCollapse). |
+| `start_hide_animation()` | Animate opacity from 1 to 0 and then hide the widget. |
+| `start_show_animation()` | Animate opacity from 0 to 1 and then show the widget. |
+| `text(*args, **kwargs)` | Get the text of the label. |
+| `validateIconAndLabel()` | Validate if the icon or label should be shown. |
+| `visibilityChanged(...)` |  |
+
+<!-- /generated:api-reference -->

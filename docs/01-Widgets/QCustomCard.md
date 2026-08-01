@@ -72,3 +72,31 @@ app.exec()
 Styled from the design tokens (`card_qss`) via `applyDesignTokens`; the surface,
 border, and header text use the `surface` / `outline` / `on-surface` roles. See
 [Theming](../02-Theming/designer-properties.md).
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `title` | `string` | — |
+| `subtitle` | `string` | — |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `addLayout(layout)` |  |
+| `addWidget(widget)` |  |
+| `body()` |  |
+| `contentLayout()` | The body QVBoxLayout - add rows/widgets here. |
+| `setSubtitle(text)` |  |
+| `setTitle(text)` |  |
+| `subtitle(*args, **kwargs)` |  |
+| `title(*args, **kwargs)` |  |
+
+<!-- /generated:api-reference -->

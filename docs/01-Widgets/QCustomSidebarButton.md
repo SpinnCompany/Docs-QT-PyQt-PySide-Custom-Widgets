@@ -343,3 +343,69 @@ The button works seamlessly with JSON styling when used within a `QCustomSidebar
 ---
 
 The `QCustomSidebarButton` is the perfect companion for `QCustomSidebar` and `QCustomSlideMenu`, providing intelligent, user-friendly button behavior that enhances the sidebar navigation experience with smooth transitions and helpful floating tooltips.
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `text` | `string` | — |
+| `icon` | `QIcon` | — |
+| `iconSize` | `QSize` | — |
+| `shortcut` | `QKeySequence` | — |
+| `checkable` | `bool` | — |
+| `checked` | `bool` | — |
+| `autoRepeat` | `bool` | — |
+| `autoExclusive` | `bool` | — |
+| `autoRepeatDelay` | `int` | — |
+| `autoRepeatInterval` | `int` | — |
+| `down` | `bool` | — |
+| `autoDefault` | `bool` | — |
+| `default` | `bool` | — |
+| `flat` | `bool` | — |
+| `iconColor` | `color` | — |
+| `iconColorActive` | `color` | — |
+| `hideOnCollapse` | `bool` | — |
+| `showOnCollapse` | `bool` | — |
+| `textPrefixSpaces` | `int` | — |
+| `labelHidden` | `bool` | — |
+| `labelText` | `string` | — |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `calculateFloatingPosition()` | Calculate the exact relative position for the floating button. |
+| `clicked(...)` |  |
+| `connectToParent()` | Connect to the closest QCustomSidebar parent if necessary. |
+| `createFloatingButton()` | Create the floating version of the button. |
+| `deleteFloatingButton(e)` | Hide the button label when the hover ends, return to original collapsed state. |
+| `eventFilter(obj, event: PySide6.QtCore.QEvent)` |  |
+| `fadeInFloatingButton()` | Fade in the floating button. |
+| `fadeOutFloatingButton()` | Fade out the floating button. |
+| `getPrefixedText(text)` |  |
+| `hideButtonIcon()` | Hide the button icon by setting it to an empty QIcon. |
+| `hideButtonLabel()` | Hide the button label by clearing the text. |
+| `hideFloatingButton()` | Hide the floating button after the fade-out. |
+| `hideOnCollapse(*args, **kwargs)` | Whether to hide this label when the sidebar collapses. |
+| `iconColor(*args, **kwargs)` |  |
+| `iconColorActive(*args, **kwargs)` |  |
+| `labelHidden(*args, **kwargs)` |  |
+| `labelText(*args, **kwargs)` | Returns the label text for the button (read-only). |
+| `moveEvent(event)` | Update floating button position on window move. |
+| `setIconSize(size)` |  |
+| `setNewIcon(url)` |  |
+| `setText(text)` | Override setText to store the raw text and apply the prefix spaces. |
+| `showButtonIcon()` | Show the button icon by restoring the original icon. |
+| `showButtonLabel()` | Show the button label by restoring the original text. |
+| `showFloatingButton()` | Show the floating button only if the mouse is still over the main button. |
+| `showOnCollapse(*args, **kwargs)` | Whether to show this label when the sidebar collapses (opposite of hideOnCollapse). |
+| `textPrefixSpaces(*args, **kwargs)` | Get number of spaces to prepend to the text. |
+| `update()` |  |
+
+<!-- /generated:api-reference -->

@@ -567,3 +567,67 @@ if __name__ == "__main__":
 
 - **Extensibility:**  
   The `GuiFunctions` class is used to initialize any additional functionality needed for your application, keeping the main window code clean and modular.
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `iconSize` | `QSize` | — |
+| `toolButtonStyle` | `Qt::ToolButtonStyle` | — |
+| `animated` | `bool` | — |
+| `documentMode` | `bool` | — |
+| `tabShape` | `QTabWidget::TabShape` | — |
+| `dockNestingEnabled` | `bool` | — |
+| `dockOptions` | `QFlags<QMainWindow::DockOption>` | — |
+| `unifiedTitleAndToolBarOnMac` | `bool` | — |
+| `appTheme` | `string` | — |
+| `jsonStylesheetFilePath` | `string` | — |
+| `frameless` | `bool` | — |
+| `translucentBg` | `bool` | — |
+| `minimizeBtn` | `string` | — |
+| `closeBtn` | `string` | — |
+| `restoreBtn` | `string` | — |
+| `restoreBtnNormalIcon` | `string` | — |
+| `restoreBtnMaximizedIcon` | `string` | — |
+| `titleBar` | `string` | — |
+| `moveWindow` | `string` | — |
+| `sizeGrip` | `string` | — |
+| `shadowColor` | `color` | — |
+| `shadowBlurRadius` | `int` | — |
+| `shadowXOffset` | `int` | — |
+| `shadowYOffset` | `int` | — |
+| `windowBorderRadius` | `int` | — |
+| `customSideDrawers` | `string` | — |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `appTheme(*args, **kwargs)` | The active theme, by NAME. Theme names are defined at runtime in |
+| `closeBtn(*args, **kwargs)` |  |
+| `closeEvent(event)` | Clean up file watchers when window is closed |
+| `customSideDrawers(*args, **kwargs)` |  |
+| `frameless(*args, **kwargs)` |  |
+| `isValidTheme(value: str)` | Whether `value` names one of the themes the engine knows about. |
+| `jsonStylesheetFilePath(*args, **kwargs)` |  |
+| `minimizeBtn(*args, **kwargs)` |  |
+| `moveWindow(*args, **kwargs)` |  |
+| `restoreBtn(*args, **kwargs)` |  |
+| `restoreBtnMaximizedIcon(*args, **kwargs)` |  |
+| `restoreBtnNormalIcon(*args, **kwargs)` |  |
+| `shadowBlurRadius(*args, **kwargs)` |  |
+| `shadowColor(*args, **kwargs)` |  |
+| `shadowXOffset(*args, **kwargs)` |  |
+| `shadowYOffset(*args, **kwargs)` |  |
+| `sizeGrip(*args, **kwargs)` |  |
+| `titleBar(*args, **kwargs)` |  |
+| `translucentBg(*args, **kwargs)` |  |
+| `windowBorderRadius(*args, **kwargs)` |  |
+
+<!-- /generated:api-reference -->

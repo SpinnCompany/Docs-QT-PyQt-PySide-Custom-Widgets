@@ -155,3 +155,43 @@ if __name__ == "__main__":
 ---
 
 This documentation should help you understand and integrate `QCustom3CirclesLoader` from the **Custom_Widgets.LoadingIndicators** module into your Qt projects, offering a visually appealing and customizable loader animation.
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `frameShape` | `QFrame::Shape` | — |
+| `frameShadow` | `QFrame::Shadow` | — |
+| `lineWidth` | `int` | — |
+| `midLineWidth` | `int` | — |
+| `frameWidth` | `int` | — |
+| `frameRect` | `QRect` | — |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `finished()` |  |
+| `getVariantAnimation()` |  |
+| `initMoveDownAnimation()` |  |
+| `initMoveLeftAnimation()` |  |
+| `initMoveRightAnimation()` |  |
+| `initMoveUpAnimation()` |  |
+| `initRects()` |  |
+| `moveDownUpdateH(newValue)` |  |
+| `moveDownUpdateY(newValue)` |  |
+| `moveLeftUpdateH(newValue)` |  |
+| `moveLeftUpdateX(newValue)` |  |
+| `moveRightUpdateW(newValue)` |  |
+| `moveRightUpdateX(newValue)` |  |
+| `moveUpUpdateH(newValue)` |  |
+| `moveUpUpdateY(newValue)` |  |
+| `startAnimations()` |  |
+
+<!-- /generated:api-reference -->

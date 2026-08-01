@@ -564,3 +564,73 @@ Here's how the JSON configuration would look for hamburger menus:
 - **Video Tutorials**: [SPINN TV YouTube Channel](https://www.youtube.com/channel/UCJVsWdUC3M8p-q67RXPujkg)
 
 The `QCustomHamburgerMenu` provides powerful, customizable sliding menu functionality perfect for modern application interfaces with smooth animations and flexible positioning options.
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `acrylicEnabled` | `bool` | — |
+| `acrylicBlurRadius` | `int` | — |
+| `acrylicTintColor` | `color` | — |
+| `acrylicLuminosityColor` | `color` | — |
+| `acrylicNoiseOpacity` | `float` | — |
+| `position` | `int` | — |
+| `animationDuration` | `int` | — |
+| `animationEasingCurve` | `int` | — |
+| `menuWidth` | `int` | — |
+| `menuHeight` | `int` | — |
+| `sizeWrap` | `bool` | — |
+| `center` | `bool` | — |
+| `margin` | `int` | — |
+| `backgroundColor` | `color` | — |
+| `shadowColor` | `color` | — |
+| `shadowBlurRadius` | `int` | — |
+| `cornerRadius` | `int` | — |
+| `autoHide` | `bool` | — |
+| `overlayColor` | `color` | — |
+| `toggleButtonName` | `string` | — |
+| `showButtonName` | `string` | — |
+| `hideButtonName` | `string` | — |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `acrylicBlurRadius(*args, **kwargs)` |  |
+| `acrylicEnabled(*args, **kwargs)` |  |
+| `acrylicLuminosityColor(*args, **kwargs)` |  |
+| `acrylicNoiseOpacity(*args, **kwargs)` |  |
+| `acrylicTintColor(*args, **kwargs)` |  |
+| `adjustSizeToContent()` | Adjust size to fit content and update positioning. |
+| `animationDuration(*args, **kwargs)` |  |
+| `animationEasingCurve(*args, **kwargs)` | Easing as an int (a QEasingCurve.Type value). Accepts |
+| `autoHide(*args, **kwargs)` |  |
+| `backgroundColor(*args, **kwargs)` |  |
+| `center(*args, **kwargs)` |  |
+| `cornerRadius(*args, **kwargs)` |  |
+| `event(event)` | Handle general events. |
+| `eventFilter(obj, event)` | Handle parent resize events to adjust menu and overlay size. |
+| `getButtonByName(buttonName)` | Recursively search for a button by objectName. |
+| `getWidget(name: str) -> PySide6.QtWidgets.QWidget` |  |
+| `hideButtonName(*args, **kwargs)` |  |
+| `hideMenu(duration=None)` | Animate the menu closing away from center. |
+| `margin(*args, **kwargs)` |  |
+| `menuHeight(*args, **kwargs)` |  |
+| `menuWidth(*args, **kwargs)` |  |
+| `overlayColor(*args, **kwargs)` |  |
+| `position(*args, **kwargs)` | Menu edge as an int (see QCustomHamburgerMenu.Position: |
+| `shadowBlurRadius(*args, **kwargs)` |  |
+| `shadowColor(*args, **kwargs)` |  |
+| `showButtonName(*args, **kwargs)` |  |
+| `showMenu()` | Animate the menu opening towards center. |
+| `sizeWrap(*args, **kwargs)` |  |
+| `toggleButtonName(*args, **kwargs)` |  |
+| `toggleMenu()` | Toggle the menu visibility. |
+
+<!-- /generated:api-reference -->

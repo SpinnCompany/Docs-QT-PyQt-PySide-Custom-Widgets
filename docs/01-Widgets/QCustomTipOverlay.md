@@ -392,3 +392,36 @@ for widget in [btn1, btn2, btn3]:
 ---
 
 The `QCustomTipOverlay` provides enterprise-grade tooltip functionality with extensive customization options, making it ideal for applications requiring rich, interactive help systems, contextual information displays, and sophisticated user guidance interfaces.
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Signals
+
+| Signal |
+|---|
+| `closed()` |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `addWidget(widget)` |  |
+| `adjustSizeToContent()` |  |
+| `closeEvent(e)` |  |
+| `closed(...)` |  |
+| `eventFilter(obj, e: PySide6.QtCore.QEvent)` |  |
+| `handleThemeChanged()` |  |
+| `loadForm(form)` |  |
+| `moveButton()` |  |
+| `setClosable(clossable: bool = True)` |  |
+| `setCloseIcon(iconFile)` |  |
+| `setDescription(description)` |  |
+| `setIcon(icon)` |  |
+| `setShadowEffect()` |  |
+| `setTitle(title)` |  |
+
+<!-- /generated:api-reference -->

@@ -417,3 +417,53 @@ app.exec_()
 - **Video Tutorials:** [SPINN TV YouTube Channel](https://www.youtube.com/channel/UCJVsWdUC3M8p-q67RXPujkg)
 
 The `QCustomSidebar` and `QCustomSlideMenu` widgets provide powerful, customizable sliding menu functionality perfect for modern application interfaces with smooth animations and responsive behavior.
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `defaultWidth` | `int` | — |
+| `defaultHeight` | `int` | — |
+| `collapsedWidth` | `int` | — |
+| `collapsedHeight` | `int` | — |
+| `expandedWidth` | `int` | — |
+| `expandedHeight` | `int` | — |
+| `toggleButtonName` | `string` | — |
+| `iconCollapsed` | `string` | — |
+| `iconExpanded` | `string` | — |
+| `animationDuration` | `int` | — |
+| `animationEasingCurve` | `int` | — |
+| `shadowColor` | `color` | — |
+| `shadowBlurRadius` | `int` | — |
+| `shadowXOffset` | `int` | — |
+| `shadowYOffset` | `int` | — |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `animationDuration(*args, **kwargs)` |  |
+| `animationEasingCurve(*args, **kwargs)` | Easing as an int (a QEasingCurve.Type value). Developers can use |
+| `collapsedHeight(*args, **kwargs)` |  |
+| `collapsedWidth(*args, **kwargs)` |  |
+| `convert_to_int(s)` |  |
+| `defaultHeight(*args, **kwargs)` |  |
+| `defaultWidth(*args, **kwargs)` |  |
+| `expandedHeight(*args, **kwargs)` |  |
+| `expandedWidth(*args, **kwargs)` |  |
+| `iconCollapsed(*args, **kwargs)` |  |
+| `iconExpanded(*args, **kwargs)` |  |
+| `shadowBlurRadius(*args, **kwargs)` |  |
+| `shadowColor(*args, **kwargs)` |  |
+| `shadowXOffset(*args, **kwargs)` |  |
+| `shadowYOffset(*args, **kwargs)` |  |
+| `toggleButtonName(*args, **kwargs)` |  |
+| `updateProperties(state=None)` |  |
+
+<!-- /generated:api-reference -->

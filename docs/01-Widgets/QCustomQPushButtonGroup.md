@@ -367,3 +367,41 @@ except Exception as e:
 For a complete walkthrough, watch the full video tutorial:
 
 [![QPushButton Groups Tutorial](https://img.youtube.com/vi/fPgwQJUFPIw/0.jpg)](https://youtu.be/fPgwQJUFPIw)
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `text` | `string` | — |
+| `icon` | `QIcon` | — |
+| `iconSize` | `QSize` | — |
+| `shortcut` | `QKeySequence` | — |
+| `checkable` | `bool` | — |
+| `checked` | `bool` | — |
+| `autoRepeat` | `bool` | — |
+| `autoExclusive` | `bool` | — |
+| `autoRepeatDelay` | `int` | — |
+| `autoRepeatInterval` | `int` | — |
+| `down` | `bool` | — |
+| `autoDefault` | `bool` | — |
+| `default` | `bool` | — |
+| `flat` | `bool` | — |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `getButtonGroup()` |  |
+| `getButtonGroupActiveStyle()` |  |
+| `getButtonGroupButtons()` |  |
+| `getButtonGroupNotActiveStyle()` |  |
+| `setButtonGroupActiveStyle(style)` |  |
+| `setButtonGroupNotActiveStyle(style)` |  |
+
+<!-- /generated:api-reference -->

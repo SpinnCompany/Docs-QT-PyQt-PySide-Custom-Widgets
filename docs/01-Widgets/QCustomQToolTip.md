@@ -381,3 +381,30 @@ tooltip.setStyleSheet("""
 ---
 
 The `QCustomQToolTip` is perfect for applications requiring modern, visually appealing tooltips with precise positioning control and smooth animations. It enhances user experience while maintaining ease of integration.
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Signals
+
+| Signal |
+|---|
+| `onClosed()` |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `adjustSizeToContent()` |  |
+| `closeEvent(e)` |  |
+| `eventFilter(obj, e: PySide6.QtCore.QEvent)` |  |
+| `handleThemeChanged()` |  |
+| `onClosed(...)` |  |
+| `setIcon(icon)` |  |
+| `setShadowEffect()` |  |
+| `setText(text)` |  |
+
+<!-- /generated:api-reference -->

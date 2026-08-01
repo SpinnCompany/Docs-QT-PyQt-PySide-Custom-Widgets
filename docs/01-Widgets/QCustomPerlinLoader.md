@@ -152,3 +152,32 @@ if __name__ == "__main__":
   Modify parameters such as colors, font settings, and `rayon` to tailor the loader's appearance to your application's theme.
 
 ---
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `frameShape` | `QFrame::Shape` | — |
+| `frameShadow` | `QFrame::Shadow` | — |
+| `lineWidth` | `int` | — |
+| `midLineWidth` | `int` | — |
+| `frameWidth` | `int` | — |
+| `frameRect` | `QRect` | — |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `draw_deformed_circles(painter: PySide6.QtGui.QPainter) -> None` |  |
+| `draw_message(painter: PySide6.QtGui.QPainter) -> None` |  |
+| `get_deformed_point(angle: float, noise_generator: perlin_noise.perlin_noise.PerlinNoise) -> PySide6.QtCore.QPointF` |  |
+| `start_animation() -> None` |  |
+| `update_start_angle(new_value: float) -> None` |  |
+
+<!-- /generated:api-reference -->

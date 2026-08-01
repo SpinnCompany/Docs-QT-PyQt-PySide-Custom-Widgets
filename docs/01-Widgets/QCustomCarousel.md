@@ -94,3 +94,44 @@ Styled from the design tokens (`carousel_qss` in
 same system every modern widget uses. Nav buttons use `surface` / `on-surface` /
 `outline`; the active dot uses the `accent` role. See
 [Theming](../02-Theming/designer-properties.md).
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `currentIndex_` | `int` | — |
+| `wrap` | `bool` | `True` |
+
+### Signals
+
+| Signal |
+|---|
+| `currentChanged(int)` |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `addSlide(widget)` | Append a widget as a slide. Returns its index. |
+| `clear()` |  |
+| `count()` |  |
+| `currentChanged(...)` |  |
+| `currentIndex()` |  |
+| `currentIndex_(*args, **kwargs)` |  |
+| `insertSlide(index, widget)` |  |
+| `next()` |  |
+| `previous()` |  |
+| `removeSlide(index)` |  |
+| `setAutoAdvance(milliseconds)` | Advance automatically every N ms (0 stops the timer). |
+| `setCurrentIndex(index)` |  |
+| `setWrap(wrap)` |  |
+| `wrap(*args, **kwargs)` |  |
+| `wrapsAround()` |  |
+
+<!-- /generated:api-reference -->

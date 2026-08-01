@@ -145,3 +145,104 @@ for emphasis and density. See [Theming](../02-Theming/designer-properties.md).
 stable extension seams — your columns, data, sorting, and examples carry over
 unchanged. **Swap the class, gain the features** (virtualization, frozen columns,
 inline editing, grouping/pivot, server-side data, CSV/XLSX export).
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `pageSize` | `int` | `25` |
+| `showPagination` | `bool` | — |
+| `selectionMode` | `enum: `NoSelection` / `SingleRow` / `MultiRow` / `Cell`` | `SingleRow` |
+| `selectable` | `bool` | — |
+| `sortable` | `bool` | — |
+| `filterable` | `bool` | — |
+| `alternatingRowColors` | `bool` | — |
+| `showGrid` | `bool` | — |
+| `showHeader` | `bool` | — |
+| `variant` | `enum: `primary` / `secondary` / `outline` / `ghost`` | `outline` |
+| `sizeVariant` | `enum: `sm` / `md` / `lg`` | `md` |
+
+### Signals
+
+| Signal |
+|---|
+| `cellClicked(int,int)` |
+| `headerActionsGlyphClicked()` |
+| `pageChanged(int)` |
+| `rowActionTriggered(int,QString)` |
+| `rowSelected(int)` |
+| `selectionCheckedChanged(QVariantList)` |
+| `sortChanged(int,PyObject)` |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `addRow(row)` |  |
+| `alternatingRowColors(*args, **kwargs)` |  |
+| `buildRowActionsMenu(srcRow)` | A QMenu of the configured row actions; each entry emits |
+| `cellClicked(...)` |  |
+| `checkedRows()` | Sorted SOURCE-model row indices whose checkbox is ticked. |
+| `clear()` |  |
+| `clearChecked()` |  |
+| `currentPage()` |  |
+| `customizeQCustomDataTable(**customValues)` |  |
+| `delegate()` |  |
+| `eventFilter(obj, event)` |  |
+| `filterable(*args, **kwargs)` |  |
+| `headerActionsGlyphClicked(...)` |  |
+| `isSelectable()` |  |
+| `model()` |  |
+| `nextPage()` |  |
+| `pageChanged(...)` |  |
+| `pageCount()` |  |
+| `pageSize(*args, **kwargs)` |  |
+| `prevPage()` |  |
+| `rowActionTriggered(...)` |  |
+| `rowActions()` |  |
+| `rowSelected(...)` |  |
+| `selectable(*args, **kwargs)` |  |
+| `selectedRows()` | Return the selected SOURCE-model row indices (sorted, unique). |
+| `selectionCheckedChanged(...)` |  |
+| `selectionMode(*args, **kwargs)` |  |
+| `setActionsColor(color)` | Colour of the kebab (⋮) glyph. |
+| `setAllChecked(checked=True)` |  |
+| `setAutoFlex(on)` | Enable/disable managed flex sizing. When off, columns keep their |
+| `setCellAccentColor(color)` | Colour used for link/status cell text (blank/None -> palette link). |
+| `setCellMutedColor(color)` | Colour used for the muted second line of twoline cells. |
+| `setColumns(columns)` |  |
+| `setData(rows)` |  |
+| `setFilterText(text)` |  |
+| `setFlexColumn(dataColumnIndex)` | Choose which DATA column (0-based, ignoring the select column) fills |
+| `setFlexMinWidth(px)` | Floor width the flex column never shrinks below (table scrolls once |
+| `setHeaderAccentColor(color)` | Colour of the ACTIVE sort caret. |
+| `setHeaderActionsGlyph(kind)` | Glyph in the actions-column header, e.g. 'gear' (or None). Clicking |
+| `setHeaderGlyphColor(color)` | Muted colour for header carets / caret / gear (track the theme). |
+| `setHeaderSelectCaret(on)` | Show a dropdown caret next to the select-all checkbox. |
+| `setPage(index)` |  |
+| `setPersistentSortIndicators(on)` | Draw an up/down sort caret on EVERY sortable column header (web-style), |
+| `setRowActions(actions)` | Enable the trailing ⋮ column. ``actions`` is a list of (key, label) |
+| `setRowChecked(row, checked=True)` |  |
+| `setRowSeparatorColor(color)` | Draw a uniform 1px bottom border under EVERY cell (rich cells are |
+| `setRows(rows)` |  |
+| `setSelectable(on)` | Show/hide the leading checkbox column (with a select-all header). |
+| `setStatusDotSize(px)` |  |
+| `setTwoLineSubtitleBold(bold)` |  |
+| `setTwoLineSubtitleScale(delta)` | Twoline subtitle size delta in points (0 = two equal peer lines). |
+| `showGrid(*args, **kwargs)` |  |
+| `showHeader(*args, **kwargs)` |  |
+| `showPagination(*args, **kwargs)` |  |
+| `sizeVariant(*args, **kwargs)` |  |
+| `sortBy(column, order=<SortOrder.AscendingOrder: 0>)` |  |
+| `sortChanged(...)` |  |
+| `sortable(*args, **kwargs)` |  |
+| `variant(*args, **kwargs)` |  |
+| `view()` |  |
+
+<!-- /generated:api-reference -->

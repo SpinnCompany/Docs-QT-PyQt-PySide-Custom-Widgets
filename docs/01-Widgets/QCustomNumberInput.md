@@ -88,3 +88,46 @@ app.exec()
 Styled from the design tokens (`number_qss`) via `applyDesignTokens`; the joined
 field + step buttons use the `surface` / `on-surface` / `outline` / `accent`
 roles. See [Theming](../02-Theming/designer-properties.md).
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `minimum` | `double` | `0` |
+| `maximum` | `double` | `100` |
+| `singleStep` | `double` | `1` |
+| `decimals` | `int` | `0` |
+
+### Signals
+
+| Signal |
+|---|
+| `valueChanged(PyObject)` |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `decimals(*args, **kwargs)` |  |
+| `lineEdit()` |  |
+| `maximum(*args, **kwargs)` |  |
+| `minimum(*args, **kwargs)` |  |
+| `setDecimals(decimals)` |  |
+| `setMaximum(maximum)` |  |
+| `setMinimum(minimum)` |  |
+| `setRange(minimum, maximum)` |  |
+| `setSingleStep(step)` |  |
+| `setValue(value)` |  |
+| `singleStep(*args, **kwargs)` |  |
+| `stepDown()` |  |
+| `stepUp()` |  |
+| `value()` |  |
+| `valueChanged(...)` |  |
+
+<!-- /generated:api-reference -->

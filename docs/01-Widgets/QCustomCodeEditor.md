@@ -337,3 +337,19 @@ project/
 ---
 
 The `QCustomCodeEditor` is ideal for IDEs, code viewers, configuration editors, educational tools, and any application requiring professional code editing capabilities with syntax highlighting and theme support.
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `loadFile(filepath, encoding='utf-8')` |  |
+| `setLang(lang)` |  |
+| `setTheme(theme)` |  |
+
+<!-- /generated:api-reference -->

@@ -488,3 +488,53 @@ app.exec_()
 ---
 
 The `QCustomQPushButton` provides a comprehensive solution for creating modern, interactive buttons with extensive customization options for animations, themes, icons, and shadows.
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `text` | `string` | — |
+| `icon` | `QIcon` | — |
+| `iconSize` | `QSize` | — |
+| `shortcut` | `QKeySequence` | — |
+| `checkable` | `bool` | — |
+| `checked` | `bool` | — |
+| `autoRepeat` | `bool` | — |
+| `autoExclusive` | `bool` | — |
+| `autoRepeatDelay` | `int` | — |
+| `autoRepeatInterval` | `int` | — |
+| `down` | `bool` | — |
+| `autoDefault` | `bool` | — |
+| `default` | `bool` | — |
+| `flat` | `bool` | — |
+| `variant` | `enum: `primary` / `secondary` / `outline` / `ghost` / `destructive`` | `primary` |
+| `sizeVariant` | `enum: `sm` / `md` / `lg`` | `md` |
+| `iconColor` | `color` | — |
+| `iconColorActive` | `color` | — |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `applyDefaultStyle()` |  |
+| `doNothing()` |  |
+| `iconColor(*args, **kwargs)` |  |
+| `iconColorActive(*args, **kwargs)` |  |
+| `removeButtonShadow()` |  |
+| `setIconSize(size)` |  |
+| `setObjectAnimateOn(trigger)` |  |
+| `setObjectAnimation(animation)` |  |
+| `setObjectCustomTheme(color1, color2)` |  |
+| `setObjectDefaultStyle(style)` |  |
+| `setObjectFallBackStyle(style)` |  |
+| `setObjectTheme(theme)` |  |
+| `sizeVariant(*args, **kwargs)` |  |
+| `variant(*args, **kwargs)` |  |
+
+<!-- /generated:api-reference -->

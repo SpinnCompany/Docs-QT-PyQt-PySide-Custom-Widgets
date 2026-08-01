@@ -452,3 +452,75 @@ prev_btn.clicked.connect(stacked.slideToPreviousWidget)
 ---
 
 The `QCustomQStackedWidget` is perfect for wizard interfaces, onboarding flows, settings panels, tabbed interfaces, and any application requiring smooth, animated transitions between different content pages.
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `frameShape` | `QFrame::Shape` | — |
+| `frameShadow` | `QFrame::Shadow` | — |
+| `lineWidth` | `int` | — |
+| `midLineWidth` | `int` | — |
+| `frameWidth` | `int` | — |
+| `frameRect` | `QRect` | — |
+| `currentIndex` | `int` | — |
+| `count` | `int` | — |
+| `fadeTransition` | `bool` | — |
+| `slideTransition` | `bool` | — |
+| `transitionDirection` | `Qt::Orientation` | — |
+| `transitionTime` | `int` | — |
+| `fadeTime` | `int` | — |
+| `fadeDelay` | `int` | — |
+| `fadeInTime` | `int` | — |
+| `fadeOutTime` | `int` | — |
+| `fadeInCurve` | `int` | — |
+| `fadeOutCurve` | `int` | — |
+| `transitionEasingCurve` | `int` | — |
+| `fadeEasingCurve` | `int` | — |
+
+### Signals
+
+| Signal |
+|---|
+| `transitionFinished()` |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `addWidget(widget)` | Add a widget to the stacked widget with proper opacity initialization. |
+| `fadeDelay(*args, **kwargs)` | Get the delay between fade out and fade in animations in milliseconds. |
+| `fadeEasingCurve(*args, **kwargs)` |  |
+| `fadeInCurve(*args, **kwargs)` |  |
+| `fadeInTime(*args, **kwargs)` | Get the fade in animation time in milliseconds. |
+| `fadeOutCurve(*args, **kwargs)` |  |
+| `fadeOutTime(*args, **kwargs)` | Get the fade out animation time in milliseconds. |
+| `fadeTime(*args, **kwargs)` | Get the total fade transition time in milliseconds. |
+| `fadeTransition(*args, **kwargs)` | Get the fade transition state. |
+| `setCurrentIndex(index)` | Set the current widget index with proper opacity handling. |
+| `setCurrentWidget(widget)` | Set the current widget with animation if enabled. |
+| `setFadeCurve(aesingCurve)` | Legacy method to set fade easing curve. |
+| `setFadeDelay(delay)` | Set the delay between fade out and fade in animations. |
+| `setFadeInOutCurves(fadeInCurve, fadeOutCurve)` | Set fade in and fade out easing curves separately. |
+| `setFadeInOutTimes(fadeInTime, fadeOutTime)` | Set fade in and fade out times separately. |
+| `setFadeSpeed(speed)` | Set the fade transition speed. |
+| `setTransitionDirection(direction)` | Set the transition direction. |
+| `setTransitionEasingCurve(aesingCurve)` | Set the easing curve for slide animations. |
+| `setTransitionSpeed(speed)` | Set the slide transition speed. |
+| `slideToNextWidget()` | Transition to the next widget with animation. |
+| `slideToPreviousWidget()` | Transition to the previous widget with animation. |
+| `slideToWidget(newWidget)` | Transition to a specific widget with animation. |
+| `slideToWidgetIndex(index)` | Transition to a specific widget index with animation. |
+| `slideTransition(*args, **kwargs)` | Get the slide transition state. |
+| `transitionDirection(*args, **kwargs)` | Slide transition direction. Exposed as Qt.Orientation so Qt |
+| `transitionEasingCurve(*args, **kwargs)` |  |
+| `transitionFinished(...)` |  |
+| `transitionTime(*args, **kwargs)` | Get the slide transition time in milliseconds. |
+
+<!-- /generated:api-reference -->

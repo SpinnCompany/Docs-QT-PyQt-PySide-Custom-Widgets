@@ -61,3 +61,47 @@ progress.progressBaseColor = QColor(255, 255, 255, 100)
 progress.textColor = QColor("#000000")
 progress.progressBarWidth = 10  # Must set programmatically
 ```
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `value` | `int` | — |
+| `minimum` | `int` | — |
+| `maximum` | `int` | — |
+| `textVisible` | `bool` | — |
+| `clockwise` | `bool` | — |
+| `animationDuration` | `int` | — |
+| `progressBarWidth` | `int` | — |
+| `progressColor` | `color` | — |
+| `progressBaseColor` | `color` | — |
+| `textColor` | `color` | — |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `animateTo(progress)` | Animates the progress bar to the specified progress percentage. |
+| `animationDuration(*args, **kwargs)` |  |
+| `calculateXR()` |  |
+| `clockwise(*args, **kwargs)` |  |
+| `draw()` |  |
+| `drawText()` |  |
+| `initPen(progressBarWidth)` |  |
+| `maximum(*args, **kwargs)` |  |
+| `minimum(*args, **kwargs)` |  |
+| `progressBarWidth(*args, **kwargs)` |  |
+| `progressBaseColor(*args, **kwargs)` |  |
+| `progressColor(*args, **kwargs)` |  |
+| `setValue(val)` |  |
+| `textColor(*args, **kwargs)` |  |
+| `textVisible(*args, **kwargs)` |  |
+| `value(*args, **kwargs)` |  |
+
+<!-- /generated:api-reference -->

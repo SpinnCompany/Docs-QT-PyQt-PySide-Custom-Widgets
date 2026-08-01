@@ -244,3 +244,54 @@ The progress bar automatically detects the application's theme state through `QC
 
 - **Design Consistency:**  
   Based on fluent design principles with smooth, continuous motion.
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `minimum` | `int` | — |
+| `maximum` | `int` | — |
+| `text` | `string` | — |
+| `value` | `int` | — |
+| `alignment` | `QFlags<Qt::AlignmentFlag>` | — |
+| `textVisible` | `bool` | — |
+| `orientation` | `Qt::Orientation` | — |
+| `invertedAppearance` | `bool` | — |
+| `textDirection` | `QProgressBar::Direction` | — |
+| `format` | `string` | — |
+| `shortPos` | `float` | — |
+| `longPos` | `float` | — |
+| `paused` | `bool` | — |
+| `customBarColor` | `color` | — |
+| `errorColor` | `color` | — |
+| `pausedColor` | `color` | — |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `barColor()` |  |
+| `customBarColor(*args, **kwargs)` |  |
+| `error()` |  |
+| `errorColor(*args, **kwargs)` |  |
+| `isError()` |  |
+| `isPaused()` |  |
+| `isStarted()` |  |
+| `longPos(*args, **kwargs)` |  |
+| `pause()` |  |
+| `paused(*args, **kwargs)` |  |
+| `pausedColor(*args, **kwargs)` |  |
+| `resume()` |  |
+| `setError(isError: bool)` |  |
+| `setPaused(isPaused: bool)` |  |
+| `shortPos(*args, **kwargs)` |  |
+| `start()` |  |
+| `stop()` |  |
+
+<!-- /generated:api-reference -->

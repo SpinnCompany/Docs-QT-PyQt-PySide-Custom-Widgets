@@ -169,3 +169,30 @@ if __name__ == "__main__":
   This widget is part of the **Custom_Widgets.LoadingIndicators** module and can be integrated into any Qt application using `qtpy` (compatible with PyQt and PySide).
 
 ---
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `frameShape` | `QFrame::Shape` | — |
+| `frameShadow` | `QFrame::Shadow` | — |
+| `lineWidth` | `int` | — |
+| `midLineWidth` | `int` | — |
+| `frameWidth` | `int` | — |
+| `frameRect` | `QRect` | — |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `calculateXR(level)` |  |
+| `draw()` |  |
+| `initPen(penWidth)` |  |
+
+<!-- /generated:api-reference -->

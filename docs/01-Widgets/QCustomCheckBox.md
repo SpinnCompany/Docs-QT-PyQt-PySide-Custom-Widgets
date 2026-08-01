@@ -328,3 +328,53 @@ loadJsonStyle(self, jsonFiles={"json-style.json"})
 ---
 
 The `QCustomCheckBox` is perfect for modern applications requiring sleek toggle switches, settings panels, preference dialogs, and any interface where visual appeal and smooth interactions are important.
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `text` | `string` | — |
+| `icon` | `QIcon` | — |
+| `iconSize` | `QSize` | — |
+| `shortcut` | `QKeySequence` | — |
+| `checkable` | `bool` | — |
+| `checked` | `bool` | — |
+| `autoRepeat` | `bool` | — |
+| `autoExclusive` | `bool` | — |
+| `autoRepeatDelay` | `int` | — |
+| `autoRepeatInterval` | `int` | — |
+| `down` | `bool` | — |
+| `tristate` | `bool` | — |
+| `backgroundColor` | `color` | — |
+| `circleColor` | `color` | — |
+| `activeColor` | `color` | — |
+| `animationDuration` | `int` | — |
+| `animationEasingCurve` | `int` | — |
+| `position` | `float` | — |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `activeColor(*args, **kwargs)` |  |
+| `adjustWidgetSize()` |  |
+| `animationDuration(*args, **kwargs)` |  |
+| `animationEasingCurve(*args, **kwargs)` | Easing as an int (a QEasingCurve.Type value). Accepts |
+| `backgroundColor(*args, **kwargs)` |  |
+| `circleColor(*args, **kwargs)` |  |
+| `customizeQCustomCheckBox(**customValues)` |  |
+| `hitButton(pos: PySide6.QtCore.QPoint)` |  |
+| `position(*args, **kwargs)` |  |
+| `setIcon(icon)` |  |
+| `setIconSize(size)` | Set the size of the icon for the checkbox. |
+| `setNewIcon(url)` |  |
+| `setText(text)` |  |
+| `setup_animation(value)` |  |
+
+<!-- /generated:api-reference -->

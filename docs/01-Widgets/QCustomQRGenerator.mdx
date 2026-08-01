@@ -570,3 +570,59 @@ qr_generator.embeddedImageIcon = QIcon("logo.png")  # Square PNG with transparen
 - **Video Tutorials**: [SPINN TV YouTube Channel](https://www.youtube.com/channel/UCJVsWdUC3M8p-q67RXPujkg)
 
 The `QCustomQRGenerator` provides enterprise-grade QR code generation with extensive customization options, making it perfect for branding, marketing materials, and professional applications.
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Properties
+
+| Property | Type | Default |
+|---|---|---|
+| `data` | `string` | — |
+| `version` | `int` | — |
+| `errorCorrection` | `string` | — |
+| `boxSize` | `int` | — |
+| `border` | `int` | — |
+| `fillColor` | `color` | — |
+| `backgroundColor` | `color` | — |
+| `cacheEnabled` | `bool` | — |
+| `moduleDrawer` | `string` | — |
+| `colorMask` | `string` | — |
+| `gradientStartColor` | `color` | — |
+| `gradientEndColor` | `color` | — |
+| `sizeRatio` | `float` | — |
+| `embedImage` | `bool` | — |
+| `embeddedImageIcon` | `QIcon` | — |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `backgroundColor(*args, **kwargs)` |  |
+| `border(*args, **kwargs)` |  |
+| `boxSize(*args, **kwargs)` |  |
+| `cacheEnabled(*args, **kwargs)` |  |
+| `clearCache()` | Clear the QR code cache. |
+| `colorMask(*args, **kwargs)` |  |
+| `copyToClipboard()` | Copy the QR code to clipboard. |
+| `data(*args, **kwargs)` |  |
+| `embedImage(*args, **kwargs)` |  |
+| `embeddedImageIcon(*args, **kwargs)` |  |
+| `errorCorrection(*args, **kwargs)` |  |
+| `fillColor(*args, **kwargs)` |  |
+| `generateQRCode()` | Generate the QR code pixmap and set it to the QLabel. |
+| `getQRCodePixmap()` | Get the current QR code as QPixmap. |
+| `gradientEndColor(*args, **kwargs)` |  |
+| `gradientStartColor(*args, **kwargs)` |  |
+| `moduleDrawer(*args, **kwargs)` |  |
+| `refreshQRCode()` | Refresh QR code when theme changes, only if colors are from palette. |
+| `resizeQR()` | Scale pixmap to fit while maintaining aspect ratio |
+| `saveQRCode(file_path=None)` | Save the generated QR code to file. |
+| `setEmbeddedImageFromFileDialog()` | Open a file dialog to set the embedded image. |
+| `sizeRatio(*args, **kwargs)` |  |
+| `version(*args, **kwargs)` |  |
+
+<!-- /generated:api-reference -->
