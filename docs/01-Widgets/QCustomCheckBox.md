@@ -2,7 +2,7 @@
 
 `QCustomCheckBox` is a custom animated checkbox widget that provides a modern, switch-like interface with smooth transitions and customizable styling. It extends Qt's standard `QCheckBox` with enhanced visual effects and animation capabilities.
 
-![Qt Custom checkbox](/img/showcase/switch.png)
+![Qt Custom checkbox](/img/showcase/switch.gif)
 
 ---
 

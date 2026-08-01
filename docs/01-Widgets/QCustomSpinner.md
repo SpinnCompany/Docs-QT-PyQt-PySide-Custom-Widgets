@@ -12,7 +12,7 @@
 
 ---
 
-![QCustomSpinner screenshot](/img/showcase/spinner.png)
+![QCustomSpinner screenshot](/img/showcase/spinner.gif)
 
 
 ## Features

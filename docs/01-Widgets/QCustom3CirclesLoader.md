@@ -1,6 +1,6 @@
 # QCustom3CirclesLoader
 
-![QCustom3CirclesLoader](/img/showcase/3circlesloader.png)
+![QCustom3CirclesLoader](/img/showcase/3circlesloader.gif)
 
 > **Copyright 2021**  
 > by Parham Oyan and Oleg Frolov  

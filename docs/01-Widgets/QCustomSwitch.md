@@ -1,6 +1,6 @@
 # QCustomSwitch
 
-![QCustomSwitch screenshot](/img/showcase/switch.png)
+![QCustomSwitch screenshot](/img/showcase/switch.gif)
 
 `QCustomSwitch` is an on/off **toggle switch** — a painted, iOS/Material-style
 sliding control with an animated thumb. Its colours come from the design tokens,

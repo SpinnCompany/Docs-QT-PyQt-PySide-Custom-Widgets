@@ -1,6 +1,6 @@
 # QCustomPerlinLoader
 
-![QCustomPerlinLoader](/img/showcase/perlinloader.png)
+![QCustomPerlinLoader](/img/showcase/perlinloader.gif)
 
 > **Reference Video:** [YouTube](https://www.youtube.com/watch?v=daVpOpvsCKQ&t=20s)  
 > **All Rights Reserved**  

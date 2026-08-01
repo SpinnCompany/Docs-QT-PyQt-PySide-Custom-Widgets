@@ -1,6 +1,6 @@
 # QCustomArcLoader
 
-![QCustomArcLoader](/img/showcase/arcloader.png)
+![QCustomArcLoader](/img/showcase/arcloader.gif)
 
 > **Copyright 2021**  
 > by Parham Oyan and Oleg Frolov  
