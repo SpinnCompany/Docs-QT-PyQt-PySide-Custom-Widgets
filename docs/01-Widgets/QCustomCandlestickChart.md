@@ -17,8 +17,6 @@ sidebar_class_name: sidebar-pro
 
 :::
 
-![QCustomCandlestickChart](/img/showcase/candlestickchart.png)
-
 A painted OHLC / candlestick price chart.
 
 Each candle is one period: a filled body spanning open->close and a wick
@@ -51,12 +49,6 @@ from Custom_Widgets.QCustomCandlestickChart import QCustomCandlestickChart
 
 widget = QCustomCandlestickChart()
 ```
-
-## Dark theme
-
-Colours come from the design tokens, so the widget follows the app theme with no extra work.
-
-![QCustomCandlestickChart in dark theme](/img/showcase/candlestickchart-dark.png)
 
 ## Properties
 

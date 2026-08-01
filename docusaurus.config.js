@@ -166,7 +166,7 @@ const config = {
             items: [
               {
                 label: 'Widget Gallery',
-                to: '/Widgets/QCustomQMainWindow',
+                to: '/gallery',
               },
               {
                 label: 'Examples',
@@ -215,7 +215,7 @@ const config = {
               },
               {
                 label: 'Widget Gallery',
-                to: '/Widgets/QCustomQMainWindow',
+                to: '/gallery',
               },
               {
                 label: 'Theming Guide',

@@ -8,8 +8,6 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomForm
 
-![QCustomForm](/img/showcase/form.png)
-
 Minimal form container with validation and submit signals.
 
 ## At a glance
@@ -27,12 +25,6 @@ from Custom_Widgets.QCustomForm import QCustomForm
 
 widget = QCustomForm()
 ```
-
-## Dark theme
-
-Colours come from the design tokens, so the widget follows the app theme with no extra work.
-
-![QCustomForm in dark theme](/img/showcase/form-dark.png)
 
 ## Signals
 

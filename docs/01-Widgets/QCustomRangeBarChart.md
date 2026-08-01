@@ -17,8 +17,6 @@ sidebar_class_name: sidebar-pro
 
 :::
 
-![QCustomRangeBarChart](/img/showcase/rangebarchart.png)
-
 A painted floating-bar / range chart.
 
 Each bar spans a low-to-high pair rather than sitting on a baseline: a
@@ -51,12 +49,6 @@ from Custom_Widgets.QCustomRangeBarChart import QCustomRangeBarChart
 
 widget = QCustomRangeBarChart()
 ```
-
-## Dark theme
-
-Colours come from the design tokens, so the widget follows the app theme with no extra work.
-
-![QCustomRangeBarChart in dark theme](/img/showcase/rangebarchart-dark.png)
 
 ## Properties
 

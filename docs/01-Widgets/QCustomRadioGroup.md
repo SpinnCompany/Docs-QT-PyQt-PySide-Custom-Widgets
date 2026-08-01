@@ -8,7 +8,7 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomRadioGroup
 
-![QCustomRadioGroup](/img/showcase/radiogroup.png)
+![QCustomRadioGroup](/img/showcase/radiogroup.gif)
 
 A labelled set of single-choice options.
 
@@ -46,7 +46,7 @@ widget = QCustomRadioGroup()
 
 Colours come from the design tokens, so the widget follows the app theme with no extra work.
 
-![QCustomRadioGroup in dark theme](/img/showcase/radiogroup-dark.png)
+![QCustomRadioGroup in dark theme](/img/showcase/radiogroup-dark.gif)
 
 ## Properties
 

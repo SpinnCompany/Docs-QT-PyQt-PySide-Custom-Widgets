@@ -8,7 +8,7 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomChatList
 
-![QCustomChatList](/img/showcase/chatlist.png)
+![QCustomChatList](/img/showcase/chatlist.gif)
 
 A data-driven conversation list.
 
@@ -42,7 +42,7 @@ widget = QCustomChatList()
 
 Colours come from the design tokens, so the widget follows the app theme with no extra work.
 
-![QCustomChatList in dark theme](/img/showcase/chatlist-dark.png)
+![QCustomChatList in dark theme](/img/showcase/chatlist-dark.gif)
 
 ## Properties
 

@@ -8,7 +8,7 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomAreaChart
 
-![QCustomAreaChart](/img/showcase/areachart.png)
+![QCustomAreaChart](/img/showcase/areachart.gif)
 
 Area chart implementation using the modular architecture.
 
@@ -39,7 +39,7 @@ That is the exact code behind the screenshot above.
 
 Colours come from the design tokens, so the widget follows the app theme with no extra work.
 
-![QCustomAreaChart in dark theme](/img/showcase/areachart-dark.png)
+![QCustomAreaChart in dark theme](/img/showcase/areachart-dark.gif)
 
 ## Properties
 

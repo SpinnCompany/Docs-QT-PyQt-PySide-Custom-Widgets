@@ -8,7 +8,7 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomHeaderNav
 
-![QCustomHeaderNav](/img/showcase/headernav.png)
+![QCustomHeaderNav](/img/showcase/headernav.gif)
 
 A horizontal top navigation bar.
 
@@ -48,7 +48,7 @@ widget = QCustomHeaderNav()
 
 Colours come from the design tokens, so the widget follows the app theme with no extra work.
 
-![QCustomHeaderNav in dark theme](/img/showcase/headernav-dark.png)
+![QCustomHeaderNav in dark theme](/img/showcase/headernav-dark.gif)
 
 ## Properties
 

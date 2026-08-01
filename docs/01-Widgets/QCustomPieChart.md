@@ -8,7 +8,7 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomPieChart
 
-![QCustomPieChart](/img/showcase/piechart.png)
+![QCustomPieChart](/img/showcase/piechart.gif)
 
 Pie chart implementation using the modular architecture.
 
@@ -39,7 +39,7 @@ That is the exact code behind the screenshot above.
 
 Colours come from the design tokens, so the widget follows the app theme with no extra work.
 
-![QCustomPieChart in dark theme](/img/showcase/piechart-dark.png)
+![QCustomPieChart in dark theme](/img/showcase/piechart-dark.gif)
 
 ## Properties
 

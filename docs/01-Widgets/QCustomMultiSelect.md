@@ -8,8 +8,6 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomMultiSelect
 
-![QCustomMultiSelect](/img/showcase/multiselect.png)
-
 A multiple-choice field with chips.
 
 A closed field that paints the current selection as removable chips, and a
@@ -41,12 +39,6 @@ from Custom_Widgets.QCustomMultiSelect import QCustomMultiSelect
 
 widget = QCustomMultiSelect()
 ```
-
-## Dark theme
-
-Colours come from the design tokens, so the widget follows the app theme with no extra work.
-
-![QCustomMultiSelect in dark theme](/img/showcase/multiselect-dark.png)
 
 ## Properties
 

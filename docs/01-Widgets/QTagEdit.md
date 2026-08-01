@@ -8,7 +8,7 @@ mdx:
 <!-- generated:widget-reference -->
 # QTagEdit
 
-![QTagEdit](/img/showcase/tagedit.png)
+![QTagEdit](/img/showcase/tagedit.gif)
 
 A tag based edit
 
@@ -36,7 +36,7 @@ That is the exact code behind the screenshot above.
 
 Colours come from the design tokens, so the widget follows the app theme with no extra work.
 
-![QTagEdit in dark theme](/img/showcase/tagedit-dark.png)
+![QTagEdit in dark theme](/img/showcase/tagedit-dark.gif)
 
 ## Properties
 

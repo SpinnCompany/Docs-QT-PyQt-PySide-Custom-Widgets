@@ -58,7 +58,7 @@ widget box — no promotion step required.
 > `QPushButton`, **Promoted class name** `QCustomQPushButton`, and **Header
 > file** `Custom_Widgets.QCustomQPushButton.h`.
 
-![QT Designer Promotion](https://github.com/SpinnCompany/Docs-QT-PyQt-PySide-Custom-Widgets/blob/main/images/1.png?raw=true)
+![QT Designer Promotion](/img/showcase/qpushbutton.png)
 
 ### 2. Basic Usage
 

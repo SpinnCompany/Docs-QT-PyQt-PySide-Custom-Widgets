@@ -17,6 +17,8 @@ sidebar_class_name: sidebar-pro
 
 :::
 
+![QCustomSankey](/img/showcase/sankey.png)
+
 A painted Sankey flow diagram.
 
 Nodes in columns joined by ribbons whose thickness is the quantity flowing.
@@ -51,6 +53,12 @@ from Custom_Widgets.QCustomSankey import QCustomSankey
 
 widget = QCustomSankey()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomSankey in dark theme](/img/showcase/sankey-dark.png)
 
 ## Properties
 

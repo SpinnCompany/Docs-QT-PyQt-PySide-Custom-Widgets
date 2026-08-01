@@ -343,7 +343,7 @@ app.exec_()
 ---
 
 
-![Custom Qt Progress Bar](https://github.com/SpinnCompany/Docs-QT-PyQt-PySide-Custom-Widgets/blob/main/images/19.png?raw=true)
+
 
 # Customize Your QMainWindow
 

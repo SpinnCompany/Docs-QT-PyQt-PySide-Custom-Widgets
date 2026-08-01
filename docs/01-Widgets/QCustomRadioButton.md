@@ -8,7 +8,7 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomRadioButton
 
-![QCustomRadioButton](/img/showcase/radiobutton.png)
+![QCustomRadioButton](/img/showcase/radiobutton.gif)
 
 A painted single-choice radio button.
 
@@ -46,7 +46,7 @@ widget = QCustomRadioButton()
 
 Colours come from the design tokens, so the widget follows the app theme with no extra work.
 
-![QCustomRadioButton in dark theme](/img/showcase/radiobutton-dark.png)
+![QCustomRadioButton in dark theme](/img/showcase/radiobutton-dark.gif)
 
 ## Properties
 

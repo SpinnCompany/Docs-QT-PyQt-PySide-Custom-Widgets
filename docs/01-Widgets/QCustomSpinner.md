@@ -14,7 +14,6 @@
 
 ![QCustomSpinner screenshot](/img/showcase/spinner.gif)
 
-
 ## Features
 
 - **Customizable Appearance:**  

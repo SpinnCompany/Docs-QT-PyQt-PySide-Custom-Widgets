@@ -8,8 +8,6 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomButtonGroup
 
-![QCustomButtonGroup](/img/showcase/buttongroup.png)
-
 An accessible button group (radio-style or checkbox-style selection).
 
 Wraps QButtonGroup with a tokenized, variant-aware presentation:
@@ -40,12 +38,6 @@ widget.setSelectedId(1)
 ```
 
 That is the exact code behind the screenshot above.
-
-## Dark theme
-
-Colours come from the design tokens, so the widget follows the app theme with no extra work.
-
-![QCustomButtonGroup in dark theme](/img/showcase/buttongroup-dark.png)
 
 ## Properties
 

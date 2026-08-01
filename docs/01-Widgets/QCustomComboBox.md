@@ -8,7 +8,7 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomComboBox
 
-![QCustomComboBox](/img/showcase/combobox.png)
+![QCustomComboBox](/img/showcase/combobox.gif)
 
 A searchable / autocomplete select.
 
@@ -41,7 +41,7 @@ widget = QCustomComboBox()
 
 Colours come from the design tokens, so the widget follows the app theme with no extra work.
 
-![QCustomComboBox in dark theme](/img/showcase/combobox-dark.png)
+![QCustomComboBox in dark theme](/img/showcase/combobox-dark.gif)
 
 ## Properties
 

@@ -8,7 +8,7 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomVerificationCode
 
-![QCustomVerificationCode](/img/showcase/verificationcode.png)
+![QCustomVerificationCode](/img/showcase/verificationcode.gif)
 
 A segmented one-time-code input.
 
@@ -46,7 +46,7 @@ widget = QCustomVerificationCode()
 
 Colours come from the design tokens, so the widget follows the app theme with no extra work.
 
-![QCustomVerificationCode in dark theme](/img/showcase/verificationcode-dark.png)
+![QCustomVerificationCode in dark theme](/img/showcase/verificationcode-dark.gif)
 
 ## Properties
 

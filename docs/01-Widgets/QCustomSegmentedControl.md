@@ -8,7 +8,7 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomSegmentedControl
 
-![QCustomSegmentedControl](/img/showcase/segmentedcontrol.png)
+![QCustomSegmentedControl](/img/showcase/segmentedcontrol.gif)
 
 A single-select connected button group.
 
@@ -36,7 +36,7 @@ widget = QCustomSegmentedControl()
 
 Colours come from the design tokens, so the widget follows the app theme with no extra work.
 
-![QCustomSegmentedControl in dark theme](/img/showcase/segmentedcontrol-dark.png)
+![QCustomSegmentedControl in dark theme](/img/showcase/segmentedcontrol-dark.gif)
 
 ## Properties
 

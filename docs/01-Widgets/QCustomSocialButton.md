@@ -8,7 +8,7 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomSocialButton
 
-![QCustomSocialButton](/img/showcase/socialbutton.png)
+![QCustomSocialButton](/img/showcase/socialbutton.gif)
 
 A brand-coloured sign-in / share button.
 
@@ -44,7 +44,7 @@ widget = QCustomSocialButton()
 
 Colours come from the design tokens, so the widget follows the app theme with no extra work.
 
-![QCustomSocialButton in dark theme](/img/showcase/socialbutton-dark.png)
+![QCustomSocialButton in dark theme](/img/showcase/socialbutton-dark.gif)
 
 ## Properties
 

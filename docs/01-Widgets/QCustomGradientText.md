@@ -8,8 +8,6 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomGradientText
 
-![QCustomGradientText](/img/showcase/gradienttext.png)
-
 Text filled with a gradient.
 
 The headline treatment every landing page wants and QSS cannot do: Qt
@@ -38,12 +36,6 @@ from Custom_Widgets.QCustomGradientText import QCustomGradientText
 
 widget = QCustomGradientText()
 ```
-
-## Dark theme
-
-Colours come from the design tokens, so the widget follows the app theme with no extra work.
-
-![QCustomGradientText in dark theme](/img/showcase/gradienttext-dark.png)
 
 ## Properties
 

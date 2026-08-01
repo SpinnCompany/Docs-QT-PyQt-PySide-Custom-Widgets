@@ -17,7 +17,7 @@ sidebar_class_name: sidebar-pro
 
 :::
 
-![QCustomRichTextEditor](/img/showcase/richtexteditor.png)
+![QCustomRichTextEditor](/img/showcase/richtexteditor.gif)
 
 A WYSIWYG rich-text editor.
 
@@ -45,7 +45,7 @@ widget = QCustomRichTextEditor()
 
 Colours come from the design tokens, so the widget follows the app theme with no extra work.
 
-![QCustomRichTextEditor in dark theme](/img/showcase/richtexteditor-dark.png)
+![QCustomRichTextEditor in dark theme](/img/showcase/richtexteditor-dark.gif)
 
 ## Signals
 

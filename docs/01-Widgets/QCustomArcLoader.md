@@ -16,7 +16,7 @@
 
 ---
 
-![QCustomArcLoader GIF](https://github.com/SpinnCompany/Docs-QT-PyQt-PySide-Custom-Widgets/raw/main/images/custom-arc-loader.gif)
+![QCustomArcLoader GIF](/img/showcase/arcloader.gif)
 
 
 ## Key Features

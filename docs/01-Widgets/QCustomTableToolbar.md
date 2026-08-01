@@ -17,7 +17,7 @@ sidebar_class_name: sidebar-pro
 
 :::
 
-![QCustomTableToolbar](/img/showcase/tabletoolbar.png)
+![QCustomTableToolbar](/img/showcase/tabletoolbar.gif)
 
 A rich filter/search bar for data tables.
 
@@ -56,7 +56,7 @@ widget = QCustomTableToolbar()
 
 Colours come from the design tokens, so the widget follows the app theme with no extra work.
 
-![QCustomTableToolbar in dark theme](/img/showcase/tabletoolbar-dark.png)
+![QCustomTableToolbar in dark theme](/img/showcase/tabletoolbar-dark.gif)
 
 ## Signals
 

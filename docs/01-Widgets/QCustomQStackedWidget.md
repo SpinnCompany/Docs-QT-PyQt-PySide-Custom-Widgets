@@ -2,7 +2,7 @@
 
 `QCustomQStackedWidget` is an enhanced version of Qt's standard `QStackedWidget` that provides smooth animated transitions between pages. It supports both slide and fade animations with customizable timing and easing curves.
 
-![Custom QStacked Widgets](https://github.com/SpinnCompany/Docs-QT-PyQt-PySide-Custom-Widgets/blob/main/images/qstacked.png?raw=true)
+
 
 ---
 

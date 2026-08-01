@@ -8,7 +8,7 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomModal
 
-![QCustomModal](/img/showcase/modal.png)
+![QCustomModal](/img/showcase/modal.gif)
 
 A modern centered modal dialog with a dim backdrop.
 
@@ -43,7 +43,7 @@ widget = QCustomModal()
 
 Colours come from the design tokens, so the widget follows the app theme with no extra work.
 
-![QCustomModal in dark theme](/img/showcase/modal-dark.png)
+![QCustomModal in dark theme](/img/showcase/modal-dark.gif)
 
 ## Signals
 

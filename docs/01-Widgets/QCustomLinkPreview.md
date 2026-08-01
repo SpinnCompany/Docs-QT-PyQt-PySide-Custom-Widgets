@@ -8,8 +8,6 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomLinkPreview
 
-![QCustomLinkPreview](/img/showcase/linkpreview.png)
-
 A shared-link preview card.
 
 The row seen under the "Links" tab: a rounded thumbnail (a real favicon /
@@ -35,12 +33,6 @@ from Custom_Widgets.QCustomLinkPreview import QCustomLinkPreview
 
 widget = QCustomLinkPreview()
 ```
-
-## Dark theme
-
-Colours come from the design tokens, so the widget follows the app theme with no extra work.
-
-![QCustomLinkPreview in dark theme](/img/showcase/linkpreview-dark.png)
 
 ## Properties
 

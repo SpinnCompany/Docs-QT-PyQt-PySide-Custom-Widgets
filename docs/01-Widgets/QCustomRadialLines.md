@@ -17,8 +17,6 @@ sidebar_class_name: sidebar-pro
 
 :::
 
-![QCustomRadialLines](/img/showcase/radiallines.png)
-
 A painted polar line chart.
 
 A line chart wrapped onto a circle: the x axis is angular, so the series
@@ -61,12 +59,6 @@ widget.setSeries([("Model A", [8, 6, 7, 9, 5, 6]),
 ```
 
 That is the exact code behind the screenshot above.
-
-## Dark theme
-
-Colours come from the design tokens, so the widget follows the app theme with no extra work.
-
-![QCustomRadialLines in dark theme](/img/showcase/radiallines-dark.png)
 
 ## Properties
 

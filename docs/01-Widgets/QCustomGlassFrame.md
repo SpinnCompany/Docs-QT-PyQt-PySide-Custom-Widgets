@@ -8,8 +8,6 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomGlassFrame
 
-![QCustomGlassFrame](/img/showcase/glassframe.png)
-
 A GLASSMORPHISM / "liquid glass" container.
 
 A rounded container that composites a BLURRED copy of the content behind
@@ -51,12 +49,6 @@ from Custom_Widgets.QCustomGlassFrame import QCustomGlassFrame
 
 widget = QCustomGlassFrame()
 ```
-
-## Dark theme
-
-Colours come from the design tokens, so the widget follows the app theme with no extra work.
-
-![QCustomGlassFrame in dark theme](/img/showcase/glassframe-dark.png)
 
 ## Properties
 

@@ -8,7 +8,7 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomTextArea
 
-![QCustomTextArea](/img/showcase/textarea.png)
+![QCustomTextArea](/img/showcase/textarea.gif)
 
 A multi-line text input.
 
@@ -49,7 +49,7 @@ widget = QCustomTextArea()
 
 Colours come from the design tokens, so the widget follows the app theme with no extra work.
 
-![QCustomTextArea in dark theme](/img/showcase/textarea-dark.png)
+![QCustomTextArea in dark theme](/img/showcase/textarea-dark.gif)
 
 ## Properties
 

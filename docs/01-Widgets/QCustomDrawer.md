@@ -8,7 +8,7 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomDrawer
 
-![QCustomDrawer](/img/showcase/drawer.png)
+![QCustomDrawer](/img/showcase/drawer.gif)
 
 A slide-in side panel / sheet.
 
@@ -39,7 +39,7 @@ widget = QCustomDrawer()
 
 Colours come from the design tokens, so the widget follows the app theme with no extra work.
 
-![QCustomDrawer in dark theme](/img/showcase/drawer-dark.png)
+![QCustomDrawer in dark theme](/img/showcase/drawer-dark.gif)
 
 ## Signals
 

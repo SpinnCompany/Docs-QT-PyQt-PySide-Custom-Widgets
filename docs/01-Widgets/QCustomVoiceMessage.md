@@ -8,8 +8,6 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomVoiceMessage
 
-![QCustomVoiceMessage](/img/showcase/voicemessage.png)
-
 A voice / audio message with a scrubber waveform.
 
 The audio row seen inside a chat bubble: a circular play / pause button, a
@@ -35,12 +33,6 @@ from Custom_Widgets.QCustomVoiceMessage import QCustomVoiceMessage
 
 widget = QCustomVoiceMessage()
 ```
-
-## Dark theme
-
-Colours come from the design tokens, so the widget follows the app theme with no extra work.
-
-![QCustomVoiceMessage in dark theme](/img/showcase/voicemessage-dark.png)
 
 ## Properties
 

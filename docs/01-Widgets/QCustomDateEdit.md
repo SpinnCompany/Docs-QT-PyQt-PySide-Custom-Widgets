@@ -8,7 +8,7 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomDateEdit
 
-![QCustomDateEdit](/img/showcase/dateedit.png)
+![QCustomDateEdit](/img/showcase/dateedit.gif)
 
 / QCustomTimeEdit / QCustomDateRangeEdit
 
@@ -37,7 +37,7 @@ widget = QCustomDateEdit()
 
 Colours come from the design tokens, so the widget follows the app theme with no extra work.
 
-![QCustomDateEdit in dark theme](/img/showcase/dateedit-dark.png)
+![QCustomDateEdit in dark theme](/img/showcase/dateedit-dark.gif)
 
 ## Properties
 

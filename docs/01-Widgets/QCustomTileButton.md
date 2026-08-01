@@ -8,7 +8,7 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomTileButton
 
-![QCustomTileButton](/img/showcase/tilebutton.png)
+![QCustomTileButton](/img/showcase/tilebutton.gif)
 
 A selectable device / action TILE.
 
@@ -44,7 +44,7 @@ widget = QCustomTileButton()
 
 Colours come from the design tokens, so the widget follows the app theme with no extra work.
 
-![QCustomTileButton in dark theme](/img/showcase/tilebutton-dark.png)
+![QCustomTileButton in dark theme](/img/showcase/tilebutton-dark.gif)
 
 ## Properties
 

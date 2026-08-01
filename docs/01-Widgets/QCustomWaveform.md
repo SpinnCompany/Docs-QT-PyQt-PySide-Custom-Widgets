@@ -8,8 +8,6 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomWaveform
 
-![QCustomWaveform](/img/showcase/waveform.png)
-
 A standalone audio-bars / streaming-line visualiser.
 
 Two modes (`mode`):
@@ -42,12 +40,6 @@ from Custom_Widgets.QCustomWaveform import QCustomWaveform
 
 widget = QCustomWaveform()
 ```
-
-## Dark theme
-
-Colours come from the design tokens, so the widget follows the app theme with no extra work.
-
-![QCustomWaveform in dark theme](/img/showcase/waveform-dark.png)
 
 ## Properties
 

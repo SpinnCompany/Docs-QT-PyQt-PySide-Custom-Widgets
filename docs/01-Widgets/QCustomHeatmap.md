@@ -17,8 +17,6 @@ sidebar_class_name: sidebar-pro
 
 :::
 
-![QCustomHeatmap](/img/showcase/heatmap.png)
-
 A painted colour-intensity grid.
 
 Two modes (`mode`):
@@ -62,12 +60,6 @@ widget.setColors("#dbeafe", "#1d4ed8", "#f1f5f9")
 ```
 
 That is the exact code behind the screenshot above.
-
-## Dark theme
-
-Colours come from the design tokens, so the widget follows the app theme with no extra work.
-
-![QCustomHeatmap in dark theme](/img/showcase/heatmap-dark.png)
 
 ## Properties
 

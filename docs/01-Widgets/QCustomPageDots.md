@@ -8,8 +8,6 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomPageDots
 
-![QCustomPageDots](/img/showcase/pagedots.png)
-
 A carousel / pager page indicator.
 
 A row (or column) of dots where the active page is drawn as an elongated
@@ -32,12 +30,6 @@ from Custom_Widgets.QCustomPageDots import QCustomPageDots
 
 widget = QCustomPageDots()
 ```
-
-## Dark theme
-
-Colours come from the design tokens, so the widget follows the app theme with no extra work.
-
-![QCustomPageDots in dark theme](/img/showcase/pagedots-dark.png)
 
 ## Properties
 

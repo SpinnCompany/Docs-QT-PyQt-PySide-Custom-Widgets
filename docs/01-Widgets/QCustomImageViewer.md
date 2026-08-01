@@ -17,8 +17,6 @@ sidebar_class_name: sidebar-pro
 
 :::
 
-![QCustomImageViewer](/img/showcase/imageviewer.png)
-
 A modal lightbox for a gallery of images.
 
 A frameless overlay that covers its host window with a dark scrim and
@@ -45,12 +43,6 @@ from Custom_Widgets.QCustomImageViewer import QCustomImageViewer
 
 widget = QCustomImageViewer()
 ```
-
-## Dark theme
-
-Colours come from the design tokens, so the widget follows the app theme with no extra work.
-
-![QCustomImageViewer in dark theme](/img/showcase/imageviewer-dark.png)
 
 ## Properties
 

@@ -16,7 +16,7 @@ sidebar_class_name: sidebar-pro
 
 `QCustomCodeEditor` is a powerful, syntax-highlighting code editor widget that provides professional code editing capabilities with theme support, line numbering, and multiple programming language syntax highlighting.
 
-![Custom Code Editor GIF](https://github.com/SpinnCompany/Docs-QT-PyQt-PySide-Custom-Widgets/raw/main/images/custom-code-editor.gif)
+![Custom Code Editor GIF](/img/showcase/codeeditor.png)
 
 ---
 

@@ -8,7 +8,7 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomInput
 
-![QCustomInput](/img/showcase/input.png)
+![QCustomInput](/img/showcase/input.gif)
 
 A modern text input with design-token variants and sizes.
 
@@ -39,7 +39,7 @@ widget = QCustomInput()
 
 Colours come from the design tokens, so the widget follows the app theme with no extra work.
 
-![QCustomInput in dark theme](/img/showcase/input-dark.png)
+![QCustomInput in dark theme](/img/showcase/input-dark.gif)
 
 ## Properties
 

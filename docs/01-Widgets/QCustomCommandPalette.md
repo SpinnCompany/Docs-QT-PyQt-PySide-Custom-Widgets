@@ -8,7 +8,7 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomCommandPalette
 
-![QCustomCommandPalette](/img/showcase/commandpalette.png)
+![QCustomCommandPalette](/img/showcase/commandpalette.gif)
 
 A fuzzy-searchable command launcher (Ctrl/Cmd+K).
 
@@ -42,7 +42,7 @@ widget = QCustomCommandPalette()
 
 Colours come from the design tokens, so the widget follows the app theme with no extra work.
 
-![QCustomCommandPalette in dark theme](/img/showcase/commandpalette-dark.png)
+![QCustomCommandPalette in dark theme](/img/showcase/commandpalette-dark.gif)
 
 ## Signals
 

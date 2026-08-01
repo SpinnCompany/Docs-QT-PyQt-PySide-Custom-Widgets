@@ -8,8 +8,6 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomMessageStatus
 
-![QCustomMessageStatus](/img/showcase/messagestatus.png)
-
 A delivery-state tick indicator.
 
 The little "read receipt" ticks next to an outgoing message's time:
@@ -36,12 +34,6 @@ from Custom_Widgets.QCustomMessageStatus import QCustomMessageStatus
 
 widget = QCustomMessageStatus()
 ```
-
-## Dark theme
-
-Colours come from the design tokens, so the widget follows the app theme with no extra work.
-
-![QCustomMessageStatus in dark theme](/img/showcase/messagestatus-dark.png)
 
 ## Properties
 

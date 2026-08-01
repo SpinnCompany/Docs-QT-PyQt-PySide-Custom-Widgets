@@ -8,8 +8,6 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomImagePicker
 
-![QCustomImagePicker](/img/showcase/imagepicker.png)
-
 A drop / browse image field with a live preview.
 
 The avatar-or-cover upload control: an empty dashed target that accepts a
@@ -40,12 +38,6 @@ from Custom_Widgets.QCustomImagePicker import QCustomImagePicker
 
 widget = QCustomImagePicker()
 ```
-
-## Dark theme
-
-Colours come from the design tokens, so the widget follows the app theme with no extra work.
-
-![QCustomImagePicker in dark theme](/img/showcase/imagepicker-dark.png)
 
 ## Properties
 

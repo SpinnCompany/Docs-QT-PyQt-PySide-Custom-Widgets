@@ -8,7 +8,7 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomRadialGauge
 
-![QCustomRadialGauge](/img/showcase/radialgauge.png)
+![QCustomRadialGauge](/img/showcase/radialgauge.gif)
 
 A modern painted gauge (the gauge FAMILY in one widget).
 
@@ -52,7 +52,7 @@ widget = QCustomRadialGauge()
 
 Colours come from the design tokens, so the widget follows the app theme with no extra work.
 
-![QCustomRadialGauge in dark theme](/img/showcase/radialgauge-dark.png)
+![QCustomRadialGauge in dark theme](/img/showcase/radialgauge-dark.gif)
 
 ## Properties
 

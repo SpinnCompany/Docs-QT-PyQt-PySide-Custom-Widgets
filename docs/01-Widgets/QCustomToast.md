@@ -8,7 +8,7 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomToast
 
-![QCustomToast](/img/showcase/toast.png)
+![QCustomToast](/img/showcase/toast.gif)
 
 Non-blocking, auto-dismissing, corner-stacked
 
@@ -41,7 +41,7 @@ widget = QCustomToast()
 
 Colours come from the design tokens, so the widget follows the app theme with no extra work.
 
-![QCustomToast in dark theme](/img/showcase/toast-dark.png)
+![QCustomToast in dark theme](/img/showcase/toast-dark.gif)
 
 ## Properties
 

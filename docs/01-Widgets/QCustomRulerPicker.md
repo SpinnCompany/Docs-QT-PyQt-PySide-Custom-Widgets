@@ -8,7 +8,7 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomRulerPicker
 
-![QCustomRulerPicker](/img/showcase/rulerpicker.png)
+![QCustomRulerPicker](/img/showcase/rulerpicker.gif)
 
 A numbered tick-ruler value selector.
 
@@ -51,7 +51,7 @@ That is the exact code behind the screenshot above.
 
 Colours come from the design tokens, so the widget follows the app theme with no extra work.
 
-![QCustomRulerPicker in dark theme](/img/showcase/rulerpicker-dark.png)
+![QCustomRulerPicker in dark theme](/img/showcase/rulerpicker-dark.gif)
 
 ## Properties
 

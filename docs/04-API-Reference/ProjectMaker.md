@@ -1,7 +1,7 @@
 # Projectmaker
 
 
-![Custom Analog Gauge](https://github.com/SpinnCompany/Docs-QT-PyQt-PySide-Custom-Widgets/blob/main/images/qt-pyqt-pyside-project-maker.png?raw=true)
+
 
 ## Project Builder/Project Setup Wizard
 
@@ -15,7 +15,7 @@ This wizard will:
 - Create the main file
 - Create the json stylesheet file. JSon stylesheet file will be used the create the app settings and pass other values to the custom widgets module such as the app name.
 
-![Custom Analog Gauge](https://github.com/SpinnCompany/Docs-QT-PyQt-PySide-Custom-Widgets/blob/main/images/qt-pyqt-pyside-project-maker_1.png?raw=true)
+
 
 ## Getting Started
 

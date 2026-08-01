@@ -15,7 +15,7 @@
 
 ---
 
-![QCustomArcLoader GIF](https://github.com/SpinnCompany/Docs-QT-PyQt-PySide-Custom-Widgets/raw/main/images/custom-perlin-loader.gif)
+![QCustomArcLoader GIF](/img/showcase/perlinloader.gif)
 
 ## Key Features
 

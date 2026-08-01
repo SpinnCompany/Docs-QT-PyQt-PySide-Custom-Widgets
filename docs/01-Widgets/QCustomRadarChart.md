@@ -17,8 +17,6 @@ sidebar_class_name: sidebar-pro
 
 :::
 
-![QCustomRadarChart](/img/showcase/radarchart.png)
-
 A painted radar / spider chart.
 
 N axes radiating from a centre, one filled polygon per series. Used to
@@ -54,12 +52,6 @@ from Custom_Widgets.QCustomRadarChart import QCustomRadarChart
 
 widget = QCustomRadarChart()
 ```
-
-## Dark theme
-
-Colours come from the design tokens, so the widget follows the app theme with no extra work.
-
-![QCustomRadarChart in dark theme](/img/showcase/radarchart-dark.png)
 
 ## Properties
 

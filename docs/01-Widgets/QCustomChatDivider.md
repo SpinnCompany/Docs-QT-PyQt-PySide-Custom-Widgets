@@ -8,8 +8,6 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomChatDivider
 
-![QCustomChatDivider](/img/showcase/chatdivider.png)
-
 A thread separator with a centered label.
 
 The "YESTERDAY" / "Today" date pill (and the coloured "Unread messages"
@@ -34,12 +32,6 @@ from Custom_Widgets.QCustomChatDivider import QCustomChatDivider
 
 widget = QCustomChatDivider()
 ```
-
-## Dark theme
-
-Colours come from the design tokens, so the widget follows the app theme with no extra work.
-
-![QCustomChatDivider in dark theme](/img/showcase/chatdivider-dark.png)
 
 ## Properties
 

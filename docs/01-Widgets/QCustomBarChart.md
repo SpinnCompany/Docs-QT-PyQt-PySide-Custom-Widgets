@@ -8,7 +8,7 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomBarChart
 
-![QCustomBarChart](/img/showcase/barchart.png)
+![QCustomBarChart](/img/showcase/barchart.gif)
 
 Bar chart implementation using the modular architecture.
 
@@ -39,7 +39,7 @@ That is the exact code behind the screenshot above.
 
 Colours come from the design tokens, so the widget follows the app theme with no extra work.
 
-![QCustomBarChart in dark theme](/img/showcase/barchart-dark.png)
+![QCustomBarChart in dark theme](/img/showcase/barchart-dark.gif)
 
 ## Properties
 

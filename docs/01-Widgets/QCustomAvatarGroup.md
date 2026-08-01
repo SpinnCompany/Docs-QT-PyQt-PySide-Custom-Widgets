@@ -8,8 +8,6 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomAvatarGroup
 
-![QCustomAvatarGroup](/img/showcase/avatargroup.png)
-
 A row of overlapping avatars with overflow.
 
 Circular initials-avatars overlap; beyond `maxVisible` a "+N" chip shows
@@ -35,12 +33,6 @@ widget.setAvatars(["Amara Mensah", "Ben Ortiz", "Chidi Okafor", "Dana Levy",
 ```
 
 That is the exact code behind the screenshot above.
-
-## Dark theme
-
-Colours come from the design tokens, so the widget follows the app theme with no extra work.
-
-![QCustomAvatarGroup in dark theme](/img/showcase/avatargroup-dark.png)
 
 ## Properties
 

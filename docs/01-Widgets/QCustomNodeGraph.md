@@ -17,7 +17,7 @@ sidebar_class_name: sidebar-pro
 
 :::
 
-![QCustomNodeGraph](/img/showcase/nodegraph.png)
+![QCustomNodeGraph](/img/showcase/nodegraph.gif)
 
 A node-based visual editor canvas.
 
@@ -74,7 +74,7 @@ That is the exact code behind the screenshot above.
 
 Colours come from the design tokens, so the widget follows the app theme with no extra work.
 
-![QCustomNodeGraph in dark theme](/img/showcase/nodegraph-dark.png)
+![QCustomNodeGraph in dark theme](/img/showcase/nodegraph-dark.gif)
 
 ## Properties
 

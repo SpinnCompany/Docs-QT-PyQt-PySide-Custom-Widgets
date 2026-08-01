@@ -8,7 +8,7 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomTabWidget
 
-![QCustomTabWidget](/img/showcase/tabwidget.png)
+![QCustomTabWidget](/img/showcase/tabwidget.gif)
 
 A tokenized tab container.
 
@@ -42,7 +42,7 @@ That is the exact code behind the screenshot above.
 
 Colours come from the design tokens, so the widget follows the app theme with no extra work.
 
-![QCustomTabWidget in dark theme](/img/showcase/tabwidget-dark.png)
+![QCustomTabWidget in dark theme](/img/showcase/tabwidget-dark.gif)
 
 ## Properties
 

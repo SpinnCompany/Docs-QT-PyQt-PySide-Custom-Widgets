@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomQLabel
 
+![QCustomQLabel](/img/showcase/qlabel.png)
+
 A QLabel that can show an SVG ICON recoloured from QSS.
 
 The icon FILE is set the normal way (a QLabel `pixmap` — in the .ui or from
@@ -40,6 +42,12 @@ from Custom_Widgets.QCustomQLabel import QCustomQLabel
 
 widget = QCustomQLabel()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomQLabel in dark theme](/img/showcase/qlabel-dark.png)
 
 ## Properties
 

@@ -8,8 +8,6 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomCardStack
 
-![QCustomCardStack](/img/showcase/cardstack.png)
-
 An interactive stack of payment cards.
 
 Holds several QCustomPaymentCard children laid out as a peeking stack (the
@@ -36,12 +34,6 @@ from Custom_Widgets.QCustomCardStack import QCustomCardStack
 
 widget = QCustomCardStack()
 ```
-
-## Dark theme
-
-Colours come from the design tokens, so the widget follows the app theme with no extra work.
-
-![QCustomCardStack in dark theme](/img/showcase/cardstack-dark.png)
 
 ## Properties
 

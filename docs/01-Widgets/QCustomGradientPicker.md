@@ -8,8 +8,6 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomGradientPicker
 
-![QCustomGradientPicker](/img/showcase/gradientpicker.png)
-
 An editable multi-stop gradient control.
 
 A gradient preview with draggable colour stops beneath it. Click the bar to
@@ -43,12 +41,6 @@ from Custom_Widgets.QCustomGradientPicker import QCustomGradientPicker
 
 widget = QCustomGradientPicker()
 ```
-
-## Dark theme
-
-Colours come from the design tokens, so the widget follows the app theme with no extra work.
-
-![QCustomGradientPicker in dark theme](/img/showcase/gradientpicker-dark.png)
 
 ## Properties
 

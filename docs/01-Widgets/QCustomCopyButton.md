@@ -8,8 +8,6 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomCopyButton
 
-![QCustomCopyButton](/img/showcase/copybutton.png)
-
 Copy-to-clipboard with confirmation.
 
 The small button beside a code block, an API key or a share link. The whole
@@ -38,12 +36,6 @@ from Custom_Widgets.QCustomCopyButton import QCustomCopyButton
 
 widget = QCustomCopyButton()
 ```
-
-## Dark theme
-
-Colours come from the design tokens, so the widget follows the app theme with no extra work.
-
-![QCustomCopyButton in dark theme](/img/showcase/copybutton-dark.png)
 
 ## Properties
 

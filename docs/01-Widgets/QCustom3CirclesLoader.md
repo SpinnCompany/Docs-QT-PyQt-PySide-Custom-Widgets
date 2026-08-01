@@ -16,7 +16,7 @@
 
 ---
 
-![Custom Embeded Window GIF](https://github.com/SpinnCompany/Docs-QT-PyQt-PySide-Custom-Widgets/raw/main/images/custom-3-circles-loader.gif)
+![Custom Embeded Window GIF](/img/showcase/3circlesloader.gif)
 
 
 ## Key Features

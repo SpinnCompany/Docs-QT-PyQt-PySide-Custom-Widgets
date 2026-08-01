@@ -8,8 +8,6 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomChatListItem
 
-![QCustomChatListItem](/img/showcase/chatlistitem.png)
-
 One conversation row in a messenger list.
 
 A leading avatar (with an online status dot), the contact name, an elided
@@ -35,12 +33,6 @@ from Custom_Widgets.QCustomChatListItem import QCustomChatListItem
 
 widget = QCustomChatListItem()
 ```
-
-## Dark theme
-
-Colours come from the design tokens, so the widget follows the app theme with no extra work.
-
-![QCustomChatListItem in dark theme](/img/showcase/chatlistitem-dark.png)
 
 ## Properties
 

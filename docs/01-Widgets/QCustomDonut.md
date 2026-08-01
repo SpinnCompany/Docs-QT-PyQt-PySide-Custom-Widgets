@@ -8,8 +8,6 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomDonut
 
-![QCustomDonut](/img/showcase/donut.png)
-
 A painted donut / multi-ring radial chart.
 
 Two modes:
@@ -39,12 +37,6 @@ from Custom_Widgets.QCustomDonut import QCustomDonut
 
 widget = QCustomDonut()
 ```
-
-## Dark theme
-
-Colours come from the design tokens, so the widget follows the app theme with no extra work.
-
-![QCustomDonut in dark theme](/img/showcase/donut-dark.png)
 
 ## Properties
 

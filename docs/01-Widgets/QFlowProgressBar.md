@@ -2,7 +2,7 @@
 
 `QFlowProgressBar` is a versatile and animated progress indicator widget that displays progress through multiple steps with various visual styles. It provides interactive step navigation and smooth animations for enhanced user experience.
 
-![Custom Embeded Window GIF](https://github.com/SpinnCompany/Docs-QT-PyQt-PySide-Custom-Widgets/raw/main/images/flow-progress-bar.gif)
+![Custom Embeded Window GIF](/img/showcase/qprogressbar.gif)
 
 ---
 

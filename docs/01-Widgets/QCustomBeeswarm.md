@@ -17,8 +17,6 @@ sidebar_class_name: sidebar-pro
 
 :::
 
-![QCustomBeeswarm](/img/showcase/beeswarm.png)
-
 A column beeswarm / bubble-stack chart.
 
 Each COLUMN is a thin vertical guide line carrying a vertical stack of
@@ -51,12 +49,6 @@ from Custom_Widgets.QCustomBeeswarm import QCustomBeeswarm
 
 widget = QCustomBeeswarm()
 ```
-
-## Dark theme
-
-Colours come from the design tokens, so the widget follows the app theme with no extra work.
-
-![QCustomBeeswarm in dark theme](/img/showcase/beeswarm-dark.png)
 
 ## Properties
 

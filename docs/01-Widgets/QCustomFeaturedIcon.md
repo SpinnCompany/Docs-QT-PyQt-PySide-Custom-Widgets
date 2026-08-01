@@ -8,8 +8,6 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomFeaturedIcon
 
-![QCustomFeaturedIcon](/img/showcase/featuredicon.png)
-
 An icon in a decorative container.
 
 The little coloured tile that sits above a feature headline or beside an
@@ -43,12 +41,6 @@ widget.sizeVariant = "lg"
 ```
 
 That is the exact code behind the screenshot above.
-
-## Dark theme
-
-Colours come from the design tokens, so the widget follows the app theme with no extra work.
-
-![QCustomFeaturedIcon in dark theme](/img/showcase/featuredicon-dark.png)
 
 ## Properties
 

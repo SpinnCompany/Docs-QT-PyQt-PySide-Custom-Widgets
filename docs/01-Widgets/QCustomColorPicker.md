@@ -8,8 +8,6 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomColorPicker
 
-![QCustomColorPicker](/img/showcase/colorpicker.png)
-
 A colour selector.
 
 A colour swatch + hex field. Clicking the swatch opens a popup of preset
@@ -30,12 +28,6 @@ from Custom_Widgets.QCustomColorPicker import QCustomColorPicker
 
 widget = QCustomColorPicker()
 ```
-
-## Dark theme
-
-Colours come from the design tokens, so the widget follows the app theme with no extra work.
-
-![QCustomColorPicker in dark theme](/img/showcase/colorpicker-dark.png)
 
 ## Signals
 

@@ -8,7 +8,7 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomLineChart
 
-![QCustomLineChart](/img/showcase/linechart.png)
+![QCustomLineChart](/img/showcase/linechart.gif)
 
 Line chart implementation using the modular architecture.
 
@@ -39,7 +39,7 @@ That is the exact code behind the screenshot above.
 
 Colours come from the design tokens, so the widget follows the app theme with no extra work.
 
-![QCustomLineChart in dark theme](/img/showcase/linechart-dark.png)
+![QCustomLineChart in dark theme](/img/showcase/linechart-dark.gif)
 
 ## Properties
 

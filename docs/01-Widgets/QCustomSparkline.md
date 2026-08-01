@@ -8,8 +8,6 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomSparkline
 
-![QCustomSparkline](/img/showcase/sparkline.png)
-
 A compact, axis-less trend line.
 
 A tiny inline chart for KPI cards / tables: a smooth (cubic) or straight
@@ -33,12 +31,6 @@ from Custom_Widgets.QCustomSparkline import QCustomSparkline
 
 widget = QCustomSparkline()
 ```
-
-## Dark theme
-
-Colours come from the design tokens, so the widget follows the app theme with no extra work.
-
-![QCustomSparkline in dark theme](/img/showcase/sparkline-dark.png)
 
 ## Properties
 

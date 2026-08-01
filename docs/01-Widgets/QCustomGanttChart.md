@@ -17,8 +17,6 @@ sidebar_class_name: sidebar-pro
 
 :::
 
-![QCustomGanttChart](/img/showcase/ganttchart.png)
-
 A horizontal timeline / gantt of rounded pill bars.
 
 Every ROW is one rounded "pill" bar placed on a shared numeric x-axis by
@@ -50,12 +48,6 @@ from Custom_Widgets.QCustomGanttChart import QCustomGanttChart
 
 widget = QCustomGanttChart()
 ```
-
-## Dark theme
-
-Colours come from the design tokens, so the widget follows the app theme with no extra work.
-
-![QCustomGanttChart in dark theme](/img/showcase/ganttchart-dark.png)
 
 ## Properties
 
