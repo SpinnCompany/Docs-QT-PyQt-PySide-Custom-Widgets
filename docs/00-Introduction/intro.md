@@ -34,7 +34,7 @@ test, a Designer registration and a documented API.
 | | |
 |---|---|
 | **[Getting started](getting-started.md)** | A themed window in twenty lines |
-| **[Widget gallery](../gallery.md)** | All 163, grouped by what you are building |
+| **[Widget gallery](../gallery.mdx)** | All 163, grouped by what you are building |
 | **[Design tokens](../02-Theming/DesignTokens.md)** | How theming actually works |
 | **[Real-world examples](../05-Usage-Examples/RealWorldScenarios.md)** | Complete apps to copy |
 
@@ -42,12 +42,12 @@ test, a Designer registration and a documented API.
 
 <div class="widget-gallery">
 
-<a class="wg-card" href="/Widgets/QCustomStatCard"><img src="/img/showcase/statcard.png" alt="Stat card" loading="lazy" /><span class="wg-name">Stat card</span></a>
-<a class="wg-card" href="/Widgets/QCustomLineChart"><img src="/img/showcase/linechart.gif" alt="Line chart" loading="lazy" /><span class="wg-name">Charts<span class="wg-pro">PRO</span></span></a>
-<a class="wg-card" href="/Widgets/QCustomDataTable"><img src="/img/showcase/datatable.png" alt="Data table" loading="lazy" /><span class="wg-name">Data table<span class="wg-pro">PRO</span></span></a>
-<a class="wg-card" href="/Widgets/QCustomChatThread"><img src="/img/showcase/chatthread.png" alt="Chat thread" loading="lazy" /><span class="wg-name">Chat</span></a>
-<a class="wg-card" href="/Widgets/QCustomSpinner"><img src="/img/showcase/spinner.gif" alt="Loaders" loading="lazy" /><span class="wg-name">Loaders</span></a>
-<a class="wg-card" href="/Widgets/QCustomCommandPalette"><img src="/img/showcase/commandpalette.gif" alt="Command palette" loading="lazy" /><span class="wg-name">Command palette</span></a>
+<a class="wg-card" href="../Widgets/QCustomStatCard"><img src="../img/showcase/statcard.png" alt="Stat card" loading="lazy" /><span class="wg-name">Stat card</span></a>
+<a class="wg-card" href="../Widgets/QCustomLineChart"><img src="../img/showcase/linechart.gif" alt="Line chart" loading="lazy" /><span class="wg-name">Charts<span class="wg-pro">PRO</span></span></a>
+<a class="wg-card" href="../Widgets/QCustomDataTable"><img src="../img/showcase/datatable.png" alt="Data table" loading="lazy" /><span class="wg-name">Data table<span class="wg-pro">PRO</span></span></a>
+<a class="wg-card" href="../Widgets/QCustomChatThread"><img src="../img/showcase/chatthread.png" alt="Chat thread" loading="lazy" /><span class="wg-name">Chat</span></a>
+<a class="wg-card" href="../Widgets/QCustomSpinner"><img src="../img/showcase/spinner.gif" alt="Loaders" loading="lazy" /><span class="wg-name">Loaders</span></a>
+<a class="wg-card" href="../Widgets/QCustomCommandPalette"><img src="../img/showcase/commandpalette.gif" alt="Command palette" loading="lazy" /><span class="wg-name">Command palette</span></a>
 
 </div>
 

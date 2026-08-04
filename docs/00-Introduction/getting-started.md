@@ -97,7 +97,7 @@ Both use the same widgets. You can mix them.
 
 ## Pick your widgets
 
-The [Widget gallery](../gallery.md) is a thumbnail index of all 163 widgets,
+The [Widget gallery](../gallery.mdx) is a thumbnail index of all 163 widgets,
 grouped by the job you are doing — layout, navigation, forms, data display,
 charts, feedback, chat, media. Each card links to a reference page with a
 runnable snippet.
@@ -114,7 +114,7 @@ a form.
 
 ## Where to go next
 
-- [Widget gallery](../gallery.md) — see everything at a glance
+- [Widget gallery](../gallery.mdx) — see everything at a glance
 - [Design tokens](../02-Theming/DesignTokens.md) — how theming actually works
 - [Styling guide](../02-Theming/StylingGuide.md) — QSS and SCSS
 - [Basic usage](../05-Usage-Examples/BasicUsage.md) — longer worked examples
