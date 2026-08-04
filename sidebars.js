@@ -312,6 +312,7 @@ const sidebars = {
       collapsible: true,
       collapsed: false,
       items: [
+        'Usage-Examples/AppShowcase',
         'Usage-Examples/BasicUsage',
         'Usage-Examples/AdvancedLayouts',
         'Usage-Examples/RealWorldScenarios',

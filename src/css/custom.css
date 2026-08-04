@@ -439,3 +439,119 @@ html, body {
   color: #fff;
   background: var(--qt-green, #16a34a);
 }
+
+/* ------------------------------------------------------------------ */
+/* App showcase grid — wider cards than the widget gallery, because    */
+/* the subject is a full application window, not a single control.     */
+/* ------------------------------------------------------------------ */
+.app-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.1rem;
+  margin: 1.25rem 0 2rem;
+}
+.ag-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none !important;
+  background: var(--ifm-background-surface-color);
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+a.ag-card:hover {
+  border-color: var(--ifm-color-primary);
+  transform: translateY(-2px);
+}
+.ag-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  object-position: top;
+  background: var(--ifm-color-emphasis-100);
+  display: block;
+}
+.ag-card.ag-demo img {
+  height: 140px;
+  object-fit: contain;
+}
+.ag-name {
+  padding: 0.6rem 0.7rem 0.15rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--ifm-font-color-base);
+}
+.ag-blurb {
+  padding: 0 0.7rem;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  color: var(--ifm-color-emphasis-700);
+}
+.ag-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  padding: 0.55rem 0.7rem 0.7rem;
+}
+.ag-chip {
+  padding: 0.1em 0.5em;
+  border-radius: 999px;
+  font-size: 0.66rem;
+  font-family: var(--ifm-font-family-monospace);
+  color: var(--ifm-color-emphasis-800);
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.ag-patreon {
+  margin-left: 0.45em;
+  padding: 0.08em 0.45em;
+  border-radius: 4px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  vertical-align: middle;
+  color: #fff;
+  background: #ff424d; /* Patreon coral */
+}
+
+/* Click-to-expand images (Zoomable component). */
+img.zoomable {
+  cursor: zoom-in;
+}
+.zoom-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  background: rgba(8, 10, 14, 0.86);
+  cursor: zoom-out;
+}
+.zoom-overlay img {
+  max-width: min(96vw, 1400px);
+  max-height: 92vh;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.55);
+}
+.zoom-close {
+  position: fixed;
+  top: 0.9rem;
+  right: 1.1rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 0;
+  border-radius: 999px;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.14);
+  cursor: pointer;
+}
+.zoom-close:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
