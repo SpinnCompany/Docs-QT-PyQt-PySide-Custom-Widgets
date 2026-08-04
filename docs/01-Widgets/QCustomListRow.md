@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomListRow
 
+![QCustomListRow](/img/showcase/listrow.png)
+
 A leading-icon list item.
 
 The universal "row" for transaction feeds, activity lists, leaderboards and
@@ -40,6 +42,12 @@ widget.setMeta("2 min ago")
 ```
 
 That is the exact code behind the screenshot above.
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomListRow in dark theme](/img/showcase/listrow-dark.png)
 
 ## Properties
 

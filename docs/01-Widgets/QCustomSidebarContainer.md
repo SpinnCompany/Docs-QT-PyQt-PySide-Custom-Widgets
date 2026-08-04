@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomSidebarContainer
 
+![QCustomSidebarContainer](/img/showcase/sidebarcontainer.png)
+
 A container widget that can hide or show its contents when the parent sidebar collapses/expands.
 
 ## At a glance
@@ -24,7 +26,22 @@ A container widget that can hide or show its contents when the parent sidebar co
 from Custom_Widgets.QCustomSidebarContainer import QCustomSidebarContainer
 
 widget = QCustomSidebarContainer()
+lay = _intoLayout(w)
+title = QLabel("Filters")
+title.setStyleSheet("font-size: 14px; font-weight: 600;")
+lay.addWidget(title)
+for text in ("Status: Active", "Owner: Me", "Due this week"):
+lay.addWidget(QPushButton(text))
+lay.addStretch(1)
 ```
+
+That is the exact code behind the screenshot above.
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomSidebarContainer in dark theme](/img/showcase/sidebarcontainer-dark.png)
 
 ## Properties
 

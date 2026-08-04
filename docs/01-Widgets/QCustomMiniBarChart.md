@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomMiniBarChart
 
+![QCustomMiniBarChart](/img/showcase/minibarchart.png)
+
 A compact, axis-less bar chart.
 
 The painted sibling of QCustomSparkline: a row of bottom-aligned bars with
@@ -33,6 +35,12 @@ from Custom_Widgets.QCustomMiniBarChart import QCustomMiniBarChart
 
 widget = QCustomMiniBarChart()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomMiniBarChart in dark theme](/img/showcase/minibarchart-dark.png)
 
 ## Properties
 

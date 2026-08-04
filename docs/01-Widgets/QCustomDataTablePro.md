@@ -1,5 +1,8 @@
 # QCustomDataTablePro
 
+![QCustomDataTablePro](/img/showcase/datatablepro.png)
+
+
 `QCustomDataTablePro` is the **commercial, production-grade** data grid. It
 subclasses the free [QCustomDataTable](./QCustomDataTable.md) through stable
 extension seams, so everything you already do — columns, `setData`, sorting,

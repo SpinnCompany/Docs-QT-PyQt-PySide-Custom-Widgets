@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomChatInput
 
+![QCustomChatInput](/img/showcase/chatinput.png)
+
 A message composer bar.
 
 The bottom "Write something…" row: attach + mic buttons, a text field, an
@@ -37,6 +39,12 @@ widget.setText("Sounds good - shipping it today")
 ```
 
 That is the exact code behind the screenshot above.
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomChatInput in dark theme](/img/showcase/chatinput-dark.png)
 
 ## Properties
 

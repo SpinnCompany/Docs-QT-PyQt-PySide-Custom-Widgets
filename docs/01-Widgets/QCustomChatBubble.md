@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomChatBubble
 
+![QCustomChatBubble](/img/showcase/chatbubble.png)
+
 A single chat message bubble.
 
 The core building block of a messenger thread: a rounded, tail-cornered
@@ -42,6 +44,12 @@ widget.setTime("09:41")
 ```
 
 That is the exact code behind the screenshot above.
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomChatBubble in dark theme](/img/showcase/chatbubble-dark.png)
 
 ## Properties
 

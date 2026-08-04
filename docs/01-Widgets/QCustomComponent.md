@@ -1,5 +1,8 @@
 # QCustomComponent
 
+![QCustomComponent](/img/showcase/component.png)
+
+
 `QCustomComponent` is a versatile container widget designed for nesting other widgets and applying JSON-based styling. It provides a flexible foundation for creating custom UI components with live stylesheet compilation and theme integration.
 
 ---

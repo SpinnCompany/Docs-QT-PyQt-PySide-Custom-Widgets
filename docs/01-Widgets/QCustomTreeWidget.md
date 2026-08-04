@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomTreeWidget
 
+![QCustomTreeWidget](/img/showcase/treewidget.png)
+
 A tokenized hierarchical tree.
 
 Built on QTreeWidget with a convenient nested setItems() API and
@@ -38,6 +40,12 @@ widget.setItems([
 ```
 
 That is the exact code behind the screenshot above.
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomTreeWidget in dark theme](/img/showcase/treewidget-dark.png)
 
 ## Properties
 

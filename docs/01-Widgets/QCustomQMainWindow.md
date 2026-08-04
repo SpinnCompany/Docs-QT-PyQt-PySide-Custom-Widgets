@@ -1,5 +1,8 @@
 # QcustomQmainwindow
 
+![QCustomQMainWindow](/img/showcase/qmainwindow.png)
+
+
 `QCustomQMainWindow` is a custom subclass of Qt’s [`QMainWindow`](https://doc.qt.io/qt-5/qmainwindow.html) designed to extend the standard main window with enhanced theming and styling capabilities. It is part of the `Custom_Widgets` module and provides a framework for applying JSON-based stylesheets, live style compilation, and dynamic theme management through a custom theme engine.
 
 ---

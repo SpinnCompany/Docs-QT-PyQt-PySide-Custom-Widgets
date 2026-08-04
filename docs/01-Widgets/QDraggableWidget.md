@@ -1,5 +1,8 @@
 # QDraggableWidget
 
+![QDraggableWidget](/img/showcase/draggablewidget.png)
+
+
 `QDraggableWidget` provides custom drag-and-drop functionality for PyQt/PySide applications. It includes two main classes: `QDragItem` for draggable elements and `QDragWidget` as a container that accepts and manages draggable items.
 
 ---

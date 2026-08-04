@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomClockLabel
 
+![QCustomClockLabel](/img/showcase/clocklabel.png)
+
 A self-ticking clock label.
 
 Shows the current time in `format` (QTime.toString syntax, default
@@ -30,6 +32,12 @@ from Custom_Widgets.QCustomClockLabel import QCustomClockLabel
 
 widget = QCustomClockLabel()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomClockLabel in dark theme](/img/showcase/clocklabel-dark.png)
 
 ## Properties
 

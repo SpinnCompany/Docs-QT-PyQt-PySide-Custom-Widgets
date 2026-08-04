@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomEmptyState
 
+![QCustomEmptyState](/img/showcase/emptystate.png)
+
 A centered "nothing here yet" placeholder.
 
 A mark + title + description + an optional action button. Tokenized.
@@ -33,6 +35,12 @@ from Custom_Widgets.QCustomEmptyState import QCustomEmptyState
 
 widget = QCustomEmptyState()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomEmptyState in dark theme](/img/showcase/emptystate-dark.png)
 
 ## Properties
 

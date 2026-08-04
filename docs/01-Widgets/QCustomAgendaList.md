@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomAgendaList
 
+![QCustomAgendaList](/img/showcase/agendalist.png)
+
 A schedule / event timeline list.
 
 The day-plan card (Running / Cycling / Gym / Swimming): each row has a left
@@ -36,6 +38,12 @@ from Custom_Widgets.QCustomAgendaList import QCustomAgendaList
 
 widget = QCustomAgendaList()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomAgendaList in dark theme](/img/showcase/agendalist-dark.png)
 
 ## Properties
 

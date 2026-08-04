@@ -1,5 +1,8 @@
 # QCustomComponentLoader
 
+![QCustomComponentLoader](/img/showcase/componentloader.png)
+
+
 `QCustomComponentLoader` is a dynamic UI component loader that can import and display UI classes from external Python files at runtime. It provides robust loading capabilities with theme integration and designer preview support.
 
 ---

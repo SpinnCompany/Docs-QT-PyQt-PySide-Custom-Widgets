@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomPlayerBar
 
+![QCustomPlayerBar](/img/showcase/playerbar.png)
+
 A NOW-PLAYING transport bar.
 
 The signature music-app footer: a rounded bar with, left-to-right, the
@@ -38,6 +40,12 @@ from Custom_Widgets.QCustomPlayerBar import QCustomPlayerBar
 
 widget = QCustomPlayerBar()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomPlayerBar in dark theme](/img/showcase/playerbar-dark.png)
 
 ## Properties
 

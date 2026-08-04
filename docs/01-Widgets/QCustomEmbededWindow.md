@@ -1,5 +1,8 @@
 # QCustomEmbededWindow
 
+![QCustomEmbededWindow](/img/showcase/embeddedwindow.gif)
+
+
 `QCustomEmbededWindow` is a customizable embedded window widget that provides floating, draggable window functionality within a parent application. It features smooth animations, theme integration, and flexible content management.
 
 ---

@@ -17,6 +17,8 @@ sidebar_class_name: sidebar-pro
 
 :::
 
+![QCustomVideoPlayer](/img/showcase/videoplayer.png)
+
 A poster-framed media/video player card.
 
 A rounded poster image with a big centred play button and a bottom control
@@ -42,6 +44,12 @@ from Custom_Widgets.QCustomVideoPlayer import QCustomVideoPlayer
 
 widget = QCustomVideoPlayer()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomVideoPlayer in dark theme](/img/showcase/videoplayer-dark.png)
 
 ## Properties
 

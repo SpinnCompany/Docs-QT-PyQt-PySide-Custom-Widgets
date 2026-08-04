@@ -17,6 +17,8 @@ sidebar_class_name: sidebar-pro
 
 :::
 
+![QCustomRadialBars](/img/showcase/radialbars.png)
+
 A painted radial bar chart.
 
 Concentric arcs, one per category, each sweeping in proportion to its
@@ -48,6 +50,12 @@ from Custom_Widgets.QCustomRadialBars import QCustomRadialBars
 
 widget = QCustomRadialBars()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomRadialBars in dark theme](/img/showcase/radialbars-dark.png)
 
 ## Properties
 

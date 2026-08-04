@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomAvatar
 
+![QCustomAvatar](/img/showcase/avatar.png)
+
 A single circular avatar with an optional status dot.
 
 Shows either initials (text) or an image, clipped to a circle, over a solid
@@ -35,6 +37,12 @@ from Custom_Widgets.QCustomAvatar import QCustomAvatar
 
 widget = QCustomAvatar()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomAvatar in dark theme](/img/showcase/avatar-dark.png)
 
 ## Properties
 

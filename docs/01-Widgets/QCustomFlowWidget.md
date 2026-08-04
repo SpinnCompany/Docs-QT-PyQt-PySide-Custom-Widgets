@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomFlowWidget
 
+![QCustomFlowWidget](/img/showcase/flowwidget.gif)
+
 A container widget that uses QCustomFlowLayout internally.
 
 ALL custom properties are exposed here for Qt Designer.
@@ -26,7 +28,17 @@ ALL custom properties are exposed here for Qt Designer.
 from Custom_Widgets.QCustomFlowWidget import QCustomFlowWidget
 
 widget = QCustomFlowWidget()
+for chip in _flowChips():
+widget.addWidget(chip)
 ```
+
+That is the exact code behind the screenshot above.
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomFlowWidget in dark theme](/img/showcase/flowwidget-dark.gif)
 
 ## Properties
 

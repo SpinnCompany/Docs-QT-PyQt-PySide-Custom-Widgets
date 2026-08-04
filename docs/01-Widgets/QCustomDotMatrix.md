@@ -17,6 +17,8 @@ sidebar_class_name: sidebar-pro
 
 :::
 
+![QCustomDotMatrix](/img/showcase/dotmatrix.png)
+
 A density / category dot grid.
 
 A grid of small dots where each cell carries a STATE (0..N). State 0 is
@@ -47,6 +49,12 @@ from Custom_Widgets.QCustomDotMatrix import QCustomDotMatrix
 
 widget = QCustomDotMatrix()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomDotMatrix in dark theme](/img/showcase/dotmatrix-dark.png)
 
 ## Properties
 

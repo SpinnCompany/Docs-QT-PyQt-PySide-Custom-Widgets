@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomBreadcrumbs
 
+![QCustomBreadcrumbs](/img/showcase/breadcrumbs.png)
+
 A clickable path navigation.
 
 Home / Section / Page ... - all but the last segment are clickable
@@ -33,6 +35,12 @@ widget.setItems([("Home", "/"), ("Projects", "/projects"),
 ```
 
 That is the exact code behind the screenshot above.
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomBreadcrumbs in dark theme](/img/showcase/breadcrumbs-dark.png)
 
 ## Signals
 

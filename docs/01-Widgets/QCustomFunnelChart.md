@@ -17,6 +17,8 @@ sidebar_class_name: sidebar-pro
 
 :::
 
+![QCustomFunnelChart](/img/showcase/funnelchart.png)
+
 A painted funnel / pyramid chart.
 
 Stacked trapezoid stages narrowing toward the end: a conversion funnel, a
@@ -50,6 +52,12 @@ from Custom_Widgets.QCustomFunnelChart import QCustomFunnelChart
 
 widget = QCustomFunnelChart()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomFunnelChart in dark theme](/img/showcase/funnelchart-dark.png)
 
 ## Properties
 

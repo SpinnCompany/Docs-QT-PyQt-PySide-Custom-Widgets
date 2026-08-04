@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomCompass
 
+![QCustomCompass](/img/showcase/compass.png)
+
 A heading / compass rose.
 
 A painted compass: a tick ring with N / E / S / W (+ intercardinals), a
@@ -38,6 +40,12 @@ from Custom_Widgets.QCustomCompass import QCustomCompass
 
 widget = QCustomCompass()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomCompass in dark theme](/img/showcase/compass-dark.png)
 
 ## Properties
 

@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomRangeSlider
 
+![QCustomRangeSlider](/img/showcase/rangeslider.png)
+
 A dual-handle range selector.
 
 Two handles select a [lower, upper] range on a track; the selected span is
@@ -29,6 +31,12 @@ from Custom_Widgets.QCustomRangeSlider import QCustomRangeSlider
 
 widget = QCustomRangeSlider()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomRangeSlider in dark theme](/img/showcase/rangeslider-dark.png)
 
 ## Properties
 

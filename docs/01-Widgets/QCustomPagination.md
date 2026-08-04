@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomPagination
 
+![QCustomPagination](/img/showcase/pagination.png)
+
 Page navigation with prev/next and ellipsis.
 
 [<] [1] ... [4] [5] [6] ... [20] [>]  - first/last always shown, a window
@@ -28,6 +30,12 @@ from Custom_Widgets.QCustomPagination import QCustomPagination
 
 widget = QCustomPagination()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomPagination in dark theme](/img/showcase/pagination-dark.png)
 
 ## Signals
 

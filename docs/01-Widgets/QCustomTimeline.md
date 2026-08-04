@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomTimeline
 
+![QCustomTimeline](/img/showcase/timeline.png)
+
 A vertical event timeline.
 
 Each item has a marker dot on a connecting rail plus a title, optional
@@ -29,6 +31,12 @@ from Custom_Widgets.QCustomTimeline import QCustomTimeline
 
 widget = QCustomTimeline()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomTimeline in dark theme](/img/showcase/timeline-dark.png)
 
 ## Properties
 

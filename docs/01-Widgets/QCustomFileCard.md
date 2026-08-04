@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomFileCard
 
+![QCustomFileCard](/img/showcase/filecard.png)
+
 A file / attachment row.
 
 The row seen under the "Files" tab: a painted rounded badge with the file
@@ -33,6 +35,12 @@ from Custom_Widgets.QCustomFileCard import QCustomFileCard
 
 widget = QCustomFileCard()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomFileCard in dark theme](/img/showcase/filecard-dark.png)
 
 ## Properties
 

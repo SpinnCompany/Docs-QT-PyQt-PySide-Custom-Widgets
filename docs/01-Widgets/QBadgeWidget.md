@@ -5,6 +5,9 @@ description: QBadgeWidget was replaced by QCustomBadge in v3.
 
 # QBadgeWidget (removed)
 
+![QBadgeWidget](/img/showcase/badge.png)
+
+
 :::warning Removed in v3
 `QBadgeWidget` has been **removed** and replaced by
 [**`QCustomBadge`**](./QCustomBadge.md) — a themed badge whose colour comes from

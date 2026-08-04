@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomActionButton
 
+![QCustomActionButton](/img/showcase/actionbutton.png)
+
 A round icon button with a caption beneath it.
 
 The "quick action" tile seen on profile panels and toolbars (Profile / Mute /
@@ -36,6 +38,12 @@ widget.caption = "Transfer"
 ```
 
 That is the exact code behind the screenshot above.
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomActionButton in dark theme](/img/showcase/actionbutton-dark.png)
 
 ## Properties
 

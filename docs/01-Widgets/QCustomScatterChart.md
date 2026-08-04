@@ -17,6 +17,8 @@ sidebar_class_name: sidebar-pro
 
 :::
 
+![QCustomScatterChart](/img/showcase/scatterchart.png)
+
 A painted x/y scatter plot.
 
 Points in a cartesian plane, one colour per series, optionally sized by a
@@ -55,6 +57,12 @@ from Custom_Widgets.QCustomScatterChart import QCustomScatterChart
 
 widget = QCustomScatterChart()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomScatterChart in dark theme](/img/showcase/scatterchart-dark.png)
 
 ## Properties
 

@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomChip
 
+![QCustomChip](/img/showcase/chip.png)
+
 / QCustomChipGroup - compact tags / filter chips.
 
 A chip is a small rounded label, optionally closable (x) and/or
@@ -29,6 +31,12 @@ from Custom_Widgets.QCustomChip import QCustomChip
 
 widget = QCustomChip()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomChip in dark theme](/img/showcase/chip-dark.png)
 
 ## Signals
 

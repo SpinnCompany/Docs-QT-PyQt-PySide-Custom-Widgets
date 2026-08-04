@@ -1,5 +1,8 @@
 # QCard Widget
 
+![QCardWidget](/img/showcase/card.png)
+
+
 `QCard` is a styling system that allows you to apply uniform drop shadow effects to groups of widgets, creating visually appealing card-based layouts perfect for dashboards and modern UI designs.
 
 ---

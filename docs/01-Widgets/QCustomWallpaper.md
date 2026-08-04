@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomWallpaper
 
+![QCustomWallpaper](/img/showcase/wallpaper.png)
+
 A full-bleed backdrop image widget.
 
 The photo layer glass UIs sample: give it an `imageSource` (local path or
@@ -33,6 +35,12 @@ from Custom_Widgets.QCustomWallpaper import QCustomWallpaper
 
 widget = QCustomWallpaper()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomWallpaper in dark theme](/img/showcase/wallpaper-dark.png)
 
 ## Properties
 

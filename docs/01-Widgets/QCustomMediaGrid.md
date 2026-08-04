@@ -17,6 +17,8 @@ sidebar_class_name: sidebar-pro
 
 :::
 
+![QCustomMediaGrid](/img/showcase/mediagrid.png)
+
 A data-driven thumbnail gallery.
 
 The "Media, Files & Links" photo grid: a responsive grid of rounded
@@ -41,6 +43,12 @@ from Custom_Widgets.QCustomMediaGrid import QCustomMediaGrid
 
 widget = QCustomMediaGrid()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomMediaGrid in dark theme](/img/showcase/mediagrid-dark.png)
 
 ## Properties
 

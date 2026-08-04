@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomThemeDarkLightToggle
 
+![QCustomThemeDarkLightToggle](/img/showcase/themedarklighttoggle.png)
+
 QPushButton(self, text: str, /, parent: PySide6.QtWidgets.QWidget | None = None, *, autoDefault: bool | None = None, default: bool | None = None, flat: bool | None = None) -> None
 
 QPushButton(self, icon: PySide6.QtGui.QIcon | PySide6.QtGui.QPixmap, text: str, /, parent: PySide6.QtWidgets.QWidget | None = None, *, autoDefault: bool | None = None, default: bool | None = None, flat: bool | None = None) -> None
@@ -28,6 +30,12 @@ from Custom_Widgets.QCustomThemeDarkLightToggle import QCustomThemeDarkLightTogg
 
 widget = QCustomThemeDarkLightToggle()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomThemeDarkLightToggle in dark theme](/img/showcase/themedarklighttoggle-dark.png)
 
 ## Properties
 

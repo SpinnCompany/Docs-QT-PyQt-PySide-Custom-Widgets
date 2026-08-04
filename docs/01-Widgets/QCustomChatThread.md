@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomChatThread
 
+![QCustomChatThread](/img/showcase/chatthread.png)
+
 A data-driven message thread.
 
 The scrolling column of chat bubbles. A manager calls setMessages([...]) with
@@ -37,6 +39,12 @@ from Custom_Widgets.QCustomChatThread import QCustomChatThread
 
 widget = QCustomChatThread()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomChatThread in dark theme](/img/showcase/chatthread-dark.png)
 
 ## Properties
 

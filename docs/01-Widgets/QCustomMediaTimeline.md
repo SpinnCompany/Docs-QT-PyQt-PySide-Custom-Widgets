@@ -17,6 +17,8 @@ sidebar_class_name: sidebar-pro
 
 :::
 
+![QCustomMediaTimeline](/img/showcase/mediatimeline.png)
+
 A horizontal multi-track clip / scrubber timeline.
 
 The bottom-of-a-video/animation-tool surface: a time RULER with labelled
@@ -46,6 +48,12 @@ from Custom_Widgets.QCustomMediaTimeline import QCustomMediaTimeline
 
 widget = QCustomMediaTimeline()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomMediaTimeline in dark theme](/img/showcase/mediatimeline-dark.png)
 
 ## Properties
 

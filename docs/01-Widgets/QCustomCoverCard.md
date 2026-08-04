@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomCoverCard
 
+![QCustomCoverCard](/img/showcase/covercard.png)
+
 An album / song COVER card.
 
 A rounded album-art tile: the cover image fills a rounded rectangle
@@ -38,6 +40,12 @@ from Custom_Widgets.QCustomCoverCard import QCustomCoverCard
 
 widget = QCustomCoverCard()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomCoverCard in dark theme](/img/showcase/covercard-dark.png)
 
 ## Properties
 

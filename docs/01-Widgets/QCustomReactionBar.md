@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomReactionBar
 
+![QCustomReactionBar](/img/showcase/reactionbar.png)
+
 A row of emoji reaction chips.
 
 The little pills under a chat message showing who reacted: each chip is an
@@ -36,6 +38,12 @@ widget.setReactions([("\U0001f44d", 12), ("\U0001f525", 4), ("\U0001f389", 2)])
 ```
 
 That is the exact code behind the screenshot above.
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomReactionBar in dark theme](/img/showcase/reactionbar-dark.png)
 
 ## Properties
 

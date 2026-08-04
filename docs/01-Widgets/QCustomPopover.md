@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomPopover
 
+![QCustomPopover](/img/showcase/popover.png)
+
 A rich popover anchored to a widget.
 
 Unlike a text tooltip, a popover holds arbitrary widgets and points at its
@@ -29,6 +31,12 @@ from Custom_Widgets.QCustomPopover import QCustomPopover
 
 widget = QCustomPopover()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomPopover in dark theme](/img/showcase/popover-dark.png)
 
 ## Properties
 

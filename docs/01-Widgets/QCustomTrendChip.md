@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomTrendChip
 
+![QCustomTrendChip](/img/showcase/trendchip.png)
+
 A directional delta / trend indicator.
 
 A painted up/down/flat arrow that colour-codes a change (green up, red down,
@@ -38,6 +40,12 @@ widget.setValue(12.4, "+12.4%")
 ```
 
 That is the exact code behind the screenshot above.
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomTrendChip in dark theme](/img/showcase/trendchip-dark.png)
 
 ## Properties
 

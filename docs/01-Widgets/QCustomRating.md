@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomRating
 
+![QCustomRating](/img/showcase/rating.png)
+
 A clickable star rating.
 
 A row of stars; click to set the value, hover to preview. Read-only mode
@@ -28,6 +30,12 @@ from Custom_Widgets.QCustomRating import QCustomRating
 
 widget = QCustomRating()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomRating in dark theme](/img/showcase/rating-dark.png)
 
 ## Properties
 

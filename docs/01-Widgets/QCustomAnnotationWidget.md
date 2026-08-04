@@ -1,5 +1,8 @@
 # QCustomAnnotationWidget
 
+![QCustomAnnotationWidget](/img/showcase/annotationwidget.png)
+
+
 `QCustomAnnotationWidget` (Canvas) is a powerful image annotation tool that provides a comprehensive drawing canvas for creating and managing annotations on images. It supports multiple shape types, Bezier curves, polygonal annotations, and exports annotations to JSON format for machine learning datasets.
 
 ---

@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomFileDropZone
 
+![QCustomFileDropZone](/img/showcase/filedropzone.png)
+
 Drag-and-drop file input with click-to-browse.
 
 A dashed zone that accepts dropped files (filtered by extension) or opens
@@ -29,6 +31,12 @@ from Custom_Widgets.QCustomFileDropZone import QCustomFileDropZone
 
 widget = QCustomFileDropZone()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomFileDropZone in dark theme](/img/showcase/filedropzone-dark.png)
 
 ## Signals
 

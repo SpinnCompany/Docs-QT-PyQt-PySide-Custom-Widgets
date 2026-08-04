@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomPaymentCard
 
+![QCustomPaymentCard](/img/showcase/paymentcard.png)
+
 A painted credit / debit card surface.
 
 A rounded card with a brand mark, a big amount and a masked card number,
@@ -36,6 +38,12 @@ from Custom_Widgets.QCustomPaymentCard import QCustomPaymentCard
 
 widget = QCustomPaymentCard()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomPaymentCard in dark theme](/img/showcase/paymentcard-dark.png)
 
 ## Properties
 

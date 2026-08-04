@@ -1,5 +1,8 @@
 # QCustomFlowLayout
 
+![QCustomFlowLayout](/img/showcase/flowlayout.gif)
+
+
 `QCustomFlowLayout` is a custom layout manager that arranges widgets in a flow pattern, similar to how text flows in a document. Widgets are positioned left to right, then top to bottom, automatically wrapping to the next line when space runs out.
 
 ---

@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomMenu
 
+![QCustomMenu](/img/showcase/menu.png)
+
 A modern popup action menu.
 
 A frameless, rounded, elevated popup for the "..." / more buttons: a column
@@ -32,6 +34,12 @@ from Custom_Widgets.QCustomMenu import QCustomMenu
 
 widget = QCustomMenu()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomMenu in dark theme](/img/showcase/menu-dark.png)
 
 ## Signals
 

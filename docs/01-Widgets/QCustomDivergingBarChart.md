@@ -17,6 +17,8 @@ sidebar_class_name: sidebar-pro
 
 :::
 
+![QCustomDivergingBarChart](/img/showcase/divergingbarchart.png)
+
 A diverging (bipolar / up-down) bar chart.
 
 Each category is ONE column split across a zero axis: an UPWARD segment
@@ -46,6 +48,12 @@ from Custom_Widgets.QCustomDivergingBarChart import QCustomDivergingBarChart
 
 widget = QCustomDivergingBarChart()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomDivergingBarChart in dark theme](/img/showcase/divergingbarchart-dark.png)
 
 ## Properties
 

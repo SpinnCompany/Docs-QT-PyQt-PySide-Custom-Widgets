@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomCompassDial
 
+![QCustomCompassDial](/img/showcase/compassdial.png)
+
 A PREMIUM beveled instrument compass.
 
 The skeuomorphic-modern map compass (the Haulix "NW" dial): a beveled metal
@@ -36,6 +38,12 @@ from Custom_Widgets.QCustomCompassDial import QCustomCompassDial
 
 widget = QCustomCompassDial()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomCompassDial in dark theme](/img/showcase/compassdial-dark.png)
 
 ## Properties
 

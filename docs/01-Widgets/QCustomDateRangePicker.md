@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomDateRangePicker
 
+![QCustomDateRangePicker](/img/showcase/daterangepicker.png)
+
 An INLINE dual-month range calendar.
 
 The travel-dates / booking range picker: N month grids side by side, a painted
@@ -36,6 +38,12 @@ from Custom_Widgets.QCustomDateRangePicker import QCustomDateRangePicker
 
 widget = QCustomDateRangePicker()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomDateRangePicker in dark theme](/img/showcase/daterangepicker-dark.png)
 
 ## Properties
 

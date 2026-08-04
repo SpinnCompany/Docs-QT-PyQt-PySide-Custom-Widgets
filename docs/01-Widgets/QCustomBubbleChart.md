@@ -17,6 +17,8 @@ sidebar_class_name: sidebar-pro
 
 :::
 
+![QCustomBubbleChart](/img/showcase/bubblechart.png)
+
 An interactive packed-circle (bubble) chart.
 
 The sentiment / share bubble cloud: one circle per item, AREA proportional to
@@ -52,6 +54,12 @@ from Custom_Widgets.QCustomBubbleChart import QCustomBubbleChart
 
 widget = QCustomBubbleChart()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomBubbleChart in dark theme](/img/showcase/bubblechart-dark.png)
 
 ## Properties
 

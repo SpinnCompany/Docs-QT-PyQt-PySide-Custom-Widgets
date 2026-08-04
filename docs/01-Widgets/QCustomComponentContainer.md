@@ -1,5 +1,8 @@
 # QCustomComponentContainer
 
+![QCustomComponentContainer](/img/showcase/componentcontainer.png)
+
+
 `QCustomComponentContainer` is a dynamic UI loader widget that can load and display external UI classes from Python files at runtime. It provides a flexible way to create modular, dynamically-loaded user interfaces.
 
 ---

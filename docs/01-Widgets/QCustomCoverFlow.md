@@ -8,6 +8,8 @@ mdx:
 <!-- generated:widget-reference -->
 # QCustomCoverFlow
 
+![QCustomCoverFlow](/img/showcase/coverflow.png)
+
 A 3D COVER-FLOW carousel.
 
 The signature music/media hero: the ACTIVE cover sits large and centred
@@ -38,6 +40,12 @@ from Custom_Widgets.QCustomCoverFlow import QCustomCoverFlow
 
 widget = QCustomCoverFlow()
 ```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+![QCustomCoverFlow in dark theme](/img/showcase/coverflow-dark.png)
 
 ## Properties
 

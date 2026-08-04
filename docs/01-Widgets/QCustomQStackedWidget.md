@@ -1,5 +1,8 @@
 # QCustomQStackedWidget
 
+![QCustomQStackedWidget](/img/showcase/qstackedwidget.gif)
+
+
 `QCustomQStackedWidget` is an enhanced version of Qt's standard `QStackedWidget` that provides smooth animated transitions between pages. It supports both slide and fade animations with customizable timing and easing curves.
 
 
