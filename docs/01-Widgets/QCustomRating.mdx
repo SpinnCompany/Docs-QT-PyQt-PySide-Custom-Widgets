@@ -1,0 +1,76 @@
+---
+title: QCustomRating
+description: A clickable star rating.
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import Zoomable from '@site/src/components/Zoomable';
+
+{/* generated:widget-reference */}
+
+# QCustomRating
+
+<Zoomable src={useBaseUrl('/img/showcase/rating.png')} alt="QCustomRating" />
+
+A clickable star rating.
+
+A row of stars; click to set the value, hover to preview. Read-only mode
+for display. Tokenized via a `filled` dynamic property on each star.
+
+## At a glance
+
+| | |
+|---|---|
+| **Tier** | Free (GPLv3) |
+| **Import** | `from Custom_Widgets.QCustomRating import QCustomRating` |
+| **Qt Designer** | Yes — drag it from the palette |
+
+## Quick start
+
+```python
+from Custom_Widgets.QCustomRating import QCustomRating
+
+widget = QCustomRating()
+```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+<Zoomable src={useBaseUrl('/img/showcase/rating-dark.png')} alt="QCustomRating in dark theme" />
+
+## Properties
+
+Every property below is settable in code and in Qt Designer.
+
+| Property | Type | Default |
+|---|---|---|
+| `maximum` | `int` | `5` |
+| `value` | `int` | `0` |
+| `readOnly` | `bool` | `False` |
+
+## Signals
+
+| Signal |
+|---|
+| `valueChanged(int)` |
+
+## Methods
+
+| Method | Description |
+|---|---|
+| `maximum(*args, **kwargs)` | Maximum. |
+| `readOnly(*args, **kwargs)` | Read only. |
+| `setValue(v)` | Set the value. |
+| `value(*args, **kwargs)` | Value. |
+| `valueChanged(...)` | Value changed. |
+
+## Theming
+
+Colours come from the design tokens, so they follow the active theme. Roles used: `warning`, `outline`.
+
+See [Design tokens](../02-Theming/DesignTokens.md).
+
+## Related
+
+[QCustomButtonGroup](QCustomButtonGroup.mdx) · [QCustomCheckBox](QCustomCheckBox.md) · [QCustomColorPicker](QCustomColorPicker.mdx) · [QCustomComboBox](QCustomComboBox.mdx) · [QCustomDateEdit](QCustomDateEdit.mdx) · [QCustomDateRangePicker](QCustomDateRangePicker.mdx) · [QCustomEmojiPicker](QCustomEmojiPicker.md) · [QCustomFileDropZone](QCustomFileDropZone.mdx)

@@ -1,0 +1,70 @@
+---
+title: QCustomTimeline
+description: A vertical event timeline.
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import Zoomable from '@site/src/components/Zoomable';
+
+{/* generated:widget-reference */}
+
+# QCustomTimeline
+
+<Zoomable src={useBaseUrl('/img/showcase/timeline.png')} alt="QCustomTimeline" />
+
+A vertical event timeline.
+
+Each item has a marker dot on a connecting rail plus a title, optional
+time and description. Rail colours come from tokens (qproperty lineColor);
+per-item dot colour can be overridden. Tokenized.
+
+## At a glance
+
+| | |
+|---|---|
+| **Tier** | Free (GPLv3) |
+| **Import** | `from Custom_Widgets.QCustomTimeline import QCustomTimeline` |
+| **Qt Designer** | Yes — drag it from the palette |
+
+## Quick start
+
+```python
+from Custom_Widgets.QCustomTimeline import QCustomTimeline
+
+widget = QCustomTimeline()
+```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+<Zoomable src={useBaseUrl('/img/showcase/timeline-dark.png')} alt="QCustomTimeline in dark theme" />
+
+## Properties
+
+Every property below is settable in code and in Qt Designer.
+
+| Property | Type | Default |
+|---|---|---|
+| `lineColor` | `color` | — |
+| `dotColor` | `color` | — |
+
+## Methods
+
+| Method | Description |
+|---|---|
+| `addItem(title, time=None, description=None, color=None)` | Add an item. |
+| `count()` | Count. |
+| `dotColor(*args, **kwargs)` | Dot color. |
+| `lineColor(*args, **kwargs)` | Line color. |
+| `setItems(items)` | Set the items. |
+
+## Theming
+
+Colours come from the design tokens, so they follow the active theme. Roles used: `on-surface`, `surface-muted`, `outline`, `accent`.
+
+See [Design tokens](../02-Theming/DesignTokens.md).
+
+## Related
+
+[AnalogGaugeWidget](AnalogGaugeWidget.md) · [QCustomAgendaList](QCustomAgendaList.mdx) · [QCustomAlert](QCustomAlert.md) · [QCustomAvatar](QCustomAvatar.mdx) · [QCustomAvatarGroup](QCustomAvatarGroup.mdx) · [QCustomBadge](QCustomBadge.md) · [QCustomCard](QCustomCard.md) · [QCustomChip](QCustomChip.mdx)

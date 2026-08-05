@@ -1,0 +1,112 @@
+---
+title: QCustomPaymentCard
+description: A painted credit / debit card surface.
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import Zoomable from '@site/src/components/Zoomable';
+
+{/* generated:widget-reference */}
+
+# QCustomPaymentCard
+
+<Zoomable src={useBaseUrl('/img/showcase/paymentcard.png')} alt="QCustomPaymentCard" />
+
+A painted credit / debit card surface.
+
+A rounded card with a brand mark, a big amount and a masked card number,
+drawn entirely with QPainter so it stays crisp at any size and needs no
+child widgets. Two looks:
+variant="gradient" (default) - a diagonal two-stop gradient (e.g. an accent
+"active" card) with light text.
+variant="flat" - a single flat fill (e.g. a muted secondary card) whose
+text colour you control.
+Colours come from qproperties so a theme/manager can tokenise them. An
+optional EMV-style chip can be shown. Set content with setBrand/setAmount/
+setNumber (or the Designer properties).
+
+## At a glance
+
+| | |
+|---|---|
+| **Tier** | Free (GPLv3) |
+| **Import** | `from Custom_Widgets.QCustomPaymentCard import QCustomPaymentCard` |
+| **Qt Designer** | Yes — drag it from the palette |
+
+## Quick start
+
+```python
+from Custom_Widgets.QCustomPaymentCard import QCustomPaymentCard
+
+widget = QCustomPaymentCard()
+```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+<Zoomable src={useBaseUrl('/img/showcase/paymentcard-dark.png')} alt="QCustomPaymentCard in dark theme" />
+
+## Properties
+
+Every property below is settable in code and in Qt Designer.
+
+| Property | Type | Default |
+|---|---|---|
+| `brand` | `string` | `VISA` |
+| `amount` | `string` | `$5 400.55` |
+| `number` | `string` | `4558` |
+| `variant` | `enum: `gradient` / `flat`` | `gradient` |
+| `gradientStart` | `color` | `#3f6bff` |
+| `gradientEnd` | `color` | `#1c33c4` |
+| `flatColor` | `color` | `#e7e9f0` |
+| `textColor` | `color` | `#ffffff` |
+| `cornerRadius` | `int` | `18` |
+| `showChip` | `bool` | `False` |
+| `fullNumber` | `string` | — |
+| `revealable` | `bool` | `False` |
+| `revealed` | `bool` | — |
+
+## Signals
+
+| Signal |
+|---|
+| `numberRevealed(bool)` |
+
+## Methods
+
+| Method | Description |
+|---|---|
+| `amount(*args, **kwargs)` | Amount. |
+| `brand(*args, **kwargs)` | Brand. |
+| `cornerRadius(*args, **kwargs)` | Corner radius. |
+| `flatColor(*args, **kwargs)` | Flat color. |
+| `fullNumber(*args, **kwargs)` | Full number. |
+| `gradientEnd(*args, **kwargs)` | Gradient end. |
+| `gradientStart(*args, **kwargs)` | Gradient start. |
+| `number(*args, **kwargs)` | Number. |
+| `numberRevealed(...)` | Number revealed. |
+| `revealable(*args, **kwargs)` | Revealable. |
+| `revealed(*args, **kwargs)` | Revealed. |
+| `setAmount(text)` | Set the amount. |
+| `setBrand(text)` | Set the brand. |
+| `setColors(start, end=None)` | Set the gradient (start, end) — or a single flat colour if end is None. |
+| `setFullNumber(number)` | The complete PAN — enables a real reveal (otherwise the eye just |
+| `setNumber(text)` | Set the number. |
+| `setRevealable(on)` | Set the revealable. |
+| `setRevealed(on)` | Set the revealed. |
+| `setVariant(variant)` | Set the variant. |
+| `showChip(*args, **kwargs)` | Show the chip. |
+| `textColor(*args, **kwargs)` | Text color. |
+| `toggleReveal()` | Toggle the reveal. |
+| `variant(*args, **kwargs)` | Variant. |
+
+## Theming
+
+Colours come from the design tokens, so they follow the active theme. Roles used: `accent`.
+
+See [Design tokens](../02-Theming/DesignTokens.md).
+
+## Related
+
+[AnalogGaugeWidget](AnalogGaugeWidget.md) · [QCustomAgendaList](QCustomAgendaList.mdx) · [QCustomAlert](QCustomAlert.md) · [QCustomAvatar](QCustomAvatar.mdx) · [QCustomAvatarGroup](QCustomAvatarGroup.mdx) · [QCustomBadge](QCustomBadge.md) · [QCustomCard](QCustomCard.md) · [QCustomChip](QCustomChip.mdx)

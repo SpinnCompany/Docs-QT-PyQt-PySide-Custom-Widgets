@@ -1,0 +1,69 @@
+---
+title: QCustomFileDropZone
+description: Drag-and-drop file input with click-to-browse.
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import Zoomable from '@site/src/components/Zoomable';
+
+{/* generated:widget-reference */}
+
+# QCustomFileDropZone
+
+<Zoomable src={useBaseUrl('/img/showcase/filedropzone.png')} alt="QCustomFileDropZone" />
+
+Drag-and-drop file input with click-to-browse.
+
+A dashed zone that accepts dropped files (filtered by extension) or opens
+a file dialog on click. Highlights while dragging (a `dragActive` property).
+Tokenized. Emits filesDropped / filesChanged.
+
+## At a glance
+
+| | |
+|---|---|
+| **Tier** | Free (GPLv3) |
+| **Import** | `from Custom_Widgets.QCustomFileDropZone import QCustomFileDropZone` |
+| **Qt Designer** | Yes — drag it from the palette |
+
+## Quick start
+
+```python
+from Custom_Widgets.QCustomFileDropZone import QCustomFileDropZone
+
+widget = QCustomFileDropZone()
+```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+<Zoomable src={useBaseUrl('/img/showcase/filedropzone-dark.png')} alt="QCustomFileDropZone in dark theme" />
+
+## Signals
+
+| Signal |
+|---|
+| `filesChanged(QVariantList)` |
+| `filesDropped(QVariantList)` |
+
+## Methods
+
+| Method | Description |
+|---|---|
+| `clear()` | Clear. |
+| `files()` | Files. |
+| `filesChanged(...)` | Files changed. |
+| `filesDropped(...)` | Files dropped. |
+| `setAcceptedExtensions(extensions)` | Set the accepted extensions. |
+| `setMultiple(multiple)` | Set the multiple. |
+
+## Theming
+
+Colours come from the design tokens, so they follow the active theme. Roles used: `surface`, `surface-muted`, `on-surface`, `outline`, `accent`.
+
+See [Design tokens](../02-Theming/DesignTokens.md).
+
+## Related
+
+[QCustomButtonGroup](QCustomButtonGroup.mdx) · [QCustomCheckBox](QCustomCheckBox.md) · [QCustomColorPicker](QCustomColorPicker.mdx) · [QCustomComboBox](QCustomComboBox.mdx) · [QCustomDateEdit](QCustomDateEdit.mdx) · [QCustomDateRangePicker](QCustomDateRangePicker.mdx) · [QCustomEmojiPicker](QCustomEmojiPicker.md) · [QCustomForm](QCustomForm.mdx)

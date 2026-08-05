@@ -1,0 +1,72 @@
+---
+title: QCustomMenu
+description: A modern popup action menu.
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import Zoomable from '@site/src/components/Zoomable';
+
+{/* generated:widget-reference */}
+
+# QCustomMenu
+
+<Zoomable src={useBaseUrl('/img/showcase/menu.png')} alt="QCustomMenu" />
+
+A modern popup action menu.
+
+A frameless, rounded, elevated popup for the "..." / more buttons: a column
+of icon + label action rows with hover states, optional separators and a
+right-aligned hint. Open it anchored under a button with popupAt(button).
+Emits triggered(key) when an item is picked. Theme it from code with
+applyColors(...) so it flips with the app theme (it is a top-level popup, so
+the app stylesheet does not cascade in automatically).
+
+## At a glance
+
+| | |
+|---|---|
+| **Tier** | Free (GPLv3) |
+| **Import** | `from Custom_Widgets.QCustomMenu import QCustomMenu` |
+| **Qt Designer** | Yes — drag it from the palette |
+
+## Quick start
+
+```python
+from Custom_Widgets.QCustomMenu import QCustomMenu
+
+widget = QCustomMenu()
+```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+<Zoomable src={useBaseUrl('/img/showcase/menu-dark.png')} alt="QCustomMenu in dark theme" />
+
+## Signals
+
+| Signal |
+|---|
+| `triggered(QString)` |
+
+## Methods
+
+| Method | Description |
+|---|---|
+| `addAction(text, key=None, icon=None, hint='', danger=False)` | Add an action row. `icon` may be a QIcon or QPixmap. Returns the key. |
+| `addSeparator()` | Add a separator. |
+| `applyColors(bg=None, text=None, muted=None, hover=None, border=None, accent=None, danger=None)` | Apply the colors. |
+| `clear()` | Clear. |
+| `popupAt(anchor, align='right', gap=4)` | Show the menu just below `anchor`, right- or left-aligned to it. |
+| `popupAtPos(global_pos)` | Popup at pos. |
+| `triggered(...)` | Triggered. |
+
+## Theming
+
+Colours come from the design tokens, so they follow the active theme. Roles used: `accent`, `background`, `text`.
+
+See [Design tokens](../02-Theming/DesignTokens.md).
+
+## Related
+
+[QCustomBreadcrumbs](QCustomBreadcrumbs.mdx) · [QCustomCommandPalette](QCustomCommandPalette.mdx) · [QCustomDrawer](QCustomDrawer.mdx) · [QCustomHamburgerMenu](QCustomHamburgerMenu.mdx) · [QCustomHeaderNav](QCustomHeaderNav.mdx) · [QCustomPagination](QCustomPagination.mdx) · [QCustomSidebar](QCustomSidebar.md) · [QCustomSidebarButton](QCustomSidebarButton.md)

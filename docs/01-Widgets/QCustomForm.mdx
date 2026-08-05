@@ -1,0 +1,57 @@
+---
+title: QCustomForm
+description: Minimal form container with validation and submit signals.
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import Zoomable from '@site/src/components/Zoomable';
+
+{/* generated:widget-reference */}
+
+# QCustomForm
+
+<Zoomable src={useBaseUrl('/img/showcase/form.png')} alt="QCustomForm" />
+
+Minimal form container with validation and submit signals.
+
+## At a glance
+
+| | |
+|---|---|
+| **Tier** | Free (GPLv3) |
+| **Import** | `from Custom_Widgets.QCustomForm import QCustomForm` |
+| **Qt Designer** | Code only |
+
+## Quick start
+
+```python
+from Custom_Widgets.QCustomForm import QCustomForm
+
+widget = QCustomForm()
+```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+<Zoomable src={useBaseUrl('/img/showcase/form-dark.png')} alt="QCustomForm in dark theme" />
+
+## Signals
+
+| Signal |
+|---|
+| `submitted(QVariantMap)` |
+
+## Methods
+
+| Method | Description |
+|---|---|
+| `add_field(field)` | Add field. |
+| `errors()` | Errors. |
+| `submit()` | Submit. |
+| `submitted(...)` | Submitted. |
+| `validate()` | Validate. |
+
+## Related
+
+[QCustomButtonGroup](QCustomButtonGroup.mdx) · [QCustomCheckBox](QCustomCheckBox.md) · [QCustomColorPicker](QCustomColorPicker.mdx) · [QCustomComboBox](QCustomComboBox.mdx) · [QCustomDateEdit](QCustomDateEdit.mdx) · [QCustomDateRangePicker](QCustomDateRangePicker.mdx) · [QCustomEmojiPicker](QCustomEmojiPicker.md) · [QCustomFileDropZone](QCustomFileDropZone.mdx)

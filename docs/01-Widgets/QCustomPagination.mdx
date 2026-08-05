@@ -1,0 +1,66 @@
+---
+title: QCustomPagination
+description: Page navigation with prev/next and ellipsis.
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import Zoomable from '@site/src/components/Zoomable';
+
+{/* generated:widget-reference */}
+
+# QCustomPagination
+
+<Zoomable src={useBaseUrl('/img/showcase/pagination.png')} alt="QCustomPagination" />
+
+Page navigation with prev/next and ellipsis.
+
+[\<] [1] ... [4] [5] [6] ... [20] [>]  - first/last always shown, a window
+around the current page, ellipsis for gaps. Tokenized. Emits pageChanged.
+
+## At a glance
+
+| | |
+|---|---|
+| **Tier** | Free (GPLv3) |
+| **Import** | `from Custom_Widgets.QCustomPagination import QCustomPagination` |
+| **Qt Designer** | Yes — drag it from the palette |
+
+## Quick start
+
+```python
+from Custom_Widgets.QCustomPagination import QCustomPagination
+
+widget = QCustomPagination()
+```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+<Zoomable src={useBaseUrl('/img/showcase/pagination-dark.png')} alt="QCustomPagination in dark theme" />
+
+## Signals
+
+| Signal |
+|---|
+| `pageChanged(int)` |
+
+## Methods
+
+| Method | Description |
+|---|---|
+| `currentPage()` | Current page. |
+| `pageChanged(...)` | Page changed. |
+| `pageCount()` | Page count. |
+| `setCurrentPage(page)` | Set the current page. |
+| `setPageCount(count)` | Set the page count. |
+
+## Theming
+
+Colours come from the design tokens, so they follow the active theme. Roles used: `surface`, `on-surface`, `surface-muted`, `outline`, `accent`, `on-primary`.
+
+See [Design tokens](../02-Theming/DesignTokens.md).
+
+## Related
+
+[QCustomBreadcrumbs](QCustomBreadcrumbs.mdx) · [QCustomCommandPalette](QCustomCommandPalette.mdx) · [QCustomDrawer](QCustomDrawer.mdx) · [QCustomHamburgerMenu](QCustomHamburgerMenu.mdx) · [QCustomHeaderNav](QCustomHeaderNav.mdx) · [QCustomMenu](QCustomMenu.mdx) · [QCustomSidebar](QCustomSidebar.md) · [QCustomSidebarButton](QCustomSidebarButton.md)

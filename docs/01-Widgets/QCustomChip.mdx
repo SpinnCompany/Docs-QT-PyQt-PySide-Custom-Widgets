@@ -1,0 +1,65 @@
+---
+title: QCustomChip
+description: / QCustomChipGroup - compact tags / filter chips.
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import Zoomable from '@site/src/components/Zoomable';
+
+{/* generated:widget-reference */}
+
+# QCustomChip
+
+<Zoomable src={useBaseUrl('/img/showcase/chip.png')} alt="QCustomChip" />
+
+/ QCustomChipGroup - compact tags / filter chips.
+
+A chip is a small rounded label, optionally closable (x) and/or
+selectable (filter/choice chip). QCustomChipGroup lays chips out in a
+wrapping flow with optional single- or multi-select. Tokenized.
+
+## At a glance
+
+| | |
+|---|---|
+| **Tier** | Free (GPLv3) |
+| **Import** | `from Custom_Widgets.QCustomChip import QCustomChip` |
+| **Qt Designer** | Code only |
+
+## Quick start
+
+```python
+from Custom_Widgets.QCustomChip import QCustomChip
+
+widget = QCustomChip()
+```
+
+## Dark theme
+
+Colours come from the design tokens, so the widget follows the app theme with no extra work.
+
+<Zoomable src={useBaseUrl('/img/showcase/chip-dark.png')} alt="QCustomChip in dark theme" />
+
+## Signals
+
+| Signal |
+|---|
+| `clicked()` |
+| `removed()` |
+| `toggled(bool)` |
+
+## Methods
+
+| Method | Description |
+|---|---|
+| `clicked(...)` | Clicked. |
+| `data()` | Data. |
+| `isSelected()` | Return whether the widget is selected. |
+| `removed(...)` | Removed. |
+| `setSelected(selected)` | Set the selected. |
+| `text()` | Text. |
+| `toggled(...)` | Toggled. |
+
+## Related
+
+[AnalogGaugeWidget](AnalogGaugeWidget.md) · [QCustomAgendaList](QCustomAgendaList.mdx) · [QCustomAlert](QCustomAlert.md) · [QCustomAvatar](QCustomAvatar.mdx) · [QCustomAvatarGroup](QCustomAvatarGroup.mdx) · [QCustomBadge](QCustomBadge.md) · [QCustomCard](QCustomCard.md) · [QCustomClockLabel](QCustomClockLabel.mdx)
