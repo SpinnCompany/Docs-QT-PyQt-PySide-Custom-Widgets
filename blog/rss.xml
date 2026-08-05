@@ -4,10 +4,137 @@
         <title>Qt Custom Widgets Blog</title>
         <link>https://SpinnCompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog</link>
         <description>Qt Custom Widgets Blog</description>
-        <lastBuildDate>Wed, 26 Nov 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 05 Aug 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[The App Showcase: 92 real apps, captured live — and 12 premium flagships]]></title>
+            <link>https://SpinnCompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/app-showcase-92-real-apps</link>
+            <guid>https://SpinnCompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/app-showcase-92-real-apps</guid>
+            <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[A widget gallery tells you what the parts look like. The new]]></description>
+            <content:encoded><![CDATA[<p>A widget gallery tells you what the parts look like. The new
+<a class="" href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/Usage-Examples/AppShowcase">App showcase</a> shows the machines: <strong>92 complete,
+runnable applications</strong> built with Custom Widgets, every screenshot captured
+from the app itself — not a mockup.</p>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="whats-in-it">What's in it<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/app-showcase-92-real-apps#whats-in-it" class="hash-link" aria-label="Direct link to What's in it" title="Direct link to What's in it" translate="no">​</a></h2>
+<p>Dashboards for finance, crypto, cash flow, smart-home control and e-commerce
+analytics. A three-pane chat client with voice messages and reactions. A music
+player with a cover-flow hero. A node-graph creative studio with a code editor
+and timeline. Operations consoles, agenda boards, starters — and roughly
+seventy single-widget demos, each the shortest runnable answer to "how do I
+wire this up".</p>
+<p><img decoding="async" loading="lazy" alt="AuroraChat" src="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/assets/images/aurorachat-e8205b09c36220f5217563cf988192f6.png" width="960" height="587" class="img_ev3q"></p>
+<p>Every card lists the widgets the app actually uses (detected from its real
+imports, so the list can't lie), and every screenshot clicks to full size.</p>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="free-apps-and-supporter-flagships">Free apps, and supporter flagships<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/app-showcase-92-real-apps#free-apps-and-supporter-flagships" class="hash-link" aria-label="Direct link to Free apps, and supporter flagships" title="Direct link to Free apps, and supporter flagships" translate="no">​</a></h2>
+<p>The single-widget demos, the starters, and teaching apps like GlassHome stay
+free in the repo — they are documentation. The <strong>twelve flagship
+applications</strong> (marked <strong>PATREON</strong> on the showcase) ship their full source to
+supporters: six dashboards, AuroraChat, two operations decks, the jobs table,
+NodeStudio and RhythmoTune. Each is a production-shaped codebase — Designer
+forms, compiled sources, themed stylesheets, managers and workers — meant to
+be the starting point for your own app.</p>
+<p><img decoding="async" loading="lazy" alt="SmartHomeDashboard" src="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/assets/images/smarthomedashboard-e6e6853c4453a2a33b83a032ea351e11.png" width="960" height="576" class="img_ev3q"></p>
+<p>Screenshots of everything stay public. The source of the twelve is the
+supporter perk.</p>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="how-to-get-them">How to get them<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/app-showcase-92-real-apps#how-to-get-them" class="hash-link" aria-label="Direct link to How to get them" title="Direct link to How to get them" translate="no">​</a></h2>
+<p>Support the project on <a href="https://www.patreon.com/c/spinntv" target="_blank" rel="noopener noreferrer" class="">Patreon</a> or grab a
+plan at <a href="https://customwidgets.org/pricing/" target="_blank" rel="noopener noreferrer" class="">customwidgets.org/pricing</a> —
+supporters get the premium example apps alongside the Pro widget package
+(DataTable Pro's virtualization, grouping, pivot and export). Tutorials and
+walkthroughs land on <a href="https://www.youtube.com/@SpinnTV" target="_blank" rel="noopener noreferrer" class="">YouTube</a>.</p>
+<p>Everything else — the 163-widget library, the 82 public examples, the whole
+documentation site — is free under GPLv3, and
+<a class="" href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/custom-widgets-2-3-0-released">2.3.0 is on PyPI now</a>.</p>]]></content:encoded>
+            <author>khamisikibet@gmail.com (Khamisi Kibet)</author>
+            <category>PySide6</category>
+            <category>Python</category>
+            <category>GUI</category>
+            <category>Custom Widgets</category>
+            <category>Showcase</category>
+            <category>news</category>
+        </item>
+        <item>
+            <title><![CDATA[Custom Widgets 2.3.0: 163 widgets, painted charts, and docs that can't go stale]]></title>
+            <link>https://SpinnCompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/custom-widgets-2-3-0-released</link>
+            <guid>https://SpinnCompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/custom-widgets-2-3-0-released</guid>
+            <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Version 2.3.0 is on PyPI — the largest release in the project's history.]]></description>
+            <content:encoded><![CDATA[<p>Version <strong>2.3.0</strong> is on PyPI — the largest release in the project's history.
+The catalogue grows to <strong>163 documented widgets</strong>, every example app was
+rebuilt and verified, and the entire reference documentation is now generated
+straight from the code.</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">pip </span><span class="token function" style="color:rgb(80, 250, 123)">install</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(189, 147, 249);font-style:italic">--upgrade</span><span class="token plain"> QT-PyQt-PySide-Custom-Widgets</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="a-painted-chart-family">A painted chart family<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/custom-widgets-2-3-0-released#a-painted-chart-family" class="hash-link" aria-label="Direct link to A painted chart family" title="Direct link to A painted chart family" translate="no">​</a></h2>
+<p>Charts used to lean on Qt Charts; most of the family is now painted directly
+with QPainter — theme-token driven, crisp at any size, and interactive:
+Scatter, Funnel, RangeBar, Radial gauges, Sankey, Candlestick, Beeswarm,
+DivergingBar, DotMatrix, Sparkline, MiniBar, and the ring/segment
+<a class="" href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/Widgets/QCustomDonut">QCustomDonut</a>. The
+<a class="" href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/Widgets/QCustomBubbleChart">bubble chart</a> ships zoom, drag-pan, search
+dimming and a painted tooltip card — not an OS tooltip in sight.</p>
+<p><img decoding="async" loading="lazy" alt="QCustomDonut" src="data:image/png;base64,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" width="180" height="112" class="img_ev3q"></p>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="a-real-data-table">A real data table<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/custom-widgets-2-3-0-released#a-real-data-table" class="hash-link" aria-label="Direct link to A real data table" title="Direct link to A real data table" translate="no">​</a></h2>
+<p><a class="" href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/Widgets/QCustomDataTable">QCustomDataTable</a> brings rich cell renderers
+(two-line, status dots, currency, links), a select column, sortable headers
+and per-column alignment — enough to match a modern SaaS table without
+leaving Qt. Supporters get <strong>DataTable Pro</strong> on top: virtualization for 100k+
+rows, frozen columns, grouping with aggregates, pivot and export.</p>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="maps-tokens-and-the-rest">Maps, tokens, and the rest<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/custom-widgets-2-3-0-released#maps-tokens-and-the-rest" class="hash-link" aria-label="Direct link to Maps, tokens, and the rest" title="Direct link to Maps, tokens, and the rest" translate="no">​</a></h2>
+<ul>
+<li class=""><strong>QCustomMapView</strong> — the optional <code>[map]</code> extra:
+QtLocation's OSM backend with an offline default provider. No API key, no
+Chromium.</li>
+<li class=""><strong>Design tokens</strong> — <code>applyDesignTokens(app, theme="dark")</code> themes the whole
+widget set from one call, light and dark.</li>
+<li class=""><strong>Chrome &amp; motion</strong> — hamburger menu, animated slide menu, animated page
+transitions, flow layouts with animated reflow, compass dials, liquid and
+radial gauges, skeletons and more. Over 60 widgets animate.</li>
+<li class=""><strong>Typed stubs</strong> — the whole set ships <code>.pyi</code> stubs (<code>py.typed</code>), mypy-clean.</li>
+<li class=""><strong>A design-rule linter</strong> — <code>Custom_Widgets.lint</code> enforces the visual rules a
+type checker can't see (no glyph icons, no hardcoded hex, justified shadows).</li>
+<li class=""><strong>An MCP server</strong> — the <code>[mcp]</code> extra lets AI agents drive Qt Designer, run
+apps, and read the widget catalog with exact signatures.</li>
+</ul>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="docs-that-cannot-drift">Docs that cannot drift<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/custom-widgets-2-3-0-released#docs-that-cannot-drift" class="hash-link" aria-label="Direct link to Docs that cannot drift" title="Direct link to Docs that cannot drift" translate="no">​</a></h2>
+<p>Every widget page — prose, property tables, signals, screenshots, animations
+— is generated from the live code. The <a class="" href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/gallery">gallery</a> shows all 163
+widgets (61 animated), and every screenshot in it is produced by the same
+pipeline that verifies the widgets still render.</p>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="82-rebuilt-examples--and-an-app-showcase">82 rebuilt examples — and an App Showcase<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/custom-widgets-2-3-0-released#82-rebuilt-examples--and-an-app-showcase" class="hash-link" aria-label="Direct link to 82 rebuilt examples — and an App Showcase" title="Direct link to 82 rebuilt examples — and an App Showcase" translate="no">​</a></h2>
+<p>Every public example app was rebuilt to the full structure (Designer-editable
+<code>.ui</code> forms, compiled sources, themed stylesheets, zero inline styles) and
+verified headlessly. And because widgets are parts, not products, the new
+<a class="" href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/Usage-Examples/AppShowcase">App showcase</a> captures <strong>92 complete
+applications</strong> live — dashboards, a chat client, a music player, a node
+editor — every screenshot taken from the running app.</p>
+<p><img decoding="async" loading="lazy" alt="NodeStudio" src="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/assets/images/nodestudio-0d00d17501d032fc9b00c9f994738e72.png" width="960" height="615" class="img_ev3q"></p>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="fixes-worth-knowing-about">Fixes worth knowing about<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/custom-widgets-2-3-0-released#fixes-worth-knowing-about" class="hash-link" aria-label="Direct link to Fixes worth knowing about" title="Direct link to Fixes worth knowing about" translate="no">​</a></h2>
+<p>Multi-second boot hangs in component-heavy apps are gone (QSettings writes
+are now write-if-changed), stacked-widget slide/fade transitions and slide
+menu auto-sizing are restored, a QtLocation provider segfault is fixed, and
+chart theme listeners can no longer crash an app by firing into a deleted
+widget.</p>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="links">Links<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/custom-widgets-2-3-0-released#links" class="hash-link" aria-label="Direct link to Links" title="Direct link to Links" translate="no">​</a></h2>
+<ul>
+<li class=""><a href="https://pypi.org/project/QT-PyQt-PySide-Custom-Widgets/2.3.0/" target="_blank" rel="noopener noreferrer" class="">PyPI: QT-PyQt-PySide-Custom-Widgets 2.3.0</a></li>
+<li class=""><a class="" href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/gallery">Widget gallery</a> · <a class="" href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/Usage-Examples/AppShowcase">App showcase</a></li>
+<li class=""><a href="https://customwidgets.org/pricing/" target="_blank" rel="noopener noreferrer" class="">Pro &amp; supporter plans</a></li>
+<li class=""><a href="https://www.patreon.com/c/spinntv" target="_blank" rel="noopener noreferrer" class="">Patreon</a> · <a href="https://www.youtube.com/@SpinnTV" target="_blank" rel="noopener noreferrer" class="">YouTube</a></li>
+</ul>
+<p>The free package is GPLv3, as always. Thank you to everyone who filed issues,
+tested previews and supported the project — this release is enormous because
+of you.</p>]]></content:encoded>
+            <author>khamisikibet@gmail.com (Khamisi Kibet)</author>
+            <category>PySide6</category>
+            <category>Python</category>
+            <category>GUI</category>
+            <category>Custom Widgets</category>
+            <category>version</category>
+            <category>news</category>
+        </item>
         <item>
             <title><![CDATA[Complete Guide to Acrylic Effects in Qt]]></title>
             <link>https://SpinnCompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/complete-guide-to-acrylic-effects-in-qt</link>
