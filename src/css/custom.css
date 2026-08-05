@@ -288,8 +288,10 @@ div.theme-announcement-bar a[href] {
    on focus. Class names are the plugin's own, so they are stable.
    ========================================================================== */
 
+/* Never hardcode a CSS-module hash (this had `.searchBar_RVTs input`): the
+   suffix changes between builds and Docusaurus versions. `.navbar__search-input`
+   is stable and the `[class*=]` match is hash-independent. */
 .navbar__search-input,
-.searchBar_RVTs input,
 input[class*="searchInput"] {
   background: var(--cw-surface-2);
   border: 1px solid var(--cw-border);
@@ -452,9 +454,13 @@ code {
   color: var(--ifm-color-primary);
 }
 
-/* Code blocks: one border, no glow, no hover. */
+/* Code blocks: one border, no glow, no hover.
+   `.theme-code-block` is the stable hook. This rule previously used
+   `div[class^="codeBlockContainer"]` and was DEAD: the real attribute is
+   `class="language-bash codeBlockContainer_Ckt0 theme-code-block"`, so
+   `codeBlockContainer` is not first and `^=` never matched. */
 .markdown pre,
-div[class^="codeBlockContainer"] {
+.theme-code-block {
   border: 1px solid var(--cw-border);
   border-radius: var(--cw-radius);
   box-shadow: none;
