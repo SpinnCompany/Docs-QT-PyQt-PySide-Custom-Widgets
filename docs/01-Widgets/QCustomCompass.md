@@ -77,22 +77,22 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `animated(*args, **kwargs)` |  |
-| `cardinal16(deg)` |  |
-| `cardinalColor(*args, **kwargs)` |  |
-| `heading(*args, **kwargs)` |  |
-| `headingChanged(...)` |  |
-| `hubColor(*args, **kwargs)` |  |
-| `interactive(*args, **kwargs)` |  |
-| `northColor(*args, **kwargs)` |  |
-| `readoutColor(*args, **kwargs)` |  |
-| `ringColor(*args, **kwargs)` |  |
-| `rotateBezel(*args, **kwargs)` |  |
-| `setHeading(deg)` |  |
-| `showIntercardinals(*args, **kwargs)` |  |
-| `showReadout(*args, **kwargs)` |  |
-| `southColor(*args, **kwargs)` |  |
-| `tickColor(*args, **kwargs)` |  |
+| `animated(*args, **kwargs)` | Animated. |
+| `cardinal16(deg)` | Cardinal16. |
+| `cardinalColor(*args, **kwargs)` | Cardinal color. |
+| `heading(*args, **kwargs)` | Heading. |
+| `headingChanged(...)` | Heading changed. |
+| `hubColor(*args, **kwargs)` | Hub color. |
+| `interactive(*args, **kwargs)` | Interactive. |
+| `northColor(*args, **kwargs)` | North color. |
+| `readoutColor(*args, **kwargs)` | Readout color. |
+| `ringColor(*args, **kwargs)` | Ring color. |
+| `rotateBezel(*args, **kwargs)` | Rotate bezel. |
+| `setHeading(deg)` | Set the heading. |
+| `showIntercardinals(*args, **kwargs)` | Show the intercardinals. |
+| `showReadout(*args, **kwargs)` | Show the readout. |
+| `southColor(*args, **kwargs)` | South color. |
+| `tickColor(*args, **kwargs)` | Tick color. |
 
 ## Theming
 

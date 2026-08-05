@@ -354,6 +354,6 @@ The `QCustomQSlider` is ideal for media players, configuration dialogs, settings
 
 | Method | Description |
 |---|---|
-| `pixelPosToRangeValue(pos)` |  |
+| `pixelPosToRangeValue(pos)` | Pixel pos to range value. |
 
 <!-- /generated:api-reference -->

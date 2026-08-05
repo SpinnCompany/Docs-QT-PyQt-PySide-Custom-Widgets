@@ -398,13 +398,13 @@ The `QCustomQToolTip` is perfect for applications requiring modern, visually app
 
 | Method | Description |
 |---|---|
-| `adjustSizeToContent()` |  |
-| `closeEvent(e)` |  |
-| `eventFilter(obj, e: PySide6.QtCore.QEvent)` |  |
-| `handleThemeChanged()` |  |
-| `onClosed(...)` |  |
-| `setIcon(icon)` |  |
-| `setShadowEffect()` |  |
-| `setText(text)` |  |
+| `adjustSizeToContent()` | Adjust size to content. |
+| `closeEvent(e)` | Close the event. |
+| `eventFilter(obj, e: PySide6.QtCore.QEvent)` | Event filter. |
+| `handleThemeChanged()` | Handle theme changed. |
+| `onClosed(...)` | Handle closed. |
+| `setIcon(icon)` | Set the icon. |
+| `setShadowEffect()` | Set the shadow effect. |
+| `setText(text)` | Set the text. |
 
 <!-- /generated:api-reference -->

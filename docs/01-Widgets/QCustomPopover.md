@@ -58,15 +58,15 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `addWidget(widget)` |  |
+| `addWidget(widget)` | Add a widget. |
 | `attach(trigger, placement='bottom')` | Create a popover anchored to `trigger` and open it on click. |
-| `borderColor(*args, **kwargs)` |  |
-| `closed(...)` |  |
-| `contentLayout()` |  |
-| `opened(...)` |  |
-| `panelColor(*args, **kwargs)` |  |
-| `setPlacement(placement)` |  |
-| `showPopover()` |  |
+| `borderColor(*args, **kwargs)` | Border color. |
+| `closed(...)` | Closed. |
+| `contentLayout()` | Content layout. |
+| `opened(...)` | Opened. |
+| `panelColor(*args, **kwargs)` | Panel color. |
+| `setPlacement(placement)` | Set the placement. |
+| `showPopover()` | Show the popover. |
 
 ## Theming
 

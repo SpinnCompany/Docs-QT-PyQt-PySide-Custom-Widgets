@@ -100,14 +100,14 @@ colours use the `success` / `destructive` / `outline` roles. See
 
 | Method | Description |
 |---|---|
-| `caption(*args, **kwargs)` |  |
-| `label(*args, **kwargs)` |  |
-| `setCaption(text)` |  |
+| `caption(*args, **kwargs)` | Caption. |
+| `label(*args, **kwargs)` | Label. |
+| `setCaption(text)` | Set the caption. |
 | `setDelta(text, trend=None)` | Set the delta text (e.g. "+12.5%") and, optionally, the trend |
-| `setLabel(text)` |  |
-| `setTrend(trend)` |  |
-| `setValue(text)` |  |
-| `trend(*args, **kwargs)` |  |
-| `value(*args, **kwargs)` |  |
+| `setLabel(text)` | Set the label. |
+| `setTrend(trend)` | Set the trend. |
+| `setValue(text)` | Set the value. |
+| `trend(*args, **kwargs)` | Trend. |
+| `value(*args, **kwargs)` | Value. |
 
 <!-- /generated:api-reference -->

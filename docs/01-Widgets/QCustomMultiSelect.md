@@ -82,38 +82,38 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `chipBackgroundColor(*args, **kwargs)` |  |
-| `chipTextColor(*args, **kwargs)` |  |
-| `clearSelection()` |  |
-| `count()` |  |
-| `fieldBackgroundColor(*args, **kwargs)` |  |
-| `fieldBorderActiveColor(*args, **kwargs)` |  |
-| `fieldBorderColor(*args, **kwargs)` |  |
-| `fieldBorderErrorColor(*args, **kwargs)` |  |
-| `hidePopup()` |  |
-| `isPopupVisible()` |  |
-| `isSelected(value)` |  |
-| `labelFor(value)` |  |
-| `maxChips(*args, **kwargs)` |  |
-| `maxSelection(*args, **kwargs)` |  |
-| `optionToggled(...)` |  |
-| `options()` |  |
-| `optionsCsv(*args, **kwargs)` |  |
-| `placeholderColor(*args, **kwargs)` |  |
-| `placeholderText(*args, **kwargs)` |  |
-| `searchable(*args, **kwargs)` |  |
-| `selectOption(value, on=True)` |  |
-| `selected()` |  |
-| `selectedCsv(*args, **kwargs)` |  |
-| `selectedLabels()` |  |
-| `selectionChanged(...)` |  |
+| `chipBackgroundColor(*args, **kwargs)` | Chip background color. |
+| `chipTextColor(*args, **kwargs)` | Chip text color. |
+| `clearSelection()` | Clear the selection. |
+| `count()` | Count. |
+| `fieldBackgroundColor(*args, **kwargs)` | Field background color. |
+| `fieldBorderActiveColor(*args, **kwargs)` | Field border active color. |
+| `fieldBorderColor(*args, **kwargs)` | Field border color. |
+| `fieldBorderErrorColor(*args, **kwargs)` | Field border error color. |
+| `hidePopup()` | Hide the popup. |
+| `isPopupVisible()` | Return whether the widget is popup visible. |
+| `isSelected(value)` | Return whether the widget is selected. |
+| `labelFor(value)` | Label for. |
+| `maxChips(*args, **kwargs)` | Max chips. |
+| `maxSelection(*args, **kwargs)` | Max selection. |
+| `optionToggled(...)` | Option toggled. |
+| `options()` | Options. |
+| `optionsCsv(*args, **kwargs)` | Options csv. |
+| `placeholderColor(*args, **kwargs)` | Placeholder color. |
+| `placeholderText(*args, **kwargs)` | Placeholder text. |
+| `searchable(*args, **kwargs)` | Searchable. |
+| `selectOption(value, on=True)` | Select an option. |
+| `selected()` | Selected. |
+| `selectedCsv(*args, **kwargs)` | Selected csv. |
+| `selectedLabels()` | Selected labels. |
+| `selectionChanged(...)` | Selection changed. |
 | `setOptions(options)` | Replace the option set, dropping any selection that no longer exists. |
-| `setSelected(values)` |  |
-| `showPopup()` |  |
-| `sizeVariant(*args, **kwargs)` |  |
-| `state(*args, **kwargs)` |  |
-| `textColor(*args, **kwargs)` |  |
-| `toggleOption(value)` |  |
+| `setSelected(values)` | Set the selected. |
+| `showPopup()` | Show the popup. |
+| `sizeVariant(*args, **kwargs)` | Size variant. |
+| `state(*args, **kwargs)` | State. |
+| `textColor(*args, **kwargs)` | Text color. |
+| `toggleOption(value)` | Toggle the option. |
 
 ## Theming
 

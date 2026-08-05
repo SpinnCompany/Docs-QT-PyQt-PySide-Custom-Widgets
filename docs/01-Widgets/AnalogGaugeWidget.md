@@ -525,82 +525,82 @@ The `AnalogGaugeWidget` is perfect for dashboards, control panels, monitoring ap
 
 | Method | Description |
 |---|---|
-| `angleOffset(*args, **kwargs)` |  |
-| `bigScaleColor(*args, **kwargs)` |  |
-| `centerPointColor(*args, **kwargs)` |  |
-| `center_horizontal(value)` |  |
-| `center_vertical(value)` |  |
-| `change_value_needle_style(design)` |  |
-| `create_fine_scaled_marker()` |  |
-| `create_polygon_pie(outer_radius, inner_raduis, start, lenght, bar_graph=True)` |  |
-| `create_scale_marker_values_text()` |  |
-| `create_units_text()` |  |
-| `create_values_text()` |  |
-| `displayValueColor(*args, **kwargs)` |  |
-| `draw_big_needle_center_point(diameter=30)` |  |
-| `draw_big_scaled_marker()` |  |
-| `draw_filled_polygon(outline_pen_with=0)` |  |
-| `draw_icon_image()` |  |
-| `draw_needle()` |  |
-| `draw_outer_circle(diameter=30)` |  |
-| `enableBarGraph(*args, **kwargs)` |  |
-| `enableBigScaleGrid(*args, **kwargs)` |  |
-| `enableCenterPoint(*args, **kwargs)` |  |
-| `enableFineScaleGrid(*args, **kwargs)` |  |
-| `enableNeedlePolygon(*args, **kwargs)` |  |
-| `enableScalePolygon(*args, **kwargs)` |  |
-| `enableScaleText(*args, **kwargs)` |  |
-| `enableValueText(*args, **kwargs)` |  |
-| `fineScaleColor(*args, **kwargs)` |  |
-| `gaugeColorInnerRadiusFactor(*args, **kwargs)` |  |
-| `gaugeColorOuterRadiusFactor(*args, **kwargs)` |  |
-| `maxValue(*args, **kwargs)` |  |
-| `minValue(*args, **kwargs)` |  |
-| `needleColor(*args, **kwargs)` |  |
-| `needleColorOnDrag(*args, **kwargs)` |  |
-| `rescale_method()` |  |
-| `scalaCount(*args, **kwargs)` |  |
-| `scaleFontFamily(*args, **kwargs)` |  |
-| `scaleStartAngle(*args, **kwargs)` |  |
-| `scaleValueColor(*args, **kwargs)` |  |
-| `setAngleOffset(offset: float)` |  |
-| `setBigScaleColor(color: PySide6.QtGui.QColor)` |  |
-| `setCenterPointColor(color: PySide6.QtGui.QColor)` |  |
-| `setCustomGaugeTheme(custom_theme: list)` |  |
-| `setDisplayValueColor(color: PySide6.QtGui.QColor)` |  |
-| `setEnableBarGraph(enable=True)` |  |
-| `setEnableBigScaleGrid(enable=True)` |  |
-| `setEnableCenterPoint(enable=True)` |  |
-| `setEnableFineScaleGrid(enable=True)` |  |
-| `setEnableNeedlePolygon(enable: bool = True)` |  |
-| `setEnableScalePolygon(enable=True)` |  |
-| `setEnableScaleText(enable=True)` |  |
-| `setEnableValueText(enable=True)` |  |
-| `setFineScaleColor(color: PySide6.QtGui.QColor)` |  |
-| `setGaugeColorInnerRadiusFactor(value)` |  |
-| `setGaugeColorOuterRadiusFactor(value)` |  |
-| `setGaugeTheme(Theme=0)` |  |
-| `setMaxValue(value: int)` |  |
-| `setMinValue(value: int)` |  |
-| `setMouseTracking(flag)` |  |
-| `setNeedleCenterColor(**color_positions)` |  |
-| `setNeedleColor(color: PySide6.QtGui.QColor)` |  |
-| `setNeedleColorOnDrag(color: PySide6.QtGui.QColor)` |  |
-| `setOuterCircleColor(**color_positions)` |  |
-| `setScalaCount(count)` |  |
-| `setScaleFontFamily(font: PySide6.QtGui.QFont | str)` |  |
-| `setScalePolygonColor(**color_positions)` |  |
-| `setScaleStartAngle(value)` |  |
-| `setScaleValueColor(color: PySide6.QtGui.QColor)` |  |
-| `setTotalScaleAngleSize(value: float)` |  |
-| `setUnits(value: str)` |  |
-| `setValue(value: int)` |  |
-| `setValueFontFamily(font: PySide6.QtGui.QFont | str)` |  |
-| `themeNumber(*args, **kwargs)` |  |
-| `totalScaleAngleSize(*args, **kwargs)` |  |
-| `units(*args, **kwargs)` |  |
-| `value(*args, **kwargs)` |  |
-| `valueChanged(...)` |  |
-| `valueFontFamily(*args, **kwargs)` |  |
+| `angleOffset(*args, **kwargs)` | Angle offset. |
+| `bigScaleColor(*args, **kwargs)` | Big scale color. |
+| `centerPointColor(*args, **kwargs)` | Center point color. |
+| `center_horizontal(value)` | Center horizontal. |
+| `center_vertical(value)` | Center vertical. |
+| `change_value_needle_style(design)` | Change value needle style. |
+| `create_fine_scaled_marker()` | Create fine scaled marker. |
+| `create_polygon_pie(outer_radius, inner_raduis, start, lenght, bar_graph=True)` | Create polygon pie. |
+| `create_scale_marker_values_text()` | Create scale marker values text. |
+| `create_units_text()` | Create units text. |
+| `create_values_text()` | Create values text. |
+| `displayValueColor(*args, **kwargs)` | Display value color. |
+| `draw_big_needle_center_point(diameter=30)` | Draw big needle center point. |
+| `draw_big_scaled_marker()` | Draw big scaled marker. |
+| `draw_filled_polygon(outline_pen_with=0)` | Draw filled polygon. |
+| `draw_icon_image()` | Draw icon image. |
+| `draw_needle()` | Draw needle. |
+| `draw_outer_circle(diameter=30)` | Draw outer circle. |
+| `enableBarGraph(*args, **kwargs)` | Enable the bar graph. |
+| `enableBigScaleGrid(*args, **kwargs)` | Enable the big scale grid. |
+| `enableCenterPoint(*args, **kwargs)` | Enable the center point. |
+| `enableFineScaleGrid(*args, **kwargs)` | Enable the fine scale grid. |
+| `enableNeedlePolygon(*args, **kwargs)` | Enable the needle polygon. |
+| `enableScalePolygon(*args, **kwargs)` | Enable the scale polygon. |
+| `enableScaleText(*args, **kwargs)` | Enable the scale text. |
+| `enableValueText(*args, **kwargs)` | Enable the value text. |
+| `fineScaleColor(*args, **kwargs)` | Fine scale color. |
+| `gaugeColorInnerRadiusFactor(*args, **kwargs)` | Gauge color inner radius factor. |
+| `gaugeColorOuterRadiusFactor(*args, **kwargs)` | Gauge color outer radius factor. |
+| `maxValue(*args, **kwargs)` | Max value. |
+| `minValue(*args, **kwargs)` | Min value. |
+| `needleColor(*args, **kwargs)` | Needle color. |
+| `needleColorOnDrag(*args, **kwargs)` | Needle color on drag. |
+| `rescale_method()` | Rescale method. |
+| `scalaCount(*args, **kwargs)` | Scala count. |
+| `scaleFontFamily(*args, **kwargs)` | Scale font family. |
+| `scaleStartAngle(*args, **kwargs)` | Scale start angle. |
+| `scaleValueColor(*args, **kwargs)` | Scale value color. |
+| `setAngleOffset(offset: float)` | Set the angle offset. |
+| `setBigScaleColor(color: PySide6.QtGui.QColor)` | Set the big scale color. |
+| `setCenterPointColor(color: PySide6.QtGui.QColor)` | Set the center point color. |
+| `setCustomGaugeTheme(custom_theme: list)` | Set the custom gauge theme. |
+| `setDisplayValueColor(color: PySide6.QtGui.QColor)` | Set the display value color. |
+| `setEnableBarGraph(enable=True)` | Set the enable bar graph. |
+| `setEnableBigScaleGrid(enable=True)` | Set the enable big scale grid. |
+| `setEnableCenterPoint(enable=True)` | Set the enable center point. |
+| `setEnableFineScaleGrid(enable=True)` | Set the enable fine scale grid. |
+| `setEnableNeedlePolygon(enable: bool = True)` | Set the enable needle polygon. |
+| `setEnableScalePolygon(enable=True)` | Set the enable scale polygon. |
+| `setEnableScaleText(enable=True)` | Set the enable scale text. |
+| `setEnableValueText(enable=True)` | Set the enable value text. |
+| `setFineScaleColor(color: PySide6.QtGui.QColor)` | Set the fine scale color. |
+| `setGaugeColorInnerRadiusFactor(value)` | Set the gauge color inner radius factor. |
+| `setGaugeColorOuterRadiusFactor(value)` | Set the gauge color outer radius factor. |
+| `setGaugeTheme(Theme=0)` | Set the gauge theme. |
+| `setMaxValue(value: int)` | Set the max value. |
+| `setMinValue(value: int)` | Set the min value. |
+| `setMouseTracking(flag)` | Set the mouse tracking. |
+| `setNeedleCenterColor(**color_positions)` | Set the needle center color. |
+| `setNeedleColor(color: PySide6.QtGui.QColor)` | Set the needle color. |
+| `setNeedleColorOnDrag(color: PySide6.QtGui.QColor)` | Set the needle color on drag. |
+| `setOuterCircleColor(**color_positions)` | Set the outer circle color. |
+| `setScalaCount(count)` | Set the scala count. |
+| `setScaleFontFamily(font: PySide6.QtGui.QFont | str)` | Set the scale font family. |
+| `setScalePolygonColor(**color_positions)` | Set the scale polygon color. |
+| `setScaleStartAngle(value)` | Set the scale start angle. |
+| `setScaleValueColor(color: PySide6.QtGui.QColor)` | Set the scale value color. |
+| `setTotalScaleAngleSize(value: float)` | Set the total scale angle size. |
+| `setUnits(value: str)` | Set the units. |
+| `setValue(value: int)` | Set the value. |
+| `setValueFontFamily(font: PySide6.QtGui.QFont | str)` | Set the value font family. |
+| `themeNumber(*args, **kwargs)` | Theme number. |
+| `totalScaleAngleSize(*args, **kwargs)` | Total scale angle size. |
+| `units(*args, **kwargs)` | Units. |
+| `value(*args, **kwargs)` | Value. |
+| `valueChanged(...)` | Value changed. |
+| `valueFontFamily(*args, **kwargs)` | Value font family. |
 
 <!-- /generated:api-reference -->

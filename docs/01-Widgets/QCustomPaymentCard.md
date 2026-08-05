@@ -75,29 +75,29 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `amount(*args, **kwargs)` |  |
-| `brand(*args, **kwargs)` |  |
-| `cornerRadius(*args, **kwargs)` |  |
-| `flatColor(*args, **kwargs)` |  |
-| `fullNumber(*args, **kwargs)` |  |
-| `gradientEnd(*args, **kwargs)` |  |
-| `gradientStart(*args, **kwargs)` |  |
-| `number(*args, **kwargs)` |  |
-| `numberRevealed(...)` |  |
-| `revealable(*args, **kwargs)` |  |
-| `revealed(*args, **kwargs)` |  |
-| `setAmount(text)` |  |
-| `setBrand(text)` |  |
+| `amount(*args, **kwargs)` | Amount. |
+| `brand(*args, **kwargs)` | Brand. |
+| `cornerRadius(*args, **kwargs)` | Corner radius. |
+| `flatColor(*args, **kwargs)` | Flat color. |
+| `fullNumber(*args, **kwargs)` | Full number. |
+| `gradientEnd(*args, **kwargs)` | Gradient end. |
+| `gradientStart(*args, **kwargs)` | Gradient start. |
+| `number(*args, **kwargs)` | Number. |
+| `numberRevealed(...)` | Number revealed. |
+| `revealable(*args, **kwargs)` | Revealable. |
+| `revealed(*args, **kwargs)` | Revealed. |
+| `setAmount(text)` | Set the amount. |
+| `setBrand(text)` | Set the brand. |
 | `setColors(start, end=None)` | Set the gradient (start, end) — or a single flat colour if end is None. |
 | `setFullNumber(number)` | The complete PAN — enables a real reveal (otherwise the eye just |
-| `setNumber(text)` |  |
-| `setRevealable(on)` |  |
-| `setRevealed(on)` |  |
-| `setVariant(variant)` |  |
-| `showChip(*args, **kwargs)` |  |
-| `textColor(*args, **kwargs)` |  |
-| `toggleReveal()` |  |
-| `variant(*args, **kwargs)` |  |
+| `setNumber(text)` | Set the number. |
+| `setRevealable(on)` | Set the revealable. |
+| `setRevealed(on)` | Set the revealed. |
+| `setVariant(variant)` | Set the variant. |
+| `showChip(*args, **kwargs)` | Show the chip. |
+| `textColor(*args, **kwargs)` | Text color. |
+| `toggleReveal()` | Toggle the reveal. |
+| `variant(*args, **kwargs)` | Variant. |
 
 ## Theming
 

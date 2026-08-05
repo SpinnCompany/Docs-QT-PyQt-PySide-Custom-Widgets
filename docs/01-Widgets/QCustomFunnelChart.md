@@ -89,29 +89,29 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `bands()` |  |
-| `clearStages()` |  |
-| `colorsCsv(*args, **kwargs)` |  |
-| `gapPx(*args, **kwargs)` |  |
-| `labelColor(*args, **kwargs)` |  |
+| `bands()` | Bands. |
+| `clearStages()` | Clear the stages. |
+| `colorsCsv(*args, **kwargs)` | Colors csv. |
+| `gapPx(*args, **kwargs)` | Gap px. |
+| `labelColor(*args, **kwargs)` | Label color. |
 | `maximum()` | The value the widest band represents; never zero. |
-| `neckRatio(*args, **kwargs)` |  |
-| `orientation(*args, **kwargs)` |  |
-| `outsideLabelColor(*args, **kwargs)` |  |
+| `neckRatio(*args, **kwargs)` | Neck ratio. |
+| `orientation(*args, **kwargs)` | Orientation. |
+| `outsideLabelColor(*args, **kwargs)` | Outside label color. |
 | `percentFor(index)` | Conversion percentage for a stage, per `percentOf`. |
-| `percentOf(*args, **kwargs)` |  |
-| `setStages(stages)` |  |
-| `shape(*args, **kwargs)` |  |
-| `showLabels(*args, **kwargs)` |  |
-| `showPercent(*args, **kwargs)` |  |
-| `showValues(*args, **kwargs)` |  |
-| `stageAt(pos)` |  |
-| `stageClicked(...)` |  |
-| `stageColor(index)` |  |
-| `stageCount()` |  |
-| `stageHovered(...)` |  |
-| `stages()` |  |
-| `stagesCsv(*args, **kwargs)` |  |
+| `percentOf(*args, **kwargs)` | Percent of. |
+| `setStages(stages)` | Set the stages. |
+| `shape(*args, **kwargs)` | Shape. |
+| `showLabels(*args, **kwargs)` | Show the labels. |
+| `showPercent(*args, **kwargs)` | Show the percent. |
+| `showValues(*args, **kwargs)` | Show the values. |
+| `stageAt(pos)` | Stage at. |
+| `stageClicked(...)` | Stage clicked. |
+| `stageColor(index)` | Stage color. |
+| `stageCount()` | Stage count. |
+| `stageHovered(...)` | Stage hovered. |
+| `stages()` | Stages. |
+| `stagesCsv(*args, **kwargs)` | Stages csv. |
 
 ## Theming
 

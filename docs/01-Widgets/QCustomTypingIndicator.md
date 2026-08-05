@@ -55,13 +55,13 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `bubble(*args, **kwargs)` |  |
-| `bubbleColor(*args, **kwargs)` |  |
-| `dotColor(*args, **kwargs)` |  |
-| `dotSize(*args, **kwargs)` |  |
-| `running(*args, **kwargs)` |  |
-| `start()` |  |
-| `stop()` |  |
+| `bubble(*args, **kwargs)` | Bubble. |
+| `bubbleColor(*args, **kwargs)` | Bubble color. |
+| `dotColor(*args, **kwargs)` | Dot color. |
+| `dotSize(*args, **kwargs)` | Dot size. |
+| `running(*args, **kwargs)` | Running. |
+| `start()` | Start. |
+| `stop()` | Stop. |
 
 ## Theming
 

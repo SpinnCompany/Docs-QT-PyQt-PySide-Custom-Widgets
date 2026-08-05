@@ -174,10 +174,10 @@ if __name__ == "__main__":
 
 | Method | Description |
 |---|---|
-| `draw_deformed_circles(painter: PySide6.QtGui.QPainter) -> None` |  |
-| `draw_message(painter: PySide6.QtGui.QPainter) -> None` |  |
-| `get_deformed_point(angle: float, noise_generator: perlin_noise.perlin_noise.PerlinNoise) -> PySide6.QtCore.QPointF` |  |
-| `start_animation() -> None` |  |
-| `update_start_angle(new_value: float) -> None` |  |
+| `draw_deformed_circles(painter: PySide6.QtGui.QPainter) -> None` | Draw deformed circles. |
+| `draw_message(painter: PySide6.QtGui.QPainter) -> None` | Draw message. |
+| `get_deformed_point(angle: float, noise_generator: perlin_noise.perlin_noise.PerlinNoise) -> PySide6.QtCore.QPointF` | Get deformed point. |
+| `start_animation() -> None` | Start animation. |
+| `update_start_angle(new_value: float) -> None` | Update start angle. |
 
 <!-- /generated:api-reference -->

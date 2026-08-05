@@ -63,13 +63,13 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `fallbackBottom(*args, **kwargs)` |  |
-| `fallbackMid(*args, **kwargs)` |  |
-| `fallbackTop(*args, **kwargs)` |  |
-| `imageLoaded(...)` |  |
-| `imageSource(*args, **kwargs)` |  |
-| `pixmap()` |  |
-| `setImageSource(source)` |  |
+| `fallbackBottom(*args, **kwargs)` | Fallback bottom. |
+| `fallbackMid(*args, **kwargs)` | Fallback mid. |
+| `fallbackTop(*args, **kwargs)` | Fallback top. |
+| `imageLoaded(...)` | Image loaded. |
+| `imageSource(*args, **kwargs)` | Image source. |
+| `pixmap()` | Pixmap. |
+| `setImageSource(source)` | Set the image source. |
 
 ## Related
 

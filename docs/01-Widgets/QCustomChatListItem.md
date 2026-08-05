@@ -81,27 +81,27 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `accentColor(*args, **kwargs)` |  |
-| `active(*args, **kwargs)` |  |
-| `activeColor(*args, **kwargs)` |  |
-| `activeNameColor(*args, **kwargs)` |  |
-| `activeTimeColor(*args, **kwargs)` |  |
-| `avatarSize(*args, **kwargs)` |  |
-| `clicked(...)` |  |
-| `muted(*args, **kwargs)` |  |
-| `name(*args, **kwargs)` |  |
-| `nameColor(*args, **kwargs)` |  |
-| `online(*args, **kwargs)` |  |
-| `preview(*args, **kwargs)` |  |
-| `previewColor(*args, **kwargs)` |  |
-| `radius(*args, **kwargs)` |  |
-| `setAvatarImage(image)` |  |
-| `setName(text)` |  |
-| `setPreview(text)` |  |
-| `setTime(text)` |  |
-| `time(*args, **kwargs)` |  |
-| `timeColor(*args, **kwargs)` |  |
-| `unread(*args, **kwargs)` |  |
+| `accentColor(*args, **kwargs)` | Accent color. |
+| `active(*args, **kwargs)` | Active. |
+| `activeColor(*args, **kwargs)` | Active color. |
+| `activeNameColor(*args, **kwargs)` | Active name color. |
+| `activeTimeColor(*args, **kwargs)` | Active time color. |
+| `avatarSize(*args, **kwargs)` | Avatar size. |
+| `clicked(...)` | Clicked. |
+| `muted(*args, **kwargs)` | Muted. |
+| `name(*args, **kwargs)` | Name. |
+| `nameColor(*args, **kwargs)` | Name color. |
+| `online(*args, **kwargs)` | Online. |
+| `preview(*args, **kwargs)` | Preview. |
+| `previewColor(*args, **kwargs)` | Preview color. |
+| `radius(*args, **kwargs)` | Radius. |
+| `setAvatarImage(image)` | Set the avatar image. |
+| `setName(text)` | Set the name. |
+| `setPreview(text)` | Set the preview. |
+| `setTime(text)` | Set the time. |
+| `time(*args, **kwargs)` | Time. |
+| `timeColor(*args, **kwargs)` | Time color. |
+| `unread(*args, **kwargs)` | Unread. |
 
 ## Theming
 

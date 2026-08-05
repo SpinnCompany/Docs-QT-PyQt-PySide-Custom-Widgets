@@ -276,22 +276,22 @@ The progress bar automatically detects the application's theme state through `QC
 
 | Method | Description |
 |---|---|
-| `barColor()` |  |
-| `customBarColor(*args, **kwargs)` |  |
-| `error()` |  |
-| `errorColor(*args, **kwargs)` |  |
-| `isError()` |  |
-| `isPaused()` |  |
-| `isStarted()` |  |
-| `longPos(*args, **kwargs)` |  |
-| `pause()` |  |
-| `paused(*args, **kwargs)` |  |
-| `pausedColor(*args, **kwargs)` |  |
-| `resume()` |  |
-| `setError(isError: bool)` |  |
-| `setPaused(isPaused: bool)` |  |
-| `shortPos(*args, **kwargs)` |  |
-| `start()` |  |
-| `stop()` |  |
+| `barColor()` | Bar color. |
+| `customBarColor(*args, **kwargs)` | Custom bar color. |
+| `error()` | Error. |
+| `errorColor(*args, **kwargs)` | Error color. |
+| `isError()` | Return whether the widget is error. |
+| `isPaused()` | Return whether the widget is paused. |
+| `isStarted()` | Return whether the widget is started. |
+| `longPos(*args, **kwargs)` | Long pos. |
+| `pause()` | Pause. |
+| `paused(*args, **kwargs)` | Paused. |
+| `pausedColor(*args, **kwargs)` | Paused color. |
+| `resume()` | Resume. |
+| `setError(isError: bool)` | Set the error. |
+| `setPaused(isPaused: bool)` | Set the paused. |
+| `shortPos(*args, **kwargs)` | Short pos. |
+| `start()` | Start. |
+| `stop()` | Stop. |
 
 <!-- /generated:api-reference -->

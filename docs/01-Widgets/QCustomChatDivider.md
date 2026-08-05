@@ -64,12 +64,12 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `accentColor(*args, **kwargs)` |  |
-| `lineColor(*args, **kwargs)` |  |
-| `pillColor(*args, **kwargs)` |  |
-| `text(*args, **kwargs)` |  |
-| `textColor(*args, **kwargs)` |  |
-| `variant(*args, **kwargs)` |  |
+| `accentColor(*args, **kwargs)` | Accent color. |
+| `lineColor(*args, **kwargs)` | Line color. |
+| `pillColor(*args, **kwargs)` | Pill color. |
+| `text(*args, **kwargs)` | Text. |
+| `textColor(*args, **kwargs)` | Text color. |
+| `variant(*args, **kwargs)` | Variant. |
 
 ## Theming
 

@@ -80,29 +80,29 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `allowClear(*args, **kwargs)` |  |
-| `backgroundColor(*args, **kwargs)` |  |
-| `borderActiveColor(*args, **kwargs)` |  |
-| `borderColor(*args, **kwargs)` |  |
-| `borderErrorColor(*args, **kwargs)` |  |
+| `allowClear(*args, **kwargs)` | Allow clear. |
+| `backgroundColor(*args, **kwargs)` | Background color. |
+| `borderActiveColor(*args, **kwargs)` | Border active color. |
+| `borderColor(*args, **kwargs)` | Border color. |
+| `borderErrorColor(*args, **kwargs)` | Border error color. |
 | `browse()` | Open a file dialog. Returns True if an image was accepted. |
-| `canAccept(path)` |  |
-| `clearImage()` |  |
-| `cornerRadius(*args, **kwargs)` |  |
-| `fitMode(*args, **kwargs)` |  |
-| `hasImage()` |  |
-| `imageCleared(...)` |  |
-| `imagePath(*args, **kwargs)` |  |
-| `imageSelected(...)` |  |
-| `maxBytes(*args, **kwargs)` |  |
-| `maxPixels(*args, **kwargs)` |  |
-| `pixmap()` |  |
-| `placeholderText(*args, **kwargs)` |  |
-| `selectionRejected(...)` |  |
+| `canAccept(path)` | Can accept. |
+| `clearImage()` | Clear the image. |
+| `cornerRadius(*args, **kwargs)` | Corner radius. |
+| `fitMode(*args, **kwargs)` | Fit the mode. |
+| `hasImage()` | Return whether it has image. |
+| `imageCleared(...)` | Image cleared. |
+| `imagePath(*args, **kwargs)` | Image path. |
+| `imageSelected(...)` | Image selected. |
+| `maxBytes(*args, **kwargs)` | Max bytes. |
+| `maxPixels(*args, **kwargs)` | Max pixels. |
+| `pixmap()` | Pixmap. |
+| `placeholderText(*args, **kwargs)` | Placeholder text. |
+| `selectionRejected(...)` | Selection rejected. |
 | `setImagePath(path)` | Select an image. Rejects and emits selectionRejected on failure. |
-| `shape(*args, **kwargs)` |  |
-| `state(*args, **kwargs)` |  |
-| `textColor(*args, **kwargs)` |  |
+| `shape(*args, **kwargs)` | Shape. |
+| `state(*args, **kwargs)` | State. |
+| `textColor(*args, **kwargs)` | Text color. |
 | `validationError(path)` | Reason this file cannot be used, or None if it is fine. |
 
 ## Theming

@@ -52,13 +52,13 @@ Colours come from the design tokens, so the widget follows the app theme with no
 
 | Method | Description |
 |---|---|
-| `addWidget(widget)` |  |
-| `close()` |  |
-| `closed(...)` |  |
-| `contentLayout()` |  |
-| `isOpen()` |  |
-| `open()` |  |
-| `opened(...)` |  |
+| `addWidget(widget)` | Add a widget. |
+| `close()` | Close. |
+| `closed(...)` | Closed. |
+| `contentLayout()` | Content layout. |
+| `isOpen()` | Return whether the widget is open. |
+| `open()` | Open. |
+| `opened(...)` | Opened. |
 
 ## Theming
 

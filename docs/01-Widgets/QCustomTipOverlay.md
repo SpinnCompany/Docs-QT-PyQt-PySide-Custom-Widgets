@@ -409,19 +409,19 @@ The `QCustomTipOverlay` provides enterprise-grade tooltip functionality with ext
 
 | Method | Description |
 |---|---|
-| `addWidget(widget)` |  |
-| `adjustSizeToContent()` |  |
-| `closeEvent(e)` |  |
-| `closed(...)` |  |
-| `eventFilter(obj, e: PySide6.QtCore.QEvent)` |  |
-| `handleThemeChanged()` |  |
-| `loadForm(form)` |  |
-| `moveButton()` |  |
-| `setClosable(clossable: bool = True)` |  |
-| `setCloseIcon(iconFile)` |  |
-| `setDescription(description)` |  |
-| `setIcon(icon)` |  |
-| `setShadowEffect()` |  |
-| `setTitle(title)` |  |
+| `addWidget(widget)` | Add a widget. |
+| `adjustSizeToContent()` | Adjust size to content. |
+| `closeEvent(e)` | Close the event. |
+| `closed(...)` | Closed. |
+| `eventFilter(obj, e: PySide6.QtCore.QEvent)` | Event filter. |
+| `handleThemeChanged()` | Handle theme changed. |
+| `loadForm(form)` | Load the form. |
+| `moveButton()` | Move button. |
+| `setClosable(clossable: bool = True)` | Set the closable. |
+| `setCloseIcon(iconFile)` | Set the close icon. |
+| `setDescription(description)` | Set the description. |
+| `setIcon(icon)` | Set the icon. |
+| `setShadowEffect()` | Set the shadow effect. |
+| `setTitle(title)` | Set the title. |
 
 <!-- /generated:api-reference -->

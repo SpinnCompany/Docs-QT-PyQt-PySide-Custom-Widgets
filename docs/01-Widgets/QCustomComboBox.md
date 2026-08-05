@@ -73,12 +73,12 @@ Every property below is settable in code and in Qt Designer.
 | Method | Description |
 |---|---|
 | `currentValue()` | Alias for currentData(). |
-| `placeholderText()` |  |
-| `setEditable(editable)` |  |
+| `placeholderText()` | Placeholder text. |
+| `setEditable(editable)` | Set the editable. |
 | `setItems(items)` | Replace all items. Each item may be a string, a (label, data) pair, |
-| `setPlaceholderText(text)` |  |
-| `sizeVariant(*args, **kwargs)` |  |
-| `variant(*args, **kwargs)` |  |
+| `setPlaceholderText(text)` | Set the placeholder text. |
+| `sizeVariant(*args, **kwargs)` | Size variant. |
+| `variant(*args, **kwargs)` | Variant. |
 
 ## Theming
 

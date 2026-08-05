@@ -65,25 +65,25 @@ Every property below is settable in code and in Qt Designer.
 |---|---|
 | `addWidget(widget, position=None)` | Add a widget to the flow layout |
 | `adoptExistingChildren()` | Adopt existing child widgets from Qt Designer in their original order |
-| `animationDuration(*args, **kwargs)` |  |
-| `animationEasingCurve(*args, **kwargs)` |  |
-| `animationEnabled(*args, **kwargs)` |  |
-| `autoFillHeight(*args, **kwargs)` |  |
-| `autoFillWidth(*args, **kwargs)` |  |
+| `animationDuration(*args, **kwargs)` | Animation duration. |
+| `animationEasingCurve(*args, **kwargs)` | Animation easing curve. |
+| `animationEnabled(*args, **kwargs)` | Animation enabled. |
+| `autoFillHeight(*args, **kwargs)` | Auto fill height. |
+| `autoFillWidth(*args, **kwargs)` | Auto fill width. |
 | `childEvent(event)` | Handle child events to detect when widgets are added |
 | `clear()` | Remove all widgets from the flow layout |
-| `equalDistribution(*args, **kwargs)` |  |
+| `equalDistribution(*args, **kwargs)` | Equal distribution. |
 | `getFlowLayout()` | Get the underlying flow layout |
-| `horizontalSpacing(*args, **kwargs)` |  |
+| `horizontalSpacing(*args, **kwargs)` | Horizontal spacing. |
 | `isAnimating()` | Check if animations are running |
-| `justifySpacing(*args, **kwargs)` |  |
-| `margin(*args, **kwargs)` |  |
-| `orderJsonPath(*args, **kwargs)` |  |
+| `justifySpacing(*args, **kwargs)` | Justify spacing. |
+| `margin(*args, **kwargs)` | Margin. |
+| `orderJsonPath(*args, **kwargs)` | Order json path. |
 | `refreshLayout()` | Manually refresh the layout |
 | `removeWidget(widget)` | Remove a widget from the flow layout |
-| `spacing(*args, **kwargs)` |  |
+| `spacing(*args, **kwargs)` | Spacing. |
 | `stopAllAnimations()` | Stop all ongoing animations |
-| `verticalSpacing(*args, **kwargs)` |  |
+| `verticalSpacing(*args, **kwargs)` | Vertical spacing. |
 
 ## Runnable example
 

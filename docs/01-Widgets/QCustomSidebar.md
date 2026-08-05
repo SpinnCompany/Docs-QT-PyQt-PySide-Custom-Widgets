@@ -448,22 +448,22 @@ The `QCustomSidebar` and `QCustomSlideMenu` widgets provide powerful, customizab
 
 | Method | Description |
 |---|---|
-| `animationDuration(*args, **kwargs)` |  |
+| `animationDuration(*args, **kwargs)` | Animation duration. |
 | `animationEasingCurve(*args, **kwargs)` | Easing as an int (a QEasingCurve.Type value). Developers can use |
-| `collapsedHeight(*args, **kwargs)` |  |
-| `collapsedWidth(*args, **kwargs)` |  |
-| `convert_to_int(s)` |  |
-| `defaultHeight(*args, **kwargs)` |  |
-| `defaultWidth(*args, **kwargs)` |  |
-| `expandedHeight(*args, **kwargs)` |  |
-| `expandedWidth(*args, **kwargs)` |  |
-| `iconCollapsed(*args, **kwargs)` |  |
-| `iconExpanded(*args, **kwargs)` |  |
-| `shadowBlurRadius(*args, **kwargs)` |  |
-| `shadowColor(*args, **kwargs)` |  |
-| `shadowXOffset(*args, **kwargs)` |  |
-| `shadowYOffset(*args, **kwargs)` |  |
-| `toggleButtonName(*args, **kwargs)` |  |
-| `updateProperties(state=None)` |  |
+| `collapsedHeight(*args, **kwargs)` | Collapsed height. |
+| `collapsedWidth(*args, **kwargs)` | Collapsed width. |
+| `convert_to_int(s)` | Convert to int. |
+| `defaultHeight(*args, **kwargs)` | Default height. |
+| `defaultWidth(*args, **kwargs)` | Default width. |
+| `expandedHeight(*args, **kwargs)` | Expanded height. |
+| `expandedWidth(*args, **kwargs)` | Expanded width. |
+| `iconCollapsed(*args, **kwargs)` | Icon collapsed. |
+| `iconExpanded(*args, **kwargs)` | Icon expanded. |
+| `shadowBlurRadius(*args, **kwargs)` | Shadow blur radius. |
+| `shadowColor(*args, **kwargs)` | Shadow color. |
+| `shadowXOffset(*args, **kwargs)` | Shadow X offset. |
+| `shadowYOffset(*args, **kwargs)` | Shadow Y offset. |
+| `toggleButtonName(*args, **kwargs)` | Toggle the button name. |
+| `updateProperties(state=None)` | Update the properties. |
 
 <!-- /generated:api-reference -->

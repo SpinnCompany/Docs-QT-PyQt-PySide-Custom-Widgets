@@ -71,9 +71,9 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `format(*args, **kwargs)` |  |
-| `interval(*args, **kwargs)` |  |
-| `running(*args, **kwargs)` |  |
+| `format(*args, **kwargs)` | Format. |
+| `interval(*args, **kwargs)` | Interval. |
+| `running(*args, **kwargs)` | Running. |
 
 ## Related
 

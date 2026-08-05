@@ -92,38 +92,38 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `accentColor(*args, **kwargs)` |  |
-| `artist(*args, **kwargs)` |  |
-| `barColor(*args, **kwargs)` |  |
+| `accentColor(*args, **kwargs)` | Accent color. |
+| `artist(*args, **kwargs)` | Artist. |
+| `barColor(*args, **kwargs)` | Bar color. |
 | `compactMode(*args, **kwargs)` | Opt-in stacked layout (cover+titles / seek / centred transport) for |
-| `cornerRadius(*args, **kwargs)` |  |
-| `coverPath(*args, **kwargs)` |  |
-| `durationSeconds(*args, **kwargs)` |  |
-| `elapsedSeconds(*args, **kwargs)` |  |
-| `elapsedText(*args, **kwargs)` |  |
-| `favorite(*args, **kwargs)` |  |
-| `favoriteToggled(...)` |  |
-| `iconColor(*args, **kwargs)` |  |
-| `nextClicked(...)` |  |
-| `playBtnColor(*args, **kwargs)` |  |
-| `playToggled(...)` |  |
-| `playing(*args, **kwargs)` |  |
-| `position(*args, **kwargs)` |  |
-| `prevClicked(...)` |  |
-| `repeat(*args, **kwargs)` |  |
-| `repeatToggled(...)` |  |
-| `seeked(...)` |  |
+| `cornerRadius(*args, **kwargs)` | Corner radius. |
+| `coverPath(*args, **kwargs)` | Cover path. |
+| `durationSeconds(*args, **kwargs)` | Duration seconds. |
+| `elapsedSeconds(*args, **kwargs)` | Elapsed seconds. |
+| `elapsedText(*args, **kwargs)` | Elapsed text. |
+| `favorite(*args, **kwargs)` | Favorite. |
+| `favoriteToggled(...)` | Favorite toggled. |
+| `iconColor(*args, **kwargs)` | Icon color. |
+| `nextClicked(...)` | Next clicked. |
+| `playBtnColor(*args, **kwargs)` | Play btn color. |
+| `playToggled(...)` | Play toggled. |
+| `playing(*args, **kwargs)` | Playing. |
+| `position(*args, **kwargs)` | Position. |
+| `prevClicked(...)` | Prev clicked. |
+| `repeat(*args, **kwargs)` | Repeat. |
+| `repeatToggled(...)` | Repeat toggled. |
+| `seeked(...)` | Seeked. |
 | `setCoverSource(source)` | Set the track cover from a local PATH or an http(s) URL (URL is |
-| `setPlaying(on)` |  |
-| `setTrack(title=None, artist=None, coverPath=None, elapsed=None, total=None, position=None)` |  |
-| `shuffle(*args, **kwargs)` |  |
-| `shuffleToggled(...)` |  |
-| `subTextColor(*args, **kwargs)` |  |
-| `textColor(*args, **kwargs)` |  |
-| `title(*args, **kwargs)` |  |
-| `totalText(*args, **kwargs)` |  |
-| `trackColor(*args, **kwargs)` |  |
-| `volumeClicked(...)` |  |
+| `setPlaying(on)` | Set the playing. |
+| `setTrack(title=None, artist=None, coverPath=None, elapsed=None, total=None, position=None)` | Set the track. |
+| `shuffle(*args, **kwargs)` | Shuffle. |
+| `shuffleToggled(...)` | Shuffle toggled. |
+| `subTextColor(*args, **kwargs)` | Sub text color. |
+| `textColor(*args, **kwargs)` | Text color. |
+| `title(*args, **kwargs)` | Title. |
+| `totalText(*args, **kwargs)` | Total text. |
+| `trackColor(*args, **kwargs)` | Track color. |
+| `volumeClicked(...)` | Volume clicked. |
 
 ## Theming
 

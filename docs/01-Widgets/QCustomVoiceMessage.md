@@ -70,18 +70,18 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `buttonColor(*args, **kwargs)` |  |
-| `buttonDiameter(*args, **kwargs)` |  |
-| `buttonIconColor(*args, **kwargs)` |  |
-| `duration(*args, **kwargs)` |  |
-| `durationColor(*args, **kwargs)` |  |
-| `playToggled(...)` |  |
-| `playedColor(*args, **kwargs)` |  |
-| `playing(*args, **kwargs)` |  |
-| `progress(*args, **kwargs)` |  |
-| `seeked(...)` |  |
-| `unplayedColor(*args, **kwargs)` |  |
-| `valuesCsv(*args, **kwargs)` |  |
+| `buttonColor(*args, **kwargs)` | Button color. |
+| `buttonDiameter(*args, **kwargs)` | Button diameter. |
+| `buttonIconColor(*args, **kwargs)` | Button icon color. |
+| `duration(*args, **kwargs)` | Duration. |
+| `durationColor(*args, **kwargs)` | Duration color. |
+| `playToggled(...)` | Play toggled. |
+| `playedColor(*args, **kwargs)` | Played color. |
+| `playing(*args, **kwargs)` | Playing. |
+| `progress(*args, **kwargs)` | Progress. |
+| `seeked(...)` | Seeked. |
+| `unplayedColor(*args, **kwargs)` | Unplayed color. |
+| `valuesCsv(*args, **kwargs)` | Values csv. |
 
 ## Theming
 

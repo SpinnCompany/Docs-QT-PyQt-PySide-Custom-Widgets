@@ -88,24 +88,24 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `backdropSource(*args, **kwargs)` |  |
-| `blurRadius(*args, **kwargs)` |  |
-| `borderColor(*args, **kwargs)` |  |
-| `borderWidth(*args, **kwargs)` |  |
-| `brightness(*args, **kwargs)` |  |
-| `changeEvent(e)` |  |
-| `cornerRadius(*args, **kwargs)` |  |
-| `downsample(*args, **kwargs)` |  |
-| `edgeIntensity(*args, **kwargs)` |  |
-| `eventFilter(obj, e)` |  |
-| `liquidEdge(*args, **kwargs)` |  |
-| `liveBackdrop(*args, **kwargs)` |  |
-| `moveEvent(e)` |  |
-| `noiseOpacity(*args, **kwargs)` |  |
+| `backdropSource(*args, **kwargs)` | Backdrop source. |
+| `blurRadius(*args, **kwargs)` | Blur radius. |
+| `borderColor(*args, **kwargs)` | Border color. |
+| `borderWidth(*args, **kwargs)` | Border width. |
+| `brightness(*args, **kwargs)` | Brightness. |
+| `changeEvent(e)` | Change event. |
+| `cornerRadius(*args, **kwargs)` | Corner radius. |
+| `downsample(*args, **kwargs)` | Downsample. |
+| `edgeIntensity(*args, **kwargs)` | Edge intensity. |
+| `eventFilter(obj, e)` | Event filter. |
+| `liquidEdge(*args, **kwargs)` | Liquid edge. |
+| `liveBackdrop(*args, **kwargs)` | Live backdrop. |
+| `moveEvent(e)` | Move event. |
+| `noiseOpacity(*args, **kwargs)` | Noise opacity. |
 | `refreshBackdrop()` | Re-sample and re-blur the backdrop now. |
-| `refreshInterval(*args, **kwargs)` |  |
+| `refreshInterval(*args, **kwargs)` | Refresh the interval. |
 | `setBackdropWidget(widget)` | Point the frame at the widget to sample (overrides backdropSource). |
-| `tintColor(*args, **kwargs)` |  |
+| `tintColor(*args, **kwargs)` | Tint color. |
 
 ## Related
 

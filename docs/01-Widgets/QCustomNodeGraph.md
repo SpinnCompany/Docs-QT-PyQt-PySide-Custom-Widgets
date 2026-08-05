@@ -114,48 +114,48 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `addEdge(src, src_port, dst, dst_port, color=None)` |  |
-| `addNode(title='Node', x=0.0, y=0.0, w=200.0, h=120.0, accent='#f2a63b', text='', rows=None, image='', chips=None, inputs=None, outputs=None, nid=None)` |  |
-| `animated(*args, **kwargs)` |  |
-| `bgColor(*args, **kwargs)` |  |
-| `canvasClicked(...)` |  |
-| `clear()` |  |
-| `connectionMade(...)` |  |
-| `connectionRemoved(...)` |  |
-| `contextMenuEvent(e)` |  |
-| `cornerRadius(*args, **kwargs)` |  |
+| `addEdge(src, src_port, dst, dst_port, color=None)` | Add an edge. |
+| `addNode(title='Node', x=0.0, y=0.0, w=200.0, h=120.0, accent='#f2a63b', text='', rows=None, image='', chips=None, inputs=None, outputs=None, nid=None)` | Add a node. |
+| `animated(*args, **kwargs)` | Animated. |
+| `bgColor(*args, **kwargs)` | Bg color. |
+| `canvasClicked(...)` | Canvas clicked. |
+| `clear()` | Clear. |
+| `connectionMade(...)` | Connection made. |
+| `connectionRemoved(...)` | Connection removed. |
+| `contextMenuEvent(e)` | Context menu event. |
+| `cornerRadius(*args, **kwargs)` | Corner radius. |
 | `disconnectNode(nid)` | Remove every cable attached to a node (keeps the node). |
-| `edgeColor(*args, **kwargs)` |  |
-| `editRequested(...)` |  |
-| `fitToView(margin=40)` |  |
-| `gridColor(*args, **kwargs)` |  |
-| `gridSpacing(*args, **kwargs)` |  |
-| `mutedColor(*args, **kwargs)` |  |
-| `nodeAccent(nid)` |  |
-| `nodeBorderColor(*args, **kwargs)` |  |
-| `nodeById(nid)` |  |
-| `nodeClicked(...)` |  |
-| `nodeColor(*args, **kwargs)` |  |
-| `nodeHeaderColor(*args, **kwargs)` |  |
-| `nodeMoved(...)` |  |
-| `nodeRemoved(...)` |  |
-| `nodeRows(nid)` |  |
-| `nodeSelected(...)` |  |
-| `nodeText(nid)` |  |
-| `nodeTitle(nid)` |  |
-| `portColor(*args, **kwargs)` |  |
-| `removeEdge(src, src_port, dst, dst_port)` |  |
+| `edgeColor(*args, **kwargs)` | Edge color. |
+| `editRequested(...)` | Edit requested. |
+| `fitToView(margin=40)` | Fit the to view. |
+| `gridColor(*args, **kwargs)` | Grid color. |
+| `gridSpacing(*args, **kwargs)` | Grid spacing. |
+| `mutedColor(*args, **kwargs)` | Muted color. |
+| `nodeAccent(nid)` | Node accent. |
+| `nodeBorderColor(*args, **kwargs)` | Node border color. |
+| `nodeById(nid)` | Node by id. |
+| `nodeClicked(...)` | Node clicked. |
+| `nodeColor(*args, **kwargs)` | Node color. |
+| `nodeHeaderColor(*args, **kwargs)` | Node header color. |
+| `nodeMoved(...)` | Node moved. |
+| `nodeRemoved(...)` | Node removed. |
+| `nodeRows(nid)` | Node rows. |
+| `nodeSelected(...)` | Node selected. |
+| `nodeText(nid)` | Node text. |
+| `nodeTitle(nid)` | Node title. |
+| `portColor(*args, **kwargs)` | Port color. |
+| `removeEdge(src, src_port, dst, dst_port)` | Remove an edge. |
 | `removeEdgeAt(index)` | Disconnect (remove) the edge at `index`. |
 | `removeNode(nid)` | Delete a node and every cable attached to it. |
-| `rowClicked(...)` |  |
-| `selectedColor(*args, **kwargs)` |  |
+| `rowClicked(...)` | Row clicked. |
+| `selectedColor(*args, **kwargs)` | Selected color. |
 | `setGraph(data)` | data = {"nodes":[{...}], "edges":[{"src","srcPort","dst","dstPort","color"}]}. |
 | `setNodeAccent(nid, color)` | Recolour a node (its header dot + underline, chips, glow). |
-| `setNodePosition(nid, x, y)` |  |
-| `setNodeText(nid, text)` |  |
-| `setNodeTitle(nid, title)` |  |
-| `setRowValue(nid, idx, value)` |  |
-| `textColor(*args, **kwargs)` |  |
+| `setNodePosition(nid, x, y)` | Set the node position. |
+| `setNodeText(nid, text)` | Set the node text. |
+| `setNodeTitle(nid, title)` | Set the node title. |
+| `setRowValue(nid, idx, value)` | Set the row value. |
+| `textColor(*args, **kwargs)` | Text color. |
 
 ## Theming
 

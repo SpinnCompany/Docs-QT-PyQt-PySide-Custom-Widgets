@@ -71,22 +71,22 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `alignment(*args, **kwargs)` |  |
-| `angle(*args, **kwargs)` |  |
-| `animated(*args, **kwargs)` |  |
-| `animationSpeed(*args, **kwargs)` |  |
-| `bold(*args, **kwargs)` |  |
-| `clicked(...)` |  |
-| `fontScale(*args, **kwargs)` |  |
+| `alignment(*args, **kwargs)` | Alignment. |
+| `angle(*args, **kwargs)` | Angle. |
+| `animated(*args, **kwargs)` | Animated. |
+| `animationSpeed(*args, **kwargs)` | Animation speed. |
+| `bold(*args, **kwargs)` | Bold. |
+| `clicked(...)` | Clicked. |
+| `fontScale(*args, **kwargs)` | Font scale. |
 | `gradientFor(rect)` | The gradient across a rect, including the animation offset. |
-| `isAnimating()` |  |
+| `isAnimating()` | Return whether the widget is animating. |
 | `setStops(stops)` | Replace the gradient stops. Fewer than two is rejected. |
-| `start()` |  |
-| `stop()` |  |
-| `stops()` |  |
-| `stopsCsv(*args, **kwargs)` |  |
-| `text(*args, **kwargs)` |  |
-| `wordWrap(*args, **kwargs)` |  |
+| `start()` | Start. |
+| `stop()` | Stop. |
+| `stops()` | Stops. |
+| `stopsCsv(*args, **kwargs)` | Stops csv. |
+| `text(*args, **kwargs)` | Text. |
+| `wordWrap(*args, **kwargs)` | Word wrap. |
 
 ## Theming
 

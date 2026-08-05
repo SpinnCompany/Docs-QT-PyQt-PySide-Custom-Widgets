@@ -301,3 +301,43 @@ flow_layout.addWidget(widget3, align=QtCore.Qt.AlignRight)
 ---
 
 The `QCustomFlowLayout` is ideal for tag clouds, dynamic button groups, card layouts, image galleries, and any interface where content needs to flow naturally and responsively within a container.
+
+<!-- generated:api-reference -->
+
+## API reference
+
+*Generated from the widget's live metaobject — do not edit by hand.*
+
+### Signals
+
+| Signal |
+|---|
+| `animationFinished()` |
+| `animationStarted()` |
+
+### Methods
+
+| Method | Description |
+|---|---|
+| `addItem(a0: PySide6.QtWidgets.QLayoutItem) -> None` | ALWAYS APPEND - never reorder |
+| `addWidget(w: PySide6.QtWidgets.QWidget, position: int = None, align: PySide6.QtCore.Qt.AlignmentFlag = None) -> None` | ALWAYS APPEND - position parameter IGNORED to preserve order |
+| `animationFinished(...)` | Animation finished. |
+| `animationStarted(...)` | Animation started. |
+| `count()` | Count. |
+| `expandingDirections()` | Expanding directions. |
+| `hasHeightForWidth()` | Return whether it has height for width. |
+| `heightForWidth(width)` | Height for width. |
+| `isAnimating()` | Return whether the widget is animating. |
+| `itemAt(index: int) -> PySide6.QtWidgets.QLayoutItem` | Item at. |
+| `loadOrderFromJson()` | Load widget order from JSON file if path is provided |
+| `minimumSize()` | Minimum size. |
+| `removeItem(a0: PySide6.QtWidgets.QLayoutItem) -> None` | Remove an item. |
+| `removeWidget(w: PySide6.QtWidgets.QWidget) -> None` | Remove a widget. |
+| `setAnimated(animate)` | Set the animated. |
+| `setAnimationDuration(durationMs)` | Set the animation duration. |
+| `setAnimationEasingCurve(curve)` | Set the animation easing curve. |
+| `setGeometry(rect)` | Set the geometry. |
+| `stopAllAnimations()` | Stop the all animations. |
+| `takeAt(index: int) -> PySide6.QtWidgets.QLayoutItem` | Take at. |
+
+<!-- /generated:api-reference -->

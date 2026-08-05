@@ -56,18 +56,18 @@ Colours come from the design tokens, so the widget follows the app theme with no
 
 | Method | Description |
 |---|---|
-| `addAction(text, key=None, primary=False, danger=False)` |  |
-| `addContent(widget)` |  |
-| `applyColors(bg=None, text=None, muted=None, border=None, accent=None, accentText=None, hover=None)` |  |
-| `clearActions()` |  |
-| `clearContent()` |  |
-| `closeModal()` |  |
-| `closed(...)` |  |
-| `eventFilter(obj, ev)` |  |
-| `setSubtitle(text)` |  |
-| `setTitle(text)` |  |
-| `showModal()` |  |
-| `triggered(...)` |  |
+| `addAction(text, key=None, primary=False, danger=False)` | Add an action. |
+| `addContent(widget)` | Add a content. |
+| `applyColors(bg=None, text=None, muted=None, border=None, accent=None, accentText=None, hover=None)` | Apply the colors. |
+| `clearActions()` | Clear the actions. |
+| `clearContent()` | Clear the content. |
+| `closeModal()` | Close the modal. |
+| `closed(...)` | Closed. |
+| `eventFilter(obj, ev)` | Event filter. |
+| `setSubtitle(text)` | Set the subtitle. |
+| `setTitle(text)` | Set the title. |
+| `showModal()` | Show the modal. |
+| `triggered(...)` | Triggered. |
 
 ## Theming
 

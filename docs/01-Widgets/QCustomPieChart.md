@@ -107,7 +107,7 @@ Every property below is settable in code and in Qt Designer.
 | `areLabelsVisible() -> bool` | Check if labels are visible |
 | `borderColor(*args, **kwargs)` | Get border color |
 | `borderWidth(*args, **kwargs)` | Get border width |
-| `chartExportComplete(...)` |  |
+| `chartExportComplete(...)` | Chart export complete. |
 | `clearAllData()` | Clear all chart data |
 | `clearData()` | Clear all chart data (compatibility method) |
 | `endAngle(*args, **kwargs)` | Get end angle |
@@ -142,8 +142,8 @@ Every property below is settable in code and in Qt Designer.
 | `getTotalValue(series_name: str) -> float` | Get the total value of all slices in a series |
 | `gradientFill(*args, **kwargs)` | Get gradient fill state |
 | `gradientType(*args, **kwargs)` | Get gradient type |
-| `hatchCsv(*args, **kwargs)` |  |
-| `hatchPattern(*args, **kwargs)` |  |
+| `hatchCsv(*args, **kwargs)` | Hatch csv. |
+| `hatchPattern(*args, **kwargs)` | Hatch pattern. |
 | `hideTooltip()` | Manually hide tooltip |
 | `holeSize(*args, **kwargs)` | Get hole size |
 | `hoverExplosionDistance(*args, **kwargs)` | Get hover explosion distance |
@@ -153,7 +153,7 @@ Every property below is settable in code and in Qt Designer.
 | `isSliceExploded(slice_name: str) -> bool` | Check if a slice is exploded |
 | `labelsPosition(*args, **kwargs)` | Labels position (int; see QCustomChartEnums.LabelsPosition). |
 | `legendMarkerBorderWidth(*args, **kwargs)` | Get legend marker border width |
-| `legendPositionChanged(...)` |  |
+| `legendPositionChanged(...)` | Legend position changed. |
 | `pieAngularSpan(*args, **kwargs)` | Get pie angular span |
 | `printChart()` | Print chart |
 | `refreshTheme()` | Refresh the current theme (useful when app palette changes) |
@@ -161,8 +161,8 @@ Every property below is settable in code and in Qt Designer.
 | `removeSlice(series_name: str, slice_name: str) -> bool` | Remove a slice from a series |
 | `semicircleEnabled(*args, **kwargs)` | Get semicircle enabled state |
 | `semicircleOrientation(*args, **kwargs)` | Get semicircle orientation |
-| `seriesAdded(...)` |  |
-| `seriesRemoved(...)` |  |
+| `seriesAdded(...)` | Series added. |
+| `seriesRemoved(...)` | Series removed. |
 | `setBorderColor(color: PySide6.QtGui.QColor)` | Set border color |
 | `setBorderWidth(width: float)` | Set border width |
 | `setChartTitle(title: str)` | Set chart title (compatibility method) |
@@ -172,7 +172,7 @@ Every property below is settable in code and in Qt Designer.
 | `setGradientFill(enabled: bool)` | Enable or disable gradient fill |
 | `setGradientType(gradient_type: str)` | Set gradient type: 'radial' or 'conical' |
 | `setHatchIndices(indices)` | Slice indices (within the series) rendered with a hatch/pattern fill. |
-| `setHatchPattern(name)` |  |
+| `setHatchPattern(name)` | Set the hatch pattern. |
 | `setHoleSize(size: float)` | Set the hole size for donut chart (0.0 to 0.9) |
 | `setHoverExplosionDistance(distance: float)` | Set the explosion distance factor for hover (0.0 to 1.0) |
 | `setLabelsPosition(position: str)` | Set labels position: 'outside', 'inside', or 'callout' |
@@ -197,9 +197,9 @@ Every property below is settable in code and in Qt Designer.
 | `showPercentages(*args, **kwargs)` | Get show percentages state |
 | `showTooltipAt(x: float, y: float, slice_name: str, title: str = None, description: str = None)` | Manually show tooltip at specific coordinates |
 | `showValues(*args, **kwargs)` | Get show values state |
-| `sliceClicked(...)` |  |
-| `sliceExploded(...)` |  |
-| `sliceHovered(...)` |  |
+| `sliceClicked(...)` | Slice clicked. |
+| `sliceExploded(...)` | Slice exploded. |
+| `sliceHovered(...)` | Slice hovered. |
 | `startAngle(*args, **kwargs)` | Get start angle |
 | `toggleSliceExplosion(slice_name: str)` | Toggle explosion state of a slice |
 | `updateChart()` | Update the chart display based on current data |

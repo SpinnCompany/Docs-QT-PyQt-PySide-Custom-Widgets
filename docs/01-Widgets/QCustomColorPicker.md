@@ -47,10 +47,10 @@ Colours come from the design tokens, so the widget follows the app theme with no
 
 | Method | Description |
 |---|---|
-| `color()` |  |
-| `colorChanged(...)` |  |
-| `colorName()` |  |
-| `setColor(color)` |  |
+| `color()` | Color. |
+| `colorChanged(...)` | Color changed. |
+| `colorName()` | Color name. |
+| `setColor(color)` | Set the color. |
 
 ## Theming
 

@@ -85,26 +85,26 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `accentColor(*args, **kwargs)` |  |
+| `accentColor(*args, **kwargs)` | Accent color. |
 | `addReaction(index, emoji)` | Add one of `emoji` to message `index` (increment if it already |
-| `dateBgColor(*args, **kwargs)` |  |
-| `dateTextColor(*args, **kwargs)` |  |
-| `incomingBubbleColor(*args, **kwargs)` |  |
-| `incomingTextColor(*args, **kwargs)` |  |
-| `inlineMediaCreated(...)` |  |
-| `linkClicked(...)` |  |
-| `maxBubbleWidth(*args, **kwargs)` |  |
-| `mediaOpenRequested(...)` |  |
-| `metaColor(*args, **kwargs)` |  |
-| `outgoingBubbleColor(*args, **kwargs)` |  |
-| `outgoingTextColor(*args, **kwargs)` |  |
-| `reactionAddRequested(...)` |  |
-| `reactionClicked(...)` |  |
-| `setMessages(messages)` |  |
+| `dateBgColor(*args, **kwargs)` | Date bg color. |
+| `dateTextColor(*args, **kwargs)` | Date text color. |
+| `incomingBubbleColor(*args, **kwargs)` | Incoming bubble color. |
+| `incomingTextColor(*args, **kwargs)` | Incoming text color. |
+| `inlineMediaCreated(...)` | Inline media created. |
+| `linkClicked(...)` | Link clicked. |
+| `maxBubbleWidth(*args, **kwargs)` | Max bubble width. |
+| `mediaOpenRequested(...)` | Media open requested. |
+| `metaColor(*args, **kwargs)` | Meta color. |
+| `outgoingBubbleColor(*args, **kwargs)` | Outgoing bubble color. |
+| `outgoingTextColor(*args, **kwargs)` | Outgoing text color. |
+| `reactionAddRequested(...)` | Reaction add requested. |
+| `reactionClicked(...)` | Reaction clicked. |
+| `setMessages(messages)` | Set the messages. |
 | `setSenderName(name)` | Default sender label for incoming rows that omit their own. |
-| `showReactionAdd(*args, **kwargs)` |  |
-| `spacing(*args, **kwargs)` |  |
-| `waveUnplayedColor(*args, **kwargs)` |  |
+| `showReactionAdd(*args, **kwargs)` | Show the reaction add. |
+| `spacing(*args, **kwargs)` | Spacing. |
+| `waveUnplayedColor(*args, **kwargs)` | Wave unplayed color. |
 
 ## Theming
 

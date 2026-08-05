@@ -79,20 +79,20 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `axisTextColor(*args, **kwargs)` |  |
-| `barHeight(*args, **kwargs)` |  |
-| `colorsCsv(*args, **kwargs)` |  |
-| `data()` |  |
-| `dataCsv(*args, **kwargs)` |  |
-| `gridColor(*args, **kwargs)` |  |
-| `gridStep(*args, **kwargs)` |  |
-| `labelColor(*args, **kwargs)` |  |
-| `setColors(fills, texts=None)` |  |
-| `setData(rows)` |  |
-| `showGrid(*args, **kwargs)` |  |
-| `showMarkers(*args, **kwargs)` |  |
-| `textColorsCsv(*args, **kwargs)` |  |
-| `xMax(*args, **kwargs)` |  |
+| `axisTextColor(*args, **kwargs)` | Axis text color. |
+| `barHeight(*args, **kwargs)` | Bar height. |
+| `colorsCsv(*args, **kwargs)` | Colors csv. |
+| `data()` | Data. |
+| `dataCsv(*args, **kwargs)` | Data csv. |
+| `gridColor(*args, **kwargs)` | Grid color. |
+| `gridStep(*args, **kwargs)` | Grid step. |
+| `labelColor(*args, **kwargs)` | Label color. |
+| `setColors(fills, texts=None)` | Set the colors. |
+| `setData(rows)` | Set the data. |
+| `showGrid(*args, **kwargs)` | Show the grid. |
+| `showMarkers(*args, **kwargs)` | Show the markers. |
+| `textColorsCsv(*args, **kwargs)` | Text colors csv. |
+| `xMax(*args, **kwargs)` | X max. |
 
 ## Theming
 

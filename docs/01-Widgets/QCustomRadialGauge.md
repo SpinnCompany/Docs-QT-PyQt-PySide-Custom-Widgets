@@ -111,59 +111,59 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `activeTickExtend(*args, **kwargs)` |  |
-| `animated(*args, **kwargs)` |  |
-| `animationDuration(*args, **kwargs)` |  |
-| `arcWidth(*args, **kwargs)` |  |
-| `centerIcon(*args, **kwargs)` |  |
-| `centerSuffix(*args, **kwargs)` |  |
-| `centerText(*args, **kwargs)` |  |
-| `centerTextColor(*args, **kwargs)` |  |
-| `emphasizeActiveTick(*args, **kwargs)` |  |
-| `finished(...)` |  |
-| `gaugeStyle(*args, **kwargs)` |  |
-| `glow(*args, **kwargs)` |  |
-| `glowRadius(*args, **kwargs)` |  |
-| `glowStrength(*args, **kwargs)` |  |
-| `gradientEnd(*args, **kwargs)` |  |
-| `gradientStart(*args, **kwargs)` |  |
-| `handleColor(*args, **kwargs)` |  |
-| `iconColor(*args, **kwargs)` |  |
-| `innerColor(*args, **kwargs)` |  |
-| `maximum(*args, **kwargs)` |  |
-| `minimum(*args, **kwargs)` |  |
-| `needleColor(*args, **kwargs)` |  |
-| `roundedCaps(*args, **kwargs)` |  |
-| `scaleColor(*args, **kwargs)` |  |
-| `scaleLabelEvery(*args, **kwargs)` |  |
-| `scaleLabelRadius(*args, **kwargs)` |  |
-| `setCenterText(text)` |  |
-| `setGradient(start, end)` |  |
-| `setRange(minimum, maximum)` |  |
-| `setStatusText(text)` |  |
+| `activeTickExtend(*args, **kwargs)` | Active tick extend. |
+| `animated(*args, **kwargs)` | Animated. |
+| `animationDuration(*args, **kwargs)` | Animation duration. |
+| `arcWidth(*args, **kwargs)` | Arc width. |
+| `centerIcon(*args, **kwargs)` | Center icon. |
+| `centerSuffix(*args, **kwargs)` | Center suffix. |
+| `centerText(*args, **kwargs)` | Center text. |
+| `centerTextColor(*args, **kwargs)` | Center text color. |
+| `emphasizeActiveTick(*args, **kwargs)` | Emphasize active tick. |
+| `finished(...)` | Finished. |
+| `gaugeStyle(*args, **kwargs)` | Gauge style. |
+| `glow(*args, **kwargs)` | Glow. |
+| `glowRadius(*args, **kwargs)` | Glow radius. |
+| `glowStrength(*args, **kwargs)` | Glow strength. |
+| `gradientEnd(*args, **kwargs)` | Gradient end. |
+| `gradientStart(*args, **kwargs)` | Gradient start. |
+| `handleColor(*args, **kwargs)` | Handle color. |
+| `iconColor(*args, **kwargs)` | Icon color. |
+| `innerColor(*args, **kwargs)` | Inner color. |
+| `maximum(*args, **kwargs)` | Maximum. |
+| `minimum(*args, **kwargs)` | Minimum. |
+| `needleColor(*args, **kwargs)` | Needle color. |
+| `roundedCaps(*args, **kwargs)` | Rounded caps. |
+| `scaleColor(*args, **kwargs)` | Scale color. |
+| `scaleLabelEvery(*args, **kwargs)` | Scale label every. |
+| `scaleLabelRadius(*args, **kwargs)` | Scale label radius. |
+| `setCenterText(text)` | Set the center text. |
+| `setGradient(start, end)` | Set the gradient. |
+| `setRange(minimum, maximum)` | Set the range. |
+| `setStatusText(text)` | Set the status text. |
 | `setStyle(gaugeStyle)` | Switch between the 'needle' and 'tick' looks. |
-| `setValue(value)` |  |
+| `setValue(value)` | Set the value. |
 | `setZones(zones)` | zones: iterable of (lo, hi, colour) in value units (colours the arc). |
-| `showGuide(*args, **kwargs)` |  |
-| `showHandle(*args, **kwargs)` |  |
-| `showNeedle(*args, **kwargs)` |  |
-| `showScaleLabels(*args, **kwargs)` |  |
-| `showTicks(*args, **kwargs)` |  |
-| `singleStep(*args, **kwargs)` |  |
-| `spanAngle(*args, **kwargs)` |  |
+| `showGuide(*args, **kwargs)` | Show the guide. |
+| `showHandle(*args, **kwargs)` | Show the handle. |
+| `showNeedle(*args, **kwargs)` | Show the needle. |
+| `showScaleLabels(*args, **kwargs)` | Show the scale labels. |
+| `showTicks(*args, **kwargs)` | Show the ticks. |
+| `singleStep(*args, **kwargs)` | Single step. |
+| `spanAngle(*args, **kwargs)` | Span angle. |
 | `start(seconds=None, interval_ms=1000, step=1.0)` | Count the value down to the minimum, emitting finished() at the end. |
-| `startAngle(*args, **kwargs)` |  |
-| `statusColor(*args, **kwargs)` |  |
-| `statusText(*args, **kwargs)` |  |
+| `startAngle(*args, **kwargs)` | Start the angle. |
+| `statusColor(*args, **kwargs)` | Status color. |
+| `statusText(*args, **kwargs)` | Status text. |
 | `stepBy(delta)` | Nudge the value by ``delta`` (clamped to the range). With centerText |
-| `stepDown()` |  |
-| `stepUp()` |  |
-| `stop()` |  |
-| `tickCount(*args, **kwargs)` |  |
-| `trackColor(*args, **kwargs)` |  |
-| `value(*args, **kwargs)` |  |
-| `valueChanged(...)` |  |
-| `zonesCsv(*args, **kwargs)` |  |
+| `stepDown()` | Step down. |
+| `stepUp()` | Step up. |
+| `stop()` | Stop. |
+| `tickCount(*args, **kwargs)` | Tick count. |
+| `trackColor(*args, **kwargs)` | Track color. |
+| `value(*args, **kwargs)` | Value. |
+| `valueChanged(...)` | Value changed. |
+| `zonesCsv(*args, **kwargs)` | Zones csv. |
 
 ## Theming
 

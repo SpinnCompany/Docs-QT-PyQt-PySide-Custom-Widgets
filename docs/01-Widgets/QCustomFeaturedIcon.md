@@ -75,18 +75,18 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `accentColor(*args, **kwargs)` |  |
-| `clicked(...)` |  |
-| `cornerRadius(*args, **kwargs)` |  |
-| `hasIcon()` |  |
-| `icon()` |  |
-| `iconColor(*args, **kwargs)` |  |
-| `iconPath(*args, **kwargs)` |  |
-| `setIcon(icon)` |  |
-| `shape(*args, **kwargs)` |  |
-| `sizeVariant(*args, **kwargs)` |  |
-| `surfaceColor(*args, **kwargs)` |  |
-| `variant(*args, **kwargs)` |  |
+| `accentColor(*args, **kwargs)` | Accent color. |
+| `clicked(...)` | Clicked. |
+| `cornerRadius(*args, **kwargs)` | Corner radius. |
+| `hasIcon()` | Return whether it has icon. |
+| `icon()` | Icon. |
+| `iconColor(*args, **kwargs)` | Icon color. |
+| `iconPath(*args, **kwargs)` | Icon path. |
+| `setIcon(icon)` | Set the icon. |
+| `shape(*args, **kwargs)` | Shape. |
+| `sizeVariant(*args, **kwargs)` | Size variant. |
+| `surfaceColor(*args, **kwargs)` | Surface color. |
+| `variant(*args, **kwargs)` | Variant. |
 
 ## Theming
 

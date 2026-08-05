@@ -61,10 +61,10 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `closed(...)` |  |
-| `dismiss()` |  |
-| `showToast()` |  |
-| `variant(*args, **kwargs)` |  |
+| `closed(...)` | Closed. |
+| `dismiss()` | Dismiss. |
+| `showToast()` | Show the toast. |
+| `variant(*args, **kwargs)` | Variant. |
 
 ## Theming
 

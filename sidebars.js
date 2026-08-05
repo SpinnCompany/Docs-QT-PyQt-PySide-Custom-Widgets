@@ -232,12 +232,13 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Media (9)',
+      label: 'Media (10)',
       collapsible: true,
       collapsed: true,
       items: [
         'Widgets/QCustomCarousel',
         'Widgets/QCustomImageViewer',
+        'Widgets/QCustomMapView',
         'Widgets/QCustomMediaGrid',
         'Widgets/QCustomMediaTimeline',
         'Widgets/QCustomPlayerBar',

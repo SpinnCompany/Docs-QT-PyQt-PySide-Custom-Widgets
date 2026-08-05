@@ -63,20 +63,20 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `fillColor(*args, **kwargs)` |  |
-| `handleBorderColor(*args, **kwargs)` |  |
-| `handleColor(*args, **kwargs)` |  |
-| `lowerValue(*args, **kwargs)` |  |
-| `maximum(*args, **kwargs)` |  |
-| `minimum(*args, **kwargs)` |  |
-| `setLowerValue(v)` |  |
-| `setRange(minimum, maximum)` |  |
-| `setUpperValue(v)` |  |
-| `setValues(lower, upper)` |  |
-| `trackColor(*args, **kwargs)` |  |
-| `upperValue(*args, **kwargs)` |  |
-| `values()` |  |
-| `valuesChanged(...)` |  |
+| `fillColor(*args, **kwargs)` | Fill color. |
+| `handleBorderColor(*args, **kwargs)` | Handle border color. |
+| `handleColor(*args, **kwargs)` | Handle color. |
+| `lowerValue(*args, **kwargs)` | Lower value. |
+| `maximum(*args, **kwargs)` | Maximum. |
+| `minimum(*args, **kwargs)` | Minimum. |
+| `setLowerValue(v)` | Set the lower value. |
+| `setRange(minimum, maximum)` | Set the range. |
+| `setUpperValue(v)` | Set the upper value. |
+| `setValues(lower, upper)` | Set the values. |
+| `trackColor(*args, **kwargs)` | Track color. |
+| `upperValue(*args, **kwargs)` | Upper value. |
+| `values()` | Values. |
+| `valuesChanged(...)` | Values changed. |
 
 ## Theming
 

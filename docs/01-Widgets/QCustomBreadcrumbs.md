@@ -52,8 +52,8 @@ Colours come from the design tokens, so the widget follows the app theme with no
 
 | Method | Description |
 |---|---|
-| `itemClicked(...)` |  |
-| `items()` |  |
+| `itemClicked(...)` | Item clicked. |
+| `items()` | Items. |
 | `setItems(items)` | Set the trail. Each item is a string, (label, data) pair, or a dict |
 
 ## Theming

@@ -340,11 +340,11 @@ The `QCustomProgressIndicator` is ideal for multi-step forms, installation wizar
 
 | Method | Description |
 |---|---|
-| `animateFormProgress(percentage)` |  |
-| `createFormProgressIndicator()` |  |
-| `selectFormProgressIndicatorTheme(themeNumber)` |  |
-| `setStepStatus(**stepStatus)` |  |
-| `updateFormProgress(value)` |  |
-| `updateFormProgressIndicator(**values)` |  |
+| `animateFormProgress(percentage)` | Animate form progress. |
+| `createFormProgressIndicator()` | Create a form progress indicator. |
+| `selectFormProgressIndicatorTheme(themeNumber)` | Select a form progress indicator theme. |
+| `setStepStatus(**stepStatus)` | Set the step status. |
+| `updateFormProgress(value)` | Update the form progress. |
+| `updateFormProgressIndicator(**values)` | Update the form progress indicator. |
 
 <!-- /generated:api-reference -->

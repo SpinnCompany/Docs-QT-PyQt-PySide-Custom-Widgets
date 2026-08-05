@@ -72,30 +72,30 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `colorsCsv(*args, **kwargs)` |  |
-| `gapColor(*args, **kwargs)` |  |
-| `gapDegrees(*args, **kwargs)` |  |
-| `hatchCsv(*args, **kwargs)` |  |
-| `hatchPattern(*args, **kwargs)` |  |
-| `holeRatio(*args, **kwargs)` |  |
-| `maxSweep(*args, **kwargs)` |  |
-| `minLabelPercent(*args, **kwargs)` |  |
-| `mode(*args, **kwargs)` |  |
-| `percentLabelColor(*args, **kwargs)` |  |
-| `percentPill(*args, **kwargs)` |  |
-| `percentPillColor(*args, **kwargs)` |  |
-| `setColors(colors)` |  |
-| `setData(values, colors=None)` |  |
-| `setGapColor(color)` |  |
+| `colorsCsv(*args, **kwargs)` | Colors csv. |
+| `gapColor(*args, **kwargs)` | Gap color. |
+| `gapDegrees(*args, **kwargs)` | Gap degrees. |
+| `hatchCsv(*args, **kwargs)` | Hatch csv. |
+| `hatchPattern(*args, **kwargs)` | Hatch pattern. |
+| `holeRatio(*args, **kwargs)` | Hole ratio. |
+| `maxSweep(*args, **kwargs)` | Max sweep. |
+| `minLabelPercent(*args, **kwargs)` | Min label percent. |
+| `mode(*args, **kwargs)` | Mode. |
+| `percentLabelColor(*args, **kwargs)` | Percent label color. |
+| `percentPill(*args, **kwargs)` | Percent pill. |
+| `percentPillColor(*args, **kwargs)` | Percent pill color. |
+| `setColors(colors)` | Set the colors. |
+| `setData(values, colors=None)` | Set the data. |
+| `setGapColor(color)` | Set the gap color. |
 | `setHatchIndices(indices)` | Segment indices (segments mode) rendered with a hatch/pattern fill. |
-| `setHatchPattern(name)` |  |
-| `setMode(mode)` |  |
-| `setShowPercentLabels(on)` |  |
-| `setTrackColor(color)` |  |
-| `showPercentLabels(*args, **kwargs)` |  |
-| `trackColor(*args, **kwargs)` |  |
-| `values()` |  |
-| `valuesCsv(*args, **kwargs)` |  |
+| `setHatchPattern(name)` | Set the hatch pattern. |
+| `setMode(mode)` | Set the mode. |
+| `setShowPercentLabels(on)` | Set the show percent labels. |
+| `setTrackColor(color)` | Set the track color. |
+| `showPercentLabels(*args, **kwargs)` | Show the percent labels. |
+| `trackColor(*args, **kwargs)` | Track color. |
+| `values()` | Values. |
+| `valuesCsv(*args, **kwargs)` | Values csv. |
 
 ## Theming
 

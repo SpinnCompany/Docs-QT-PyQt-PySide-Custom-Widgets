@@ -97,36 +97,36 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `addSeries(name, points, color=None)` |  |
-| `axisColor(*args, **kwargs)` |  |
-| `clearSeries()` |  |
+| `addSeries(name, points, color=None)` | Add a series. |
+| `axisColor(*args, **kwargs)` | Axis color. |
+| `clearSeries()` | Clear the series. |
 | `dataBounds()` | (xmin, xmax, ymin, ymax) across every series. |
-| `gridColor(*args, **kwargs)` |  |
-| `labelColor(*args, **kwargs)` |  |
+| `gridColor(*args, **kwargs)` | Grid color. |
+| `labelColor(*args, **kwargs)` | Label color. |
 | `mapPoint(x, y)` | Data coordinates -> widget coordinates. |
-| `markerOpacity(*args, **kwargs)` |  |
-| `markerShape(*args, **kwargs)` |  |
-| `markerSize(*args, **kwargs)` |  |
+| `markerOpacity(*args, **kwargs)` | Marker opacity. |
+| `markerShape(*args, **kwargs)` | Marker shape. |
+| `markerSize(*args, **kwargs)` | Marker size. |
 | `pointAt(pos, tolerance=None)` | (series, point) nearest a position within tolerance, else (-1, -1). |
-| `pointClicked(...)` |  |
-| `pointCount()` |  |
-| `pointHovered(...)` |  |
-| `pointsCsv(*args, **kwargs)` |  |
-| `removeSeries(index)` |  |
-| `series()` |  |
-| `seriesColor(index)` |  |
-| `seriesColorsCsv(*args, **kwargs)` |  |
-| `seriesCount()` |  |
-| `setSeries(series)` |  |
-| `showAxes(*args, **kwargs)` |  |
-| `showGrid(*args, **kwargs)` |  |
-| `showLegend(*args, **kwargs)` |  |
-| `showTooltip(*args, **kwargs)` |  |
-| `tickCount(*args, **kwargs)` |  |
-| `xAxisTitle(*args, **kwargs)` |  |
-| `xRange()` |  |
-| `yAxisTitle(*args, **kwargs)` |  |
-| `yRange()` |  |
+| `pointClicked(...)` | Point clicked. |
+| `pointCount()` | Point count. |
+| `pointHovered(...)` | Point hovered. |
+| `pointsCsv(*args, **kwargs)` | Points csv. |
+| `removeSeries(index)` | Remove a series. |
+| `series()` | Series. |
+| `seriesColor(index)` | Series color. |
+| `seriesColorsCsv(*args, **kwargs)` | Series colors csv. |
+| `seriesCount()` | Series count. |
+| `setSeries(series)` | Set the series. |
+| `showAxes(*args, **kwargs)` | Show the axes. |
+| `showGrid(*args, **kwargs)` | Show the grid. |
+| `showLegend(*args, **kwargs)` | Show the legend. |
+| `showTooltip(*args, **kwargs)` | Show the tooltip. |
+| `tickCount(*args, **kwargs)` | Tick count. |
+| `xAxisTitle(*args, **kwargs)` | X axis title. |
+| `xRange()` | X range. |
+| `yAxisTitle(*args, **kwargs)` | Y axis title. |
+| `yRange()` | Y range. |
 
 ## Theming
 

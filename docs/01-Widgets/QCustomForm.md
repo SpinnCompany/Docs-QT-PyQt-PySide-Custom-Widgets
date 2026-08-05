@@ -44,11 +44,11 @@ Colours come from the design tokens, so the widget follows the app theme with no
 
 | Method | Description |
 |---|---|
-| `add_field(field)` |  |
-| `errors()` |  |
-| `submit()` |  |
-| `submitted(...)` |  |
-| `validate()` |  |
+| `add_field(field)` | Add field. |
+| `errors()` | Errors. |
+| `submit()` | Submit. |
+| `submitted(...)` | Submitted. |
+| `validate()` | Validate. |
 
 ## Related
 

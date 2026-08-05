@@ -80,28 +80,28 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `axisPrefix(*args, **kwargs)` |  |
-| `axisSuffix(*args, **kwargs)` |  |
-| `axisTextColor(*args, **kwargs)` |  |
-| `barWidth(*args, **kwargs)` |  |
-| `cornerRadius(*args, **kwargs)` |  |
-| `downColor(*args, **kwargs)` |  |
-| `downCsv(*args, **kwargs)` |  |
-| `downValues()` |  |
-| `gridColor(*args, **kwargs)` |  |
-| `labelsCsv(*args, **kwargs)` |  |
-| `setColors(up_color, down_color)` |  |
+| `axisPrefix(*args, **kwargs)` | Axis prefix. |
+| `axisSuffix(*args, **kwargs)` | Axis suffix. |
+| `axisTextColor(*args, **kwargs)` | Axis text color. |
+| `barWidth(*args, **kwargs)` | Bar width. |
+| `cornerRadius(*args, **kwargs)` | Corner radius. |
+| `downColor(*args, **kwargs)` | Down color. |
+| `downCsv(*args, **kwargs)` | Down csv. |
+| `downValues()` | Down values. |
+| `gridColor(*args, **kwargs)` | Grid color. |
+| `labelsCsv(*args, **kwargs)` | Labels csv. |
+| `setColors(up_color, down_color)` | Set the colors. |
 | `setData(up, down, labels=None)` | Set both series at once. `up` = upward (income) values, `down` = |
-| `setDownValues(values)` |  |
-| `setLabels(labels)` |  |
+| `setDownValues(values)` | Set the down values. |
+| `setLabels(labels)` | Set the labels. |
 | `setTickStep(step)` | Axis gridline/label step in data units (0 = auto). |
-| `setUpValues(values)` |  |
-| `showAxis(*args, **kwargs)` |  |
-| `showLabels(*args, **kwargs)` |  |
-| `upColor(*args, **kwargs)` |  |
-| `upCsv(*args, **kwargs)` |  |
-| `upValues()` |  |
-| `zeroGap(*args, **kwargs)` |  |
+| `setUpValues(values)` | Set the up values. |
+| `showAxis(*args, **kwargs)` | Show the axis. |
+| `showLabels(*args, **kwargs)` | Show the labels. |
+| `upColor(*args, **kwargs)` | Up color. |
+| `upCsv(*args, **kwargs)` | Up csv. |
+| `upValues()` | Up values. |
+| `zeroGap(*args, **kwargs)` | Zero gap. |
 
 ## Theming
 

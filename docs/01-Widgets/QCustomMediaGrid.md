@@ -71,16 +71,16 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `columns(*args, **kwargs)` |  |
-| `count()` |  |
+| `columns(*args, **kwargs)` | Columns. |
+| `count()` | Count. |
 | `pixmaps()` | The current tile pixmaps (for feeding a lightbox / viewer). |
 | `setImageAt(index, pm)` | Swap one tile's pixmap in place (e.g. a real photo arriving async). |
-| `setImages(images)` |  |
-| `setPlaceholders(pairs)` |  |
-| `spacing(*args, **kwargs)` |  |
-| `tileClicked(...)` |  |
-| `tileHeight(*args, **kwargs)` |  |
-| `tileRadius(*args, **kwargs)` |  |
+| `setImages(images)` | Set the images. |
+| `setPlaceholders(pairs)` | Set the placeholders. |
+| `spacing(*args, **kwargs)` | Spacing. |
+| `tileClicked(...)` | Tile clicked. |
+| `tileHeight(*args, **kwargs)` | Tile height. |
+| `tileRadius(*args, **kwargs)` | Tile radius. |
 
 ## Related
 

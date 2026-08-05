@@ -184,65 +184,65 @@ inline editing, grouping/pivot, server-side data, CSV/XLSX export).
 
 | Method | Description |
 |---|---|
-| `addRow(row)` |  |
-| `alternatingRowColors(*args, **kwargs)` |  |
+| `addRow(row)` | Add a row. |
+| `alternatingRowColors(*args, **kwargs)` | Alternating row colors. |
 | `buildRowActionsMenu(srcRow)` | A QMenu of the configured row actions; each entry emits |
-| `cellClicked(...)` |  |
+| `cellClicked(...)` | Cell clicked. |
 | `checkedRows()` | Sorted SOURCE-model row indices whose checkbox is ticked. |
-| `clear()` |  |
-| `clearChecked()` |  |
-| `currentPage()` |  |
-| `customizeQCustomDataTable(**customValues)` |  |
-| `delegate()` |  |
-| `eventFilter(obj, event)` |  |
-| `filterable(*args, **kwargs)` |  |
-| `headerActionsGlyphClicked(...)` |  |
-| `isSelectable()` |  |
-| `model()` |  |
-| `nextPage()` |  |
-| `pageChanged(...)` |  |
-| `pageCount()` |  |
-| `pageSize(*args, **kwargs)` |  |
-| `prevPage()` |  |
-| `rowActionTriggered(...)` |  |
-| `rowActions()` |  |
-| `rowSelected(...)` |  |
-| `selectable(*args, **kwargs)` |  |
+| `clear()` | Clear. |
+| `clearChecked()` | Clear the checked. |
+| `currentPage()` | Current page. |
+| `customizeQCustomDataTable(**customValues)` | Customize Q custom data table. |
+| `delegate()` | Delegate. |
+| `eventFilter(obj, event)` | Event filter. |
+| `filterable(*args, **kwargs)` | Filterable. |
+| `headerActionsGlyphClicked(...)` | Header actions glyph clicked. |
+| `isSelectable()` | Return whether the widget is selectable. |
+| `model()` | Model. |
+| `nextPage()` | Next page. |
+| `pageChanged(...)` | Page changed. |
+| `pageCount()` | Page count. |
+| `pageSize(*args, **kwargs)` | Page size. |
+| `prevPage()` | Prev page. |
+| `rowActionTriggered(...)` | Row action triggered. |
+| `rowActions()` | Row actions. |
+| `rowSelected(...)` | Row selected. |
+| `selectable(*args, **kwargs)` | Selectable. |
 | `selectedRows()` | Return the selected SOURCE-model row indices (sorted, unique). |
-| `selectionCheckedChanged(...)` |  |
-| `selectionMode(*args, **kwargs)` |  |
+| `selectionCheckedChanged(...)` | Selection checked changed. |
+| `selectionMode(*args, **kwargs)` | Selection mode. |
 | `setActionsColor(color)` | Colour of the kebab (⋮) glyph. |
-| `setAllChecked(checked=True)` |  |
+| `setAllChecked(checked=True)` | Set the all checked. |
 | `setAutoFlex(on)` | Enable/disable managed flex sizing. When off, columns keep their |
 | `setCellAccentColor(color)` | Colour used for link/status cell text (blank/None -> palette link). |
 | `setCellMutedColor(color)` | Colour used for the muted second line of twoline cells. |
-| `setColumns(columns)` |  |
-| `setData(rows)` |  |
-| `setFilterText(text)` |  |
+| `setColumns(columns)` | Set the columns. |
+| `setData(rows)` | Set the data. |
+| `setFilterText(text)` | Set the filter text. |
 | `setFlexColumn(dataColumnIndex)` | Choose which DATA column (0-based, ignoring the select column) fills |
 | `setFlexMinWidth(px)` | Floor width the flex column never shrinks below (table scrolls once |
 | `setHeaderAccentColor(color)` | Colour of the ACTIVE sort caret. |
 | `setHeaderActionsGlyph(kind)` | Glyph in the actions-column header, e.g. 'gear' (or None). Clicking |
 | `setHeaderGlyphColor(color)` | Muted colour for header carets / caret / gear (track the theme). |
 | `setHeaderSelectCaret(on)` | Show a dropdown caret next to the select-all checkbox. |
-| `setPage(index)` |  |
+| `setPage(index)` | Set the page. |
 | `setPersistentSortIndicators(on)` | Draw an up/down sort caret on EVERY sortable column header (web-style), |
 | `setRowActions(actions)` | Enable the trailing ⋮ column. ``actions`` is a list of (key, label) |
-| `setRowChecked(row, checked=True)` |  |
+| `setRowChecked(row, checked=True)` | Set the row checked. |
 | `setRowSeparatorColor(color)` | Draw a uniform 1px bottom border under EVERY cell (rich cells are |
-| `setRows(rows)` |  |
+| `setRows(rows)` | Set the rows. |
 | `setSelectable(on)` | Show/hide the leading checkbox column (with a select-all header). |
-| `setStatusDotSize(px)` |  |
-| `setTwoLineSubtitleBold(bold)` |  |
+| `setStatusDotSize(px)` | Set the status dot size. |
+| `setTwoLineSubtitleBold(bold)` | Set the two line subtitle bold. |
 | `setTwoLineSubtitleScale(delta)` | Twoline subtitle size delta in points (0 = two equal peer lines). |
-| `showGrid(*args, **kwargs)` |  |
-| `showHeader(*args, **kwargs)` |  |
-| `showPagination(*args, **kwargs)` |  |
-| `sizeVariant(*args, **kwargs)` |  |
-| `sortBy(column, order=<SortOrder.AscendingOrder: 0>)` |  |
-| `sortChanged(...)` |  |
-| `sortable(*args, **kwargs)` |  |
-| `variant(*args, **kwargs)` |  |
-| `view()` |  |
+| `showGrid(*args, **kwargs)` | Show the grid. |
+| `showHeader(*args, **kwargs)` | Show the header. |
+| `showPagination(*args, **kwargs)` | Show the pagination. |
+| `sizeVariant(*args, **kwargs)` | Size variant. |
+| `sortBy(column, order=<SortOrder.AscendingOrder: 0>)` | Sort by. |
+| `sortChanged(...)` | Sort changed. |
+| `sortable(*args, **kwargs)` | Sortable. |
+| `variant(*args, **kwargs)` | Variant. |
+| `view()` | View. |
 
 <!-- /generated:api-reference -->

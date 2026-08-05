@@ -79,23 +79,23 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `attachClicked(...)` |  |
-| `clearOnSend(*args, **kwargs)` |  |
-| `emojiButton()` |  |
-| `emojiClicked(...)` |  |
-| `field()` |  |
-| `iconSize(*args, **kwargs)` |  |
-| `insertText(t)` |  |
-| `micClicked(...)` |  |
-| `placeholder(*args, **kwargs)` |  |
-| `sendButton()` |  |
-| `sendMessage(...)` |  |
-| `setText(t)` |  |
-| `showAttach(*args, **kwargs)` |  |
-| `showEmoji(*args, **kwargs)` |  |
-| `showMic(*args, **kwargs)` |  |
-| `text()` |  |
-| `textChanged(...)` |  |
+| `attachClicked(...)` | Attach clicked. |
+| `clearOnSend(*args, **kwargs)` | Clear the on send. |
+| `emojiButton()` | Emoji button. |
+| `emojiClicked(...)` | Emoji clicked. |
+| `field()` | Field. |
+| `iconSize(*args, **kwargs)` | Icon size. |
+| `insertText(t)` | Insert a text. |
+| `micClicked(...)` | Mic clicked. |
+| `placeholder(*args, **kwargs)` | Placeholder. |
+| `sendButton()` | Send button. |
+| `sendMessage(...)` | Send message. |
+| `setText(t)` | Set the text. |
+| `showAttach(*args, **kwargs)` | Show the attach. |
+| `showEmoji(*args, **kwargs)` | Show the emoji. |
+| `showMic(*args, **kwargs)` | Show the mic. |
+| `text()` | Text. |
+| `textChanged(...)` | Text changed. |
 
 ## Theming
 

@@ -78,23 +78,23 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `accentColor(*args, **kwargs)` |  |
-| `activeColor(*args, **kwargs)` |  |
-| `activeNameColor(*args, **kwargs)` |  |
-| `activeTimeColor(*args, **kwargs)` |  |
-| `count()` |  |
-| `currentChanged(...)` |  |
-| `currentIndex()` |  |
-| `itemClicked(...)` |  |
-| `nameColor(*args, **kwargs)` |  |
-| `onlineColor(*args, **kwargs)` |  |
-| `previewColor(*args, **kwargs)` |  |
-| `rowSpacing(*args, **kwargs)` |  |
-| `setAvatarImageAt(index, image)` |  |
-| `setConversations(conversations)` |  |
-| `setCurrentIndex(index, emit=True)` |  |
-| `surfaceColor(*args, **kwargs)` |  |
-| `timeColor(*args, **kwargs)` |  |
+| `accentColor(*args, **kwargs)` | Accent color. |
+| `activeColor(*args, **kwargs)` | Active color. |
+| `activeNameColor(*args, **kwargs)` | Active name color. |
+| `activeTimeColor(*args, **kwargs)` | Active time color. |
+| `count()` | Count. |
+| `currentChanged(...)` | Current changed. |
+| `currentIndex()` | Current index. |
+| `itemClicked(...)` | Item clicked. |
+| `nameColor(*args, **kwargs)` | Name color. |
+| `onlineColor(*args, **kwargs)` | Online color. |
+| `previewColor(*args, **kwargs)` | Preview color. |
+| `rowSpacing(*args, **kwargs)` | Row spacing. |
+| `setAvatarImageAt(index, image)` | Set the avatar image at. |
+| `setConversations(conversations)` | Set the conversations. |
+| `setCurrentIndex(index, emit=True)` | Set the current index. |
+| `surfaceColor(*args, **kwargs)` | Surface color. |
+| `timeColor(*args, **kwargs)` | Time color. |
 
 ## Theming
 

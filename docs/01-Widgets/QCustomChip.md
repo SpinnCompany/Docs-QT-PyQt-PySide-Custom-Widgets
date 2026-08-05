@@ -50,13 +50,13 @@ Colours come from the design tokens, so the widget follows the app theme with no
 
 | Method | Description |
 |---|---|
-| `clicked(...)` |  |
-| `data()` |  |
-| `isSelected()` |  |
-| `removed(...)` |  |
-| `setSelected(selected)` |  |
-| `text()` |  |
-| `toggled(...)` |  |
+| `clicked(...)` | Clicked. |
+| `data()` | Data. |
+| `isSelected()` | Return whether the widget is selected. |
+| `removed(...)` | Removed. |
+| `setSelected(selected)` | Set the selected. |
+| `text()` | Text. |
+| `toggled(...)` | Toggled. |
 
 ## Related
 

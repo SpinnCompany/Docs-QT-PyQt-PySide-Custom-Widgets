@@ -52,11 +52,11 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `baseColor(*args, **kwargs)` |  |
-| `highlightColor(*args, **kwargs)` |  |
-| `shape(*args, **kwargs)` |  |
-| `start()` |  |
-| `stop()` |  |
+| `baseColor(*args, **kwargs)` | Base color. |
+| `highlightColor(*args, **kwargs)` | Highlight color. |
+| `shape(*args, **kwargs)` | Shape. |
+| `start()` | Start. |
+| `stop()` | Stop. |
 
 ## Theming
 

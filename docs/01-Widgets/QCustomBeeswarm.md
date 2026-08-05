@@ -79,19 +79,19 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `bubbleWidth(*args, **kwargs)` |  |
-| `colorsCsv(*args, **kwargs)` |  |
-| `data()` |  |
-| `dataCsv(*args, **kwargs)` |  |
-| `gap(*args, **kwargs)` |  |
-| `jitter(*args, **kwargs)` |  |
-| `lineColor(*args, **kwargs)` |  |
-| `maxSize(*args, **kwargs)` |  |
-| `minSize(*args, **kwargs)` |  |
-| `setColors(fills, texts=None)` |  |
+| `bubbleWidth(*args, **kwargs)` | Bubble width. |
+| `colorsCsv(*args, **kwargs)` | Colors csv. |
+| `data()` | Data. |
+| `dataCsv(*args, **kwargs)` | Data csv. |
+| `gap(*args, **kwargs)` | Gap. |
+| `jitter(*args, **kwargs)` | Jitter. |
+| `lineColor(*args, **kwargs)` | Line color. |
+| `maxSize(*args, **kwargs)` | Max size. |
+| `minSize(*args, **kwargs)` | Min size. |
+| `setColors(fills, texts=None)` | Set the colors. |
 | `setData(columns)` | `columns` = list of columns; each column = list of (value, category). |
-| `showValues(*args, **kwargs)` |  |
-| `textColorsCsv(*args, **kwargs)` |  |
+| `showValues(*args, **kwargs)` | Show the values. |
+| `textColorsCsv(*args, **kwargs)` | Text colors csv. |
 
 ## Theming
 

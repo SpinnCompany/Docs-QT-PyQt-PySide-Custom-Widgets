@@ -89,38 +89,38 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `addClip(track, start, end, color=None, label='')` |  |
-| `addTrack(name='Track', kind='clips', color=None)` |  |
-| `animated(*args, **kwargs)` |  |
-| `bgColor(*args, **kwargs)` |  |
-| `clear()` |  |
-| `clipClicked(...)` |  |
-| `clipColor(*args, **kwargs)` |  |
-| `clipMoved(...)` |  |
-| `clipTrimmed(...)` |  |
-| `cornerRadius(*args, **kwargs)` |  |
-| `duration(*args, **kwargs)` |  |
-| `isPlaying()` |  |
-| `loop(*args, **kwargs)` |  |
-| `pause()` |  |
-| `play()` |  |
-| `playToggled(...)` |  |
-| `playheadColor(*args, **kwargs)` |  |
-| `playing(*args, **kwargs)` |  |
-| `position(*args, **kwargs)` |  |
-| `positionChanged(...)` |  |
-| `positionSeconds()` |  |
-| `rulerColor(*args, **kwargs)` |  |
+| `addClip(track, start, end, color=None, label='')` | Add a clip. |
+| `addTrack(name='Track', kind='clips', color=None)` | Add a track. |
+| `animated(*args, **kwargs)` | Animated. |
+| `bgColor(*args, **kwargs)` | Bg color. |
+| `clear()` | Clear. |
+| `clipClicked(...)` | Clip clicked. |
+| `clipColor(*args, **kwargs)` | Clip color. |
+| `clipMoved(...)` | Clip moved. |
+| `clipTrimmed(...)` | Clip trimmed. |
+| `cornerRadius(*args, **kwargs)` | Corner radius. |
+| `duration(*args, **kwargs)` | Duration. |
+| `isPlaying()` | Return whether the widget is playing. |
+| `loop(*args, **kwargs)` | Loop. |
+| `pause()` | Pause. |
+| `play()` | Play. |
+| `playToggled(...)` | Play toggled. |
+| `playheadColor(*args, **kwargs)` | Playhead color. |
+| `playing(*args, **kwargs)` | Playing. |
+| `position(*args, **kwargs)` | Position. |
+| `positionChanged(...)` | Position changed. |
+| `positionSeconds()` | Position seconds. |
+| `rulerColor(*args, **kwargs)` | Ruler color. |
 | `setAnimated(on)` | Enable/disable animation entirely (stops playback when disabled). |
-| `setDuration(seconds)` |  |
-| `setPlaying(on)` |  |
-| `setPosition(seconds)` |  |
+| `setDuration(seconds)` | Set the duration. |
+| `setPlaying(on)` | Set the playing. |
+| `setPosition(seconds)` | Set the position. |
 | `setTimeline(data)` | data = {"duration":10, "position":1, |
-| `setWaveform(track, values)` |  |
-| `textColor(*args, **kwargs)` |  |
-| `togglePlay()` |  |
-| `trackBgColor(*args, **kwargs)` |  |
-| `waveColor(*args, **kwargs)` |  |
+| `setWaveform(track, values)` | Set the waveform. |
+| `textColor(*args, **kwargs)` | Text color. |
+| `togglePlay()` | Toggle the play. |
+| `trackBgColor(*args, **kwargs)` | Track bg color. |
+| `waveColor(*args, **kwargs)` | Wave color. |
 
 ## Theming
 

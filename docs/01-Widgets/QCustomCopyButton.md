@@ -72,19 +72,19 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `accentColor(*args, **kwargs)` |  |
-| `copied(...)` |  |
-| `copiedText(*args, **kwargs)` |  |
+| `accentColor(*args, **kwargs)` | Accent color. |
+| `copied(...)` | Copied. |
+| `copiedText(*args, **kwargs)` | Copied text. |
 | `copy()` | Put the payload on the clipboard and confirm. False if empty. |
-| `iconOnly(*args, **kwargs)` |  |
-| `isConfirming()` |  |
-| `payload(*args, **kwargs)` |  |
-| `resetDelay(*args, **kwargs)` |  |
-| `successColor(*args, **kwargs)` |  |
-| `surfaceColor(*args, **kwargs)` |  |
-| `text(*args, **kwargs)` |  |
-| `textColor(*args, **kwargs)` |  |
-| `variant(*args, **kwargs)` |  |
+| `iconOnly(*args, **kwargs)` | Icon only. |
+| `isConfirming()` | Return whether the widget is confirming. |
+| `payload(*args, **kwargs)` | Payload. |
+| `resetDelay(*args, **kwargs)` | Reset the delay. |
+| `successColor(*args, **kwargs)` | Success color. |
+| `surfaceColor(*args, **kwargs)` | Surface color. |
+| `text(*args, **kwargs)` | Text. |
+| `textColor(*args, **kwargs)` | Text color. |
+| `variant(*args, **kwargs)` | Variant. |
 
 ## Theming
 

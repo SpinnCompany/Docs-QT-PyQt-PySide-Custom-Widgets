@@ -103,23 +103,23 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `autoGrow(*args, **kwargs)` |  |
-| `clearText()` |  |
-| `counterColor(*args, **kwargs)` |  |
-| `counterOverColor(*args, **kwargs)` |  |
-| `isOverLimit()` |  |
-| `length()` |  |
-| `lengthChanged(...)` |  |
-| `limitReached(...)` |  |
-| `maxLength(*args, **kwargs)` |  |
-| `maxRows(*args, **kwargs)` |  |
-| `minRows(*args, **kwargs)` |  |
+| `autoGrow(*args, **kwargs)` | Auto grow. |
+| `clearText()` | Clear the text. |
+| `counterColor(*args, **kwargs)` | Counter color. |
+| `counterOverColor(*args, **kwargs)` | Counter over color. |
+| `isOverLimit()` | Return whether the widget is over limit. |
+| `length()` | Length. |
+| `lengthChanged(...)` | Length changed. |
+| `limitReached(...)` | Limit reached. |
+| `maxLength(*args, **kwargs)` | Max length. |
+| `maxRows(*args, **kwargs)` | Max rows. |
+| `minRows(*args, **kwargs)` | Min rows. |
 | `remaining()` | Characters left, or -1 when no limit is set. |
-| `setError(error_text=None)` |  |
-| `showCounter(*args, **kwargs)` |  |
-| `sizeVariant(*args, **kwargs)` |  |
-| `state(*args, **kwargs)` |  |
-| `variant(*args, **kwargs)` |  |
+| `setError(error_text=None)` | Set the error. |
+| `showCounter(*args, **kwargs)` | Show the counter. |
+| `sizeVariant(*args, **kwargs)` | Size variant. |
+| `state(*args, **kwargs)` | State. |
+| `variant(*args, **kwargs)` | Variant. |
 
 ## Theming
 

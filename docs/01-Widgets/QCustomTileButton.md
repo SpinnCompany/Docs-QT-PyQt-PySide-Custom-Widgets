@@ -76,18 +76,18 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `activeColor(*args, **kwargs)` |  |
-| `bgColor(*args, **kwargs)` |  |
-| `caption(*args, **kwargs)` |  |
-| `cornerRadius(*args, **kwargs)` |  |
-| `gradientEnd(*args, **kwargs)` |  |
-| `gradientStart(*args, **kwargs)` |  |
-| `iconColor(*args, **kwargs)` |  |
-| `iconPath(*args, **kwargs)` |  |
-| `iconSize(*args, **kwargs)` |  |
-| `setCaption(text)` |  |
-| `setGradient(start, end)` |  |
-| `setIconPath(path)` |  |
+| `activeColor(*args, **kwargs)` | Active color. |
+| `bgColor(*args, **kwargs)` | Bg color. |
+| `caption(*args, **kwargs)` | Caption. |
+| `cornerRadius(*args, **kwargs)` | Corner radius. |
+| `gradientEnd(*args, **kwargs)` | Gradient end. |
+| `gradientStart(*args, **kwargs)` | Gradient start. |
+| `iconColor(*args, **kwargs)` | Icon color. |
+| `iconPath(*args, **kwargs)` | Icon path. |
+| `iconSize(*args, **kwargs)` | Icon size. |
+| `setCaption(text)` | Set the caption. |
+| `setGradient(start, end)` | Set the gradient. |
+| `setIconPath(path)` | Set the icon path. |
 
 ## Theming
 

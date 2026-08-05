@@ -83,30 +83,30 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `animated(*args, **kwargs)` |  |
-| `barColor(*args, **kwargs)` |  |
-| `barColor2(*args, **kwargs)` |  |
-| `barGap(*args, **kwargs)` |  |
-| `barWidth(*args, **kwargs)` |  |
-| `capacity(*args, **kwargs)` |  |
-| `clear()` |  |
-| `cornerRadius(*args, **kwargs)` |  |
-| `fillArea(*args, **kwargs)` |  |
-| `glow(*args, **kwargs)` |  |
-| `glowStrength(*args, **kwargs)` |  |
-| `gridColor(*args, **kwargs)` |  |
-| `lineColor(*args, **kwargs)` |  |
-| `lineWidth(*args, **kwargs)` |  |
-| `mirror(*args, **kwargs)` |  |
-| `mode(*args, **kwargs)` |  |
-| `push(value)` |  |
-| `setAnimated(on)` |  |
-| `setMode(mode)` |  |
-| `setValues(values)` |  |
-| `showGrid(*args, **kwargs)` |  |
-| `valuePushed(...)` |  |
-| `values()` |  |
-| `valuesCsv(*args, **kwargs)` |  |
+| `animated(*args, **kwargs)` | Animated. |
+| `barColor(*args, **kwargs)` | Bar color. |
+| `barColor2(*args, **kwargs)` | Bar color2. |
+| `barGap(*args, **kwargs)` | Bar gap. |
+| `barWidth(*args, **kwargs)` | Bar width. |
+| `capacity(*args, **kwargs)` | Capacity. |
+| `clear()` | Clear. |
+| `cornerRadius(*args, **kwargs)` | Corner radius. |
+| `fillArea(*args, **kwargs)` | Fill area. |
+| `glow(*args, **kwargs)` | Glow. |
+| `glowStrength(*args, **kwargs)` | Glow strength. |
+| `gridColor(*args, **kwargs)` | Grid color. |
+| `lineColor(*args, **kwargs)` | Line color. |
+| `lineWidth(*args, **kwargs)` | Line width. |
+| `mirror(*args, **kwargs)` | Mirror. |
+| `mode(*args, **kwargs)` | Mode. |
+| `push(value)` | Push. |
+| `setAnimated(on)` | Set the animated. |
+| `setMode(mode)` | Set the mode. |
+| `setValues(values)` | Set the values. |
+| `showGrid(*args, **kwargs)` | Show the grid. |
+| `valuePushed(...)` | Value pushed. |
+| `values()` | Values. |
+| `valuesCsv(*args, **kwargs)` | Values csv. |
 
 ## Theming
 

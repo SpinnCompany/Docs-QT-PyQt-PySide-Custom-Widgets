@@ -389,14 +389,14 @@ The `QFlowProgressBar` is ideal for multi-step forms, installation wizards, work
 | `changeCurrentStep(step: int)` | Change the current step of the progress bar. |
 | `drawFlatStyle(painter: PySide6.QtGui.QPainter)` | Draw progress bar with Flat style and triangle pointer tip. |
 | `drawStyle(painter: PySide6.QtGui.QPainter)` | Draw the progress bar with Circular or Square style. |
-| `finishedProgressLength(*args, **kwargs)` |  |
+| `finishedProgressLength(*args, **kwargs)` | Finished progress length. |
 | `getBackgroundColor() -> PySide6.QtGui.QColor` | Get the background color of the progress bar. |
 | `getCurrentStep()` | CReturn current step |
 | `getDrawTextSize(text: str, font: PySide6.QtGui.QFont) -> PySide6.QtCore.QRect` | Get the size of the text to be drawn. |
 | `getFinishedBackgroundColor() -> PySide6.QtGui.QColor` | Get the color for finished progress bar segments. |
 | `getFinishedNumberColor() -> PySide6.QtGui.QColor` | Get the color for finished numbers in the progress bar. |
-| `getFinishedProgressLength() -> int` |  |
-| `onStepClicked(...)` |  |
-| `setFinishedProgressLength(length: int)` |  |
+| `getFinishedProgressLength() -> int` | Return the finished progress length. |
+| `onStepClicked(...)` | Handle step clicked. |
+| `setFinishedProgressLength(length: int)` | Set the finished progress length. |
 
 <!-- /generated:api-reference -->

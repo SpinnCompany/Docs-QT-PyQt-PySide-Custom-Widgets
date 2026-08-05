@@ -72,20 +72,20 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `brand(*args, **kwargs)` |  |
-| `brandColor(*args, **kwargs)` |  |
-| `brandNames()` |  |
-| `clicked(...)` |  |
+| `brand(*args, **kwargs)` | Brand. |
+| `brandColor(*args, **kwargs)` | Brand color. |
+| `brandNames()` | Brand names. |
+| `clicked(...)` | Clicked. |
 | `foregroundColor()` | Readable text colour for the current fill. |
-| `iconOnly(*args, **kwargs)` |  |
-| `iconPath(*args, **kwargs)` |  |
-| `isKnownBrand()` |  |
+| `iconOnly(*args, **kwargs)` | Icon only. |
+| `iconPath(*args, **kwargs)` | Icon path. |
+| `isKnownBrand()` | Return whether the widget is known brand. |
 | `setBrand(brand)` | Adopt a known brand's colour and default caption. |
-| `shape(*args, **kwargs)` |  |
-| `sizeVariant(*args, **kwargs)` |  |
-| `surfaceColor(*args, **kwargs)` |  |
-| `text(*args, **kwargs)` |  |
-| `variant(*args, **kwargs)` |  |
+| `shape(*args, **kwargs)` | Shape. |
+| `sizeVariant(*args, **kwargs)` | Size variant. |
+| `surfaceColor(*args, **kwargs)` | Surface color. |
+| `text(*args, **kwargs)` | Text. |
+| `variant(*args, **kwargs)` | Variant. |
 
 ## Theming
 

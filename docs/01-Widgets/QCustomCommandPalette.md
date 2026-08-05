@@ -54,12 +54,12 @@ Colours come from the design tokens, so the widget follows the app theme with no
 
 | Method | Description |
 |---|---|
-| `addCommand(*args, **kw)` |  |
-| `close()` |  |
-| `commandTriggered(...)` |  |
+| `addCommand(*args, **kw)` | Add a command. |
+| `close()` | Close. |
+| `commandTriggered(...)` | Command triggered. |
 | `installShortcut(window, sequence='Ctrl+K', commands=None)` | Create a palette over `window` and bind `sequence` (Qt maps Ctrl->Cmd |
-| `open()` |  |
-| `setCommands(commands)` |  |
+| `open()` | Open. |
+| `setCommands(commands)` | Set the commands. |
 
 ## Theming
 

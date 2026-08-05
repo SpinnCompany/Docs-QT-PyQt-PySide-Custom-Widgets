@@ -121,6 +121,6 @@ same system every modern widget uses. The handle uses the `surface-muted` and
 
 | Method | Description |
 |---|---|
-| `orientationName(*args, **kwargs)` |  |
+| `orientationName(*args, **kwargs)` | Orientation name. |
 
 <!-- /generated:api-reference -->

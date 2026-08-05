@@ -499,10 +499,10 @@ The `QCustomQStackedWidget` is perfect for wizard interfaces, onboarding flows, 
 |---|---|
 | `addWidget(widget)` | Add a widget to the stacked widget with proper opacity initialization. |
 | `fadeDelay(*args, **kwargs)` | Get the delay between fade out and fade in animations in milliseconds. |
-| `fadeEasingCurve(*args, **kwargs)` |  |
-| `fadeInCurve(*args, **kwargs)` |  |
+| `fadeEasingCurve(*args, **kwargs)` | Fade easing curve. |
+| `fadeInCurve(*args, **kwargs)` | Fade in curve. |
 | `fadeInTime(*args, **kwargs)` | Get the fade in animation time in milliseconds. |
-| `fadeOutCurve(*args, **kwargs)` |  |
+| `fadeOutCurve(*args, **kwargs)` | Fade out curve. |
 | `fadeOutTime(*args, **kwargs)` | Get the fade out animation time in milliseconds. |
 | `fadeTime(*args, **kwargs)` | Get the total fade transition time in milliseconds. |
 | `fadeTransition(*args, **kwargs)` | Get the fade transition state. |
@@ -513,6 +513,8 @@ The `QCustomQStackedWidget` is perfect for wizard interfaces, onboarding flows, 
 | `setFadeInOutCurves(fadeInCurve, fadeOutCurve)` | Set fade in and fade out easing curves separately. |
 | `setFadeInOutTimes(fadeInTime, fadeOutTime)` | Set fade in and fade out times separately. |
 | `setFadeSpeed(speed)` | Set the fade transition speed. |
+| `setFadeTransition(fadeState=True)` | Enable or disable fade transitions (setter for the |
+| `setSlideTransition(slideState=True)` | Enable or disable slide transitions (setter for the |
 | `setTransitionDirection(direction)` | Set the transition direction. |
 | `setTransitionEasingCurve(aesingCurve)` | Set the easing curve for slide animations. |
 | `setTransitionSpeed(speed)` | Set the slide transition speed. |
@@ -522,8 +524,8 @@ The `QCustomQStackedWidget` is perfect for wizard interfaces, onboarding flows, 
 | `slideToWidgetIndex(index)` | Transition to a specific widget index with animation. |
 | `slideTransition(*args, **kwargs)` | Get the slide transition state. |
 | `transitionDirection(*args, **kwargs)` | Slide transition direction. Exposed as Qt.Orientation so Qt |
-| `transitionEasingCurve(*args, **kwargs)` |  |
-| `transitionFinished(...)` |  |
+| `transitionEasingCurve(*args, **kwargs)` | Transition easing curve. |
+| `transitionFinished(...)` | Transition finished. |
 | `transitionTime(*args, **kwargs)` | Get the slide transition time in milliseconds. |
 
 <!-- /generated:api-reference -->

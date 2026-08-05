@@ -177,21 +177,21 @@ This documentation should help you understand and integrate `QCustom3CirclesLoad
 
 | Method | Description |
 |---|---|
-| `finished()` |  |
-| `getVariantAnimation()` |  |
-| `initMoveDownAnimation()` |  |
-| `initMoveLeftAnimation()` |  |
-| `initMoveRightAnimation()` |  |
-| `initMoveUpAnimation()` |  |
-| `initRects()` |  |
-| `moveDownUpdateH(newValue)` |  |
-| `moveDownUpdateY(newValue)` |  |
-| `moveLeftUpdateH(newValue)` |  |
-| `moveLeftUpdateX(newValue)` |  |
-| `moveRightUpdateW(newValue)` |  |
-| `moveRightUpdateX(newValue)` |  |
-| `moveUpUpdateH(newValue)` |  |
-| `moveUpUpdateY(newValue)` |  |
-| `startAnimations()` |  |
+| `finished()` | Finished. |
+| `getVariantAnimation()` | Return the variant animation. |
+| `initMoveDownAnimation()` | Init move down animation. |
+| `initMoveLeftAnimation()` | Init move left animation. |
+| `initMoveRightAnimation()` | Init move right animation. |
+| `initMoveUpAnimation()` | Init move up animation. |
+| `initRects()` | Init rects. |
+| `moveDownUpdateH(newValue)` | Move down update H. |
+| `moveDownUpdateY(newValue)` | Move down update Y. |
+| `moveLeftUpdateH(newValue)` | Move left update H. |
+| `moveLeftUpdateX(newValue)` | Move left update X. |
+| `moveRightUpdateW(newValue)` | Move right update W. |
+| `moveRightUpdateX(newValue)` | Move right update X. |
+| `moveUpUpdateH(newValue)` | Move up update H. |
+| `moveUpUpdateY(newValue)` | Move up update Y. |
+| `startAnimations()` | Start the animations. |
 
 <!-- /generated:api-reference -->

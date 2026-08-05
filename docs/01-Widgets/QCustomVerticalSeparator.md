@@ -47,15 +47,15 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `color(*args, **kwargs)` |  |
-| `getColor()` |  |
-| `getMargin()` |  |
-| `getWidth()` |  |
-| `margin(*args, **kwargs)` |  |
+| `color(*args, **kwargs)` | Color. |
+| `getColor()` | Return the color. |
+| `getMargin()` | Return the margin. |
+| `getWidth()` | Return the width. |
+| `margin(*args, **kwargs)` | Margin. |
 | `setColor(color)` | Sets the color of the separator. |
 | `setMargin(margin)` | Sets the horizontal margin around the separator line. |
 | `setWidth(width)` | Sets the width (thickness) of the separator. |
-| `width(*args, **kwargs)` |  |
+| `width(*args, **kwargs)` | Width. |
 
 ## Related
 

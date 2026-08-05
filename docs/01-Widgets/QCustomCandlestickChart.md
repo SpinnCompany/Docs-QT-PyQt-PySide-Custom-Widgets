@@ -93,32 +93,32 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `axisTextColor(*args, **kwargs)` |  |
+| `axisTextColor(*args, **kwargs)` | Axis text color. |
 | `candleAt(pos)` | Index of the candle under a point, or -1. |
-| `candleClicked(...)` |  |
-| `candleHovered(...)` |  |
-| `candleWidthRatio(*args, **kwargs)` |  |
-| `count()` |  |
-| `data()` |  |
-| `downColor(*args, **kwargs)` |  |
-| `gridColor(*args, **kwargs)` |  |
-| `gridLines(*args, **kwargs)` |  |
-| `hollowUpCandles(*args, **kwargs)` |  |
-| `labels()` |  |
-| `labelsCsv(*args, **kwargs)` |  |
-| `ohlcCsv(*args, **kwargs)` |  |
-| `pricePrecision(*args, **kwargs)` |  |
+| `candleClicked(...)` | Candle clicked. |
+| `candleHovered(...)` | Candle hovered. |
+| `candleWidthRatio(*args, **kwargs)` | Candle width ratio. |
+| `count()` | Count. |
+| `data()` | Data. |
+| `downColor(*args, **kwargs)` | Down color. |
+| `gridColor(*args, **kwargs)` | Grid color. |
+| `gridLines(*args, **kwargs)` | Grid lines. |
+| `hollowUpCandles(*args, **kwargs)` | Hollow up candles. |
+| `labels()` | Labels. |
+| `labelsCsv(*args, **kwargs)` | Labels csv. |
+| `ohlcCsv(*args, **kwargs)` | Ohlc csv. |
+| `pricePrecision(*args, **kwargs)` | Price precision. |
 | `priceRange()` | (low, high) across every candle, or (0.0, 1.0) when empty. |
 | `setData(data, labels=None)` | Replace every candle. Each item is (open, high, low, close). |
-| `setLabels(labels)` |  |
-| `showGrid(*args, **kwargs)` |  |
-| `showLabels(*args, **kwargs)` |  |
-| `showPriceAxis(*args, **kwargs)` |  |
-| `showTooltip(*args, **kwargs)` |  |
-| `tooltipBackgroundColor(*args, **kwargs)` |  |
-| `tooltipTextColor(*args, **kwargs)` |  |
-| `upColor(*args, **kwargs)` |  |
-| `wickColor(*args, **kwargs)` |  |
+| `setLabels(labels)` | Set the labels. |
+| `showGrid(*args, **kwargs)` | Show the grid. |
+| `showLabels(*args, **kwargs)` | Show the labels. |
+| `showPriceAxis(*args, **kwargs)` | Show the price axis. |
+| `showTooltip(*args, **kwargs)` | Show the tooltip. |
+| `tooltipBackgroundColor(*args, **kwargs)` | Tooltip background color. |
+| `tooltipTextColor(*args, **kwargs)` | Tooltip text color. |
+| `upColor(*args, **kwargs)` | Up color. |
+| `wickColor(*args, **kwargs)` | Wick color. |
 
 ## Theming
 

@@ -70,8 +70,8 @@ Every property below is settable in code and in Qt Designer.
 | `removeTag(tag: str) -> None` | Removes a tag |
 | `setTagSuggestions(suggestions: List[str]) -> None` | Sets the tag suggestions. They will be used if `self._tag_suggestions` is True (can be set via `enableTagSuggestions(...)`) |
 | `setTags(tags: List[str]) -> None` | Replaces all current tags with tag from the `tags` argument |
-| `tagColor(*args, **kwargs)` |  |
-| `tagTextColor(*args, **kwargs)` |  |
+| `tagColor(*args, **kwargs)` | Tag color. |
+| `tagTextColor(*args, **kwargs)` | Tag text color. |
 | `tags() -> List[str]` | Returns all tag names |
 
 ## Related

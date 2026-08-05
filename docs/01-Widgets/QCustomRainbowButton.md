@@ -72,23 +72,23 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `animated(*args, **kwargs)` |  |
-| `borderWidth(*args, **kwargs)` |  |
-| `clicked(...)` |  |
-| `colors()` |  |
-| `colorsCsv(*args, **kwargs)` |  |
-| `cornerRadius(*args, **kwargs)` |  |
-| `filled(*args, **kwargs)` |  |
-| `glow(*args, **kwargs)` |  |
-| `isAnimating()` |  |
+| `animated(*args, **kwargs)` | Animated. |
+| `borderWidth(*args, **kwargs)` | Border width. |
+| `clicked(...)` | Clicked. |
+| `colors()` | Colors. |
+| `colorsCsv(*args, **kwargs)` | Colors csv. |
+| `cornerRadius(*args, **kwargs)` | Corner radius. |
+| `filled(*args, **kwargs)` | Filled. |
+| `glow(*args, **kwargs)` | Glow. |
+| `isAnimating()` | Return whether the widget is animating. |
 | `setColors(colors)` | Replace the wheel. Fewer than two valid colours is rejected. |
-| `sizeVariant(*args, **kwargs)` |  |
-| `speed(*args, **kwargs)` |  |
-| `start()` |  |
-| `stop()` |  |
-| `surfaceColor(*args, **kwargs)` |  |
-| `text(*args, **kwargs)` |  |
-| `textColor(*args, **kwargs)` |  |
+| `sizeVariant(*args, **kwargs)` | Size variant. |
+| `speed(*args, **kwargs)` | Speed. |
+| `start()` | Start. |
+| `stop()` | Stop. |
+| `surfaceColor(*args, **kwargs)` | Surface color. |
+| `text(*args, **kwargs)` | Text. |
+| `textColor(*args, **kwargs)` | Text color. |
 
 ## Theming
 

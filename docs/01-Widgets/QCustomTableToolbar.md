@@ -73,28 +73,28 @@ Colours come from the design tokens, so the widget follows the app theme with no
 
 | Method | Description |
 |---|---|
-| `activeStatus()` |  |
-| `addFilterChip(key, label, value=None)` |  |
-| `clearFilterChips()` |  |
-| `clearFiltersClicked(...)` |  |
-| `filterChipKeys()` |  |
-| `filterChipRemoved(...)` |  |
-| `filtersClicked(...)` |  |
-| `removeFilterChip(key)` |  |
-| `searchChanged(...)` |  |
-| `searchInput()` |  |
-| `searchText()` |  |
-| `setActiveStatus(key)` |  |
+| `activeStatus()` | Active status. |
+| `addFilterChip(key, label, value=None)` | Add a filter chip. |
+| `clearFilterChips()` | Clear the filter chips. |
+| `clearFiltersClicked(...)` | Clear the filters clicked. |
+| `filterChipKeys()` | Filter chip keys. |
+| `filterChipRemoved(...)` | Filter chip removed. |
+| `filtersClicked(...)` | Filters clicked. |
+| `removeFilterChip(key)` | Remove a filter chip. |
+| `searchChanged(...)` | Search changed. |
+| `searchInput()` | Search input. |
+| `searchText()` | Search text. |
+| `setActiveStatus(key)` | Set the active status. |
 | `setFilterChips(items)` | Replace all filter chips. Each item is (key, label[, value]) or a |
-| `setSearchPlaceholder(text)` |  |
-| `setSearchText(text)` |  |
-| `setShowStatuses(on)` |  |
-| `setStatusCount(key, count)` |  |
+| `setSearchPlaceholder(text)` | Set the search placeholder. |
+| `setSearchText(text)` | Set the search text. |
+| `setShowStatuses(on)` | Set the show statuses. |
+| `setStatusCount(key, count)` | Set the status count. |
 | `setStatuses(items)` | Rebuild the status pills (the built-in All pill is kept first). |
 | `setThemeColors(surface=None, on_surface=None, muted=None, outline=None, accent=None)` | Track the active theme. Pass token role values (call after |
-| `showStatuses()` |  |
-| `showStatusesToggled(...)` |  |
-| `statusSelected(...)` |  |
+| `showStatuses()` | Show the statuses. |
+| `showStatusesToggled(...)` | Show the statuses toggled. |
+| `statusSelected(...)` | Status selected. |
 
 ## Theming
 

@@ -76,20 +76,20 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `autoExclusive(*args, **kwargs)` |  |
-| `checked(*args, **kwargs)` |  |
-| `dotColor(*args, **kwargs)` |  |
-| `dotScale(*args, **kwargs)` |  |
-| `isChecked()` |  |
-| `ringCheckedColor(*args, **kwargs)` |  |
-| `ringColor(*args, **kwargs)` |  |
-| `selected(...)` |  |
-| `setChecked(checked)` |  |
-| `sizeVariant(*args, **kwargs)` |  |
-| `text(*args, **kwargs)` |  |
-| `textColor(*args, **kwargs)` |  |
-| `toggled(...)` |  |
-| `value(*args, **kwargs)` |  |
+| `autoExclusive(*args, **kwargs)` | Auto exclusive. |
+| `checked(*args, **kwargs)` | Checked. |
+| `dotColor(*args, **kwargs)` | Dot color. |
+| `dotScale(*args, **kwargs)` | Dot scale. |
+| `isChecked()` | Return whether the widget is checked. |
+| `ringCheckedColor(*args, **kwargs)` | Ring checked color. |
+| `ringColor(*args, **kwargs)` | Ring color. |
+| `selected(...)` | Selected. |
+| `setChecked(checked)` | Set the checked. |
+| `sizeVariant(*args, **kwargs)` | Size variant. |
+| `text(*args, **kwargs)` | Text. |
+| `textColor(*args, **kwargs)` | Text color. |
+| `toggled(...)` | Toggled. |
+| `value(*args, **kwargs)` | Value. |
 
 ## Theming
 

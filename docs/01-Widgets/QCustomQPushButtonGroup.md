@@ -397,11 +397,11 @@ For a complete walkthrough, watch the full video tutorial:
 
 | Method | Description |
 |---|---|
-| `getButtonGroup()` |  |
-| `getButtonGroupActiveStyle()` |  |
-| `getButtonGroupButtons()` |  |
-| `getButtonGroupNotActiveStyle()` |  |
-| `setButtonGroupActiveStyle(style)` |  |
-| `setButtonGroupNotActiveStyle(style)` |  |
+| `getButtonGroup()` | Return the button group. |
+| `getButtonGroupActiveStyle()` | Return the button group active style. |
+| `getButtonGroupButtons()` | Return the button group buttons. |
+| `getButtonGroupNotActiveStyle()` | Return the button group not active style. |
+| `setButtonGroupActiveStyle(style)` | Set the button group active style. |
+| `setButtonGroupNotActiveStyle(style)` | Set the button group not active style. |
 
 <!-- /generated:api-reference -->

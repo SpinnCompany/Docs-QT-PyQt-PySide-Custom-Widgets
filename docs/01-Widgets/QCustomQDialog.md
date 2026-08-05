@@ -478,18 +478,18 @@ The `QCustomQDialog` is perfect for modern applications requiring sophisticated 
 
 | Method | Description |
 |---|---|
-| `accepted(...)` |  |
-| `addWidget(widget, alignment=None)` |  |
-| `adjustSizeToContent()` |  |
+| `accepted(...)` | Accepted. |
+| `addWidget(widget, alignment=None)` | Add a widget. |
+| `adjustSizeToContent()` | Adjust size to content. |
 | `adjustToParentSize()` | Adjust the dialog to the size and position of the parent. |
-| `checkAppTheme()` |  |
+| `checkAppTheme()` | Check app theme. |
 | `done(code)` | fade out |
-| `eventFilter(obj, e: PySide6.QtCore.QEvent)` |  |
-| `hideCancelButton()` |  |
-| `hideYesButton()` |  |
-| `isDark()` |  |
-| `rejected(...)` |  |
-| `setMovable(movable: bool)` |  |
-| `setShadowEffect(blurRadius=60, offset=(0, 10), color=PySide6.QtGui.QColor.fromRgbF(0.000000, 0.000000, 0.000000, 0.392157))` |  |
+| `eventFilter(obj, e: PySide6.QtCore.QEvent)` | Event filter. |
+| `hideCancelButton()` | Hide the cancel button. |
+| `hideYesButton()` | Hide the yes button. |
+| `isDark()` | Return whether the widget is dark. |
+| `rejected(...)` | Rejected. |
+| `setMovable(movable: bool)` | Set the movable. |
+| `setShadowEffect(blurRadius=60, offset=(0, 10), color=PySide6.QtGui.QColor.fromRgbF(0.000000, 0.000000, 0.000000, 0.392157))` | Set the shadow effect. |
 
 <!-- /generated:api-reference -->

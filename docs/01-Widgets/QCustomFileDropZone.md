@@ -49,12 +49,12 @@ Colours come from the design tokens, so the widget follows the app theme with no
 
 | Method | Description |
 |---|---|
-| `clear()` |  |
-| `files()` |  |
-| `filesChanged(...)` |  |
-| `filesDropped(...)` |  |
-| `setAcceptedExtensions(extensions)` |  |
-| `setMultiple(multiple)` |  |
+| `clear()` | Clear. |
+| `files()` | Files. |
+| `filesChanged(...)` | Files changed. |
+| `filesDropped(...)` | Files dropped. |
+| `setAcceptedExtensions(extensions)` | Set the accepted extensions. |
+| `setMultiple(multiple)` | Set the multiple. |
 
 ## Theming
 

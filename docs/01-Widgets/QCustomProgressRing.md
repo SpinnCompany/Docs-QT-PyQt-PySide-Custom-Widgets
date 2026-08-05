@@ -113,19 +113,19 @@ See [Theming](../02-Theming/designer-properties.md).
 
 | Method | Description |
 |---|---|
-| `maximum(*args, **kwargs)` |  |
-| `minimum(*args, **kwargs)` |  |
-| `ringColor(*args, **kwargs)` |  |
-| `setMaximum(m)` |  |
-| `setMinimum(m)` |  |
-| `setRange(minimum, maximum)` |  |
-| `setShowText(show)` |  |
-| `setValue(value)` |  |
-| `showText(*args, **kwargs)` |  |
-| `textColor(*args, **kwargs)` |  |
-| `thickness(*args, **kwargs)` |  |
-| `trackColor(*args, **kwargs)` |  |
-| `value()` |  |
-| `valueChanged(...)` |  |
+| `maximum(*args, **kwargs)` | Maximum. |
+| `minimum(*args, **kwargs)` | Minimum. |
+| `ringColor(*args, **kwargs)` | Ring color. |
+| `setMaximum(m)` | Set the maximum. |
+| `setMinimum(m)` | Set the minimum. |
+| `setRange(minimum, maximum)` | Set the range. |
+| `setShowText(show)` | Set the show text. |
+| `setValue(value)` | Set the value. |
+| `showText(*args, **kwargs)` | Show the text. |
+| `textColor(*args, **kwargs)` | Text color. |
+| `thickness(*args, **kwargs)` | Thickness. |
+| `trackColor(*args, **kwargs)` | Track color. |
+| `value()` | Value. |
+| `valueChanged(...)` | Value changed. |
 
 <!-- /generated:api-reference -->

@@ -65,20 +65,20 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `activeColor(*args, **kwargs)` |  |
-| `activeIndex(*args, **kwargs)` |  |
-| `activePillLength(*args, **kwargs)` |  |
+| `activeColor(*args, **kwargs)` | Active color. |
+| `activeIndex(*args, **kwargs)` | Active index. |
+| `activePillLength(*args, **kwargs)` | Active pill length. |
 | `bindTo(control)` | Two-way bind the dots to any paged control (QCustomSegmentedControl, |
-| `clickable(*args, **kwargs)` |  |
-| `count(*args, **kwargs)` |  |
-| `dotColor(*args, **kwargs)` |  |
-| `dotDiameter(*args, **kwargs)` |  |
-| `orientation(*args, **kwargs)` |  |
-| `pageChanged(...)` |  |
-| `setActiveIndex(i)` |  |
-| `setColors(dot=None, active=None)` |  |
-| `setCount(n)` |  |
-| `spacing(*args, **kwargs)` |  |
+| `clickable(*args, **kwargs)` | Clickable. |
+| `count(*args, **kwargs)` | Count. |
+| `dotColor(*args, **kwargs)` | Dot color. |
+| `dotDiameter(*args, **kwargs)` | Dot diameter. |
+| `orientation(*args, **kwargs)` | Orientation. |
+| `pageChanged(...)` | Page changed. |
+| `setActiveIndex(i)` | Set the active index. |
+| `setColors(dot=None, active=None)` | Set the colors. |
+| `setCount(n)` | Set the count. |
+| `spacing(*args, **kwargs)` | Spacing. |
 
 ## Theming
 

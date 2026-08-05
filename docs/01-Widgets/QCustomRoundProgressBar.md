@@ -88,20 +88,20 @@ progress.progressBarWidth = 10  # Must set programmatically
 | Method | Description |
 |---|---|
 | `animateTo(progress)` | Animates the progress bar to the specified progress percentage. |
-| `animationDuration(*args, **kwargs)` |  |
-| `calculateXR()` |  |
-| `clockwise(*args, **kwargs)` |  |
-| `draw()` |  |
-| `drawText()` |  |
-| `initPen(progressBarWidth)` |  |
-| `maximum(*args, **kwargs)` |  |
-| `minimum(*args, **kwargs)` |  |
-| `progressBarWidth(*args, **kwargs)` |  |
-| `progressBaseColor(*args, **kwargs)` |  |
-| `progressColor(*args, **kwargs)` |  |
-| `setValue(val)` |  |
-| `textColor(*args, **kwargs)` |  |
-| `textVisible(*args, **kwargs)` |  |
-| `value(*args, **kwargs)` |  |
+| `animationDuration(*args, **kwargs)` | Animation duration. |
+| `calculateXR()` | Calculate XR. |
+| `clockwise(*args, **kwargs)` | Clockwise. |
+| `draw()` | Draw. |
+| `drawText()` | Draw text. |
+| `initPen(progressBarWidth)` | Init pen. |
+| `maximum(*args, **kwargs)` | Maximum. |
+| `minimum(*args, **kwargs)` | Minimum. |
+| `progressBarWidth(*args, **kwargs)` | Progress bar width. |
+| `progressBaseColor(*args, **kwargs)` | Progress base color. |
+| `progressColor(*args, **kwargs)` | Progress color. |
+| `setValue(val)` | Set the value. |
+| `textColor(*args, **kwargs)` | Text color. |
+| `textVisible(*args, **kwargs)` | Text visible. |
+| `value(*args, **kwargs)` | Value. |
 
 <!-- /generated:api-reference -->

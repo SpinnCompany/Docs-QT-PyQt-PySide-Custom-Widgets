@@ -76,18 +76,18 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `colorsCsv(*args, **kwargs)` |  |
-| `cols(*args, **kwargs)` |  |
-| `data()` |  |
-| `dataCsv(*args, **kwargs)` |  |
-| `dotDiameter(*args, **kwargs)` |  |
-| `emptyColor(*args, **kwargs)` |  |
-| `emptyOpacity(*args, **kwargs)` |  |
-| `gapRatio(*args, **kwargs)` |  |
-| `rows(*args, **kwargs)` |  |
-| `setColors(colors)` |  |
+| `colorsCsv(*args, **kwargs)` | Colors csv. |
+| `cols(*args, **kwargs)` | Cols. |
+| `data()` | Data. |
+| `dataCsv(*args, **kwargs)` | Data csv. |
+| `dotDiameter(*args, **kwargs)` | Dot diameter. |
+| `emptyColor(*args, **kwargs)` | Empty color. |
+| `emptyOpacity(*args, **kwargs)` | Empty opacity. |
+| `gapRatio(*args, **kwargs)` | Gap ratio. |
+| `rows(*args, **kwargs)` | Rows. |
+| `setColors(colors)` | Set the colors. |
 | `setData(data)` | 2-D row-major list of state ints (0 = empty, 1..N = colour index). |
-| `square(*args, **kwargs)` |  |
+| `square(*args, **kwargs)` | Square. |
 
 ## Theming
 

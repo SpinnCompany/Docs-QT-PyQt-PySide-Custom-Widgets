@@ -53,14 +53,14 @@ Colours come from the design tokens, so the widget follows the app theme with no
 
 | Method | Description |
 |---|---|
-| `addSection(title, content)` |  |
-| `expandedIndices()` |  |
-| `isExclusive()` |  |
-| `section(index)` |  |
-| `sectionCount()` |  |
-| `sectionToggled(...)` |  |
-| `setExclusive(exclusive)` |  |
-| `setExpanded(index, expanded, animate=True)` |  |
+| `addSection(title, content)` | Add a section. |
+| `expandedIndices()` | Expanded indices. |
+| `isExclusive()` | Return whether the widget is exclusive. |
+| `section(index)` | Section. |
+| `sectionCount()` | Section count. |
+| `sectionToggled(...)` | Section toggled. |
+| `setExclusive(exclusive)` | Set the exclusive. |
+| `setExpanded(index, expanded, animate=True)` | Set the expanded. |
 
 ## Theming
 

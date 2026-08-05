@@ -613,24 +613,24 @@ if __name__ == "__main__":
 | Method | Description |
 |---|---|
 | `appTheme(*args, **kwargs)` | The active theme, by NAME. Theme names are defined at runtime in |
-| `closeBtn(*args, **kwargs)` |  |
+| `closeBtn(*args, **kwargs)` | Close the btn. |
 | `closeEvent(event)` | Clean up file watchers when window is closed |
-| `customSideDrawers(*args, **kwargs)` |  |
-| `frameless(*args, **kwargs)` |  |
+| `customSideDrawers(*args, **kwargs)` | Custom side drawers. |
+| `frameless(*args, **kwargs)` | Frameless. |
 | `isValidTheme(value: str)` | Whether `value` names one of the themes the engine knows about. |
-| `jsonStylesheetFilePath(*args, **kwargs)` |  |
-| `minimizeBtn(*args, **kwargs)` |  |
-| `moveWindow(*args, **kwargs)` |  |
-| `restoreBtn(*args, **kwargs)` |  |
-| `restoreBtnMaximizedIcon(*args, **kwargs)` |  |
-| `restoreBtnNormalIcon(*args, **kwargs)` |  |
-| `shadowBlurRadius(*args, **kwargs)` |  |
-| `shadowColor(*args, **kwargs)` |  |
-| `shadowXOffset(*args, **kwargs)` |  |
-| `shadowYOffset(*args, **kwargs)` |  |
-| `sizeGrip(*args, **kwargs)` |  |
-| `titleBar(*args, **kwargs)` |  |
-| `translucentBg(*args, **kwargs)` |  |
-| `windowBorderRadius(*args, **kwargs)` |  |
+| `jsonStylesheetFilePath(*args, **kwargs)` | Json stylesheet file path. |
+| `minimizeBtn(*args, **kwargs)` | Minimize btn. |
+| `moveWindow(*args, **kwargs)` | Move window. |
+| `restoreBtn(*args, **kwargs)` | Restore btn. |
+| `restoreBtnMaximizedIcon(*args, **kwargs)` | Restore btn maximized icon. |
+| `restoreBtnNormalIcon(*args, **kwargs)` | Restore btn normal icon. |
+| `shadowBlurRadius(*args, **kwargs)` | Shadow blur radius. |
+| `shadowColor(*args, **kwargs)` | Shadow color. |
+| `shadowXOffset(*args, **kwargs)` | Shadow X offset. |
+| `shadowYOffset(*args, **kwargs)` | Shadow Y offset. |
+| `sizeGrip(*args, **kwargs)` | Size grip. |
+| `titleBar(*args, **kwargs)` | Title bar. |
+| `translucentBg(*args, **kwargs)` | Translucent bg. |
+| `windowBorderRadius(*args, **kwargs)` | Window border radius. |
 
 <!-- /generated:api-reference -->

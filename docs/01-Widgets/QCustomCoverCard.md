@@ -88,24 +88,24 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `accentColor(*args, **kwargs)` |  |
-| `artist(*args, **kwargs)` |  |
-| `artistColor(*args, **kwargs)` |  |
-| `cornerRadius(*args, **kwargs)` |  |
-| `coverPath(*args, **kwargs)` |  |
-| `playClicked(...)` |  |
-| `playOnHover(*args, **kwargs)` |  |
-| `scrimColor(*args, **kwargs)` |  |
-| `scrimStrength(*args, **kwargs)` |  |
-| `setArtist(text)` |  |
-| `setCoverPath(path)` |  |
-| `setData(title=None, artist=None, coverPath=None)` |  |
-| `setTitle(text)` |  |
-| `showPlay(*args, **kwargs)` |  |
-| `textAlign(*args, **kwargs)` |  |
-| `title(*args, **kwargs)` |  |
-| `titleColor(*args, **kwargs)` |  |
-| `titleScale(*args, **kwargs)` |  |
+| `accentColor(*args, **kwargs)` | Accent color. |
+| `artist(*args, **kwargs)` | Artist. |
+| `artistColor(*args, **kwargs)` | Artist color. |
+| `cornerRadius(*args, **kwargs)` | Corner radius. |
+| `coverPath(*args, **kwargs)` | Cover path. |
+| `playClicked(...)` | Play clicked. |
+| `playOnHover(*args, **kwargs)` | Play on hover. |
+| `scrimColor(*args, **kwargs)` | Scrim color. |
+| `scrimStrength(*args, **kwargs)` | Scrim strength. |
+| `setArtist(text)` | Set the artist. |
+| `setCoverPath(path)` | Set the cover path. |
+| `setData(title=None, artist=None, coverPath=None)` | Set the data. |
+| `setTitle(text)` | Set the title. |
+| `showPlay(*args, **kwargs)` | Show the play. |
+| `textAlign(*args, **kwargs)` | Text align. |
+| `title(*args, **kwargs)` | Title. |
+| `titleColor(*args, **kwargs)` | Title color. |
+| `titleScale(*args, **kwargs)` | Title scale. |
 
 ## Theming
 

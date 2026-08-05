@@ -52,12 +52,12 @@ Colours come from the design tokens, so the widget follows the app theme with no
 | Method | Description |
 |---|---|
 | `addAction(text, key=None, icon=None, hint='', danger=False)` | Add an action row. `icon` may be a QIcon or QPixmap. Returns the key. |
-| `addSeparator()` |  |
-| `applyColors(bg=None, text=None, muted=None, hover=None, border=None, accent=None, danger=None)` |  |
-| `clear()` |  |
+| `addSeparator()` | Add a separator. |
+| `applyColors(bg=None, text=None, muted=None, hover=None, border=None, accent=None, danger=None)` | Apply the colors. |
+| `clear()` | Clear. |
 | `popupAt(anchor, align='right', gap=4)` | Show the menu just below `anchor`, right- or left-aligned to it. |
-| `popupAtPos(global_pos)` |  |
-| `triggered(...)` |  |
+| `popupAtPos(global_pos)` | Popup at pos. |
+| `triggered(...)` | Triggered. |
 
 ## Theming
 

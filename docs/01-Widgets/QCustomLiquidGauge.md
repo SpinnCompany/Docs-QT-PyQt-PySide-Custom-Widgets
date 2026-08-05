@@ -81,32 +81,32 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `animated(*args, **kwargs)` |  |
-| `backgroundColor(*args, **kwargs)` |  |
-| `badgeColor(*args, **kwargs)` |  |
-| `badgeText(*args, **kwargs)` |  |
-| `centerSuffix(*args, **kwargs)` |  |
-| `centerText(*args, **kwargs)` |  |
-| `centerTextColor(*args, **kwargs)` |  |
-| `cornerRadius(*args, **kwargs)` |  |
-| `fillColor(*args, **kwargs)` |  |
-| `fillColor2(*args, **kwargs)` |  |
-| `maximum(*args, **kwargs)` |  |
-| `minimum(*args, **kwargs)` |  |
-| `ringColor(*args, **kwargs)` |  |
-| `ringWidth(*args, **kwargs)` |  |
-| `setAnimated(on)` |  |
-| `setBadge(text, color=None)` |  |
-| `setCenterText(text)` |  |
-| `setColors(fill1, fill2=None, background=None)` |  |
-| `setRange(minimum, maximum)` |  |
-| `setValue(value)` |  |
-| `shape(*args, **kwargs)` |  |
-| `value(*args, **kwargs)` |  |
-| `valueChanged(...)` |  |
-| `waveAmplitude(*args, **kwargs)` |  |
-| `waveLength(*args, **kwargs)` |  |
-| `waveSpeed(*args, **kwargs)` |  |
+| `animated(*args, **kwargs)` | Animated. |
+| `backgroundColor(*args, **kwargs)` | Background color. |
+| `badgeColor(*args, **kwargs)` | Badge color. |
+| `badgeText(*args, **kwargs)` | Badge text. |
+| `centerSuffix(*args, **kwargs)` | Center suffix. |
+| `centerText(*args, **kwargs)` | Center text. |
+| `centerTextColor(*args, **kwargs)` | Center text color. |
+| `cornerRadius(*args, **kwargs)` | Corner radius. |
+| `fillColor(*args, **kwargs)` | Fill color. |
+| `fillColor2(*args, **kwargs)` | Fill color2. |
+| `maximum(*args, **kwargs)` | Maximum. |
+| `minimum(*args, **kwargs)` | Minimum. |
+| `ringColor(*args, **kwargs)` | Ring color. |
+| `ringWidth(*args, **kwargs)` | Ring width. |
+| `setAnimated(on)` | Set the animated. |
+| `setBadge(text, color=None)` | Set the badge. |
+| `setCenterText(text)` | Set the center text. |
+| `setColors(fill1, fill2=None, background=None)` | Set the colors. |
+| `setRange(minimum, maximum)` | Set the range. |
+| `setValue(value)` | Set the value. |
+| `shape(*args, **kwargs)` | Shape. |
+| `value(*args, **kwargs)` | Value. |
+| `valueChanged(...)` | Value changed. |
+| `waveAmplitude(*args, **kwargs)` | Wave amplitude. |
+| `waveLength(*args, **kwargs)` | Wave length. |
+| `waveSpeed(*args, **kwargs)` | Wave speed. |
 
 ## Theming
 

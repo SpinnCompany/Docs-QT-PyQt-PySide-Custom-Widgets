@@ -75,20 +75,20 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `buttonColor(*args, **kwargs)` |  |
-| `buttonIconColor(*args, **kwargs)` |  |
-| `closeEvent(e)` |  |
-| `closed(...)` |  |
-| `count()` |  |
-| `imageRadius(*args, **kwargs)` |  |
-| `index()` |  |
-| `indexChanged(...)` |  |
+| `buttonColor(*args, **kwargs)` | Button color. |
+| `buttonIconColor(*args, **kwargs)` | Button icon color. |
+| `closeEvent(e)` | Close the event. |
+| `closed(...)` | Closed. |
+| `count()` | Count. |
+| `imageRadius(*args, **kwargs)` | Image radius. |
+| `index()` | Index. |
+| `indexChanged(...)` | Index changed. |
 | `openAt(index, host=None)` | Cover `host` (or the current parent) and show image `index`. |
-| `scrimColor(*args, **kwargs)` |  |
+| `scrimColor(*args, **kwargs)` | Scrim color. |
 | `setImageAt(index, pm)` | Swap one image in place (e.g. the full-res photo arriving async). |
-| `setImages(images)` |  |
-| `setIndex(i)` |  |
-| `textColor(*args, **kwargs)` |  |
+| `setImages(images)` | Set the images. |
+| `setIndex(i)` | Set the index. |
+| `textColor(*args, **kwargs)` | Text color. |
 
 ## Related
 

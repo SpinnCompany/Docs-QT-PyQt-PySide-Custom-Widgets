@@ -75,27 +75,27 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `alignment(*args, **kwargs)` |  |
-| `caretBlinkRate(*args, **kwargs)` |  |
-| `caretColor(*args, **kwargs)` |  |
-| `currentPhrase()` |  |
-| `cycled(...)` |  |
-| `erase(*args, **kwargs)` |  |
-| `eraseSpeed(*args, **kwargs)` |  |
-| `holdDelay(*args, **kwargs)` |  |
-| `isRunning()` |  |
-| `loop(*args, **kwargs)` |  |
-| `phraseFinished(...)` |  |
-| `phrases()` |  |
-| `phrasesCsv(*args, **kwargs)` |  |
-| `setPhrases(phrases, restart=True)` |  |
-| `showCaret(*args, **kwargs)` |  |
+| `alignment(*args, **kwargs)` | Alignment. |
+| `caretBlinkRate(*args, **kwargs)` | Caret blink rate. |
+| `caretColor(*args, **kwargs)` | Caret color. |
+| `currentPhrase()` | Current phrase. |
+| `cycled(...)` | Cycled. |
+| `erase(*args, **kwargs)` | Erase. |
+| `eraseSpeed(*args, **kwargs)` | Erase speed. |
+| `holdDelay(*args, **kwargs)` | Hold delay. |
+| `isRunning()` | Return whether the widget is running. |
+| `loop(*args, **kwargs)` | Loop. |
+| `phraseFinished(...)` | Phrase finished. |
+| `phrases()` | Phrases. |
+| `phrasesCsv(*args, **kwargs)` | Phrases csv. |
+| `setPhrases(phrases, restart=True)` | Set the phrases. |
+| `showCaret(*args, **kwargs)` | Show the caret. |
 | `skip()` | Jump to the end of the current phrase. |
-| `start()` |  |
-| `stop()` |  |
-| `textColor(*args, **kwargs)` |  |
-| `typeSpeed(*args, **kwargs)` |  |
-| `visibleText()` |  |
+| `start()` | Start. |
+| `stop()` | Stop. |
+| `textColor(*args, **kwargs)` | Text color. |
+| `typeSpeed(*args, **kwargs)` | Type speed. |
+| `visibleText()` | Visible text. |
 
 ## Theming
 

@@ -48,14 +48,14 @@ Colours come from the design tokens, so the widget follows the app theme with no
 
 | Method | Description |
 |---|---|
-| `currentStep()` |  |
-| `currentStepChanged(...)` |  |
-| `isComplete()` |  |
-| `next()` |  |
-| `previous()` |  |
-| `setCurrentStep(index)` |  |
-| `setSteps(titles)` |  |
-| `stepCount()` |  |
+| `currentStep()` | Current step. |
+| `currentStepChanged(...)` | Current step changed. |
+| `isComplete()` | Return whether the widget is complete. |
+| `next()` | Next. |
+| `previous()` | Previous. |
+| `setCurrentStep(index)` | Set the current step. |
+| `setSteps(titles)` | Set the steps. |
+| `stepCount()` | Step count. |
 
 ## Theming
 

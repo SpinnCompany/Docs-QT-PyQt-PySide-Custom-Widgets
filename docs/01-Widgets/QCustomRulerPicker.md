@@ -86,26 +86,26 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `centered(*args, **kwargs)` |  |
-| `indicatorColor(*args, **kwargs)` |  |
-| `labelColor(*args, **kwargs)` |  |
-| `majorEvery(*args, **kwargs)` |  |
-| `majorTickColor(*args, **kwargs)` |  |
-| `maximum(*args, **kwargs)` |  |
-| `minimum(*args, **kwargs)` |  |
-| `orientation(*args, **kwargs)` |  |
-| `setRange(minimum, maximum)` |  |
-| `setUnit(unit)` |  |
-| `setValue(value)` |  |
-| `showValue(*args, **kwargs)` |  |
-| `snap(*args, **kwargs)` |  |
-| `step(*args, **kwargs)` |  |
-| `tickColor(*args, **kwargs)` |  |
-| `tickSpacing(*args, **kwargs)` |  |
-| `unit(*args, **kwargs)` |  |
-| `value(*args, **kwargs)` |  |
-| `valueChanged(...)` |  |
-| `valueColor(*args, **kwargs)` |  |
+| `centered(*args, **kwargs)` | Centered. |
+| `indicatorColor(*args, **kwargs)` | Indicator color. |
+| `labelColor(*args, **kwargs)` | Label color. |
+| `majorEvery(*args, **kwargs)` | Major every. |
+| `majorTickColor(*args, **kwargs)` | Major tick color. |
+| `maximum(*args, **kwargs)` | Maximum. |
+| `minimum(*args, **kwargs)` | Minimum. |
+| `orientation(*args, **kwargs)` | Orientation. |
+| `setRange(minimum, maximum)` | Set the range. |
+| `setUnit(unit)` | Set the unit. |
+| `setValue(value)` | Set the value. |
+| `showValue(*args, **kwargs)` | Show the value. |
+| `snap(*args, **kwargs)` | Snap. |
+| `step(*args, **kwargs)` | Step. |
+| `tickColor(*args, **kwargs)` | Tick color. |
+| `tickSpacing(*args, **kwargs)` | Tick spacing. |
+| `unit(*args, **kwargs)` | Unit. |
+| `value(*args, **kwargs)` | Value. |
+| `valueChanged(...)` | Value changed. |
+| `valueColor(*args, **kwargs)` | Value color. |
 
 ## Theming
 

@@ -60,21 +60,21 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `clear()` |  |
-| `fillColor(*args, **kwargs)` |  |
-| `fillEnabled(*args, **kwargs)` |  |
-| `fillOpacity(*args, **kwargs)` |  |
-| `lineColor(*args, **kwargs)` |  |
-| `lineWidth(*args, **kwargs)` |  |
-| `series()` |  |
-| `seriesColorsCsv(*args, **kwargs)` |  |
-| `seriesCsv(*args, **kwargs)` |  |
+| `clear()` | Clear. |
+| `fillColor(*args, **kwargs)` | Fill color. |
+| `fillEnabled(*args, **kwargs)` | Fill enabled. |
+| `fillOpacity(*args, **kwargs)` | Fill opacity. |
+| `lineColor(*args, **kwargs)` | Line color. |
+| `lineWidth(*args, **kwargs)` | Line width. |
+| `series()` | Series. |
+| `seriesColorsCsv(*args, **kwargs)` | Series colors csv. |
+| `seriesCsv(*args, **kwargs)` | Series csv. |
 | `setSeries(series, colors=None)` | Draw MULTIPLE overlaid lines sharing one y-scale. `series` is a list |
-| `setSeriesColors(colors)` |  |
-| `setValues(values)` |  |
-| `smooth(*args, **kwargs)` |  |
-| `values()` |  |
-| `valuesCsv(*args, **kwargs)` |  |
+| `setSeriesColors(colors)` | Set the series colors. |
+| `setValues(values)` | Set the values. |
+| `smooth(*args, **kwargs)` | Smooth. |
+| `values()` | Values. |
+| `valuesCsv(*args, **kwargs)` | Values csv. |
 
 ## Theming
 

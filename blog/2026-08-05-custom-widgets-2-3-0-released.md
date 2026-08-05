@@ -46,7 +46,7 @@ rows, frozen columns, grouping with aggregates, pivot and export.
 
 ## Maps, tokens, and the rest
 
-- **QCustomMapView** — the optional `[map]` extra:
+- **[QCustomMapView](/Widgets/QCustomMapView)** — the optional `[map]` extra:
   QtLocation's OSM backend with an offline default provider. No API key, no
   Chromium.
 - **Design tokens** — `applyDesignTokens(app, theme="dark")` themes the whole

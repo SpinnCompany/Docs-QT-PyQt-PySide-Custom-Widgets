@@ -101,9 +101,9 @@ same system every modern widget uses. Keycaps use the `surface-muted`,
 
 | Method | Description |
 |---|---|
-| `keys(*args, **kwargs)` |  |
-| `keysList()` |  |
-| `separator(*args, **kwargs)` |  |
+| `keys(*args, **kwargs)` | Keys. |
+| `keysList()` | Keys list. |
+| `separator(*args, **kwargs)` | Separator. |
 | `setKeys(keys)` | Accept a shortcut string ("Ctrl+K") split on the separator, or an |
 
 <!-- /generated:api-reference -->

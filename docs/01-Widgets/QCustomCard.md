@@ -90,13 +90,13 @@ border, and header text use the `surface` / `outline` / `on-surface` roles. See
 
 | Method | Description |
 |---|---|
-| `addLayout(layout)` |  |
-| `addWidget(widget)` |  |
-| `body()` |  |
+| `addLayout(layout)` | Add a layout. |
+| `addWidget(widget)` | Add a widget. |
+| `body()` | Body. |
 | `contentLayout()` | The body QVBoxLayout - add rows/widgets here. |
-| `setSubtitle(text)` |  |
-| `setTitle(text)` |  |
-| `subtitle(*args, **kwargs)` |  |
-| `title(*args, **kwargs)` |  |
+| `setSubtitle(text)` | Set the subtitle. |
+| `setTitle(text)` | Set the title. |
+| `subtitle(*args, **kwargs)` | Subtitle. |
+| `title(*args, **kwargs)` | Title. |
 
 <!-- /generated:api-reference -->

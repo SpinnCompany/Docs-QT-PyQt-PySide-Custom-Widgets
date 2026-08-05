@@ -102,8 +102,8 @@ Every property below is settable in code and in Qt Designer.
 | Method | Description |
 |---|---|
 | `setItems(items, headers=None)` | Build the tree from nested data. Each item is a string, or a dict |
-| `sizeVariant(*args, **kwargs)` |  |
-| `variant(*args, **kwargs)` |  |
+| `sizeVariant(*args, **kwargs)` | Size variant. |
+| `variant(*args, **kwargs)` | Variant. |
 
 ## Theming
 

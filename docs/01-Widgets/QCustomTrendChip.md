@@ -66,18 +66,18 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `cornerRadius(*args, **kwargs)` |  |
-| `direction(*args, **kwargs)` |  |
-| `downColor(*args, **kwargs)` |  |
-| `flatColor(*args, **kwargs)` |  |
-| `setDirection(direction)` |  |
-| `setText(text)` |  |
+| `cornerRadius(*args, **kwargs)` | Corner radius. |
+| `direction(*args, **kwargs)` | Direction. |
+| `downColor(*args, **kwargs)` | Down color. |
+| `flatColor(*args, **kwargs)` | Flat color. |
+| `setDirection(direction)` | Set the direction. |
+| `setText(text)` | Set the text. |
 | `setValue(value, text=None)` | Set direction from a number's sign; optionally format the label. |
-| `setVariant(variant)` |  |
-| `text(*args, **kwargs)` |  |
-| `tintOpacity(*args, **kwargs)` |  |
-| `upColor(*args, **kwargs)` |  |
-| `variant(*args, **kwargs)` |  |
+| `setVariant(variant)` | Set the variant. |
+| `text(*args, **kwargs)` | Text. |
+| `tintOpacity(*args, **kwargs)` | Tint opacity. |
+| `upColor(*args, **kwargs)` | Up color. |
+| `variant(*args, **kwargs)` | Variant. |
 
 ## Theming
 

@@ -114,15 +114,15 @@ maps to a semantic role (`info` / `success` / `warning` / `destructive`). See
 
 | Method | Description |
 |---|---|
-| `closeButton()` |  |
-| `closed(...)` |  |
-| `dismissible(*args, **kwargs)` |  |
-| `isDismissible()` |  |
-| `setDismissible(dismissible)` |  |
-| `setText(text)` |  |
-| `setTitle(title)` |  |
-| `text(*args, **kwargs)` |  |
-| `title(*args, **kwargs)` |  |
-| `variant(*args, **kwargs)` |  |
+| `closeButton()` | Close the button. |
+| `closed(...)` | Closed. |
+| `dismissible(*args, **kwargs)` | Dismissible. |
+| `isDismissible()` | Return whether the widget is dismissible. |
+| `setDismissible(dismissible)` | Set the dismissible. |
+| `setText(text)` | Set the text. |
+| `setTitle(title)` | Set the title. |
+| `text(*args, **kwargs)` | Text. |
+| `title(*args, **kwargs)` | Title. |
+| `variant(*args, **kwargs)` | Variant. |
 
 <!-- /generated:api-reference -->

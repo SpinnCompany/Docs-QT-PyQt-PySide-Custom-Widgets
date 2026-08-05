@@ -329,15 +329,15 @@ The `QCustomEmojiPicker` is perfect for chat applications, social media interfac
 
 | Method | Description |
 |---|---|
-| `closeEvent(e)` |  |
-| `datasetInfo() -> dict` |  |
-| `emojiSelected(...)` |  |
-| `emojisUpdated(...)` |  |
+| `closeEvent(e)` | Close the event. |
+| `datasetInfo() -> dict` | Dataset info. |
+| `emojiSelected(...)` | Emoji selected. |
+| `emojisUpdated(...)` | Emojis updated. |
 | `isLocalOutdated() -> bool` | True if the active dataset is the bundled one or older than the |
-| `on_input(text: str)` |  |
-| `recentEmojis()` |  |
+| `on_input(text: str)` | On input. |
+| `recentEmojis()` | Recent emojis. |
 | `select() -> str | None` | The last selected emoji (or None). |
 | `updateEmojisOnline(force: bool = False)` | Fetch the latest emoji dataset online (off the GUI thread) and, on |
-| `updateFailed(...)` |  |
+| `updateFailed(...)` | Update the failed. |
 
 <!-- /generated:api-reference -->

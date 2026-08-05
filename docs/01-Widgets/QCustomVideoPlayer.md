@@ -78,20 +78,20 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `accentColor(*args, **kwargs)` |  |
-| `barColor(*args, **kwargs)` |  |
-| `duration(*args, **kwargs)` |  |
-| `playToggled(...)` |  |
-| `playing(*args, **kwargs)` |  |
-| `posterColor(*args, **kwargs)` |  |
-| `progress(*args, **kwargs)` |  |
-| `radius(*args, **kwargs)` |  |
-| `seeked(...)` |  |
-| `setPlaying(v)` |  |
-| `setPoster(pm)` |  |
-| `textColor(*args, **kwargs)` |  |
-| `toggle()` |  |
-| `trackColor(*args, **kwargs)` |  |
+| `accentColor(*args, **kwargs)` | Accent color. |
+| `barColor(*args, **kwargs)` | Bar color. |
+| `duration(*args, **kwargs)` | Duration. |
+| `playToggled(...)` | Play toggled. |
+| `playing(*args, **kwargs)` | Playing. |
+| `posterColor(*args, **kwargs)` | Poster color. |
+| `progress(*args, **kwargs)` | Progress. |
+| `radius(*args, **kwargs)` | Radius. |
+| `seeked(...)` | Seeked. |
+| `setPlaying(v)` | Set the playing. |
+| `setPoster(pm)` | Set the poster. |
+| `textColor(*args, **kwargs)` | Text color. |
+| `toggle()` | Toggle. |
+| `trackColor(*args, **kwargs)` | Track color. |
 
 ## Theming
 

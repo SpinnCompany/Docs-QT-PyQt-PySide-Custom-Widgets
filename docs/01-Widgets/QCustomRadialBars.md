@@ -90,30 +90,30 @@ Every property below is settable in code and in Qt Designer.
 | Method | Description |
 |---|---|
 | `barAt(pos)` | Index of the ring under a point, or -1. |
-| `barClicked(...)` |  |
-| `barColor(index)` |  |
-| `barCount()` |  |
-| `barHovered(...)` |  |
-| `bars()` |  |
-| `barsCsv(*args, **kwargs)` |  |
-| `clearBars()` |  |
-| `clockwise(*args, **kwargs)` |  |
-| `colorsCsv(*args, **kwargs)` |  |
+| `barClicked(...)` | Bar clicked. |
+| `barColor(index)` | Bar color. |
+| `barCount()` | Bar count. |
+| `barHovered(...)` | Bar hovered. |
+| `bars()` | Bars. |
+| `barsCsv(*args, **kwargs)` | Bars csv. |
+| `clearBars()` | Clear the bars. |
+| `clockwise(*args, **kwargs)` | Clockwise. |
+| `colorsCsv(*args, **kwargs)` | Colors csv. |
 | `fractionFor(index)` | 0..1 of the maximum. Values above the maximum are clamped so a bar |
-| `holeRatio(*args, **kwargs)` |  |
-| `labelColor(*args, **kwargs)` |  |
-| `maxValue(*args, **kwargs)` |  |
-| `maximum()` |  |
+| `holeRatio(*args, **kwargs)` | Hole ratio. |
+| `labelColor(*args, **kwargs)` | Label color. |
+| `maxValue(*args, **kwargs)` | Max value. |
+| `maximum()` | Maximum. |
 | `ringRect(index)` | Bounding rect of ring `index`, outermost first. |
-| `rounded(*args, **kwargs)` |  |
-| `setBars(bars)` |  |
-| `showLabels(*args, **kwargs)` |  |
-| `showTrack(*args, **kwargs)` |  |
-| `showValues(*args, **kwargs)` |  |
-| `spacing(*args, **kwargs)` |  |
-| `startAngle(*args, **kwargs)` |  |
-| `thickness(*args, **kwargs)` |  |
-| `trackColor(*args, **kwargs)` |  |
+| `rounded(*args, **kwargs)` | Rounded. |
+| `setBars(bars)` | Set the bars. |
+| `showLabels(*args, **kwargs)` | Show the labels. |
+| `showTrack(*args, **kwargs)` | Show the track. |
+| `showValues(*args, **kwargs)` | Show the values. |
+| `spacing(*args, **kwargs)` | Spacing. |
+| `startAngle(*args, **kwargs)` | Start the angle. |
+| `thickness(*args, **kwargs)` | Thickness. |
+| `trackColor(*args, **kwargs)` | Track color. |
 
 ## Theming
 

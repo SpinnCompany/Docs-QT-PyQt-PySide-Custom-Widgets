@@ -70,23 +70,23 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `accentColor(*args, **kwargs)` |  |
-| `endDate()` |  |
-| `headerColor(*args, **kwargs)` |  |
-| `monthsVisible(*args, **kwargs)` |  |
-| `mutedColor(*args, **kwargs)` |  |
-| `rangeBandColor(*args, **kwargs)` |  |
-| `rangeChanged(...)` |  |
-| `selectedTextColor(*args, **kwargs)` |  |
-| `setEndDate(d)` |  |
-| `setMonthsVisible(n)` |  |
-| `setRange(start, end)` |  |
-| `setSelectableRange(minimum, maximum)` |  |
-| `setStartDate(d)` |  |
-| `showMonth(year, month)` |  |
-| `startDate()` |  |
-| `textColor(*args, **kwargs)` |  |
-| `todayColor(*args, **kwargs)` |  |
+| `accentColor(*args, **kwargs)` | Accent color. |
+| `endDate()` | End date. |
+| `headerColor(*args, **kwargs)` | Header color. |
+| `monthsVisible(*args, **kwargs)` | Months visible. |
+| `mutedColor(*args, **kwargs)` | Muted color. |
+| `rangeBandColor(*args, **kwargs)` | Range band color. |
+| `rangeChanged(...)` | Range changed. |
+| `selectedTextColor(*args, **kwargs)` | Selected text color. |
+| `setEndDate(d)` | Set the end date. |
+| `setMonthsVisible(n)` | Set the months visible. |
+| `setRange(start, end)` | Set the range. |
+| `setSelectableRange(minimum, maximum)` | Set the selectable range. |
+| `setStartDate(d)` | Set the start date. |
+| `showMonth(year, month)` | Show the month. |
+| `startDate()` | Start the date. |
+| `textColor(*args, **kwargs)` | Text color. |
+| `todayColor(*args, **kwargs)` | Today color. |
 
 ## Theming
 

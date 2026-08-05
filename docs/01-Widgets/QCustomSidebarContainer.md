@@ -68,13 +68,13 @@ Every property below is settable in code and in Qt Designer.
 | `hideContainer()` | Start the hide animation if hideOnCollapse is True. |
 | `hideContainerForce()` | Force hide the container regardless of hideOnCollapse/showOnCollapse settings. |
 | `hideOnCollapse(*args, **kwargs)` | Whether to hide this container when the sidebar collapses. |
-| `onAnimationFinished()` |  |
+| `onAnimationFinished()` | Handle animation finished. |
 | `showContainer()` | Start the show animation if hideOnCollapse is True. |
 | `showContainerForce()` | Force show the container regardless of hideOnCollapse/showOnCollapse settings. |
 | `showOnCollapse(*args, **kwargs)` | Whether to show this container when the sidebar collapses (opposite of hideOnCollapse). |
 | `startHideAnimation()` | Animate opacity from 1 to 0 and then hide the widget. |
 | `startShowAnimation()` | Animate opacity from 0 to 1 and then show the widget. |
-| `visibilityChanged(...)` |  |
+| `visibilityChanged(...)` | Visibility changed. |
 
 ## Related
 

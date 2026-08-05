@@ -381,31 +381,31 @@ The `QCustomSidebarButton` is the perfect companion for `QCustomSidebar` and `QC
 | Method | Description |
 |---|---|
 | `calculateFloatingPosition()` | Calculate the exact relative position for the floating button. |
-| `clicked(...)` |  |
+| `clicked(...)` | Clicked. |
 | `connectToParent()` | Connect to the closest QCustomSidebar parent if necessary. |
 | `createFloatingButton()` | Create the floating version of the button. |
 | `deleteFloatingButton(e)` | Hide the button label when the hover ends, return to original collapsed state. |
-| `eventFilter(obj, event: PySide6.QtCore.QEvent)` |  |
+| `eventFilter(obj, event: PySide6.QtCore.QEvent)` | Event filter. |
 | `fadeInFloatingButton()` | Fade in the floating button. |
 | `fadeOutFloatingButton()` | Fade out the floating button. |
-| `getPrefixedText(text)` |  |
+| `getPrefixedText(text)` | Return the prefixed text. |
 | `hideButtonIcon()` | Hide the button icon by setting it to an empty QIcon. |
 | `hideButtonLabel()` | Hide the button label by clearing the text. |
 | `hideFloatingButton()` | Hide the floating button after the fade-out. |
 | `hideOnCollapse(*args, **kwargs)` | Whether to hide this label when the sidebar collapses. |
-| `iconColor(*args, **kwargs)` |  |
-| `iconColorActive(*args, **kwargs)` |  |
-| `labelHidden(*args, **kwargs)` |  |
+| `iconColor(*args, **kwargs)` | Icon color. |
+| `iconColorActive(*args, **kwargs)` | Icon color active. |
+| `labelHidden(*args, **kwargs)` | Label hidden. |
 | `labelText(*args, **kwargs)` | Returns the label text for the button (read-only). |
 | `moveEvent(event)` | Update floating button position on window move. |
-| `setIconSize(size)` |  |
-| `setNewIcon(url)` |  |
+| `setIconSize(size)` | Set the icon size. |
+| `setNewIcon(url)` | Set the new icon. |
 | `setText(text)` | Override setText to store the raw text and apply the prefix spaces. |
 | `showButtonIcon()` | Show the button icon by restoring the original icon. |
 | `showButtonLabel()` | Show the button label by restoring the original text. |
 | `showFloatingButton()` | Show the floating button only if the mouse is still over the main button. |
 | `showOnCollapse(*args, **kwargs)` | Whether to show this label when the sidebar collapses (opposite of hideOnCollapse). |
 | `textPrefixSpaces(*args, **kwargs)` | Get number of spaces to prepend to the text. |
-| `update()` |  |
+| `update()` | Update. |
 
 <!-- /generated:api-reference -->

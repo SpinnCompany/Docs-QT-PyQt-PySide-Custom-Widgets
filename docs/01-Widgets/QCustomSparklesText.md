@@ -73,23 +73,23 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `animated(*args, **kwargs)` |  |
-| `bold(*args, **kwargs)` |  |
-| `clicked(...)` |  |
-| `colors()` |  |
-| `colorsCsv(*args, **kwargs)` |  |
-| `fontScale(*args, **kwargs)` |  |
-| `isAnimating()` |  |
-| `seed(*args, **kwargs)` |  |
-| `setColors(colors)` |  |
-| `sparkleCount(*args, **kwargs)` |  |
-| `sparkleSize(*args, **kwargs)` |  |
+| `animated(*args, **kwargs)` | Animated. |
+| `bold(*args, **kwargs)` | Bold. |
+| `clicked(...)` | Clicked. |
+| `colors()` | Colors. |
+| `colorsCsv(*args, **kwargs)` | Colors csv. |
+| `fontScale(*args, **kwargs)` | Font scale. |
+| `isAnimating()` | Return whether the widget is animating. |
+| `seed(*args, **kwargs)` | Seed. |
+| `setColors(colors)` | Set the colors. |
+| `sparkleCount(*args, **kwargs)` | Sparkle count. |
+| `sparkleSize(*args, **kwargs)` | Sparkle size. |
 | `sparkles()` | [(x, y, size, opacity, colour), ...] for the current phase. |
-| `speed(*args, **kwargs)` |  |
-| `start()` |  |
-| `stop()` |  |
-| `text(*args, **kwargs)` |  |
-| `textColor(*args, **kwargs)` |  |
+| `speed(*args, **kwargs)` | Speed. |
+| `start()` | Start. |
+| `stop()` | Stop. |
+| `text(*args, **kwargs)` | Text. |
+| `textColor(*args, **kwargs)` | Text color. |
 
 ## Theming
 

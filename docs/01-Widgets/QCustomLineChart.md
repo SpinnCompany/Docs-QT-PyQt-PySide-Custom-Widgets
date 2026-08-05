@@ -100,10 +100,10 @@ Every property below is settable in code and in Qt Designer.
 | `addSeries(name: str, data: List[Tuple[float, float]], color: PySide6.QtGui.QColor | None = None, visible: bool = True, line_style: str = 'solid', line_width: float = 2.0, marker_style: str = 'none', marker_size: float = None, **kwargs) -> bool` | Add a line series to the chart. |
 | `appendToSeries(name: str, points: List[Tuple[float, float]]) -> bool` | Append points to an existing series |
 | `applyCustomPalette(palette: PySide6.QtGui.QPalette)` | Apply a custom palette to the chart (for App Theme) |
-| `chartExportComplete(...)` |  |
+| `chartExportComplete(...)` | Chart export complete. |
 | `clearData()` | Clear all chart data (compatibility method) |
-| `dataPointClicked(...)` |  |
-| `dataPointHovered(...)` |  |
+| `dataPointClicked(...)` | Data point clicked. |
+| `dataPointHovered(...)` | Data point hovered. |
 | `exportToClipboard()` | Export chart to clipboard |
 | `exportToFile(format: str = None, filename: str = None)` | Export chart to file |
 | `fillOpacity(*args, **kwargs)` | Get fill opacity |
@@ -125,13 +125,13 @@ Every property below is settable in code and in Qt Designer.
 | `hideTooltip()` | Manually hide tooltip |
 | `isValidLineStyle(style: str) -> bool` | Check if line style is valid |
 | `isValidMarkerStyle(style: str) -> bool` | Check if marker style is valid |
-| `legendPositionChanged(...)` |  |
+| `legendPositionChanged(...)` | Legend position changed. |
 | `printChart()` | Print chart |
 | `refreshTheme()` | Refresh the current theme (useful when app palette changes) |
 | `removeSeries(name: str) -> bool` | Remove a series from the chart |
 | `resetMarkerSizes()` | Reset all marker sizes to default |
-| `seriesAdded(...)` |  |
-| `seriesRemoved(...)` |  |
+| `seriesAdded(...)` | Series added. |
+| `seriesRemoved(...)` | Series removed. |
 | `setAllMarkersSize(size: float)` | Set marker size for all series |
 | `setChartTitle(title: str)` | Set chart title (compatibility method) |
 | `setCrosshairColor(color: PySide6.QtGui.QColor)` | Set crosshair line color |

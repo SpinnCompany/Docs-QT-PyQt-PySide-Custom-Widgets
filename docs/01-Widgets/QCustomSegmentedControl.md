@@ -57,13 +57,13 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `count()` |  |
-| `currentChanged(...)` |  |
-| `currentData()` |  |
-| `currentIndex()` |  |
+| `count()` | Count. |
+| `currentChanged(...)` | Current changed. |
+| `currentData()` | Current data. |
+| `currentIndex()` | Current index. |
 | `currentSegment(*args, **kwargs)` | currentIndex as a settable Designer property (avoids clashing with |
 | `segments(*args, **kwargs)` | Comma-separated segment labels — set the tabs from Designer. |
-| `setCurrentIndex(index)` |  |
+| `setCurrentIndex(index)` | Set the current index. |
 | `setItems(items)` | Each item is a string, (label, data) pair, or a dict with |
 | `setSegments(items)` | Each item is a string, (label, data) pair, or a dict with |
 

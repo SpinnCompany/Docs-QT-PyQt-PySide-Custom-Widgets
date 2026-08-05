@@ -84,35 +84,35 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `accentColor(*args, **kwargs)` |  |
-| `activeTextColor(*args, **kwargs)` |  |
-| `alignment(*args, **kwargs)` |  |
-| `animated(*args, **kwargs)` |  |
-| `barHeight(*args, **kwargs)` |  |
-| `brandClicked(...)` |  |
-| `brandText(*args, **kwargs)` |  |
-| `count()` |  |
-| `currentIndex()` |  |
-| `currentKey(*args, **kwargs)` |  |
-| `currentKeyValue()` |  |
-| `dividerColor(*args, **kwargs)` |  |
-| `hiddenCount()` |  |
-| `indicator(*args, **kwargs)` |  |
-| `indicatorPos(*args, **kwargs)` |  |
-| `itemAt(pos)` |  |
+| `accentColor(*args, **kwargs)` | Accent color. |
+| `activeTextColor(*args, **kwargs)` | Active text color. |
+| `alignment(*args, **kwargs)` | Alignment. |
+| `animated(*args, **kwargs)` | Animated. |
+| `barHeight(*args, **kwargs)` | Bar height. |
+| `brandClicked(...)` | Brand clicked. |
+| `brandText(*args, **kwargs)` | Brand text. |
+| `count()` | Count. |
+| `currentIndex()` | Current index. |
+| `currentKey(*args, **kwargs)` | Current key. |
+| `currentKeyValue()` | Current key value. |
+| `dividerColor(*args, **kwargs)` | Divider color. |
+| `hiddenCount()` | Hidden count. |
+| `indicator(*args, **kwargs)` | Indicator. |
+| `indicatorPos(*args, **kwargs)` | Indicator pos. |
+| `itemAt(pos)` | Item at. |
 | `itemRects()` | Always recomputed. Caching these meant a caller that resized without |
-| `itemSelected(...)` |  |
-| `itemSpacing(*args, **kwargs)` |  |
-| `items()` |  |
-| `itemsCsv(*args, **kwargs)` |  |
-| `labelFor(key)` |  |
-| `overflowClicked(...)` |  |
-| `setCurrentIndex(index, animate=True)` |  |
-| `setCurrentKey(key, animate=True)` |  |
+| `itemSelected(...)` | Item selected. |
+| `itemSpacing(*args, **kwargs)` | Item spacing. |
+| `items()` | Items. |
+| `itemsCsv(*args, **kwargs)` | Items csv. |
+| `labelFor(key)` | Label for. |
+| `overflowClicked(...)` | Overflow clicked. |
+| `setCurrentIndex(index, animate=True)` | Set the current index. |
+| `setCurrentKey(key, animate=True)` | Set the current key. |
 | `setItems(items)` | Replace the items, keeping the selection if its key survives. |
-| `showDivider(*args, **kwargs)` |  |
-| `surfaceColor(*args, **kwargs)` |  |
-| `textColor(*args, **kwargs)` |  |
+| `showDivider(*args, **kwargs)` | Show the divider. |
+| `surfaceColor(*args, **kwargs)` | Surface color. |
+| `textColor(*args, **kwargs)` | Text color. |
 
 ## Theming
 

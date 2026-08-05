@@ -95,37 +95,37 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `addSeries(name, values, color=None)` |  |
-| `axes()` |  |
-| `axesCsv(*args, **kwargs)` |  |
+| `addSeries(name, values, color=None)` | Add a series. |
+| `axes()` | Axes. |
+| `axesCsv(*args, **kwargs)` | Axes csv. |
 | `axisAt(pos)` | Index of the nearest axis to a point, or -1 when outside the plot. |
-| `axisClicked(...)` |  |
-| `axisColor(*args, **kwargs)` |  |
-| `axisCount()` |  |
-| `clearSeries()` |  |
-| `fillOpacity(*args, **kwargs)` |  |
-| `gridColor(*args, **kwargs)` |  |
-| `gridStyle(*args, **kwargs)` |  |
-| `labelColor(*args, **kwargs)` |  |
-| `lineWidth(*args, **kwargs)` |  |
-| `maxValue(*args, **kwargs)` |  |
+| `axisClicked(...)` | Axis clicked. |
+| `axisColor(*args, **kwargs)` | Axis color. |
+| `axisCount()` | Axis count. |
+| `clearSeries()` | Clear the series. |
+| `fillOpacity(*args, **kwargs)` | Fill opacity. |
+| `gridColor(*args, **kwargs)` | Grid color. |
+| `gridStyle(*args, **kwargs)` | Grid style. |
+| `labelColor(*args, **kwargs)` | Label color. |
+| `lineWidth(*args, **kwargs)` | Line width. |
+| `maxValue(*args, **kwargs)` | Max value. |
 | `maximum()` | The value the outermost ring represents. |
-| `removeSeries(index)` |  |
-| `rings(*args, **kwargs)` |  |
-| `series()` |  |
+| `removeSeries(index)` | Remove a series. |
+| `rings(*args, **kwargs)` | Rings. |
+| `series()` | Series. |
 | `seriesAt(pos)` | Index of the series whose polygon contains a point, or -1. |
-| `seriesColor(index)` |  |
-| `seriesColorsCsv(*args, **kwargs)` |  |
-| `seriesCount()` |  |
-| `seriesCsv(*args, **kwargs)` |  |
-| `seriesHovered(...)` |  |
+| `seriesColor(index)` | Series color. |
+| `seriesColorsCsv(*args, **kwargs)` | Series colors csv. |
+| `seriesCount()` | Series count. |
+| `seriesCsv(*args, **kwargs)` | Series csv. |
+| `seriesHovered(...)` | Series hovered. |
 | `setAxes(labels)` | Replace the axis labels. Existing series are re-fitted to the new |
 | `setSeries(series)` | Replace every series. Each item is (name, values). |
-| `showAxisLabels(*args, **kwargs)` |  |
-| `showLegend(*args, **kwargs)` |  |
-| `showMarkers(*args, **kwargs)` |  |
-| `showRingLabels(*args, **kwargs)` |  |
-| `startAngle(*args, **kwargs)` |  |
+| `showAxisLabels(*args, **kwargs)` | Show the axis labels. |
+| `showLegend(*args, **kwargs)` | Show the legend. |
+| `showMarkers(*args, **kwargs)` | Show the markers. |
+| `showRingLabels(*args, **kwargs)` | Show the ring labels. |
+| `startAngle(*args, **kwargs)` | Start the angle. |
 
 ## Theming
 

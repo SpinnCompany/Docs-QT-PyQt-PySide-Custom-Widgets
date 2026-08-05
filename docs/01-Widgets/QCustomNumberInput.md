@@ -114,20 +114,20 @@ roles. See [Theming](../02-Theming/designer-properties.md).
 
 | Method | Description |
 |---|---|
-| `decimals(*args, **kwargs)` |  |
-| `lineEdit()` |  |
-| `maximum(*args, **kwargs)` |  |
-| `minimum(*args, **kwargs)` |  |
-| `setDecimals(decimals)` |  |
-| `setMaximum(maximum)` |  |
-| `setMinimum(minimum)` |  |
-| `setRange(minimum, maximum)` |  |
-| `setSingleStep(step)` |  |
-| `setValue(value)` |  |
-| `singleStep(*args, **kwargs)` |  |
-| `stepDown()` |  |
-| `stepUp()` |  |
-| `value()` |  |
-| `valueChanged(...)` |  |
+| `decimals(*args, **kwargs)` | Decimals. |
+| `lineEdit()` | Line edit. |
+| `maximum(*args, **kwargs)` | Maximum. |
+| `minimum(*args, **kwargs)` | Minimum. |
+| `setDecimals(decimals)` | Set the decimals. |
+| `setMaximum(maximum)` | Set the maximum. |
+| `setMinimum(minimum)` | Set the minimum. |
+| `setRange(minimum, maximum)` | Set the range. |
+| `setSingleStep(step)` | Set the single step. |
+| `setValue(value)` | Set the value. |
+| `singleStep(*args, **kwargs)` | Single step. |
+| `stepDown()` | Step down. |
+| `stepUp()` | Step up. |
+| `value()` | Value. |
+| `valueChanged(...)` | Value changed. |
 
 <!-- /generated:api-reference -->

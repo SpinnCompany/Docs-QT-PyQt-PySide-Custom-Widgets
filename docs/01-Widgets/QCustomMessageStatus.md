@@ -58,11 +58,11 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `readColor(*args, **kwargs)` |  |
-| `setStatus(s)` |  |
-| `status(*args, **kwargs)` |  |
-| `tickColor(*args, **kwargs)` |  |
-| `tickSize(*args, **kwargs)` |  |
+| `readColor(*args, **kwargs)` | Read color. |
+| `setStatus(s)` | Set the status. |
+| `status(*args, **kwargs)` | Status. |
+| `tickColor(*args, **kwargs)` | Tick color. |
+| `tickSize(*args, **kwargs)` | Tick size. |
 
 ## Theming
 

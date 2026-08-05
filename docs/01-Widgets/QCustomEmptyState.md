@@ -61,14 +61,14 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `actionButton()` |  |
-| `actionClicked(...)` |  |
-| `markColor(*args, **kwargs)` |  |
-| `markSize(*args, **kwargs)` |  |
-| `setActionText(text)` |  |
-| `setDescription(description)` |  |
+| `actionButton()` | Action button. |
+| `actionClicked(...)` | Action clicked. |
+| `markColor(*args, **kwargs)` | Mark color. |
+| `markSize(*args, **kwargs)` | Mark size. |
+| `setActionText(text)` | Set the action text. |
+| `setDescription(description)` | Set the description. |
 | `setIcon(glyph_or_pixmap)` | A string, a pixmap, or None to go back to the painted default. |
-| `setTitle(title)` |  |
+| `setTitle(title)` | Set the title. |
 
 ## Theming
 

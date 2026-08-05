@@ -73,21 +73,21 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `activeBgColor(*args, **kwargs)` |  |
-| `activeColor(*args, **kwargs)` |  |
-| `doneColor(*args, **kwargs)` |  |
-| `heightForWidth(w)` |  |
-| `itemClicked(...)` |  |
-| `items()` |  |
-| `itemsJson(*args, **kwargs)` |  |
-| `pendingColor(*args, **kwargs)` |  |
-| `railColor(*args, **kwargs)` |  |
-| `rowHeight(*args, **kwargs)` |  |
-| `setItems(items)` |  |
-| `showRail(*args, **kwargs)` |  |
-| `subtitleColor(*args, **kwargs)` |  |
-| `timeColor(*args, **kwargs)` |  |
-| `titleColor(*args, **kwargs)` |  |
+| `activeBgColor(*args, **kwargs)` | Active bg color. |
+| `activeColor(*args, **kwargs)` | Active color. |
+| `doneColor(*args, **kwargs)` | Done color. |
+| `heightForWidth(w)` | Height for width. |
+| `itemClicked(...)` | Item clicked. |
+| `items()` | Items. |
+| `itemsJson(*args, **kwargs)` | Items json. |
+| `pendingColor(*args, **kwargs)` | Pending color. |
+| `railColor(*args, **kwargs)` | Rail color. |
+| `rowHeight(*args, **kwargs)` | Row height. |
+| `setItems(items)` | Set the items. |
+| `showRail(*args, **kwargs)` | Show the rail. |
+| `subtitleColor(*args, **kwargs)` | Subtitle color. |
+| `timeColor(*args, **kwargs)` | Time color. |
+| `titleColor(*args, **kwargs)` | Title color. |
 
 ## Theming
 

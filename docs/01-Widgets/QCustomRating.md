@@ -57,11 +57,11 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `maximum(*args, **kwargs)` |  |
-| `readOnly(*args, **kwargs)` |  |
-| `setValue(v)` |  |
-| `value(*args, **kwargs)` |  |
-| `valueChanged(...)` |  |
+| `maximum(*args, **kwargs)` | Maximum. |
+| `readOnly(*args, **kwargs)` | Read only. |
+| `setValue(v)` | Set the value. |
+| `value(*args, **kwargs)` | Value. |
+| `valueChanged(...)` | Value changed. |
 
 ## Theming
 

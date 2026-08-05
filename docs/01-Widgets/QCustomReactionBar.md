@@ -66,12 +66,12 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `addColor(*args, **kwargs)` |  |
-| `addRequested(...)` |  |
-| `reactionClicked(...)` |  |
-| `reactions(*args, **kwargs)` |  |
-| `setReactions(reactions)` |  |
-| `showAdd(*args, **kwargs)` |  |
+| `addColor(*args, **kwargs)` | Add a color. |
+| `addRequested(...)` | Add a requested. |
+| `reactionClicked(...)` | Reaction clicked. |
+| `reactions(*args, **kwargs)` | Reactions. |
+| `setReactions(reactions)` | Set the reactions. |
+| `showAdd(*args, **kwargs)` | Show the add. |
 
 ## Related
 

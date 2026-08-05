@@ -75,9 +75,9 @@ Every property below is settable in code and in Qt Designer.
 | Method | Description |
 |---|---|
 | `setError(error_text=None)` | Set the input to error state and optionally show an error message. |
-| `sizeVariant(*args, **kwargs)` |  |
-| `state(*args, **kwargs)` |  |
-| `variant(*args, **kwargs)` |  |
+| `sizeVariant(*args, **kwargs)` | Size variant. |
+| `state(*args, **kwargs)` | State. |
+| `variant(*args, **kwargs)` | Variant. |
 
 ## Theming
 

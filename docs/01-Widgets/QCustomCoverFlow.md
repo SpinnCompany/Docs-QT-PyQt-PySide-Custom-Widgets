@@ -79,27 +79,27 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `activeRatio(*args, **kwargs)` |  |
-| `artistColor(*args, **kwargs)` |  |
-| `aspect(*args, **kwargs)` |  |
-| `cornerRadius(*args, **kwargs)` |  |
-| `count()` |  |
-| `currentChanged(...)` |  |
-| `currentIndex(*args, **kwargs)` |  |
-| `itemClicked(...)` |  |
-| `itemsJson(*args, **kwargs)` |  |
-| `next()` |  |
-| `playClicked(...)` |  |
-| `playColor(*args, **kwargs)` |  |
-| `previous()` |  |
-| `setCurrentIndex(i, animate=True)` |  |
-| `setItems(items)` |  |
-| `showPlay(*args, **kwargs)` |  |
-| `showText(*args, **kwargs)` |  |
-| `sideOpacity(*args, **kwargs)` |  |
-| `sideScale(*args, **kwargs)` |  |
-| `sideSpacing(*args, **kwargs)` |  |
-| `titleColor(*args, **kwargs)` |  |
+| `activeRatio(*args, **kwargs)` | Active ratio. |
+| `artistColor(*args, **kwargs)` | Artist color. |
+| `aspect(*args, **kwargs)` | Aspect. |
+| `cornerRadius(*args, **kwargs)` | Corner radius. |
+| `count()` | Count. |
+| `currentChanged(...)` | Current changed. |
+| `currentIndex(*args, **kwargs)` | Current index. |
+| `itemClicked(...)` | Item clicked. |
+| `itemsJson(*args, **kwargs)` | Items json. |
+| `next()` | Next. |
+| `playClicked(...)` | Play clicked. |
+| `playColor(*args, **kwargs)` | Play color. |
+| `previous()` | Previous. |
+| `setCurrentIndex(i, animate=True)` | Set the current index. |
+| `setItems(items)` | Set the items. |
+| `showPlay(*args, **kwargs)` | Show the play. |
+| `showText(*args, **kwargs)` | Show the text. |
+| `sideOpacity(*args, **kwargs)` | Side opacity. |
+| `sideScale(*args, **kwargs)` | Side scale. |
+| `sideSpacing(*args, **kwargs)` | Side spacing. |
+| `titleColor(*args, **kwargs)` | Title color. |
 
 ## Theming
 

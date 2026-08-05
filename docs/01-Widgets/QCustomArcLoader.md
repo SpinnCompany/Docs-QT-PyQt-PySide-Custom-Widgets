@@ -191,8 +191,8 @@ if __name__ == "__main__":
 
 | Method | Description |
 |---|---|
-| `calculateXR(level)` |  |
-| `draw()` |  |
-| `initPen(penWidth)` |  |
+| `calculateXR(level)` | Calculate XR. |
+| `draw()` | Draw. |
+| `initPen(penWidth)` | Init pen. |
 
 <!-- /generated:api-reference -->

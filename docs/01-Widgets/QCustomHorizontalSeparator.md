@@ -372,12 +372,12 @@ The `QCustomHorizontalSeparator` is ideal for organizing forms, settings dialogs
 
 | Method | Description |
 |---|---|
-| `color(*args, **kwargs)` |  |
-| `getColor()` |  |
-| `getHeight()` |  |
-| `getMargin()` |  |
-| `height(*args, **kwargs)` |  |
-| `margin(*args, **kwargs)` |  |
+| `color(*args, **kwargs)` | Color. |
+| `getColor()` | Return the color. |
+| `getHeight()` | Return the height. |
+| `getMargin()` | Return the margin. |
+| `height(*args, **kwargs)` | Height. |
+| `margin(*args, **kwargs)` | Margin. |
 | `setColor(color)` | Sets the color of the separator. |
 | `setHeight(height)` | Sets the height (thickness) of the separator. |
 | `setMargin(margin)` | Sets the vertical margin around the separator line. |

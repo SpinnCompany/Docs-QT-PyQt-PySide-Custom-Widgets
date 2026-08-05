@@ -57,12 +57,12 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `maxVisible(*args, **kwargs)` |  |
-| `names()` |  |
-| `overflowBg(*args, **kwargs)` |  |
-| `overflowText(*args, **kwargs)` |  |
-| `ringColor(*args, **kwargs)` |  |
-| `setAvatars(names)` |  |
+| `maxVisible(*args, **kwargs)` | Max visible. |
+| `names()` | Names. |
+| `overflowBg(*args, **kwargs)` | Overflow bg. |
+| `overflowText(*args, **kwargs)` | Overflow text. |
+| `ringColor(*args, **kwargs)` | Ring color. |
+| `setAvatars(names)` | Set the avatars. |
 
 ## Theming
 

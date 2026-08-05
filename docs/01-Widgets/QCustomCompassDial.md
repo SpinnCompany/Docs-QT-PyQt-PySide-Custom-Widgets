@@ -77,24 +77,24 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `accentColor(*args, **kwargs)` |  |
-| `animated(*args, **kwargs)` |  |
-| `bezelColor(*args, **kwargs)` |  |
-| `capColor(*args, **kwargs)` |  |
-| `cardinal16(deg)` |  |
-| `cardinalColor(*args, **kwargs)` |  |
-| `faceColor(*args, **kwargs)` |  |
-| `heading(*args, **kwargs)` |  |
-| `headingChanged(...)` |  |
-| `interactive(*args, **kwargs)` |  |
-| `northColor(*args, **kwargs)` |  |
-| `readoutColor(*args, **kwargs)` |  |
-| `rotateBezel(*args, **kwargs)` |  |
-| `setHeading(deg)` |  |
-| `showIntercardinals(*args, **kwargs)` |  |
-| `showReadout(*args, **kwargs)` |  |
-| `southColor(*args, **kwargs)` |  |
-| `tickColor(*args, **kwargs)` |  |
+| `accentColor(*args, **kwargs)` | Accent color. |
+| `animated(*args, **kwargs)` | Animated. |
+| `bezelColor(*args, **kwargs)` | Bezel color. |
+| `capColor(*args, **kwargs)` | Cap color. |
+| `cardinal16(deg)` | Cardinal16. |
+| `cardinalColor(*args, **kwargs)` | Cardinal color. |
+| `faceColor(*args, **kwargs)` | Face color. |
+| `heading(*args, **kwargs)` | Heading. |
+| `headingChanged(...)` | Heading changed. |
+| `interactive(*args, **kwargs)` | Interactive. |
+| `northColor(*args, **kwargs)` | North color. |
+| `readoutColor(*args, **kwargs)` | Readout color. |
+| `rotateBezel(*args, **kwargs)` | Rotate bezel. |
+| `setHeading(deg)` | Set the heading. |
+| `showIntercardinals(*args, **kwargs)` | Show the intercardinals. |
+| `showReadout(*args, **kwargs)` | Show the readout. |
+| `southColor(*args, **kwargs)` | South color. |
+| `tickColor(*args, **kwargs)` | Tick color. |
 
 ## Theming
 

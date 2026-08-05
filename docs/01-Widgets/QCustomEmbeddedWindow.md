@@ -44,17 +44,17 @@ Colours come from the design tokens, so the widget follows the app theme with no
 
 | Method | Description |
 |---|---|
-| `addWidget(widget)` |  |
-| `adjustSizeToContent()` |  |
-| `animateHeight(startHeight, endHeight)` |  |
-| `closed(...)` |  |
-| `raiseWidget(opacityEffect)` |  |
-| `setControlsVisible(b)` |  |
-| `setShadow()` |  |
-| `setTitle(text)` |  |
-| `showHideContent()` |  |
-| `title()` |  |
-| `update(*args, **kwargs)` |  |
+| `addWidget(widget)` | Add a widget. |
+| `adjustSizeToContent()` | Adjust size to content. |
+| `animateHeight(startHeight, endHeight)` | Animate height. |
+| `closed(...)` | Closed. |
+| `raiseWidget(opacityEffect)` | Raise widget. |
+| `setControlsVisible(b)` | Set the controls visible. |
+| `setShadow()` | Set the shadow. |
+| `setTitle(text)` | Set the title. |
+| `showHideContent()` | Show the hide content. |
+| `title()` | Title. |
+| `update(*args, **kwargs)` | Update. |
 
 ## Runnable example
 

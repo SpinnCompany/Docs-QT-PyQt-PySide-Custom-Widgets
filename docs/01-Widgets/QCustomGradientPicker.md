@@ -81,34 +81,34 @@ Every property below is settable in code and in Qt Designer.
 | Method | Description |
 |---|---|
 | `addStop(position, colour=None)` | Insert a stop. Colour defaults to the gradient's colour there. |
-| `angle(*args, **kwargs)` |  |
-| `barHeight(*args, **kwargs)` |  |
-| `borderActiveColor(*args, **kwargs)` |  |
-| `borderColor(*args, **kwargs)` |  |
-| `borderErrorColor(*args, **kwargs)` |  |
+| `angle(*args, **kwargs)` | Angle. |
+| `barHeight(*args, **kwargs)` | Bar height. |
+| `borderActiveColor(*args, **kwargs)` | Border active color. |
+| `borderColor(*args, **kwargs)` | Border color. |
+| `borderErrorColor(*args, **kwargs)` | Border error color. |
 | `colorAt(position)` | Interpolated colour at a position, matching what the bar paints. |
-| `count()` |  |
+| `count()` | Count. |
 | `editStopColor(index=None)` | Open a colour dialog for a stop. Returns True if it changed. |
 | `gradient(rect=None)` | A QGradient over `rect` (defaults to the preview bar). |
-| `gradientChanged(...)` |  |
-| `gradientType(*args, **kwargs)` |  |
+| `gradientChanged(...)` | Gradient changed. |
+| `gradientType(*args, **kwargs)` | Gradient type. |
 | `handleAt(point)` | Index of the stop handle under a point, or -1. Topmost wins. |
-| `handleBorderColor(*args, **kwargs)` |  |
-| `handleColor(*args, **kwargs)` |  |
-| `handleRadius(*args, **kwargs)` |  |
-| `readOnly(*args, **kwargs)` |  |
+| `handleBorderColor(*args, **kwargs)` | Handle border color. |
+| `handleColor(*args, **kwargs)` | Handle color. |
+| `handleRadius(*args, **kwargs)` | Handle radius. |
+| `readOnly(*args, **kwargs)` | Read only. |
 | `removeStop(index)` | Remove a stop. Refuses to go below MIN_STOPS. |
-| `selectedIndex()` |  |
-| `setSelectedIndex(index)` |  |
-| `setStopColor(index, colour)` |  |
-| `setStopPosition(index, position)` |  |
+| `selectedIndex()` | Selected index. |
+| `setSelectedIndex(index)` | Set the selected index. |
+| `setStopColor(index, colour)` | Set the stop color. |
+| `setStopPosition(index, position)` | Set the stop position. |
 | `setStops(stops)` | Replace every stop. Fewer than two valid stops is rejected. |
-| `state(*args, **kwargs)` |  |
-| `stopColor(index)` |  |
-| `stopPosition(index)` |  |
-| `stopSelected(...)` |  |
+| `state(*args, **kwargs)` | State. |
+| `stopColor(index)` | Stop the color. |
+| `stopPosition(index)` | Stop the position. |
+| `stopSelected(...)` | Stop the selected. |
 | `stops()` | [(position, QColor), ...] sorted by position. |
-| `stopsCsv(*args, **kwargs)` |  |
+| `stopsCsv(*args, **kwargs)` | Stops csv. |
 
 ## Theming
 

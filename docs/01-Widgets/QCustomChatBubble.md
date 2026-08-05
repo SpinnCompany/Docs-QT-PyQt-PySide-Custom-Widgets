@@ -78,24 +78,24 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `bubbleColor(*args, **kwargs)` |  |
-| `foot(*args, **kwargs)` |  |
-| `maxBubbleWidth(*args, **kwargs)` |  |
-| `metaColor(*args, **kwargs)` |  |
-| `radius(*args, **kwargs)` |  |
-| `sender(*args, **kwargs)` |  |
+| `bubbleColor(*args, **kwargs)` | Bubble color. |
+| `foot(*args, **kwargs)` | Foot. |
+| `maxBubbleWidth(*args, **kwargs)` | Max bubble width. |
+| `metaColor(*args, **kwargs)` | Meta color. |
+| `radius(*args, **kwargs)` | Radius. |
+| `sender(*args, **kwargs)` | Sender. |
 | `setBodyPadding(h, v)` | Tighten (or pad) the bubble body — e.g. 0 for an edge-to-edge inline |
 | `setBodyWidget(widget)` | Replace the text label with an arbitrary widget (voice message, |
-| `setFoot(text)` |  |
+| `setFoot(text)` | Set the foot. |
 | `setMetaWidget(widget)` | Add a small widget after the meta line (e.g. QCustomMessageStatus |
 | `setReactionBar(widget)` | Attach a reactions row (e.g. QCustomReactionBar) below the bubble, |
-| `setSender(text)` |  |
-| `setText(text)` |  |
-| `setTime(text)` |  |
-| `side(*args, **kwargs)` |  |
-| `text(*args, **kwargs)` |  |
-| `textColor(*args, **kwargs)` |  |
-| `time(*args, **kwargs)` |  |
+| `setSender(text)` | Set the sender. |
+| `setText(text)` | Set the text. |
+| `setTime(text)` | Set the time. |
+| `side(*args, **kwargs)` | Side. |
+| `text(*args, **kwargs)` | Text. |
+| `textColor(*args, **kwargs)` | Text color. |
+| `time(*args, **kwargs)` | Time. |
 
 ## Theming
 

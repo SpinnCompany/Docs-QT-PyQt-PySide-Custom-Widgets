@@ -79,35 +79,35 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `barClicked(...)` |  |
-| `barColor(*args, **kwargs)` |  |
-| `barHovered(...)` |  |
-| `barWidth(*args, **kwargs)` |  |
-| `calloutBg(*args, **kwargs)` |  |
-| `calloutText(*args, **kwargs)` |  |
-| `calloutTextColor(*args, **kwargs)` |  |
-| `clearHighlight()` |  |
-| `colorsCsv(*args, **kwargs)` |  |
-| `cornerRadius(*args, **kwargs)` |  |
-| `highlightColor(*args, **kwargs)` |  |
+| `barClicked(...)` | Bar clicked. |
+| `barColor(*args, **kwargs)` | Bar color. |
+| `barHovered(...)` | Bar hovered. |
+| `barWidth(*args, **kwargs)` | Bar width. |
+| `calloutBg(*args, **kwargs)` | Callout bg. |
+| `calloutText(*args, **kwargs)` | Callout text. |
+| `calloutTextColor(*args, **kwargs)` | Callout text color. |
+| `clearHighlight()` | Clear the highlight. |
+| `colorsCsv(*args, **kwargs)` | Colors csv. |
+| `cornerRadius(*args, **kwargs)` | Corner radius. |
+| `highlightColor(*args, **kwargs)` | Highlight color. |
 | `highlightIndex(index, color=None)` | Highlight a single bar (in highlightColor, or the given colour). |
-| `highlightIndexProp(*args, **kwargs)` |  |
-| `hoverEnabled(*args, **kwargs)` |  |
+| `highlightIndexProp(*args, **kwargs)` | Highlight index prop. |
+| `hoverEnabled(*args, **kwargs)` | Hover enabled. |
 | `hoverSuffix(*args, **kwargs)` | Unit appended to the hover bubble's value, e.g. ' kWh'. |
-| `idleColor(*args, **kwargs)` |  |
-| `labelColor(*args, **kwargs)` |  |
-| `labelsCsv(*args, **kwargs)` |  |
+| `idleColor(*args, **kwargs)` | Idle color. |
+| `labelColor(*args, **kwargs)` | Label color. |
+| `labelsCsv(*args, **kwargs)` | Labels csv. |
 | `selectOnClick(*args, **kwargs)` | When true, clicking a bar moves the highlight (and the callout, if |
 | `setBarColors(colors)` | Give each bar its own colour (list parallel to values). |
-| `setData(values, colors=None, labels=None)` |  |
+| `setData(values, colors=None, labels=None)` | Set the data. |
 | `setIdleThreshold(value)` | Bars whose value is <= value paint in idleColor (e.g. weekends). |
-| `setLabels(labels)` |  |
-| `setValues(values)` |  |
-| `showLabels(*args, **kwargs)` |  |
-| `values()` |  |
-| `valuesCsv(*args, **kwargs)` |  |
-| `yLabelColor(*args, **kwargs)` |  |
-| `yLabelsCsv(*args, **kwargs)` |  |
+| `setLabels(labels)` | Set the labels. |
+| `setValues(values)` | Set the values. |
+| `showLabels(*args, **kwargs)` | Show the labels. |
+| `values()` | Values. |
+| `valuesCsv(*args, **kwargs)` | Values csv. |
+| `yLabelColor(*args, **kwargs)` | Y label color. |
+| `yLabelsCsv(*args, **kwargs)` | Y labels csv. |
 
 ## Theming
 

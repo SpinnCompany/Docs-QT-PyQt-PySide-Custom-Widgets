@@ -522,19 +522,19 @@ The `QCustomQPushButton` provides a comprehensive solution for creating modern, 
 
 | Method | Description |
 |---|---|
-| `applyDefaultStyle()` |  |
-| `doNothing()` |  |
-| `iconColor(*args, **kwargs)` |  |
-| `iconColorActive(*args, **kwargs)` |  |
-| `removeButtonShadow()` |  |
-| `setIconSize(size)` |  |
-| `setObjectAnimateOn(trigger)` |  |
-| `setObjectAnimation(animation)` |  |
-| `setObjectCustomTheme(color1, color2)` |  |
-| `setObjectDefaultStyle(style)` |  |
-| `setObjectFallBackStyle(style)` |  |
-| `setObjectTheme(theme)` |  |
-| `sizeVariant(*args, **kwargs)` |  |
-| `variant(*args, **kwargs)` |  |
+| `applyDefaultStyle()` | Apply the default style. |
+| `doNothing()` | Do nothing. |
+| `iconColor(*args, **kwargs)` | Icon color. |
+| `iconColorActive(*args, **kwargs)` | Icon color active. |
+| `removeButtonShadow()` | Remove a button shadow. |
+| `setIconSize(size)` | Set the icon size. |
+| `setObjectAnimateOn(trigger)` | Set the object animate on. |
+| `setObjectAnimation(animation)` | Set the object animation. |
+| `setObjectCustomTheme(color1, color2)` | Set the object custom theme. |
+| `setObjectDefaultStyle(style)` | Set the object default style. |
+| `setObjectFallBackStyle(style)` | Set the object fall back style. |
+| `setObjectTheme(theme)` | Set the object theme. |
+| `sizeVariant(*args, **kwargs)` | Size variant. |
+| `variant(*args, **kwargs)` | Variant. |
 
 <!-- /generated:api-reference -->

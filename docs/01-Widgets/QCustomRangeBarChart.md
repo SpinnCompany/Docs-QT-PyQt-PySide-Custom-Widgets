@@ -90,30 +90,30 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `barAt(pos)` |  |
-| `barClicked(...)` |  |
-| `barColor(*args, **kwargs)` |  |
-| `barCount()` |  |
-| `barHovered(...)` |  |
-| `barRects()` |  |
-| `barWidthRatio(*args, **kwargs)` |  |
-| `boundsColor(*args, **kwargs)` |  |
-| `categoriesCsv(*args, **kwargs)` |  |
-| `clearRanges()` |  |
-| `cornerRadius(*args, **kwargs)` |  |
-| `dataBounds()` |  |
-| `gridColor(*args, **kwargs)` |  |
-| `labelColor(*args, **kwargs)` |  |
-| `orientation(*args, **kwargs)` |  |
-| `ranges()` |  |
-| `rangesCsv(*args, **kwargs)` |  |
-| `setRanges(ranges)` |  |
-| `showAxis(*args, **kwargs)` |  |
-| `showBounds(*args, **kwargs)` |  |
-| `showGrid(*args, **kwargs)` |  |
-| `showLabels(*args, **kwargs)` |  |
-| `tickCount(*args, **kwargs)` |  |
-| `valueRange()` |  |
+| `barAt(pos)` | Bar at. |
+| `barClicked(...)` | Bar clicked. |
+| `barColor(*args, **kwargs)` | Bar color. |
+| `barCount()` | Bar count. |
+| `barHovered(...)` | Bar hovered. |
+| `barRects()` | Bar rects. |
+| `barWidthRatio(*args, **kwargs)` | Bar width ratio. |
+| `boundsColor(*args, **kwargs)` | Bounds color. |
+| `categoriesCsv(*args, **kwargs)` | Categories csv. |
+| `clearRanges()` | Clear the ranges. |
+| `cornerRadius(*args, **kwargs)` | Corner radius. |
+| `dataBounds()` | Data bounds. |
+| `gridColor(*args, **kwargs)` | Grid color. |
+| `labelColor(*args, **kwargs)` | Label color. |
+| `orientation(*args, **kwargs)` | Orientation. |
+| `ranges()` | Ranges. |
+| `rangesCsv(*args, **kwargs)` | Ranges csv. |
+| `setRanges(ranges)` | Set the ranges. |
+| `showAxis(*args, **kwargs)` | Show the axis. |
+| `showBounds(*args, **kwargs)` | Show the bounds. |
+| `showGrid(*args, **kwargs)` | Show the grid. |
+| `showLabels(*args, **kwargs)` | Show the labels. |
+| `tickCount(*args, **kwargs)` | Tick count. |
+| `valueRange()` | Value range. |
 | `valueToPixel(value)` | Value -> pixel along the value axis. |
 
 ## Theming

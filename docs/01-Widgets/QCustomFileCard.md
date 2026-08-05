@@ -66,15 +66,15 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `badgeColor(*args, **kwargs)` |  |
-| `clicked(...)` |  |
-| `downloadClicked(...)` |  |
-| `fileDate(*args, **kwargs)` |  |
-| `fileExt(*args, **kwargs)` |  |
-| `fileName(*args, **kwargs)` |  |
-| `fileSize(*args, **kwargs)` |  |
-| `iconColor(*args, **kwargs)` |  |
-| `setFile(name, size='', ext=None, date=None)` |  |
+| `badgeColor(*args, **kwargs)` | Badge color. |
+| `clicked(...)` | Clicked. |
+| `downloadClicked(...)` | Download clicked. |
+| `fileDate(*args, **kwargs)` | File date. |
+| `fileExt(*args, **kwargs)` | File ext. |
+| `fileName(*args, **kwargs)` | File name. |
+| `fileSize(*args, **kwargs)` | File size. |
+| `iconColor(*args, **kwargs)` | Icon color. |
+| `setFile(name, size='', ext=None, date=None)` | Set the file. |
 
 ## Related
 

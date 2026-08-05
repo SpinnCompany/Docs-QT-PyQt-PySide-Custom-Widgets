@@ -88,33 +88,33 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `clearLinks()` |  |
+| `clearLinks()` | Clear the links. |
 | `columns()` | [[node, ...], ...] left to right. |
-| `curvature(*args, **kwargs)` |  |
+| `curvature(*args, **kwargs)` | Curvature. |
 | `isSink(name)` | True when nothing flows out of a node. |
-| `labelColor(*args, **kwargs)` |  |
-| `linkAt(pos)` |  |
-| `linkCount()` |  |
-| `linkHovered(...)` |  |
-| `linkOpacity(*args, **kwargs)` |  |
-| `links()` |  |
-| `linksCsv(*args, **kwargs)` |  |
-| `nodeAt(pos)` |  |
-| `nodeClicked(...)` |  |
-| `nodeColor(name)` |  |
-| `nodeColorsCsv(*args, **kwargs)` |  |
+| `labelColor(*args, **kwargs)` | Label color. |
+| `linkAt(pos)` | Link at. |
+| `linkCount()` | Link count. |
+| `linkHovered(...)` | Link hovered. |
+| `linkOpacity(*args, **kwargs)` | Link opacity. |
+| `links()` | Links. |
+| `linksCsv(*args, **kwargs)` | Links csv. |
+| `nodeAt(pos)` | Node at. |
+| `nodeClicked(...)` | Node clicked. |
+| `nodeColor(name)` | Node color. |
+| `nodeColorsCsv(*args, **kwargs)` | Node colors csv. |
 | `nodeDepth(name)` | Column index: the longest path from any source-only node. |
-| `nodeDepths()` |  |
-| `nodeHovered(...)` |  |
-| `nodePadding(*args, **kwargs)` |  |
-| `nodeRects()` |  |
+| `nodeDepths()` | Node depths. |
+| `nodeHovered(...)` | Node hovered. |
+| `nodePadding(*args, **kwargs)` | Node padding. |
+| `nodeRects()` | Node rects. |
 | `nodeValue(name)` | Throughput: the larger of what flows in and what flows out. |
-| `nodeWidth(*args, **kwargs)` |  |
+| `nodeWidth(*args, **kwargs)` | Node width. |
 | `nodes()` | Every node name, in first-seen order. |
-| `ribbons()` |  |
+| `ribbons()` | Ribbons. |
 | `setLinks(links)` | Replace every link. Self-loops, zero flows and unnamed ends are |
-| `showLabels(*args, **kwargs)` |  |
-| `showValues(*args, **kwargs)` |  |
+| `showLabels(*args, **kwargs)` | Show the labels. |
+| `showValues(*args, **kwargs)` | Show the values. |
 
 ## Theming
 

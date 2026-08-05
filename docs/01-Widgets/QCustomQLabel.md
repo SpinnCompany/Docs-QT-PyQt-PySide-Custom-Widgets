@@ -82,11 +82,11 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `iconColor(*args, **kwargs)` |  |
-| `iconSize(*args, **kwargs)` |  |
-| `imageCornerRadius(*args, **kwargs)` |  |
-| `imageSource(*args, **kwargs)` |  |
-| `setImageSource(source)` |  |
+| `iconColor(*args, **kwargs)` | Icon color. |
+| `iconSize(*args, **kwargs)` | Icon size. |
+| `imageCornerRadius(*args, **kwargs)` | Image corner radius. |
+| `imageSource(*args, **kwargs)` | Image source. |
+| `setImageSource(source)` | Set the image source. |
 
 ## Theming
 

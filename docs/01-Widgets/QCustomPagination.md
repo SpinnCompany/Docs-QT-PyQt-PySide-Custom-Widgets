@@ -47,11 +47,11 @@ Colours come from the design tokens, so the widget follows the app theme with no
 
 | Method | Description |
 |---|---|
-| `currentPage()` |  |
-| `pageChanged(...)` |  |
-| `pageCount()` |  |
-| `setCurrentPage(page)` |  |
-| `setPageCount(count)` |  |
+| `currentPage()` | Current page. |
+| `pageChanged(...)` | Page changed. |
+| `pageCount()` | Page count. |
+| `setCurrentPage(page)` | Set the current page. |
+| `setPageCount(count)` | Set the page count. |
 
 ## Theming
 

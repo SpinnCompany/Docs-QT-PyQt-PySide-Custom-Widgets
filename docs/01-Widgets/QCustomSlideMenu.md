@@ -60,41 +60,41 @@ Colours come from the design tokens, so the widget follows the app theme with no
 
 | Method | Description |
 |---|---|
-| `activateMenuButton(buttonObject)` |  |
-| `adjustMaximumSize(property_name)` |  |
+| `activateMenuButton(buttonObject)` | Activate menu button. |
+| `adjustMaximumSize(property_name)` | Adjust maximum size. |
 | `animateDefaultSize()` | Determines if the widget is in an expanded state by comparing its |
-| `animateMenu()` |  |
+| `animateMenu()` | Animate menu. |
 | `autoContentSize()` | Size used for the legacy "auto" width/height value: the widget's |
-| `calculateEndHeight(height)` |  |
-| `calculateEndWidth(width)` |  |
-| `collapseMenu()` |  |
-| `createAnimation(property_name, start_value, end_value)` |  |
-| `customizeQCustomSlideMenu(**customValues)` |  |
-| `determineHeight()` |  |
-| `determineWith()` |  |
-| `emitStatusSignal()` |  |
-| `eventFilter(obj, event: PySide6.QtCore.QEvent)` |  |
-| `expandMenu()` |  |
+| `calculateEndHeight(height)` | Calculate end height. |
+| `calculateEndWidth(width)` | Calculate end width. |
+| `collapseMenu()` | Collapse the menu. |
+| `createAnimation(property_name, start_value, end_value)` | Create an animation. |
+| `customizeQCustomSlideMenu(**customValues)` | Customize Q custom slide menu. |
+| `determineHeight()` | Determine height. |
+| `determineWith()` | Determine with. |
+| `emitStatusSignal()` | Emit status signal. |
+| `eventFilter(obj, event: PySide6.QtCore.QEvent)` | Event filter. |
+| `expandMenu()` | Expand the menu. |
 | `getButtonByName(buttonName)` | Recursively search for a button by objectName in children and parent containers. |
-| `getCollapsedHeight()` |  |
-| `getCollapsedWidth()` |  |
-| `getDefaultHeight()` |  |
-| `getDefaultWidth()` |  |
-| `getExpandedHeight()` |  |
-| `getExpandedWidth()` |  |
-| `initializeVariables()` |  |
+| `getCollapsedHeight()` | Return the collapsed height. |
+| `getCollapsedWidth()` | Return the collapsed width. |
+| `getDefaultHeight()` | Return the default height. |
+| `getDefaultWidth()` | Return the default width. |
+| `getExpandedHeight()` | Return the expanded height. |
+| `getExpandedWidth()` | Return the expanded width. |
+| `initializeVariables()` | Initialize variables. |
 | `isCollapsed()` | Determines if the widget is in a collapsed state by comparing its |
 | `isExpanded()` | Determines if the widget is in an expanded state by comparing its |
-| `onCollapsed(...)` |  |
-| `onCollapsing(...)` |  |
-| `onExpanded(...)` |  |
-| `onExpanding(...)` |  |
-| `refresh()` |  |
-| `setMinSize()` |  |
-| `slideMenu()` |  |
-| `toggle()` |  |
-| `toggleButton(**values)` |  |
-| `toggleMenu()` |  |
+| `onCollapsed(...)` | Handle collapsed. |
+| `onCollapsing(...)` | Handle collapsing. |
+| `onExpanded(...)` | Handle expanded. |
+| `onExpanding(...)` | Handle expanding. |
+| `refresh()` | Refresh. |
+| `setMinSize()` | Set the min size. |
+| `slideMenu()` | Slide menu. |
+| `toggle()` | Toggle. |
+| `toggleButton(**values)` | Toggle the button. |
+| `toggleMenu()` | Toggle the menu. |
 
 ## Runnable example
 

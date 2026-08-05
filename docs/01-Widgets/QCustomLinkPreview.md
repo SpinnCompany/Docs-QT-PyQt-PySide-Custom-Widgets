@@ -62,12 +62,12 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `clicked(...)` |  |
-| `description(*args, **kwargs)` |  |
-| `setLink(title, url, description=None, thumbnail=None)` |  |
-| `setThumbnail(pm)` |  |
-| `title(*args, **kwargs)` |  |
-| `url(*args, **kwargs)` |  |
+| `clicked(...)` | Clicked. |
+| `description(*args, **kwargs)` | Description. |
+| `setLink(title, url, description=None, thumbnail=None)` | Set the link. |
+| `setThumbnail(pm)` | Set the thumbnail. |
+| `title(*args, **kwargs)` | Title. |
+| `url(*args, **kwargs)` | Url. |
 
 ## Related
 

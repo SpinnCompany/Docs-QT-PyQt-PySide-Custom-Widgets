@@ -67,25 +67,25 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `addCard(brand='VISA', amount='$0.00', number='0000', top='#0f4a43', bottom='#0a2b27', variant='gradient', textColor='#ffffff', fullNumber='', revealable=True)` |  |
-| `animationDuration(*args, **kwargs)` |  |
-| `cardHeight(*args, **kwargs)` |  |
-| `cardPeek(*args, **kwargs)` |  |
-| `cardsJson(*args, **kwargs)` |  |
-| `clear()` |  |
-| `count()` |  |
-| `currentCard()` |  |
-| `currentChanged(...)` |  |
-| `currentIndex(*args, **kwargs)` |  |
-| `currentIndexValue()` |  |
-| `maxVisible(*args, **kwargs)` |  |
-| `next()` |  |
-| `previous()` |  |
+| `addCard(brand='VISA', amount='$0.00', number='0000', top='#0f4a43', bottom='#0a2b27', variant='gradient', textColor='#ffffff', fullNumber='', revealable=True)` | Add a card. |
+| `animationDuration(*args, **kwargs)` | Animation duration. |
+| `cardHeight(*args, **kwargs)` | Card height. |
+| `cardPeek(*args, **kwargs)` | Card peek. |
+| `cardsJson(*args, **kwargs)` | Cards json. |
+| `clear()` | Clear. |
+| `count()` | Count. |
+| `currentCard()` | Current card. |
+| `currentChanged(...)` | Current changed. |
+| `currentIndex(*args, **kwargs)` | Current index. |
+| `currentIndexValue()` | Current index value. |
+| `maxVisible(*args, **kwargs)` | Max visible. |
+| `next()` | Next. |
+| `previous()` | Previous. |
 | `setCardColors(top, bottom=None)` | Re-apply one gradient to every card (e.g. on a theme flip) without |
 | `setCardColorsList(grads)` | Give each card its OWN gradient. `grads` is a list of (top, bottom) |
-| `setCards(cards)` |  |
-| `setCurrentIndex(index, animate=True)` |  |
-| `xInset(*args, **kwargs)` |  |
+| `setCards(cards)` | Set the cards. |
+| `setCurrentIndex(index, animate=True)` | Set the current index. |
+| `xInset(*args, **kwargs)` | X inset. |
 
 ## Theming
 

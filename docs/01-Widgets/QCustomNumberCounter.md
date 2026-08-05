@@ -74,24 +74,24 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `alignment(*args, **kwargs)` |  |
-| `bold(*args, **kwargs)` |  |
-| `decimals(*args, **kwargs)` |  |
-| `displayValue(*args, **kwargs)` |  |
-| `displayedValue()` |  |
-| `duration(*args, **kwargs)` |  |
-| `finished(...)` |  |
-| `fontScale(*args, **kwargs)` |  |
+| `alignment(*args, **kwargs)` | Alignment. |
+| `bold(*args, **kwargs)` | Bold. |
+| `decimals(*args, **kwargs)` | Decimals. |
+| `displayValue(*args, **kwargs)` | Display value. |
+| `displayedValue()` | Displayed value. |
+| `duration(*args, **kwargs)` | Duration. |
+| `finished(...)` | Finished. |
+| `fontScale(*args, **kwargs)` | Font scale. |
 | `formattedText()` | The exact string painted, including prefix and suffix. |
-| `isAnimating()` |  |
-| `prefix(*args, **kwargs)` |  |
-| `reset(value=0.0)` |  |
-| `separator(*args, **kwargs)` |  |
+| `isAnimating()` | Return whether the widget is animating. |
+| `prefix(*args, **kwargs)` | Prefix. |
+| `reset(value=0.0)` | Reset. |
+| `separator(*args, **kwargs)` | Separator. |
 | `setValue(value, animate=True)` | Animate to a new value. `animate=False` jumps, for initial state. |
-| `suffix(*args, **kwargs)` |  |
-| `textColor(*args, **kwargs)` |  |
-| `value(*args, **kwargs)` |  |
-| `valueChanged(...)` |  |
+| `suffix(*args, **kwargs)` | Suffix. |
+| `textColor(*args, **kwargs)` | Text color. |
+| `value(*args, **kwargs)` | Value. |
+| `valueChanged(...)` | Value changed. |
 
 ## Theming
 

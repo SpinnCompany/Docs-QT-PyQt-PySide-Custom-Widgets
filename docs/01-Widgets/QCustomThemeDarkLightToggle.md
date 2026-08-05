@@ -69,13 +69,13 @@ Every property below is settable in code and in Qt Designer.
 | Method | Description |
 |---|---|
 | `darkTheme(*args, **kwargs)` | Name of the CUSTOM dark theme this toggle flips to (paired with |
-| `darkThemeIcon(*args, **kwargs)` |  |
+| `darkThemeIcon(*args, **kwargs)` | Dark theme icon. |
 | `lightTheme(*args, **kwargs)` | Name of the CUSTOM light theme this toggle flips to. |
-| `lightThemeIcon(*args, **kwargs)` |  |
-| `setText(text: str)` |  |
-| `toggle_theme()` |  |
-| `updateButtonIcon(*args, **kwargs)` |  |
-| `updateLabelText(*args, **kwargs)` |  |
+| `lightThemeIcon(*args, **kwargs)` | Light theme icon. |
+| `setText(text: str)` | Set the text. |
+| `toggle_theme()` | Toggle theme. |
+| `updateButtonIcon(*args, **kwargs)` | Update the button icon. |
+| `updateLabelText(*args, **kwargs)` | Update the label text. |
 | `update_button_icon()` | Update the button icon based on the current theme. |
 | `update_button_text()` | Set the button text based on the current theme. |
 

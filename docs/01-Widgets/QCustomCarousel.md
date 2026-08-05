@@ -119,19 +119,19 @@ same system every modern widget uses. Nav buttons use `surface` / `on-surface` /
 | Method | Description |
 |---|---|
 | `addSlide(widget)` | Append a widget as a slide. Returns its index. |
-| `clear()` |  |
-| `count()` |  |
-| `currentChanged(...)` |  |
-| `currentIndex()` |  |
-| `currentIndex_(*args, **kwargs)` |  |
-| `insertSlide(index, widget)` |  |
-| `next()` |  |
-| `previous()` |  |
-| `removeSlide(index)` |  |
+| `clear()` | Clear. |
+| `count()` | Count. |
+| `currentChanged(...)` | Current changed. |
+| `currentIndex()` | Current index. |
+| `currentIndex_(*args, **kwargs)` | Current index. |
+| `insertSlide(index, widget)` | Insert a slide. |
+| `next()` | Next. |
+| `previous()` | Previous. |
+| `removeSlide(index)` | Remove a slide. |
 | `setAutoAdvance(milliseconds)` | Advance automatically every N ms (0 stops the timer). |
-| `setCurrentIndex(index)` |  |
-| `setWrap(wrap)` |  |
-| `wrap(*args, **kwargs)` |  |
-| `wrapsAround()` |  |
+| `setCurrentIndex(index)` | Set the current index. |
+| `setWrap(wrap)` | Set the wrap. |
+| `wrap(*args, **kwargs)` | Wrap. |
+| `wrapsAround()` | Wraps around. |
 
 <!-- /generated:api-reference -->

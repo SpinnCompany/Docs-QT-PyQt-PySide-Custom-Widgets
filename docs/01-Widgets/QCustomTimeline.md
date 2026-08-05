@@ -51,11 +51,11 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `addItem(title, time=None, description=None, color=None)` |  |
-| `count()` |  |
-| `dotColor(*args, **kwargs)` |  |
-| `lineColor(*args, **kwargs)` |  |
-| `setItems(items)` |  |
+| `addItem(title, time=None, description=None, color=None)` | Add an item. |
+| `count()` | Count. |
+| `dotColor(*args, **kwargs)` | Dot color. |
+| `lineColor(*args, **kwargs)` | Line color. |
+| `setItems(items)` | Set the items. |
 
 ## Theming
 

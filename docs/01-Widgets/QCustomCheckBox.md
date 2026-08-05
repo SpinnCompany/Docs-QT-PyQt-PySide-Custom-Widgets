@@ -362,19 +362,19 @@ The `QCustomCheckBox` is perfect for modern applications requiring sleek toggle 
 
 | Method | Description |
 |---|---|
-| `activeColor(*args, **kwargs)` |  |
-| `adjustWidgetSize()` |  |
-| `animationDuration(*args, **kwargs)` |  |
+| `activeColor(*args, **kwargs)` | Active color. |
+| `adjustWidgetSize()` | Adjust widget size. |
+| `animationDuration(*args, **kwargs)` | Animation duration. |
 | `animationEasingCurve(*args, **kwargs)` | Easing as an int (a QEasingCurve.Type value). Accepts |
-| `backgroundColor(*args, **kwargs)` |  |
-| `circleColor(*args, **kwargs)` |  |
-| `customizeQCustomCheckBox(**customValues)` |  |
-| `hitButton(pos: PySide6.QtCore.QPoint)` |  |
-| `position(*args, **kwargs)` |  |
-| `setIcon(icon)` |  |
+| `backgroundColor(*args, **kwargs)` | Background color. |
+| `circleColor(*args, **kwargs)` | Circle color. |
+| `customizeQCustomCheckBox(**customValues)` | Customize Q custom check box. |
+| `hitButton(pos: PySide6.QtCore.QPoint)` | Hit button. |
+| `position(*args, **kwargs)` | Position. |
+| `setIcon(icon)` | Set the icon. |
 | `setIconSize(size)` | Set the size of the icon for the checkbox. |
-| `setNewIcon(url)` |  |
-| `setText(text)` |  |
-| `setup_animation(value)` |  |
+| `setNewIcon(url)` | Set the new icon. |
+| `setText(text)` | Set the text. |
+| `setup_animation(value)` | Setup animation. |
 
 <!-- /generated:api-reference -->

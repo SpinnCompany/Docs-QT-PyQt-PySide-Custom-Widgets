@@ -72,23 +72,23 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `bgColor(*args, **kwargs)` |  |
-| `clicked(...)` |  |
-| `cornerRadius(*args, **kwargs)` |  |
-| `imageSource(*args, **kwargs)` |  |
-| `ringColor(*args, **kwargs)` |  |
-| `ringWidth(*args, **kwargs)` |  |
-| `setBgColor(c)` |  |
-| `setImage(image)` |  |
+| `bgColor(*args, **kwargs)` | Bg color. |
+| `clicked(...)` | Clicked. |
+| `cornerRadius(*args, **kwargs)` | Corner radius. |
+| `imageSource(*args, **kwargs)` | Image source. |
+| `ringColor(*args, **kwargs)` | Ring color. |
+| `ringWidth(*args, **kwargs)` | Ring width. |
+| `setBgColor(c)` | Set the bg color. |
+| `setImage(image)` | Set the image. |
 | `setImageSource(source)` | Set the avatar image from a local PATH or an http(s) URL — the URL is |
-| `setStatus(visible, color=None)` |  |
-| `setText(text)` |  |
-| `showStatus(*args, **kwargs)` |  |
-| `statusBorderColor(*args, **kwargs)` |  |
-| `statusColor(*args, **kwargs)` |  |
-| `statusPosition(*args, **kwargs)` |  |
-| `text(*args, **kwargs)` |  |
-| `textColor(*args, **kwargs)` |  |
+| `setStatus(visible, color=None)` | Set the status. |
+| `setText(text)` | Set the text. |
+| `showStatus(*args, **kwargs)` | Show the status. |
+| `statusBorderColor(*args, **kwargs)` | Status border color. |
+| `statusColor(*args, **kwargs)` | Status color. |
+| `statusPosition(*args, **kwargs)` | Status position. |
+| `text(*args, **kwargs)` | Text. |
+| `textColor(*args, **kwargs)` | Text color. |
 
 ## Theming
 

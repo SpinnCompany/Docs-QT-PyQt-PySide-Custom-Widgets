@@ -228,16 +228,16 @@ See [Theming](../02-Theming/designer-properties.md) for the token system.
 | Method | Description |
 |---|---|
 | `attachTo(target, corner='topright', xOffset=0, yOffset=0)` | Float this badge over ``target``'s corner (topright / topleft / |
-| `clicked(...)` |  |
-| `count()` |  |
-| `dot(*args, **kwargs)` |  |
-| `eventFilter(obj, event)` |  |
-| `isDot()` |  |
+| `clicked(...)` | Clicked. |
+| `count()` | Count. |
+| `dot(*args, **kwargs)` | Dot. |
+| `eventFilter(obj, event)` | Event filter. |
+| `isDot()` | Return whether the widget is dot. |
 | `setCount(count, maxCount=None)` | Numeric badge. Shows ``maxCount+`` past the cap; hidden at 0 unless |
 | `setDot(on=True)` | Dot mode: a small coloured circle with no text. |
-| `setShowZero(show)` |  |
+| `setShowZero(show)` | Set the show zero. |
 | `setText(text)` | Plain-text badge (clears count / dot mode). |
-| `sizeVariant(*args, **kwargs)` |  |
-| `variant(*args, **kwargs)` |  |
+| `sizeVariant(*args, **kwargs)` | Size variant. |
+| `variant(*args, **kwargs)` | Variant. |
 
 <!-- /generated:api-reference -->

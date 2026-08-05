@@ -102,30 +102,30 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `autoNormalize(*args, **kwargs)` |  |
-| `cellClicked(...)` |  |
-| `cellGap(*args, **kwargs)` |  |
-| `cellSize(*args, **kwargs)` |  |
-| `colLabelsCsv(*args, **kwargs)` |  |
-| `cornerRadius(*args, **kwargs)` |  |
-| `emptyColor(*args, **kwargs)` |  |
-| `highColor(*args, **kwargs)` |  |
-| `labelColor(*args, **kwargs)` |  |
-| `lowColor(*args, **kwargs)` |  |
-| `maxValue(*args, **kwargs)` |  |
-| `minValue(*args, **kwargs)` |  |
-| `mode(*args, **kwargs)` |  |
-| `rowLabelsCsv(*args, **kwargs)` |  |
-| `setColors(low, high, empty=None)` |  |
+| `autoNormalize(*args, **kwargs)` | Auto normalize. |
+| `cellClicked(...)` | Cell clicked. |
+| `cellGap(*args, **kwargs)` | Cell gap. |
+| `cellSize(*args, **kwargs)` | Cell size. |
+| `colLabelsCsv(*args, **kwargs)` | Col labels csv. |
+| `cornerRadius(*args, **kwargs)` | Corner radius. |
+| `emptyColor(*args, **kwargs)` | Empty color. |
+| `highColor(*args, **kwargs)` | High color. |
+| `labelColor(*args, **kwargs)` | Label color. |
+| `lowColor(*args, **kwargs)` | Low color. |
+| `maxValue(*args, **kwargs)` | Max value. |
+| `minValue(*args, **kwargs)` | Min value. |
+| `mode(*args, **kwargs)` | Mode. |
+| `rowLabelsCsv(*args, **kwargs)` | Row labels csv. |
+| `setColors(low, high, empty=None)` | Set the colors. |
 | `setData(values)` | Backward-compatible alias for setValues(). |
-| `setLabels(row_labels=None, col_labels=None)` |  |
-| `setMode(mode)` |  |
-| `setRange(minimum, maximum)` |  |
-| `setValues(values)` |  |
-| `showLabels(*args, **kwargs)` |  |
-| `showLegend(*args, **kwargs)` |  |
-| `values()` |  |
-| `valuesCsv(*args, **kwargs)` |  |
+| `setLabels(row_labels=None, col_labels=None)` | Set the labels. |
+| `setMode(mode)` | Set the mode. |
+| `setRange(minimum, maximum)` | Set the range. |
+| `setValues(values)` | Set the values. |
+| `showLabels(*args, **kwargs)` | Show the labels. |
+| `showLegend(*args, **kwargs)` | Show the legend. |
+| `values()` | Values. |
+| `valuesCsv(*args, **kwargs)` | Values csv. |
 
 ## Theming
 

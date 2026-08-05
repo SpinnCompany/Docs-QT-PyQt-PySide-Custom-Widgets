@@ -57,12 +57,12 @@ Colours come from the design tokens, so the widget follows the app theme with no
 
 | Method | Description |
 |---|---|
-| `editor()` |  |
-| `setHtml(html)` |  |
-| `setPlainText(text)` |  |
-| `textChanged(...)` |  |
-| `toHtml()` |  |
-| `toPlainText()` |  |
+| `editor()` | Editor. |
+| `setHtml(html)` | Set the html. |
+| `setPlainText(text)` | Set the plain text. |
+| `textChanged(...)` | Text changed. |
+| `toHtml()` | To html. |
+| `toPlainText()` | To plain text. |
 
 ## Theming
 

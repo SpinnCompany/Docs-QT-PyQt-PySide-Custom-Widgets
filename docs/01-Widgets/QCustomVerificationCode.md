@@ -81,27 +81,27 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `boxBackgroundColor(*args, **kwargs)` |  |
-| `boxBorderActiveColor(*args, **kwargs)` |  |
-| `boxBorderColor(*args, **kwargs)` |  |
-| `boxBorderErrorColor(*args, **kwargs)` |  |
-| `boxHeight(*args, **kwargs)` |  |
-| `boxSpacing(*args, **kwargs)` |  |
-| `boxWidth(*args, **kwargs)` |  |
-| `clear()` |  |
-| `code(*args, **kwargs)` |  |
-| `codeChanged(...)` |  |
-| `completed(...)` |  |
-| `digits(*args, **kwargs)` |  |
-| `inputMode(*args, **kwargs)` |  |
-| `isComplete()` |  |
-| `masked(*args, **kwargs)` |  |
+| `boxBackgroundColor(*args, **kwargs)` | Box background color. |
+| `boxBorderActiveColor(*args, **kwargs)` | Box border active color. |
+| `boxBorderColor(*args, **kwargs)` | Box border color. |
+| `boxBorderErrorColor(*args, **kwargs)` | Box border error color. |
+| `boxHeight(*args, **kwargs)` | Box height. |
+| `boxSpacing(*args, **kwargs)` | Box spacing. |
+| `boxWidth(*args, **kwargs)` | Box width. |
+| `clear()` | Clear. |
+| `code(*args, **kwargs)` | Code. |
+| `codeChanged(...)` | Code changed. |
+| `completed(...)` | Completed. |
+| `digits(*args, **kwargs)` | Digits. |
+| `inputMode(*args, **kwargs)` | Input mode. |
+| `isComplete()` | Return whether the widget is complete. |
+| `masked(*args, **kwargs)` | Masked. |
 | `pasteFromClipboard()` | Fill from the clipboard. Bound to Ctrl+V. |
-| `separatorAfter(*args, **kwargs)` |  |
+| `separatorAfter(*args, **kwargs)` | Separator after. |
 | `setCodeText(text)` | Fill from a string, ignoring anything the input mode disallows. |
-| `state(*args, **kwargs)` |  |
-| `textColor(*args, **kwargs)` |  |
-| `uppercase(*args, **kwargs)` |  |
+| `state(*args, **kwargs)` | State. |
+| `textColor(*args, **kwargs)` | Text color. |
+| `uppercase(*args, **kwargs)` | Uppercase. |
 
 ## Theming
 

@@ -97,33 +97,33 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `bubbleClicked(...)` |  |
-| `categoriesJson(*args, **kwargs)` |  |
-| `controlColor(*args, **kwargs)` |  |
-| `defaultColor(*args, **kwargs)` |  |
-| `groupByCategory(*args, **kwargs)` |  |
-| `hoverGlow(*args, **kwargs)` |  |
-| `hoverScale(*args, **kwargs)` |  |
-| `items()` |  |
-| `itemsJson(*args, **kwargs)` |  |
-| `labelColor(*args, **kwargs)` |  |
-| `minLabelRadius(*args, **kwargs)` |  |
-| `padding(*args, **kwargs)` |  |
-| `resetView()` |  |
-| `searchQuery(*args, **kwargs)` |  |
-| `searchRequested(...)` |  |
-| `setCategoryColors(mapping)` |  |
-| `setItems(items)` |  |
-| `setSearchQuery(text)` |  |
-| `shadeVariation(*args, **kwargs)` |  |
-| `showControls(*args, **kwargs)` |  |
-| `showLabels(*args, **kwargs)` |  |
-| `tooltipBgColor(*args, **kwargs)` |  |
-| `tooltips(*args, **kwargs)` |  |
-| `zoomChanged(...)` |  |
-| `zoomIn()` |  |
-| `zoomOut()` |  |
-| `zoomable(*args, **kwargs)` |  |
+| `bubbleClicked(...)` | Bubble clicked. |
+| `categoriesJson(*args, **kwargs)` | Categories json. |
+| `controlColor(*args, **kwargs)` | Control color. |
+| `defaultColor(*args, **kwargs)` | Default color. |
+| `groupByCategory(*args, **kwargs)` | Group by category. |
+| `hoverGlow(*args, **kwargs)` | Hover glow. |
+| `hoverScale(*args, **kwargs)` | Hover scale. |
+| `items()` | Items. |
+| `itemsJson(*args, **kwargs)` | Items json. |
+| `labelColor(*args, **kwargs)` | Label color. |
+| `minLabelRadius(*args, **kwargs)` | Min label radius. |
+| `padding(*args, **kwargs)` | Padding. |
+| `resetView()` | Reset the view. |
+| `searchQuery(*args, **kwargs)` | Search query. |
+| `searchRequested(...)` | Search requested. |
+| `setCategoryColors(mapping)` | Set the category colors. |
+| `setItems(items)` | Set the items. |
+| `setSearchQuery(text)` | Set the search query. |
+| `shadeVariation(*args, **kwargs)` | Shade variation. |
+| `showControls(*args, **kwargs)` | Show the controls. |
+| `showLabels(*args, **kwargs)` | Show the labels. |
+| `tooltipBgColor(*args, **kwargs)` | Tooltip bg color. |
+| `tooltips(*args, **kwargs)` | Tooltips. |
+| `zoomChanged(...)` | Zoom changed. |
+| `zoomIn()` | Zoom in. |
+| `zoomOut()` | Zoom out. |
+| `zoomable(*args, **kwargs)` | Zoomable. |
 
 ## Theming
 

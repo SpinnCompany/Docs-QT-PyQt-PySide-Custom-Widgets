@@ -76,11 +76,11 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `addTabRequested(...)` |  |
-| `closableTabs(*args, **kwargs)` |  |
-| `showAddButton(*args, **kwargs)` |  |
-| `sizeVariant(*args, **kwargs)` |  |
-| `tabStyle(*args, **kwargs)` |  |
+| `addTabRequested(...)` | Add a tab requested. |
+| `closableTabs(*args, **kwargs)` | Closable tabs. |
+| `showAddButton(*args, **kwargs)` | Show the add button. |
+| `sizeVariant(*args, **kwargs)` | Size variant. |
+| `tabStyle(*args, **kwargs)` | Tab style. |
 
 ## Theming
 

@@ -103,38 +103,38 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `addSeries(name, values, color=None)` |  |
-| `clearSeries()` |  |
-| `clockwise(*args, **kwargs)` |  |
-| `closed(*args, **kwargs)` |  |
-| `colorsCsv(*args, **kwargs)` |  |
-| `fillOpacity(*args, **kwargs)` |  |
-| `gridColor(*args, **kwargs)` |  |
-| `labelColor(*args, **kwargs)` |  |
-| `labels()` |  |
-| `labelsCsv(*args, **kwargs)` |  |
-| `lineWidth(*args, **kwargs)` |  |
-| `maxValue(*args, **kwargs)` |  |
-| `maximum()` |  |
-| `pointClicked(...)` |  |
+| `addSeries(name, values, color=None)` | Add a series. |
+| `clearSeries()` | Clear the series. |
+| `clockwise(*args, **kwargs)` | Clockwise. |
+| `closed(*args, **kwargs)` | Closed. |
+| `colorsCsv(*args, **kwargs)` | Colors csv. |
+| `fillOpacity(*args, **kwargs)` | Fill opacity. |
+| `gridColor(*args, **kwargs)` | Grid color. |
+| `labelColor(*args, **kwargs)` | Label color. |
+| `labels()` | Labels. |
+| `labelsCsv(*args, **kwargs)` | Labels csv. |
+| `lineWidth(*args, **kwargs)` | Line width. |
+| `maxValue(*args, **kwargs)` | Max value. |
+| `maximum()` | Maximum. |
+| `pointClicked(...)` | Point clicked. |
 | `pointFor(seriesIndex, sampleIndex)` | Widget-space point for one sample of one series. |
-| `rings(*args, **kwargs)` |  |
+| `rings(*args, **kwargs)` | Rings. |
 | `sampleAt(pos)` | (series, sample) nearest a point, or (-1, -1). |
 | `sampleCount()` | Samples around the circle — the longest series wins. |
-| `series()` |  |
+| `series()` | Series. |
 | `seriesAt(pos)` | Index of the series whose closed shape contains a point, else -1. |
-| `seriesColor(index)` |  |
-| `seriesCount()` |  |
-| `seriesCsv(*args, **kwargs)` |  |
-| `seriesHovered(...)` |  |
-| `setLabels(labels)` |  |
-| `setSeries(series)` |  |
-| `showGrid(*args, **kwargs)` |  |
-| `showLabels(*args, **kwargs)` |  |
-| `showLegend(*args, **kwargs)` |  |
-| `showMarkers(*args, **kwargs)` |  |
-| `smooth(*args, **kwargs)` |  |
-| `startAngle(*args, **kwargs)` |  |
+| `seriesColor(index)` | Series color. |
+| `seriesCount()` | Series count. |
+| `seriesCsv(*args, **kwargs)` | Series csv. |
+| `seriesHovered(...)` | Series hovered. |
+| `setLabels(labels)` | Set the labels. |
+| `setSeries(series)` | Set the series. |
+| `showGrid(*args, **kwargs)` | Show the grid. |
+| `showLabels(*args, **kwargs)` | Show the labels. |
+| `showLegend(*args, **kwargs)` | Show the legend. |
+| `showMarkers(*args, **kwargs)` | Show the markers. |
+| `smooth(*args, **kwargs)` | Smooth. |
+| `startAngle(*args, **kwargs)` | Start the angle. |
 
 ## Theming
 

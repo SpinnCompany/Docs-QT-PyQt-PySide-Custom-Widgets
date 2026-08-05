@@ -107,10 +107,10 @@ Every property below is settable in code and in Qt Designer.
 | `applyCustomPalette(palette: PySide6.QtGui.QPalette)` | Apply a custom palette to the chart (for App Theme) |
 | `areaBorderEdges() -> bool` | Whether the full area outline is stroked (see setAreaBorderEdges). |
 | `baselineValue(*args, **kwargs)` | Get baseline value |
-| `chartExportComplete(...)` |  |
+| `chartExportComplete(...)` | Chart export complete. |
 | `clearData()` | Clear all chart data (compatibility method) |
-| `dataPointClicked(...)` |  |
-| `dataPointHovered(...)` |  |
+| `dataPointClicked(...)` | Data point clicked. |
+| `dataPointHovered(...)` | Data point hovered. |
 | `exportToClipboard()` | Export chart to clipboard |
 | `exportToFile(format: str = None, filename: str = None)` | Export chart to file |
 | `fillOpacity(*args, **kwargs)` | Get fill opacity |
@@ -140,14 +140,14 @@ Every property below is settable in code and in Qt Designer.
 | `isStackedArea() -> bool` | Check if stacked area is enabled |
 | `isValidLineStyle(style: str) -> bool` | Check if line style is valid |
 | `isValidMarkerStyle(style: str) -> bool` | Check if marker style is valid |
-| `legendPositionChanged(...)` |  |
+| `legendPositionChanged(...)` | Legend position changed. |
 | `percentageArea(*args, **kwargs)` | Get percentage area state |
 | `printChart()` | Print chart |
 | `refreshTheme()` | Refresh the current theme (useful when app palette changes) |
 | `removeSeries(name: str) -> bool` | Remove a series from the chart |
 | `resetMarkerSizes()` | Reset all marker sizes to default |
-| `seriesAdded(...)` |  |
-| `seriesRemoved(...)` |  |
+| `seriesAdded(...)` | Series added. |
+| `seriesRemoved(...)` | Series removed. |
 | `setAllMarkersSize(size: float)` | Set marker size for all series |
 | `setAreaBorderEdges(enabled: bool)` | Draw the area polygon's full outline (True, default) or only the top |
 | `setBaselineValue(value: float)` | Set the baseline value for area chart |

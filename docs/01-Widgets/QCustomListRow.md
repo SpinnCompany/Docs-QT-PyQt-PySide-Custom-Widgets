@@ -79,25 +79,25 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `chipColor(*args, **kwargs)` |  |
-| `chipRadius(*args, **kwargs)` |  |
-| `chipSize(*args, **kwargs)` |  |
-| `chipTextColor(*args, **kwargs)` |  |
-| `dragHandleColor(*args, **kwargs)` |  |
-| `iconText(*args, **kwargs)` |  |
-| `meta(*args, **kwargs)` |  |
+| `chipColor(*args, **kwargs)` | Chip color. |
+| `chipRadius(*args, **kwargs)` | Chip radius. |
+| `chipSize(*args, **kwargs)` | Chip size. |
+| `chipTextColor(*args, **kwargs)` | Chip text color. |
+| `dragHandleColor(*args, **kwargs)` | Drag handle color. |
+| `iconText(*args, **kwargs)` | Icon text. |
+| `meta(*args, **kwargs)` | Meta. |
 | `setIcon(icon)` | Leading chip image: a QPixmap or QIcon. Clears any iconText. |
 | `setIconText(text)` | Leading chip glyph/letter (e.g. an initial). Clears any pixmap. |
-| `setMeta(text)` |  |
-| `setSubtitle(text)` |  |
-| `setTitle(text)` |  |
-| `setValue(text)` |  |
-| `showDragHandle(*args, **kwargs)` |  |
-| `subtitle(*args, **kwargs)` |  |
-| `subtitleColor(*args, **kwargs)` |  |
-| `title(*args, **kwargs)` |  |
-| `value(*args, **kwargs)` |  |
-| `valueColor(*args, **kwargs)` |  |
+| `setMeta(text)` | Set the meta. |
+| `setSubtitle(text)` | Set the subtitle. |
+| `setTitle(text)` | Set the title. |
+| `setValue(text)` | Set the value. |
+| `showDragHandle(*args, **kwargs)` | Show the drag handle. |
+| `subtitle(*args, **kwargs)` | Subtitle. |
+| `subtitleColor(*args, **kwargs)` | Subtitle color. |
+| `title(*args, **kwargs)` | Title. |
+| `value(*args, **kwargs)` | Value. |
+| `valueColor(*args, **kwargs)` | Value color. |
 
 ## Theming
 

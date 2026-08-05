@@ -107,15 +107,15 @@ system every modern widget uses. The track/thumb colours come from the `accent`,
 
 | Method | Description |
 |---|---|
-| `checked(*args, **kwargs)` |  |
-| `isChecked()` |  |
-| `setChecked(checked)` |  |
-| `sizeVariant(*args, **kwargs)` |  |
-| `thumbColor(*args, **kwargs)` |  |
-| `thumbPosition(*args, **kwargs)` |  |
-| `toggle()` |  |
-| `toggled(...)` |  |
-| `trackOffColor(*args, **kwargs)` |  |
-| `trackOnColor(*args, **kwargs)` |  |
+| `checked(*args, **kwargs)` | Checked. |
+| `isChecked()` | Return whether the widget is checked. |
+| `setChecked(checked)` | Set the checked. |
+| `sizeVariant(*args, **kwargs)` | Size variant. |
+| `thumbColor(*args, **kwargs)` | Thumb color. |
+| `thumbPosition(*args, **kwargs)` | Thumb position. |
+| `toggle()` | Toggle. |
+| `toggled(...)` | Toggled. |
+| `trackOffColor(*args, **kwargs)` | Track off color. |
+| `trackOnColor(*args, **kwargs)` | Track on color. |
 
 <!-- /generated:api-reference -->

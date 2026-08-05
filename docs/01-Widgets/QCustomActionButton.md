@@ -75,14 +75,14 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `bgColor(*args, **kwargs)` |  |
-| `buttonSize(*args, **kwargs)` |  |
-| `caption(*args, **kwargs)` |  |
-| `captionColor(*args, **kwargs)` |  |
-| `clicked(...)` |  |
-| `hoverColor(*args, **kwargs)` |  |
-| `icon(*args, **kwargs)` |  |
-| `iconSize(*args, **kwargs)` |  |
+| `bgColor(*args, **kwargs)` | Bg color. |
+| `buttonSize(*args, **kwargs)` | Button size. |
+| `caption(*args, **kwargs)` | Caption. |
+| `captionColor(*args, **kwargs)` | Caption color. |
+| `clicked(...)` | Clicked. |
+| `hoverColor(*args, **kwargs)` | Hover color. |
+| `icon(*args, **kwargs)` | Icon. |
+| `iconSize(*args, **kwargs)` | Icon size. |
 
 ## Theming
 

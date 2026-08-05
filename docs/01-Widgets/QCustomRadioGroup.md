@@ -73,25 +73,25 @@ Every property below is settable in code and in Qt Designer.
 
 | Method | Description |
 |---|---|
-| `buttons()` |  |
-| `clearSelection()` |  |
-| `count()` |  |
-| `currentIndex()` |  |
-| `currentIndexChanged(...)` |  |
-| `currentLabel()` |  |
-| `options()` |  |
-| `optionsCsv(*args, **kwargs)` |  |
-| `orientation(*args, **kwargs)` |  |
-| `selectedValue(*args, **kwargs)` |  |
-| `setCurrentIndex(index)` |  |
+| `buttons()` | Buttons. |
+| `clearSelection()` | Clear the selection. |
+| `count()` | Count. |
+| `currentIndex()` | Current index. |
+| `currentIndexChanged(...)` | Current index changed. |
+| `currentLabel()` | Current label. |
+| `options()` | Options. |
+| `optionsCsv(*args, **kwargs)` | Options csv. |
+| `orientation(*args, **kwargs)` | Orientation. |
+| `selectedValue(*args, **kwargs)` | Selected value. |
+| `setCurrentIndex(index)` | Set the current index. |
 | `setOptions(options)` | Replace every option. Selection is kept if its value survives. |
-| `setValue(value)` |  |
-| `sizeVariant(*args, **kwargs)` |  |
-| `spacingPx(*args, **kwargs)` |  |
-| `title(*args, **kwargs)` |  |
-| `titleColor(*args, **kwargs)` |  |
-| `value()` |  |
-| `valueChanged(...)` |  |
+| `setValue(value)` | Set the value. |
+| `sizeVariant(*args, **kwargs)` | Size variant. |
+| `spacingPx(*args, **kwargs)` | Spacing px. |
+| `title(*args, **kwargs)` | Title. |
+| `titleColor(*args, **kwargs)` | Title color. |
+| `value()` | Value. |
+| `valueChanged(...)` | Value changed. |
 
 ## Theming
 

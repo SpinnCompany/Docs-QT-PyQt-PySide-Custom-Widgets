@@ -95,19 +95,19 @@ Every property below is settable in code and in Qt Designer.
 | `addSeries(name: str, values: List[float], categories: List[str] | None = None, color: PySide6.QtGui.QColor | None = None, visible: bool = True) -> bool` | Add a bar series to the chart. |
 | `appendToSeries(name: str, values: List[float]) -> bool` | Append values to an existing series |
 | `applyCustomPalette(palette: PySide6.QtGui.QPalette)` | Apply a custom palette to the chart (for App Theme) |
-| `barClicked(...)` |  |
-| `barHovered(...)` |  |
+| `barClicked(...)` | Bar clicked. |
+| `barHovered(...)` | Bar hovered. |
 | `barWidth(*args, **kwargs)` | Get bar width |
-| `chartExportComplete(...)` |  |
-| `clearBarColors(series_name: str = None)` |  |
+| `chartExportComplete(...)` | Chart export complete. |
+| `clearBarColors(series_name: str = None)` | Clear the bar colors. |
 | `clearData()` | Clear all chart data (compatibility method) |
-| `clearHighlight(series_name: str = None)` |  |
+| `clearHighlight(series_name: str = None)` | Clear the highlight. |
 | `exportToClipboard()` | Export chart to clipboard |
 | `exportToFile(format: str = None, filename: str = None)` | Export chart to file |
 | `generateExampleData(example_type: str = 'simple')` | Generate example bar chart data for testing. |
 | `getAvailableLegendPositions() -> List[str]` | Get list of available legend positions |
 | `getAvailableThemes() -> List[str]` | Get list of available theme names |
-| `getBarCornerRadius() -> int` |  |
+| `getBarCornerRadius() -> int` | Return the bar corner radius. |
 | `getBarSet(series_name: str) -> PySide6.QtCharts.QBarSet | None` | Get QBarSet for a series |
 | `getBarWidth() -> float` | Get current bar width |
 | `getCategories() -> List[str]` | Get the current category names |
@@ -126,12 +126,12 @@ Every property below is settable in code and in Qt Designer.
 | `highlightIndex(index: int, color=None, series_name: str = None)` | Accent a single bar (by category index). ``color`` defaults to a |
 | `isStacked() -> bool` | Check if bars are stacked |
 | `labelsPosition(*args, **kwargs)` | Bar labels position (int; see QCustomChartEnums.BarLabelsPosition). |
-| `legendPositionChanged(...)` |  |
+| `legendPositionChanged(...)` | Legend position changed. |
 | `printChart()` | Print chart |
 | `refreshTheme()` | Refresh the current theme (useful when app palette changes) |
 | `removeSeries(name: str) -> bool` | Remove a series from the chart |
-| `seriesAdded(...)` |  |
-| `seriesRemoved(...)` |  |
+| `seriesAdded(...)` | Series added. |
+| `seriesRemoved(...)` | Series removed. |
 | `setBarColors(colors, series_name: str = None)` | Give each bar its own colour. ``colors`` is a list parallel to the |
 | `setBarCornerRadius(radius: int)` | Round the top corners of bars (px). 0 restores native square bars. |
 | `setBarWidth(width: float)` | Set relative bar width (0.0 to 1.0) |

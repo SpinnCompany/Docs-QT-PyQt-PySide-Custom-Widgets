@@ -69,15 +69,15 @@ Every property below is settable in code and in Qt Designer.
 | Method | Description |
 |---|---|
 | `addButton(text, button_id=None)` | Add a button to the group. |
-| `exclusive(*args, **kwargs)` |  |
-| `orientation(*args, **kwargs)` |  |
+| `exclusive(*args, **kwargs)` | Exclusive. |
+| `orientation(*args, **kwargs)` | Orientation. |
 | `selectedId()` | Return the ID of the selected button, or -1 if none. |
 | `selectedText()` | Return the text of the selected button, or empty string if none. |
-| `selectionChanged(...)` |  |
+| `selectionChanged(...)` | Selection changed. |
 | `setButtons(items)` | Replace all buttons. Items may be strings or (text, id) pairs. |
 | `setSelectedId(button_id)` | Set the selected button by ID. |
-| `sizeVariant(*args, **kwargs)` |  |
-| `variant(*args, **kwargs)` |  |
+| `sizeVariant(*args, **kwargs)` | Size variant. |
+| `variant(*args, **kwargs)` | Variant. |
 
 ## Theming
 

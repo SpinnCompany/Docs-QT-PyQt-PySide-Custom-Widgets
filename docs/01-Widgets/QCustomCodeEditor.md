@@ -348,8 +348,8 @@ The `QCustomCodeEditor` is ideal for IDEs, code viewers, configuration editors, 
 
 | Method | Description |
 |---|---|
-| `loadFile(filepath, encoding='utf-8')` |  |
-| `setLang(lang)` |  |
-| `setTheme(theme)` |  |
+| `loadFile(filepath, encoding='utf-8')` | Load the file. |
+| `setLang(lang)` | Set the lang. |
+| `setTheme(theme)` | Set the theme. |
 
 <!-- /generated:api-reference -->
