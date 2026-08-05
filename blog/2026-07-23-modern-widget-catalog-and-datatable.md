@@ -91,7 +91,7 @@ Custom_Widgets --dev            # runs ./main.py under supervision
 ## Upgrading
 
 This release is part of the **v3** modernization, which includes some clean-break
-API changes. See the [migration guide](https://qtcustomwidgets.spinncode.com/Appendices/v3-migration)
+API changes. See the [migration guide](https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/Appendices/v3-migration)
 for the (short) list of find-and-replace edits — most projects migrate in
 minutes.
 
@@ -106,10 +106,10 @@ a dedicated post.
 
 ## Explore the docs
 
-- [Widget gallery & reference](https://qtcustomwidgets.spinncode.com/)
-- [DataTable](https://qtcustomwidgets.spinncode.com/Widgets/QCustomDataTable) ·
-  [Usage recipes](https://qtcustomwidgets.spinncode.com/Usage-Examples/DataTableBasics)
-- [Theming](https://qtcustomwidgets.spinncode.com/Theming/designer-properties)
+- [Widget gallery & reference](https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/)
+- [DataTable](https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/Widgets/QCustomDataTable) ·
+  [Usage recipes](https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/Usage-Examples/DataTableBasics)
+- [Theming](https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/Theming/designer-properties)
 
 Thanks for building with Qt Custom Widgets. Feedback and issues are always
 welcome on [GitHub](https://github.com/SpinnCompany/QT-PyQt-PySide-Custom-Widgets).

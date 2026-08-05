@@ -341,7 +341,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
     }
     // In your dashboard.html, update the Socket.IO initialization:
-    const socket = io('https://autobot.spinncode.com', {
+    const socket = io('https://customwidgets.org', {
         path: "/socket.io",
         transports: ["websocket", "polling"],
         query: {

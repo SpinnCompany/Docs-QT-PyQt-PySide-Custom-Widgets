@@ -15,9 +15,7 @@ const sitemapContent = fs.readFileSync(baseSitemapPath, "utf-8");
 
 // List of subdomains you want to support
 const subdomains = [
-  "spinntv.spinncode.com",
-  "qtwidgets.spinncode.com",
-  "qtcustomwidgets.spinncode.com",
+  "customwidgets.org",
 ];
 
 // Function to replace URLs inside the sitemap with the subdomain

@@ -12,7 +12,7 @@ tags:
 title: Welcome to the Qt Custom Widgets Blog
 ---
 
-Welcome to the official **Qt Custom Widgets Blog**, hosted on [Spinncode](https://spinncode.com)!
+Welcome to the official **Qt Custom Widgets Blog**, hosted on [Spinncode](https://customwidgets.org)!
 
 This space is dedicated to sharing tutorials, behind-the-scenes updates, and deep dives into **modern PySide6 and PyQt widget design**.
 
@@ -48,14 +48,14 @@ It includes:
 - A project generator (“Project Maker”) for faster setup
 
 You can explore the docs at  
- [https://qtcustomwidgets.spinncode.com](https://qtcustomwidgets.spinncode.com)
+ [https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets](https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets)
 
 ## ‍ About the Author
 
 I’m **Khamisi Kibet**, a Python developer from Kenya passionate about creating **modern, lightweight desktop UIs**.
 I believe in building one line of code at a time — clean, efficient, and scalable.
 
-Follow updates here or on [Spinncode.com](https://spinncode.com).
+Follow updates here or on [Spinncode.com](https://customwidgets.org).
 
 ---
 

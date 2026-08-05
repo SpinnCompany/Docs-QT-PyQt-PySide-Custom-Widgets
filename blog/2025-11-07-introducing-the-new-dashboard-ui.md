@@ -40,7 +40,7 @@ Next, we’re adding:
 - Markdown live preview for blog creation.  
 - Automatic `.md` generation from the dashboard form.  
 - Post synchronization with your hosted docs site at  
- [qtcustomwidgets.spinncode.com/blog](https://qtcustomwidgets.spinncode.com/blog)
+ [spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog](https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog)
 
 ## Final Thoughts
 

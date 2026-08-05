@@ -263,7 +263,7 @@ class CustomDragItem(QDragItem):
 
 If you find these custom widgets helpful and would like to support their development, consider becoming a patron:
 
-[Support us on Patreon](https://www.patreon.com/spinntv)
+[Support us on Patreon](https://www.patreon.com/c/spinntv)
 
 Your support helps maintain and improve these custom widgets for the community.
 

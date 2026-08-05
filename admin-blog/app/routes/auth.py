@@ -90,7 +90,7 @@ async def login_google():
     if os.environ.get('FLASK_ENV') == 'development':
         base_url = request.host_url
     else:
-        base_url = 'https://blog.spinncode.com/'  # Changed to deriv domain
+        base_url = 'https://customwidgets.org/'  # Changed to deriv domain
 
     redirect_path = url_for('auth.authorize_google', _external=False)
     redirect_uri = urljoin(base_url.rstrip('/') + '/', redirect_path.lstrip('/'))

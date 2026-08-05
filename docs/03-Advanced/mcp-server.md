@@ -14,7 +14,7 @@ mdx:
 The MCP server ships in **Custom Widgets Pro**. The free package under GPLv3
 does not include it.
 
-[See plans](https://customwidgets.spinncode.com/pricing/)
+[See plans](https://customwidgets.org/pricing/)
 
 :::
 

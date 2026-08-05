@@ -496,7 +496,7 @@ Now that you have a basic application running:
 ## Resources
 
 - **Documentation**: [GitHub Repository](https://github.com/SpinnCompany/Qt-PyQt-PySide-Custom-Widgets)
-- **Video Tutorials**: [SPINN TV YouTube Channel](https://www.youtube.com/spinnTv)
+- **Video Tutorials**: [SPINN TV YouTube Channel](https://www.youtube.com/@SpinnTV)
 - **Community Support**: GitHub Issues and Discussions
 
 ---

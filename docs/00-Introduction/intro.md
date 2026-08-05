@@ -56,7 +56,7 @@ test, a Designer registration and a documented API.
 The library is **free and open source under GPLv3**, and that is a real
 licence, not a formality: if you ship a closed-source commercial application
 you need a
-[commercial licence](https://customwidgets.spinncode.com/pricing/).
+[commercial licence](https://customwidgets.org/pricing/).
 
 **Pro** adds the analytics chart set, the data table, rich media widgets, the
 Designer tooling and the [MCP server](../03-Advanced/mcp-server.md) for driving
