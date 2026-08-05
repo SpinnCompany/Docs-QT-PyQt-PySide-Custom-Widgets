@@ -334,8 +334,8 @@
 <ul>
 <li class="">PyPI Package: <a href="https://pypi.org/project/QT-PyQt-PySide-Custom-Widgets/2.0.2/" target="_blank" rel="noopener noreferrer" class="">https://pypi.org/project/QT-PyQt-PySide-Custom-Widgets/2.0.2/</a></li>
 <li class="">Documentation: <a href="https://github.com/SpinnCompany/Qt-PyQt-PySide-Custom-Widgets" target="_blank" rel="noopener noreferrer" class="">https://github.com/SpinnCompany/Qt-PyQt-PySide-Custom-Widgets</a></li>
-<li class="">YouTube Tutorials: <a href="https://www.youtube.com/spinnTv" target="_blank" rel="noopener noreferrer" class="">https://www.youtube.com/spinnTv</a></li>
-<li class="">Website: <a href="https://spinncode.com/" target="_blank" rel="noopener noreferrer" class="">https://spinncode.com</a></li>
+<li class="">YouTube Tutorials: <a href="https://www.youtube.com/@SpinnTV" target="_blank" rel="noopener noreferrer" class="">https://www.youtube.com/@SpinnTV</a></li>
+<li class="">Website: <a href="https://customwidgets.org/" target="_blank" rel="noopener noreferrer" class="">https://customwidgets.org</a></li>
 </ul>
 <h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="bug-reports--feedback">Bug Reports &amp; Feedback<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/2025-11-12-v-202#bug-reports--feedback" class="hash-link" aria-label="Direct link to Bug Reports &amp; Feedback" title="Direct link to Bug Reports &amp; Feedback" translate="no">​</a></h2>
 <p>Found an issue or have suggestions? Please report them on our GitHub Issues page: <a href="https://github.com/SpinnCompany/Qt-PyQt-PySide-Custom-Widgets/issues" target="_blank" rel="noopener noreferrer" class="">https://github.com/SpinnCompany/Qt-PyQt-PySide-Custom-Widgets/issues</a></p>
@@ -345,9 +345,9 @@
 <p>Happy coding!</p>
 <p>Follow us for more updates:</p>
 <ul>
-<li class="">YouTube: <a href="https://www.youtube.com/spinnTv" target="_blank" rel="noopener noreferrer" class="">https://www.youtube.com/spinnTv</a></li>
-<li class="">Website: <a href="https://spinncode.com/" target="_blank" rel="noopener noreferrer" class="">https://spinncode.com</a></li>
-<li class="">Email: <a href="mailto:info@spinncode.com" target="_blank" rel="noopener noreferrer" class="">info@spinncode.com</a></li>
+<li class="">YouTube: <a href="https://www.youtube.com/@SpinnTV" target="_blank" rel="noopener noreferrer" class="">https://www.youtube.com/@SpinnTV</a></li>
+<li class="">Website: <a href="https://customwidgets.org/" target="_blank" rel="noopener noreferrer" class="">https://customwidgets.org</a></li>
+<li class="">Email: <a href="mailto:info@customwidgets.org" target="_blank" rel="noopener noreferrer" class="">info@customwidgets.org</a></li>
 </ul>
 <p>#Python #Qt #PySide #PyQt #GUI #Development #OpenSource #CustomWidgets #Release</p>]]></content>
         <author>
@@ -690,7 +690,7 @@
 <h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="resources">Resources<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/getting-started-with-qt-custom-widgets#resources" class="hash-link" aria-label="Direct link to Resources" title="Direct link to Resources" translate="no">​</a></h2>
 <ul>
 <li class=""><strong>Documentation</strong>: <a href="https://github.com/SpinnCompany/Qt-PyQt-PySide-Custom-Widgets" target="_blank" rel="noopener noreferrer" class="">GitHub Repository</a></li>
-<li class=""><strong>Video Tutorials</strong>: <a href="https://www.youtube.com/spinnTv" target="_blank" rel="noopener noreferrer" class="">SPINN TV YouTube Channel</a></li>
+<li class=""><strong>Video Tutorials</strong>: <a href="https://www.youtube.com/@SpinnTV" target="_blank" rel="noopener noreferrer" class="">SPINN TV YouTube Channel</a></li>
 <li class=""><strong>Community Support</strong>: GitHub Issues and Discussions</li>
 </ul>
 <hr>
@@ -1029,7 +1029,7 @@ It’s built with <strong>PySide6</strong>, styled for dark mode, and designed t
 <li class="">Markdown live preview for blog creation.</li>
 <li class="">Automatic <code>.md</code> generation from the dashboard form.</li>
 <li class="">Post synchronization with your hosted docs site at<br>
-<a href="https://qtcustomwidgets.spinncode.com/blog" target="_blank" rel="noopener noreferrer" class="">qtcustomwidgets.spinncode.com/blog</a></li>
+<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog" target="_blank" rel="noopener noreferrer" class="">spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog</a></li>
 </ul>
 <h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="final-thoughts">Final Thoughts<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/introducing-the-new-dashboard-ui#final-thoughts" class="hash-link" aria-label="Direct link to Final Thoughts" title="Direct link to Final Thoughts" translate="no">​</a></h2>
 <p>This marks the beginning of a unified workflow — write, preview, and publish your documentation or blogs directly from the <strong>Dashboard UI</strong>.</p>
@@ -1053,7 +1053,7 @@ It’s built with <strong>PySide6</strong>, styled for dark mode, and designed t
         <link href="https://SpinnCompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/welcome-to-the-qt-custom-widgets-blog"/>
         <updated>2025-11-07T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Welcome to the official Qt Custom Widgets Blog, hosted on Spinncode!]]></summary>
-        <content type="html"><![CDATA[<p>Welcome to the official <strong>Qt Custom Widgets Blog</strong>, hosted on <a href="https://spinncode.com/" target="_blank" rel="noopener noreferrer" class="">Spinncode</a>!</p>
+        <content type="html"><![CDATA[<p>Welcome to the official <strong>Qt Custom Widgets Blog</strong>, hosted on <a href="https://customwidgets.org/" target="_blank" rel="noopener noreferrer" class="">Spinncode</a>!</p>
 <p>This space is dedicated to sharing tutorials, behind-the-scenes updates, and deep dives into <strong>modern PySide6 and PyQt widget design</strong>.</p>
 <h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="why-this-blog-exists">Why This Blog Exists<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/welcome-to-the-qt-custom-widgets-blog#why-this-blog-exists" class="hash-link" aria-label="Direct link to Why This Blog Exists" title="Direct link to Why This Blog Exists" translate="no">​</a></h2>
 <p>When building modern desktop apps with Qt for Python, you quickly realize that many of the best UI ideas need custom widgets — not just the defaults.<br>
@@ -1086,11 +1086,11 @@ It’s built with <strong>PySide6</strong>, styled for dark mode, and designed t
 <li class="">A project generator (“Project Maker”) for faster setup</li>
 </ul>
 <p>You can explore the docs at<br>
-<a href="https://qtcustomwidgets.spinncode.com/" target="_blank" rel="noopener noreferrer" class="">https://qtcustomwidgets.spinncode.com</a></p>
+<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets" target="_blank" rel="noopener noreferrer" class="">https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets</a></p>
 <h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="-about-the-author">‍ About the Author<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/welcome-to-the-qt-custom-widgets-blog#-about-the-author" class="hash-link" aria-label="Direct link to ‍ About the Author" title="Direct link to ‍ About the Author" translate="no">​</a></h2>
 <p>I’m <strong>Khamisi Kibet</strong>, a Python developer from Kenya passionate about creating <strong>modern, lightweight desktop UIs</strong>.
 I believe in building one line of code at a time — clean, efficient, and scalable.</p>
-<p>Follow updates here or on <a href="https://spinncode.com/" target="_blank" rel="noopener noreferrer" class="">Spinncode.com</a>.</p>
+<p>Follow updates here or on <a href="https://customwidgets.org/" target="_blank" rel="noopener noreferrer" class="">Spinncode.com</a>.</p>
 <hr>
 <blockquote>
 <p><em>“Design it once, use it everywhere — from Designer to production.”</em>
