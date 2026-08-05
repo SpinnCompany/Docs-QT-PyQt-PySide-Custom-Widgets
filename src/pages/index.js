@@ -9,7 +9,7 @@ import CodeBlock from '@theme/CodeBlock';
 import styles from './index.module.css';
 
 /* The landing page leads with the actual product. The library ships 439
-   widget captures (60 of them animated) and 92 screenshotted example apps —
+   widget captures (63 cards animate) and 92 screenshotted example apps —
    showing those is more persuasive than any adjective, and it is the same
    reason atlasgo.io leads with real terminal output instead of stock art. */
 
@@ -35,13 +35,18 @@ const APP_REEL = [
    tools/gen_widget_docs.py from the tiering manifest — contains exactly 164
    `wg-card` entries and 23 `wg-pro` badges. The hand-written "163" that was
    scattered across the READMEs, blogs and release notes was stale; every
-   surface was reconciled to 164 on 2026-08-05. Animated count is 60, which is
-   what `ls static/img/showcase/*.gif | grep -v -- -dark` returns (the gallery
-   prose claimed 61). */
+   surface was reconciled to 164 on 2026-08-05.
+
+   Animated is 63 — the number of gallery cards that actually display a GIF,
+   which is now what gen_gallery.py reports too. It is deliberately not 60
+   (distinct GIF files) nor the old buggy 61: three cards are alias pages that
+   show a canonical sibling's animation, and two names collide under slugFor
+   ("tagedit"), so files-on-disk and widgets-that-animate are different
+   numbers. See tools/gen_gallery.py in the library repo. */
 const STATS = [
   { value: '164', label: 'widgets' },
   { value: '92', label: 'example apps' },
-  { value: '60', label: 'animated' },
+  { value: '63', label: 'animated' },
   { value: '23', label: 'in Pro' },
 ];
 
@@ -119,7 +124,7 @@ function WidgetReel() {
     <section className={styles.section}>
       <div className={styles.sectionHead}>
         <Heading as="h2" className={styles.sectionTitle}>
-          Every widget documented, 60 of them animated
+          Every widget documented, 63 of them animated
         </Heading>
         <p className={styles.sectionLede}>
           Reference pages are generated from the widget catalogue, so the
