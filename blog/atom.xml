@@ -44,7 +44,7 @@ plan at <a href="https://customwidgets.org/pricing/" target="_blank" rel="noopen
 supporters get the premium example apps alongside the Pro widget package
 (DataTable Pro's virtualization, grouping, pivot and export). Tutorials and
 walkthroughs land on <a href="https://www.youtube.com/@SpinnTV" target="_blank" rel="noopener noreferrer" class="">YouTube</a>.</p>
-<p>Everything else — the 163-widget library, the 82 public examples, the whole
+<p>Everything else — the 164-widget library, the 82 public examples, the whole
 documentation site — is free under GPLv3, and
 <a class="" href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/custom-widgets-2-3-0-released">2.3.0 is on PyPI now</a>.</p>]]></content>
         <author>
@@ -60,13 +60,13 @@ documentation site — is free under GPLv3, and
         <category label="news" term="news"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Custom Widgets 2.3.0: 163 widgets, painted charts, and docs that can't go stale]]></title>
+        <title type="html"><![CDATA[Custom Widgets 2.3.0: 164 widgets, painted charts, and docs that can't go stale]]></title>
         <id>https://SpinnCompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/custom-widgets-2-3-0-released</id>
         <link href="https://SpinnCompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/custom-widgets-2-3-0-released"/>
         <updated>2026-08-05T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Version 2.3.0 is on PyPI — the largest release in the project's history.]]></summary>
         <content type="html"><![CDATA[<p>Version <strong>2.3.0</strong> is on PyPI — the largest release in the project's history.
-The catalogue grows to <strong>163 documented widgets</strong>, every example app was
+The catalogue grows to <strong>164 documented widgets</strong>, every example app was
 rebuilt and verified, and the entire reference documentation is now generated
 straight from the code.</p>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">pip </span><span class="token function" style="color:rgb(80, 250, 123)">install</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(189, 147, 249);font-style:italic">--upgrade</span><span class="token plain"> QT-PyQt-PySide-Custom-Widgets</span><br></span></code></pre></div></div>
@@ -103,7 +103,7 @@ apps, and read the widget catalog with exact signatures.</li>
 </ul>
 <h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="docs-that-cannot-drift">Docs that cannot drift<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/custom-widgets-2-3-0-released#docs-that-cannot-drift" class="hash-link" aria-label="Direct link to Docs that cannot drift" title="Direct link to Docs that cannot drift" translate="no">​</a></h2>
 <p>Every widget page — prose, property tables, signals, screenshots, animations
-— is generated from the live code. The <a class="" href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/gallery">gallery</a> shows all 163
+— is generated from the live code. The <a class="" href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/gallery">gallery</a> shows all 164
 widgets (61 animated), and every screenshot in it is produced by the same
 pipeline that verifies the widgets still render.</p>
 <h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="82-rebuilt-examples--and-an-app-showcase">82 rebuilt examples — and an App Showcase<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/custom-widgets-2-3-0-released#82-rebuilt-examples--and-an-app-showcase" class="hash-link" aria-label="Direct link to 82 rebuilt examples — and an App Showcase" title="Direct link to 82 rebuilt examples — and an App Showcase" translate="no">​</a></h2>
@@ -139,6 +139,78 @@ of you.</p>]]></content>
         <category label="Python" term="Python"/>
         <category label="GUI" term="GUI"/>
         <category label="Custom Widgets" term="Custom Widgets"/>
+        <category label="version" term="version"/>
+        <category label="news" term="news"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Custom Widgets Pro 1.0.0: DataTable Pro is here]]></title>
+        <id>https://SpinnCompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/custom-widgets-pro-1-0-0</id>
+        <link href="https://SpinnCompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/custom-widgets-pro-1-0-0"/>
+        <updated>2026-08-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Custom Widgets Pro 1.0.0 is on PyPI. The free library gives you the]]></summary>
+        <content type="html"><![CDATA[<p><strong>Custom Widgets Pro 1.0.0 is on PyPI.</strong> The free library gives you the
+164-widget catalogue; Pro adds the engine rooms — starting with <strong>DataTable
+Pro</strong>, the data table for real workloads.</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">pip </span><span class="token function" style="color:rgb(80, 250, 123)">install</span><span class="token plain"> QT-PyQt-PySide-Custom-Widgets-Pro</span><br></span></code></pre></div></div>
+<p><img decoding="async" loading="lazy" alt="DataTable Pro in grouped mode" src="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/assets/images/datatablepro-ef3b3be5a9153333da0e386e35c229a4.png" width="672" height="332" class="img_ev3q"></p>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="what-datatable-pro-does">What DataTable Pro does<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/custom-widgets-pro-1-0-0#what-datatable-pro-does" class="hash-link" aria-label="Direct link to What DataTable Pro does" title="Direct link to What DataTable Pro does" translate="no">​</a></h2>
+<p>Built on the free <code>QCustomDataTable</code> (same API, same renderers, same
+theming), Pro adds what production data needs:</p>
+<ul>
+<li class=""><strong>Virtualization</strong> — lazy row windows over 100k+ or streaming sources via
+a <code>DataProvider</code>; scrolling fetches, nothing materialises up front.</li>
+<li class=""><strong>Server-side sort &amp; filter push-down</strong> — the header drives your backend,
+not a client-side sort of one loaded window.</li>
+<li class=""><strong>Grouping with aggregates</strong> — <code>groupBy(["plan"], aggregates={"mrr": "sum"})</code>
+gives collapsible group headers with computed totals, themed from your
+design tokens.</li>
+<li class=""><strong>Pivot (cross-tab)</strong>, <strong>frozen columns</strong>, <strong>inline editing with
+validators</strong>, and <strong>CSV/XLSX export</strong> that walks the full result set —
+"what you see" at any scale.</li>
+</ul>
+<p>The wheels are compiled (no readable Python source), built for Python
+3.10–3.14 on Windows, macOS and Linux, and every macOS/Windows wheel is
+import-tested in CI against the published free core before release.</p>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="how-licensing-works">How licensing works<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/custom-widgets-pro-1-0-0#how-licensing-works" class="hash-link" aria-label="Direct link to How licensing works" title="Direct link to How licensing works" translate="no">​</a></h2>
+<p>Install freely — without an entitlement the package runs in <strong>unlicensed
+dev/eval mode</strong>, so you can evaluate everything today. A plan from
+<a href="https://customwidgets.org/pricing/" target="_blank" rel="noopener noreferrer" class="">customwidgets.org/pricing</a> or an active
+<a href="https://www.patreon.com/c/spinntv" target="_blank" rel="noopener noreferrer" class="">Patreon membership</a> gets you a licence
+token; <code>custom-widgets-pro activate &lt;token&gt;</code> and you're done. The terms are
+written for real product teams:</p>
+<ul>
+<li class=""><strong>Royalty-free in your applications</strong> — end users never need a plan.</li>
+<li class=""><strong>Perpetual fallback</strong> — versions you obtained while subscribed stay
+licensed forever; the plan buys updates and support.</li>
+<li class=""><strong>The GPL question, answered in writing</strong>: the free core is GPLv3, and the
+Pro license includes the copyright holder's additional permission, so
+combining the core with Pro and with <em>your</em> application does not pull your
+application under the GPL.</li>
+</ul>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="supporters-also-get-the-premium-apps">Supporters also get the premium apps<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/custom-widgets-pro-1-0-0#supporters-also-get-the-premium-apps" class="hash-link" aria-label="Direct link to Supporters also get the premium apps" title="Direct link to Supporters also get the premium apps" translate="no">​</a></h2>
+<p>The same plan unlocks the <a class="" href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/app-showcase-92-real-apps">twelve flagship example
+applications</a> — six dashboards, AuroraChat,
+the operations decks, NodeStudio, RhythmoTune — full production-shaped
+source, meant to be the starting point for your own product.</p>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="links">Links<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/custom-widgets-pro-1-0-0#links" class="hash-link" aria-label="Direct link to Links" title="Direct link to Links" translate="no">​</a></h2>
+<ul>
+<li class=""><a href="https://pypi.org/project/QT-PyQt-PySide-Custom-Widgets-Pro/" target="_blank" rel="noopener noreferrer" class="">PyPI: QT-PyQt-PySide-Custom-Widgets-Pro</a></li>
+<li class=""><a class="" href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/Widgets/QCustomDataTable">DataTable docs</a> · <a class="" href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/Usage-Examples/DataTableGroupingPivot">DataTable Pro guide</a></li>
+<li class=""><a href="https://customwidgets.org/pricing/" target="_blank" rel="noopener noreferrer" class="">Plans</a> · <a href="https://www.patreon.com/c/spinntv" target="_blank" rel="noopener noreferrer" class="">Patreon</a> · <a href="https://www.youtube.com/@SpinnTV" target="_blank" rel="noopener noreferrer" class="">YouTube</a></li>
+</ul>
+<p>Free core 2.3.0 <a class="" href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/custom-widgets-2-3-0-released">shipped this morning</a>;
+Pro 1.0.0 completes the release. Thank you for supporting independent Qt
+tooling.</p>]]></content>
+        <author>
+            <name>Khamisi Kibet</name>
+            <email>khamisikibet@gmail.com</email>
+            <uri>https://github.com/SpinnCompany</uri>
+        </author>
+        <category label="PySide6" term="PySide6"/>
+        <category label="Python" term="Python"/>
+        <category label="GUI" term="GUI"/>
+        <category label="Custom Widgets" term="Custom Widgets"/>
+        <category label="Pro" term="Pro"/>
         <category label="version" term="version"/>
         <category label="news" term="news"/>
     </entry>
