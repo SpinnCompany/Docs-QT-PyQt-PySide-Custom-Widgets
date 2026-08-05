@@ -1,83 +1,402 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
+/* Landing page. Rhythm comes from consistent vertical spacing and a single
+   hairline vocabulary — no gradients, no glows, one accent colour. */
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
+.hero {
+  padding: 5.5rem 0 4.5rem;
+  border-bottom: 1px solid var(--cw-border);
   overflow: hidden;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.heroInner {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr);
+  gap: 3.5rem;
+  align-items: center;
 }
 
-.buttons {
+.heroCopy {
+  max-width: 34rem;
+}
+
+/* --- eyebrow --- */
+.eyebrow {
   display: flex;
   align-items: center;
+  gap: 0.6rem;
+  margin: 0 0 1.25rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--cw-muted);
+}
+
+.version {
+  padding: 0.15em 0.5em;
+  border-radius: 999px;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--qt-green) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--qt-green) 30%, transparent);
+}
+
+.dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--cw-border-strong);
+}
+
+/* --- headline --- */
+.heroTitle {
+  margin: 0 0 1.1rem;
+  font-size: clamp(2.25rem, 4.4vw, 3.4rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  font-weight: 700;
+  color: var(--cw-text);
+}
+
+.heroSubtitle {
+  margin: 0 0 2rem;
+  font-size: 1.1rem;
+  line-height: 1.65;
+  color: var(--cw-muted);
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.install {
+  margin-top: 2rem;
+  max-width: 30rem;
+}
+
+/* Docusaurus code blocks carry their own chrome; slim it for the hero. */
+.install :global(.theme-code-block) {
+  margin-bottom: 0 !important;
+  box-shadow: none;
+}
+
+.install :global(pre) {
+  font-size: 0.86rem;
+}
+
+/* --- hero visual --- */
+.heroVisual {
+  position: relative;
+}
+
+.heroVisual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--cw-radius-lg);
+  border: 1px solid var(--cw-border);
+  box-shadow: var(--cw-shadow-lifted);
+}
+
+/* ==========================================================================
+   Stats
+   ========================================================================== */
+
+.stats {
+  border-bottom: 1px solid var(--cw-border);
+  background: var(--cw-surface);
+}
+
+.statsInner {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  text-align: center;
+}
+
+.statValue {
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--cw-text);
+  font-variant-numeric: tabular-nums;
+}
+
+.statLabel {
+  font-size: 0.82rem;
+  color: var(--cw-muted);
+}
+
+/* ==========================================================================
+   Sections
+   ========================================================================== */
+
+.section {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+  border-bottom: 1px solid var(--cw-border);
+}
+
+.section:last-of-type {
+  border-bottom: 0;
+}
+
+.sectionHead {
+  max-width: 44rem;
+  margin-bottom: 2.5rem;
+}
+
+.sectionTitle {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.6rem, 2.6vw, 2.1rem);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: var(--cw-text);
+}
+
+.sectionLede {
+  margin: 0;
+  font-size: 1.03rem;
+  line-height: 1.65;
+  color: var(--cw-muted);
+}
+
+.sectionLink {
+  display: inline-block;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+.sectionLink:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+/* ==========================================================================
+   Widget reel
+   ========================================================================== */
+
+.reel {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+  gap: 1.1rem;
+}
+
+.reelItem {
+  margin: 0;
+  border: 1px solid var(--cw-border);
+  border-radius: var(--cw-radius);
+  overflow: hidden;
+  background: var(--cw-bg);
+  transition: border-color 0.15s ease, transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.reelItem:hover {
+  border-color: var(--qt-green);
+  transform: translateY(-2px);
+  box-shadow: var(--cw-shadow-lifted);
+}
+
+.reelItem img {
+  display: block;
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  background: var(--cw-surface-2);
+}
+
+.reelItem figcaption {
+  padding: 0.6rem 0.7rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.74rem;
+  color: var(--cw-muted);
+  border-top: 1px solid var(--cw-border);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ==========================================================================
+   Features
+   ========================================================================== */
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2.5rem;
+}
+
+.feature {
+  /* No card, no border: whitespace separates these. */
+  padding-top: 1.25rem;
+  border-top: 2px solid var(--qt-green);
+}
+
+.featureTitle {
+  margin: 0 0 0.6rem;
+  font-size: 1.1rem;
+  letter-spacing: -0.02em;
+  color: var(--cw-text);
+}
+
+.featureBody {
+  margin: 0;
+  font-size: 0.97rem;
+  line-height: 1.65;
+  color: var(--cw-muted);
+}
+
+/* ==========================================================================
+   App reel
+   ========================================================================== */
+
+.appGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: 1.4rem;
+}
+
+.appCard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--cw-border);
+  border-radius: var(--cw-radius);
+  overflow: hidden;
+  background: var(--cw-bg);
+  text-decoration: none !important;
+  transition: border-color 0.15s ease, transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.appCard:hover {
+  border-color: var(--qt-green);
+  transform: translateY(-2px);
+  box-shadow: var(--cw-shadow-lifted);
+}
+
+.appCard img {
+  display: block;
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  object-position: top;
+  background: var(--cw-surface-2);
+}
+
+.appMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.8rem 0.9rem 0.95rem;
+  border-top: 1px solid var(--cw-border);
+}
+
+.appName {
+  font-size: 0.96rem;
+  font-weight: 650;
+  color: var(--cw-text);
+}
+
+.appBlurb {
+  font-size: 0.83rem;
+  color: var(--cw-muted);
+}
+
+/* ==========================================================================
+   Closing CTA
+   ========================================================================== */
+
+.cta {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 5.5rem 1.5rem 6rem;
+  text-align: center;
+}
+
+.ctaTitle {
+  margin: 0 0 0.85rem;
+  font-size: clamp(1.7rem, 2.8vw, 2.25rem);
+  letter-spacing: -0.03em;
+  color: var(--cw-text);
+}
+
+.ctaTitle code {
+  font-size: 0.82em;
+  font-weight: 600;
+}
+
+.ctaLede {
+  margin: 0 0 2rem;
+  font-size: 1.03rem;
+  line-height: 1.65;
+  color: var(--cw-muted);
+}
+
+.cta .heroActions {
   justify-content: center;
 }
 
-.heroBanner {
-  text-align: center;
-  padding: 4rem 0;
-  background: linear-gradient(135deg, #111827, #1f2937);
-  color: white;
-}
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
 
-.heroBanner img {
-  border-radius: 1rem;
-  transition: transform 0.3s ease;
-}
+@media (max-width: 996px) {
+  .hero {
+    padding: 3.5rem 0 3rem;
+  }
 
-.heroBanner img:hover {
-  transform: scale(1.02);
-}
+  .heroInner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
 
-.heroBanner {
-  background: linear-gradient(135deg, #1e1e1e 0%, #2c2c2c 100%);
-  color: white;
-  text-align: center;
-  padding: 4rem 0;
-  position: relative;
-}
+  .heroCopy {
+    max-width: none;
+  }
 
-.heroBanner::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at center, rgba(65,205,82,0.2) 0%, transparent 70%);
-  z-index: 0;
-}
+  .section {
+    padding: 3.5rem 1.5rem;
+  }
 
-.heroBanner * {
-  position: relative;
-  z-index: 1;
-}
+  .statsInner {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1.75rem 1.5rem;
+  }
 
-.heroImage {
-  max-width: 800px;      /* ✅ Limits image width to a reasonable size */
-  width: 100%;           /* responsive scaling */
-  height: auto;          /* maintains aspect ratio */
-  border-radius: 1rem;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  aspect-ratio: 16 / 9; /* keeps 1200x630 style ratio */
-  object-fit: cover;
-}
-
-.heroImage:hover {
-  transform: scale(1.02);
-  box-shadow: 0 12px 32px rgba(65, 205, 82, 0.4); /* Qt green glow */
-}
-
-@media (max-width: 768px) {
-  .heroImage {
-    max-width: 90%;  /* ✅ Shrinks slightly for mobile */
+  .featureGrid {
+    gap: 2rem;
   }
 }
 
+@media (max-width: 600px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroActions .button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .reelItem img {
+    height: 130px;
+  }
+}

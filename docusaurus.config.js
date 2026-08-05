@@ -132,8 +132,9 @@ const config = {
       announcementBar: {
         id: 'support_us',
         content: 'If you like Qt Custom Widgets, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/SpinnCompany/QT-PyQt-PySide-Custom-Widgets">GitHub</a>.',
-        backgroundColor: 'var(--qt-green)',
-        textColor: 'white',
+        // Colours live in custom.css, not here: white on --qt-green is about
+        // 2:1 contrast (fails WCAG AA), and a full-bleed brand-green bar was
+        // the loudest element on an otherwise restrained page.
         isCloseable: true,
       },
       

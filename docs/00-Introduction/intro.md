@@ -2,14 +2,14 @@
 title: Qt Custom Widgets
 sidebar_label: Introduction
 sidebar_position: 1
-description: 163 production-ready widgets for PySide6 and PyQt, designed for Qt Designer and themed by design tokens.
+description: 164 production-ready widgets for PySide6 and PyQt, designed for Qt Designer and themed by design tokens.
 mdx:
   format: md
 ---
 
 # Qt Custom Widgets
 
-**163 production-ready widgets for PySide and PyQt** — charts, data tables,
+**164 production-ready widgets for PySide and PyQt** — charts, data tables,
 chat interfaces, dashboards, loaders, forms — that drop into Qt Designer and
 theme themselves from a single call.
 
@@ -34,7 +34,7 @@ test, a Designer registration and a documented API.
 | | |
 |---|---|
 | **[Getting started](getting-started.md)** | A themed window in twenty lines |
-| **[Widget gallery](../gallery.mdx)** | All 163, grouped by what you are building |
+| **[Widget gallery](../gallery.mdx)** | All 164, grouped by what you are building |
 | **[Design tokens](../02-Theming/DesignTokens.md)** | How theming actually works |
 | **[Real-world examples](../05-Usage-Examples/RealWorldScenarios.md)** | Complete apps to copy |
 

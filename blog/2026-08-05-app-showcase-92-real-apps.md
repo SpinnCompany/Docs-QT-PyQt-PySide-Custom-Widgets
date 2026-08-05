@@ -57,6 +57,6 @@ supporters get the premium example apps alongside the Pro widget package
 (DataTable Pro's virtualization, grouping, pivot and export). Tutorials and
 walkthroughs land on [YouTube](https://www.youtube.com/@SpinnTV).
 
-Everything else — the 163-widget library, the 82 public examples, the whole
+Everything else — the 164-widget library, the 82 public examples, the whole
 documentation site — is free under GPLv3, and
 [2.3.0 is on PyPI now](/blog/custom-widgets-2-3-0-released).

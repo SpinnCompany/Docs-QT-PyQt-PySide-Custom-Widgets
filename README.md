@@ -4,7 +4,7 @@ The [Docusaurus](https://docusaurus.io) site behind
 **[spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets](https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/)** —
 the official documentation for
 [QT-PyQt-PySide-Custom-Widgets](https://github.com/SpinnCompany/QT-PyQt-PySide-Custom-Widgets):
-163 widget reference pages, usage guides, a widget gallery, the app
+164 widget reference pages, usage guides, a widget gallery, the app
 showcase and the release blog.
 
 - **Product site**: [customwidgets.org](https://customwidgets.org/)

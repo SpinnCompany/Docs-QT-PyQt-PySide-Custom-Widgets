@@ -91,6 +91,11 @@ Python:
   permalink: /python
   description: Posts about Python
 
+Pro:
+  label: Pro
+  permalink: /pro
+  description: Posts about Custom Widgets Pro
+
 Qt:
   label: Qt
   permalink: /qt
@@ -100,6 +105,11 @@ Release:
   label: Release
   permalink: /release
   description: Posts about Release
+
+Showcase:
+  label: Showcase
+  permalink: /showcase
+  description: Posts about apps built with Custom Widgets
 
 Side Drawer:
   label: Side Drawer

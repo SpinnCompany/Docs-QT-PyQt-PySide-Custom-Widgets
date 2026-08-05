@@ -1,507 +1,827 @@
+/* ==========================================================================
+   Custom Widgets documentation theme.
+
+   Design principle: restraint. Qt green is an ACCENT — calls to action,
+   links, active states, Pro badges — never a decoration applied to
+   everything. Hierarchy comes from type scale, weight and spacing, not from
+   gradients and glows. If you are tempted to add a glow, add whitespace.
+
+   Deliberately removed (do not reintroduce):
+   - gradient-filled text on every markdown heading: it flattened h1-h4 into
+     one indistinguishable green, and transparent-fill text fails contrast.
+   - `* { transition: ... }`: a universal transition made every hover feel
+     laggy and forced style recalculation on unrelated elements.
+   - hover glows on tables, code blocks, blockquotes and images.
+   - `.qt-card:hover { background: dark-green }`, which left dark text on a
+     dark background and was unreadable.
+   ========================================================================== */
+
 :root {
-  /* Light Mode Colors */
-  --ifm-color-primary: #41CD52; /* Qt green */
-  --ifm-color-primary-dark: #37b84a;
-  --ifm-color-primary-darker: #2fa440;
-  --ifm-color-primary-darkest: #278f36;
-  --ifm-color-primary-light: #59d96a;
-  --ifm-color-primary-lighter: #70e07f;
-  --ifm-color-primary-lightest: #8be897;
-  
-  --ifm-background-color: #ffffff;
-  --ifm-navbar-background-color: #f5f5f5;
-  --ifm-footer-background-color: #e5e5e5;
-  --ifm-font-color-base: #1e1e1e;
-
-  /* Qt theme variables */
-  --qt-green: #41cd52;
+  /* --- Brand ------------------------------------------------------------ */
+  --qt-green: #41cd52;          /* Qt green, the one brand colour */
   --qt-green-light: #70e07f;
-  --qt-bg-dark: #1e1e1e;
-  --qt-bg-light: #f5f5f5;
-  --qt-card-bg: #f8f8f8;
-  --qt-card-border: rgba(65, 205, 82, 0.2);
-  --qt-text-primary: #1e1e1e;
-  --qt-text-secondary: #333333;
-  --qt-bg-image-overlay: rgba(255, 255, 255, 0.1);
+  --qt-green-dark: #2fa440;
 
-  --qt-hover-glow: 0 12px 32px rgba(65, 205, 82, 0.25);
-  --qt-gradient: linear-gradient(135deg, #41cd52, #2fa440);
+  /* Docusaurus primary. Light mode uses a darker green so that green text on
+     white clears WCAG AA; the bright brand green is reserved for fills. */
+  --ifm-color-primary: #1f8f34;
+  --ifm-color-primary-dark: #1c812f;
+  --ifm-color-primary-darker: #197a2c;
+  --ifm-color-primary-darkest: #146324;
+  --ifm-color-primary-light: #24a03a;
+  --ifm-color-primary-lighter: #27a83d;
+  --ifm-color-primary-lightest: #2fbf47;
+
+  /* --- Neutral ramp ----------------------------------------------------- */
+  --cw-bg: #ffffff;
+  --cw-surface: #fbfbfa;        /* cards, code blocks */
+  --cw-surface-2: #f4f4f2;      /* table headers, chips */
+  --cw-border: #e6e6e3;
+  --cw-border-strong: #d4d4d0;
+  --cw-text: #14161a;           /* headings */
+  --cw-body: #35383d;           /* body copy: softer than headings */
+  --cw-muted: #6b7076;
+
+  --ifm-background-color: var(--cw-bg);
+  --ifm-background-surface-color: var(--cw-surface);
+  --ifm-font-color-base: var(--cw-body);
+  --ifm-heading-color: var(--cw-text);
+  --ifm-navbar-background-color: rgba(255, 255, 255, 0.82);
+  --ifm-footer-background-color: var(--cw-surface);
+  --ifm-toc-border-color: var(--cw-border);
+
+  /* --- Typography ------------------------------------------------------- */
+  /* `system-ui` is deliberately NOT first. On this machine (and any host whose
+     fontconfig maps it that way) `system-ui` resolves to a MONOSPACE face —
+     measured: system-ui 600px vs sans-serif 518px for the same string — so the
+     whole site rendered in a typewriter font. Docusaurus's default stack leads
+     with system-ui, so this predated the redesign. Lead with concrete families
+     and let sans-serif be the backstop. */
+  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Inter, Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial,
+    sans-serif;
+  --ifm-font-family-monospace: ui-monospace, SFMono-Regular, "SF Mono",
+    Menlo, Consolas, "Liberation Mono", monospace;
+
+  --ifm-font-size-base: 17px;
+  --ifm-line-height-base: 1.7;
+  --ifm-heading-font-weight: 700;
+  --ifm-h1-font-size: 2.5rem;
+  --ifm-h2-font-size: 1.8rem;
+  --ifm-h3-font-size: 1.3rem;
+  --ifm-h4-font-size: 1.075rem;
+  --ifm-heading-line-height: 1.25;
+
+  --ifm-code-font-size: 0.875em;
+  --ifm-pre-background: var(--cw-surface);
+
+  /* --- Shape & depth ---------------------------------------------------- */
+  --cw-radius: 10px;
+  --cw-radius-lg: 14px;
+  --ifm-global-radius: var(--cw-radius);
+  /* Two shadows only, both restrained. Depth is for things that float. */
+  --cw-shadow: 0 1px 2px rgba(16, 18, 22, 0.04),
+               0 2px 8px rgba(16, 18, 22, 0.04);
+  --cw-shadow-lifted: 0 4px 12px rgba(16, 18, 22, 0.07),
+                      0 12px 28px rgba(16, 18, 22, 0.06);
+
+  --ifm-navbar-shadow: none;
+  --ifm-global-spacing: 1rem;
+
+  /* Legacy aliases: generated widget pages and .sidebar-pro consume these. */
+  --qt-card-bg: var(--cw-surface);
+  --qt-card-border: var(--cw-border);
+  --qt-text-primary: var(--cw-text);
+  --qt-text-secondary: var(--cw-muted);
 }
 
-[data-theme='dark'] {
-  /* Dark Mode Colors */
-  --ifm-color-primary: #41CD52; /* Qt green */
-  --ifm-color-primary-dark: #37b84a;
-  --ifm-color-primary-darker: #2fa440;
-  --ifm-color-primary-darkest: #278f36;
-  --ifm-color-primary-light: #59d96a;
-  --ifm-color-primary-lighter: #70e07f;
-  --ifm-color-primary-lightest: #8be897;
+[data-theme="dark"] {
+  /* In dark mode the bright brand green has plenty of contrast, so use it. */
+  --ifm-color-primary: #52d962;
+  --ifm-color-primary-dark: #41cd52;
+  --ifm-color-primary-darker: #37b84a;
+  --ifm-color-primary-darkest: #2fa440;
+  --ifm-color-primary-light: #6ee07c;
+  --ifm-color-primary-lighter: #85e690;
+  --ifm-color-primary-lightest: #a5eeac;
 
-  --ifm-background-color: #1E1E1E; /* Qt dark gray */
-  --ifm-navbar-background-color: #1E1E1E;
-  --ifm-footer-background-color: #111111;
-  --ifm-font-color-base: #e0e0e0;
+  --cw-bg: #1e1e1e;             /* the established Qt dark */
+  --cw-surface: #262626;
+  --cw-surface-2: #2f2f2f;
+  --cw-border: #363636;
+  --cw-border-strong: #454545;
+  --cw-text: #f2f3f4;
+  --cw-body: #c3c7cc;
+  --cw-muted: #8b9096;
 
-  /* Qt theme variables for dark mode */
-  --qt-card-bg: #2c2c2c;
-  --qt-card-border: rgba(65, 205, 82, 0.3);
-  --qt-text-primary: #e0e0e0;
-  --qt-text-secondary: #b0b0b0;
-  --qt-bg-image-overlay: rgba(30, 30, 30, 0.7);
+  --ifm-navbar-background-color: rgba(30, 30, 30, 0.82);
+  --ifm-footer-background-color: #191919;
 
-  --qt-hover-glow: 0 12px 32px rgba(65, 205, 82, 0.45);
+  --cw-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 8px rgba(0, 0, 0, 0.22);
+  --cw-shadow-lifted: 0 4px 12px rgba(0, 0, 0, 0.38),
+                      0 12px 28px rgba(0, 0, 0, 0.3);
 }
 
-/* === Global Background Styling === */
-html, body {
-  background: var(--ifm-background-color);
-  transition: background-color 0.3s ease;
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
-/* === Image Theme Support === */
-.qt-theme-image {
+body {
+  background: var(--cw-bg);
+  color: var(--cw-body);
+}
+
+/* Scoped transitions, never universal. */
+a,
+button,
+.button,
+.card,
+.menu__link,
+.navbar__link,
+.pagination-nav__link {
+  transition: color 0.15s ease, background-color 0.15s ease,
+    border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Headings: solid colour, tightened tracking, real size hierarchy. */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--cw-text);
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ==========================================================================
+   Navbar — thin, translucent, one hairline. No shadow.
+   ========================================================================== */
+
+.navbar {
+  border-bottom: 1px solid var(--cw-border);
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+}
+
+.navbar__title {
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.navbar__link {
+  font-size: 0.94rem;
+  font-weight: 500;
+  color: var(--cw-body);
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  color: var(--cw-text);
+}
+
+/* Active nav marked with the accent, not a colour wash. */
+.navbar__link--active {
   position: relative;
-  border-radius: 1rem;
-  overflow: hidden;
-  transition: all 0.3s ease;
 }
 
-.qt-theme-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: all 0.3s ease;
-}
-
-.qt-theme-image::after {
-  content: '';
+.navbar__link--active::after {
+  content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: var(--qt-bg-image-overlay);
-  pointer-events: none;
-  transition: all 0.3s ease;
+  left: 0.6rem;
+  right: 0.6rem;
+  bottom: -0.45rem;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--qt-green);
 }
 
-.qt-theme-image:hover {
-  box-shadow: var(--qt-hover-glow);
-  transform: translateY(-2px);
+/* ==========================================================================
+   Announcement bar — a quiet strip, not a brand billboard. The config used to
+   set brand green with white text (~2:1 contrast, fails WCAG AA).
+   ========================================================================== */
+
+/* `.theme-announcement-bar` is Docusaurus's stable hook. Do NOT reach for
+   `div[class^="announcementBar_"]`: the real attribute is
+   `theme-announcement-bar announcementBar_mb4j`, so `^=` never matches, and
+   the hashed suffix changes between versions anyway. */
+.theme-announcement-bar {
+  background: var(--cw-surface-2);
+  color: var(--cw-body);
+  border-bottom: 1px solid var(--cw-border);
+  font-size: 0.86rem;
+  font-weight: 450;
 }
 
-.qt-theme-image:hover::after {
-  background: rgba(65, 205, 82, 0.1);
+.theme-announcement-bar a {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+  text-decoration-line: underline;
+  text-underline-offset: 0.18em;
 }
 
-/* Image filter for dark mode */
-[data-theme='dark'] .qt-theme-image img {
-  filter: brightness(0.9) contrast(1.1);
+/* Two navbar entries use `className: 'header-github-link'` with no label and
+   only an aria-label. Nothing in the project ever styled that class, so they
+   rendered as invisible clickable gaps. Draw the icon. */
+.header-github-link {
+  display: flex;
+  align-items: center;
+  padding: 0.4rem;
+  border-radius: 6px;
 }
 
-[data-theme='dark'] .qt-theme-image:hover img {
-  filter: brightness(1) contrast(1);
+.header-github-link:hover {
+  background: var(--cw-surface-2);
 }
 
-/* === Footer Styling with Theme Support === */
+.header-github-link::before {
+  content: "";
+  width: 21px;
+  height: 21px;
+  display: block;
+  background-color: var(--cw-body);
+  transition: background-color 0.15s ease;
+  /* GitHub mark, inlined so it works offline and follows the theme. */
+  -webkit-mask: var(--cw-gh-mask) no-repeat center / contain;
+  mask: var(--cw-gh-mask) no-repeat center / contain;
+}
+
+.header-github-link:hover::before {
+  background-color: var(--cw-text);
+}
+
+:root {
+  --cw-gh-mask: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.4 4.8 18.4 5 18.4 5c.7 1.7.3 2.9.1 3.2a4.5 4.5 0 0 1 1.2 3.1c0 4.6-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3'/%3E%3C/svg%3E");
+}
+
+/* ==========================================================================
+   Buttons — one filled, one outlined. No gradients.
+   ========================================================================== */
+
+.button {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  border-radius: var(--cw-radius);
+  box-shadow: none;
+}
+
+.button--primary {
+  background: var(--qt-green-dark);
+  border: 1px solid var(--qt-green-dark);
+  color: #fff;
+}
+
+.button--primary:hover,
+.button--primary:active {
+  background: var(--qt-green);
+  border-color: var(--qt-green);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.button--secondary {
+  background: transparent;
+  border: 1px solid var(--cw-border-strong);
+  color: var(--cw-text) !important;
+}
+
+.button--secondary:hover {
+  background: var(--cw-surface-2);
+  border-color: var(--cw-text);
+  color: var(--cw-text) !important;
+  transform: translateY(-1px);
+}
+
+[data-theme="dark"] .button--primary {
+  background: var(--qt-green);
+  border-color: var(--qt-green);
+  color: #10240f;
+}
+
+[data-theme="dark"] .button--primary:hover {
+  background: var(--qt-green-light);
+  border-color: var(--qt-green-light);
+  color: #10240f;
+}
+
+/* ==========================================================================
+   Markdown / doc content
+   ========================================================================== */
+
+.markdown {
+  color: var(--cw-body);
+}
+
+.markdown > h1:first-child {
+  font-size: var(--ifm-h1-font-size);
+  margin-bottom: 0.6rem;
+}
+
+/* Section starts get air above and a hairline, so long reference pages have
+   visible rhythm without decoration. */
+.markdown h2 {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--cw-border);
+}
+
+.markdown h3 {
+  margin-top: 2rem;
+}
+
+.markdown h2 + h3 {
+  margin-top: 1.25rem;
+}
+
+.markdown p,
+.markdown li {
+  color: var(--cw-body);
+}
+
+.markdown strong {
+  color: var(--cw-text);
+  font-weight: 650;
+}
+
+/* Comfortable measure for prose; tables/code stay full width. */
+.markdown > p,
+.markdown > ul,
+.markdown > ol {
+  max-width: 76ch;
+}
+
+.markdown a {
+  color: var(--ifm-color-primary);
+  font-weight: 500;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  text-decoration-color: color-mix(in srgb, var(--ifm-color-primary) 35%, transparent);
+}
+
+.markdown a:hover {
+  text-decoration-color: var(--ifm-color-primary);
+}
+
+/* Inline code: quiet neutral chip, not green-on-green. */
+.markdown code,
+code {
+  background: var(--cw-surface-2);
+  border: 1px solid var(--cw-border);
+  border-radius: 5px;
+  padding: 0.1em 0.35em;
+  color: var(--cw-text);
+  font-weight: 500;
+}
+
+.markdown a code {
+  color: var(--ifm-color-primary);
+}
+
+/* Code blocks: one border, no glow, no hover. */
+.markdown pre,
+div[class^="codeBlockContainer"] {
+  border: 1px solid var(--cw-border);
+  border-radius: var(--cw-radius);
+  box-shadow: none;
+}
+
+.markdown pre code {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+.markdown blockquote {
+  border-left: 3px solid var(--qt-green);
+  background: var(--cw-surface);
+  border-radius: 0 var(--cw-radius) var(--cw-radius) 0;
+  padding: 0.9rem 1.2rem;
+  color: var(--cw-body);
+  font-style: normal; /* italic long-form is harder to read */
+  box-shadow: none;
+}
+
+/* Images: contained, no scale-on-hover, no glow. */
+.markdown img {
+  border-radius: var(--cw-radius);
+  border: 1px solid var(--cw-border);
+  box-shadow: none;
+  margin: 1.5rem auto;
+  display: block;
+  max-width: 100%;
+}
+
+.markdown img:hover {
+  transform: none;
+}
+
+/* Tables: readable, zebra-free, no hover glow. */
+.markdown table {
+  display: table;
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--cw-border);
+  border-radius: var(--cw-radius);
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  box-shadow: none;
+  font-size: 0.94rem;
+}
+
+.markdown table:hover {
+  box-shadow: none;
+}
+
+.markdown table th {
+  background: var(--cw-surface-2);
+  color: var(--cw-text);
+  font-weight: 650;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  padding: 0.65rem 0.9rem;
+  border-bottom: 1px solid var(--cw-border);
+}
+
+.markdown table td {
+  color: var(--cw-body);
+  border-top: 1px solid var(--cw-border);
+  border-color: var(--cw-border);
+  padding: 0.65rem 0.9rem;
+  vertical-align: top;
+}
+
+.markdown table tr:first-child td {
+  border-top: 0;
+}
+
+/* Method/property tables on generated widget pages carry a lot of code. */
+.markdown table td code {
+  white-space: nowrap;
+}
+
+/* Wide tables must scroll themselves rather than the page. */
+.markdown .table-wrapper,
+.markdown table {
+  max-width: 100%;
+}
+
+/* Admonitions: flat, accent stripe, no heavy fill. */
+.theme-admonition {
+  border: 1px solid var(--cw-border);
+  border-left-width: 3px;
+  border-radius: var(--cw-radius);
+  box-shadow: none;
+  background: var(--cw-surface);
+}
+
+/* ==========================================================================
+   Sidebar & TOC
+   ========================================================================== */
+
+.menu {
+  font-size: 0.9rem;
+  padding: 1rem 0.75rem !important;
+}
+
+.menu__link {
+  border-radius: 7px;
+  color: var(--cw-body);
+  font-weight: 450;
+  line-height: 1.4;
+}
+
+.menu__link:hover {
+  background: var(--cw-surface-2);
+  color: var(--cw-text);
+}
+
+.menu__link--active {
+  background: color-mix(in srgb, var(--qt-green) 12%, transparent);
+  color: var(--ifm-color-primary) !important;
+  font-weight: 600;
+}
+
+.menu__list-item-collapsible > .menu__link--active {
+  background: transparent;
+}
+
+.menu__caret:before,
+.menu__link--sublist-caret:after {
+  opacity: 0.55;
+}
+
+.table-of-contents {
+  font-size: 0.84rem;
+  border-left: 1px solid var(--cw-border);
+}
+
+.table-of-contents__link {
+  color: var(--cw-muted);
+}
+
+.table-of-contents__link:hover,
+.table-of-contents__link--active {
+  color: var(--cw-text);
+}
+
+.table-of-contents__link--active {
+  font-weight: 600;
+}
+
+/* Pagination cards at the foot of each doc. */
+.pagination-nav__link {
+  border: 1px solid var(--cw-border);
+  border-radius: var(--cw-radius);
+  background: var(--cw-surface);
+}
+
+.pagination-nav__link:hover {
+  border-color: var(--qt-green);
+  transform: translateY(-1px);
+}
+
+.pagination-nav__sublabel {
+  color: var(--cw-muted);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.pagination-nav__label {
+  color: var(--cw-text);
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
 .footer {
   background: var(--ifm-footer-background-color);
-  border-top: 1px solid var(--qt-card-border);
-  padding: 3rem 0 2rem;
-  margin-top: 4rem;
-  transition: all 0.3s ease;
-}
-
-.footer__container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  border-top: 1px solid var(--cw-border);
+  padding: 3.5rem 0 2.5rem;
+  margin-top: 5rem;
+  font-size: 0.92rem;
 }
 
 .footer__title {
-  color: var(--qt-green);
-  font-weight: 600;
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-  background: var(--qt-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* was gradient-filled text; now a quiet section label */
+  color: var(--cw-text);
+  font-weight: 650;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.9rem;
+  background: none;
+  -webkit-text-fill-color: currentColor;
 }
 
 .footer__link-item {
-  color: var(--qt-text-secondary);
-  transition: all 0.2s ease;
-  padding: 0.25rem 0;
+  color: var(--cw-muted);
+  padding: 0.2rem 0;
   display: block;
   text-decoration: none;
 }
 
 .footer__link-item:hover {
-  color: var(--qt-green-light);
+  color: var(--ifm-color-primary);
   text-decoration: none;
-  transform: translateX(4px);
-  text-shadow: 0 0 8px rgba(65, 205, 82, 0.3);
+  transform: none;   /* the old translateX made link lists jitter */
+  text-shadow: none;
 }
 
 .footer__copyright {
-  color: var(--qt-text-secondary);
-  border-top: 1px solid var(--qt-card-border);
-  padding-top: 2rem;
-  margin-top: 2rem;
+  color: var(--cw-muted);
+  border-top: 1px solid var(--cw-border);
+  padding-top: 1.75rem;
+  margin-top: 2.5rem;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
-/* Footer grid layout */
 .footer .row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   gap: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
 
-/* === Qt Gradient and Glow Utilities === */
+/* ==========================================================================
+   Blog
+   ========================================================================== */
 
-/* Background Gradient */
-.qt-gradient-bg {
-  background: var(--qt-gradient);
-  color: white;
+.blog-wrapper article {
+  padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--cw-border);
 }
 
-/* Text Gradient */
-.qt-gradient-text {
-  background: var(--qt-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
+.blog-wrapper article:last-of-type {
+  border-bottom: 0;
 }
 
-/* Hover Glow */
-.qt-hover-glow {
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+.blog-wrapper article h2 {
+  letter-spacing: -0.025em;
+  border-top: 0;
+  padding-top: 0;
+  margin-top: 0;
 }
 
-.qt-hover-glow:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--qt-hover-glow);
-}
+/* ==========================================================================
+   Pro badge in the sidebar.
+   Discovery is the point: a reader browsing the free reference should see
+   what Pro adds without leaving the page. Used by 24 generated doc pages.
+   ========================================================================== */
 
-/* Common Card Style */
-.qt-card {
-  background: var(--qt-card-bg);
-  border: 1px solid var(--qt-card-border);
-  border-radius: 1rem;
-  padding: 1.5rem;
-  transition: all 0.3s ease;
-  color: var(--qt-text-primary);
-}
-
-.qt-card:hover {
-  background: var(--ifm-color-primary-darkest);
-  box-shadow: var(--qt-hover-glow);
-}
-
-/* Buttons */
-.button--primary {
-  background: var(--qt-gradient);
-  border: none;
-  color: white;
-  box-shadow: 0 4px 12px rgba(65, 205, 82, 0.3);
-  transition: all 0.3s ease;
-}
-
-.button--primary:hover {
-  box-shadow: var(--qt-hover-glow);
-  transform: translateY(-2px);
-}
-
-.button--secondary {
-  background: var(--qt-card-bg);
-  border: 2px solid var(--qt-green);
-  color: var(--qt-text-primary) !important;
-  box-shadow: none;
-  transition: all 0.3s ease;
-}
-
-.button--secondary:hover {
-  background: var(--qt-green);
-  color: white !important;
-  box-shadow: var(--qt-hover-glow);
-  transform: translateY(-2px);
-}
-
-/* === Global Markdown Styling with Qt Theme === */
-
-/* Headings */
-.markdown h1,
-.markdown h2,
-.markdown h3,
-.markdown h4 {
-  background: var(--qt-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 700;
-}
-
-/* Links */
-.markdown a {
-  color: var(--qt-green);
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
-
-.markdown a:hover {
-  color: var(--qt-green-light);
-  text-shadow: 0 0 8px rgba(65, 205, 82, 0.4);
-}
-
-/* Blockquotes */
-.markdown blockquote {
-  border-left: 4px solid var(--qt-green);
-  background: var(--qt-card-bg);
-  border-radius: 0.5rem;
-  padding: 1rem 1.25rem;
-  font-style: italic;
-  transition: box-shadow 0.3s ease;
-  color: var(--qt-text-primary);
-}
-
-.markdown blockquote:hover {
-  box-shadow: var(--qt-hover-glow);
-}
-
-/* Images in markdown */
-.markdown img {
-  border-radius: 1rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin: 1.5rem auto;
-  display: block;
-  max-width: 90%;
-}
-
-.markdown img:hover {
-  transform: scale(1.02);
-  box-shadow: var(--qt-hover-glow);
-}
-
-/* Code blocks */
-.markdown pre {
-  border: 1px solid var(--qt-card-border);
-  border-radius: 0.75rem;
-  box-shadow: 0 4px 20px rgba(65, 205, 82, 0.05);
-  background: var(--qt-card-bg);
-  transition: all 0.3s ease;
-}
-
-.markdown pre:hover {
-  box-shadow: var(--qt-hover-glow);
-}
-
-.markdown code {
-  color: var(--qt-green-light);
-  background: rgba(65, 205, 82, 0.1);
-  border-radius: 0.25rem;
-  padding: 0.2rem 0.4rem;
-}
-
-/* General text color fixes */
-.markdown {
-  color: var(--qt-text-primary);
-}
-
-.markdown p,
-.markdown li,
-.markdown table {
-  color: var(--qt-text-primary);
-}
-
-.markdown strong {
-  color: var(--qt-text-primary);
-}
-
-/* Tables */
-.markdown table {
-  background: var(--qt-card-bg);
-  border: 1px solid var(--qt-card-border);
-  border-radius: 0.5rem;
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-
-.markdown table:hover {
-  box-shadow: var(--qt-hover-glow);
-}
-
-.markdown table th {
-  background: rgba(65, 205, 82, 0.1);
-  color: var(--qt-text-primary);
-  font-weight: 600;
-  padding: 0.75rem 1rem;
-}
-
-.markdown table td {
-  color: var(--qt-text-primary);
-  border-color: var(--qt-card-border);
-  padding: 0.75rem 1rem;
-}
-
-/* Smooth transitions for theme switching */
-* {
-  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .footer .row {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  
-  .footer {
-    padding: 2rem 0 1.5rem;
-  }
-  
-  .markdown img {
-    max-width: 100%;
-    margin: 1rem auto;
-  }
-}
-/* ------------------------------------------------------------------ */
-/* Pro widgets in the sidebar.                                         */
-/* Discovery is the point: a reader browsing the free reference should */
-/* be able to see what Pro adds without leaving the page they are on.  */
-/* ------------------------------------------------------------------ */
 .sidebar-pro > a::after {
   content: "PRO";
   margin-left: 0.5em;
   padding: 0.05em 0.4em;
   border-radius: 4px;
-  font-size: 0.62rem;
+  font-size: 0.6rem;
   font-weight: 700;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
   vertical-align: middle;
   color: #fff;
-  background: var(--qt-green, #16a34a);
+  background: var(--qt-green-dark);
 }
 
-/* ------------------------------------------------------------------ */
-/* Widget gallery grid.                                                */
-/* ------------------------------------------------------------------ */
+[data-theme="dark"] .sidebar-pro > a::after {
+  color: #10240f;
+  background: var(--qt-green);
+}
+
+/* ==========================================================================
+   Widget gallery grid. Generated pages depend on these class names.
+   ========================================================================== */
+
 .widget-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
   gap: 1rem;
-  margin: 1.25rem 0 2rem;
+  margin: 1.5rem 0 2.5rem;
 }
+
 .wg-card {
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--ifm-color-emphasis-300);
-  border-radius: 10px;
+  border: 1px solid var(--cw-border);
+  border-radius: var(--cw-radius);
   overflow: hidden;
   text-decoration: none !important;
-  background: var(--ifm-background-surface-color);
-  transition: border-color 0.15s ease, transform 0.15s ease;
+  background: var(--cw-bg);
+  transition: border-color 0.15s ease, transform 0.15s ease,
+    box-shadow 0.15s ease;
 }
+
 .wg-card:hover {
-  border-color: var(--ifm-color-primary);
+  border-color: var(--qt-green);
   transform: translateY(-2px);
+  box-shadow: var(--cw-shadow-lifted);
 }
+
 .wg-card img {
   width: 100%;
   height: 118px;
   object-fit: contain;
-  background: var(--ifm-color-emphasis-100);
+  background: var(--cw-surface-2);
   display: block;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
 }
+
 .wg-noshot {
   height: 118px;
   display: grid;
   place-items: center;
-  font-size: 0.8rem;
-  color: var(--ifm-color-emphasis-600);
-  background: var(--ifm-color-emphasis-100);
+  font-size: 0.78rem;
+  color: var(--cw-muted);
+  background: var(--cw-surface-2);
 }
+
 .wg-name {
-  padding: 0.55rem 0.6rem;
+  padding: 0.6rem 0.7rem;
   font-size: 0.82rem;
   font-weight: 600;
-  color: var(--ifm-font-color-base);
+  color: var(--cw-text);
   word-break: break-word;
 }
+
 .wg-pro {
   margin-left: 0.4em;
   padding: 0.05em 0.35em;
   border-radius: 4px;
-  font-size: 0.6rem;
+  font-size: 0.58rem;
+  font-weight: 700;
   color: #fff;
-  background: var(--qt-green, #16a34a);
+  background: var(--qt-green-dark);
 }
 
-/* ------------------------------------------------------------------ */
-/* App showcase grid — wider cards than the widget gallery, because    */
-/* the subject is a full application window, not a single control.     */
-/* ------------------------------------------------------------------ */
+[data-theme="dark"] .wg-pro {
+  color: #10240f;
+  background: var(--qt-green);
+}
+
+/* ==========================================================================
+   App showcase grid — wider cards, because the subject is a whole window.
+   ========================================================================== */
+
 .app-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.1rem;
-  margin: 1.25rem 0 2rem;
+  gap: 1.25rem;
+  margin: 1.5rem 0 2.5rem;
 }
+
 .ag-card {
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--ifm-color-emphasis-300);
-  border-radius: 10px;
+  border: 1px solid var(--cw-border);
+  border-radius: var(--cw-radius);
   overflow: hidden;
   text-decoration: none !important;
-  background: var(--ifm-background-surface-color);
-  transition: border-color 0.15s ease, transform 0.15s ease;
+  background: var(--cw-bg);
+  transition: border-color 0.15s ease, transform 0.15s ease,
+    box-shadow 0.15s ease;
 }
+
 a.ag-card:hover {
-  border-color: var(--ifm-color-primary);
+  border-color: var(--qt-green);
   transform: translateY(-2px);
+  box-shadow: var(--cw-shadow-lifted);
 }
+
 .ag-card img {
   width: 100%;
   height: 190px;
   object-fit: cover;
   object-position: top;
-  background: var(--ifm-color-emphasis-100);
+  background: var(--cw-surface-2);
   display: block;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
 }
+
 .ag-card.ag-demo img {
   height: 140px;
   object-fit: contain;
 }
+
 .ag-name {
-  padding: 0.6rem 0.7rem 0.15rem;
-  font-size: 0.92rem;
-  font-weight: 600;
-  color: var(--ifm-font-color-base);
+  padding: 0.7rem 0.8rem 0.15rem;
+  font-size: 0.94rem;
+  font-weight: 650;
+  color: var(--cw-text);
 }
+
 .ag-blurb {
-  padding: 0 0.7rem;
-  font-size: 0.8rem;
-  line-height: 1.35;
-  color: var(--ifm-color-emphasis-700);
+  padding: 0 0.8rem;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--cw-muted);
 }
+
 .ag-chips {
   display: flex;
   flex-wrap: wrap;
   gap: 0.3rem;
-  padding: 0.55rem 0.7rem 0.7rem;
+  padding: 0.7rem 0.8rem 0.8rem;
+  margin-top: auto;
 }
+
 .ag-chip {
-  padding: 0.1em 0.5em;
+  padding: 0.12em 0.5em;
   border-radius: 999px;
   font-size: 0.66rem;
   font-family: var(--ifm-font-family-monospace);
-  color: var(--ifm-color-emphasis-800);
-  background: var(--ifm-color-emphasis-100);
-  border: 1px solid var(--ifm-color-emphasis-300);
+  color: var(--cw-muted);
+  background: var(--cw-surface-2);
+  border: 1px solid var(--cw-border);
 }
 
 .ag-patreon {
@@ -516,10 +836,14 @@ a.ag-card:hover {
   background: #ff424d; /* Patreon coral */
 }
 
-/* Click-to-expand images (Zoomable component). */
+/* ==========================================================================
+   Click-to-expand images (Zoomable component)
+   ========================================================================== */
+
 img.zoomable {
   cursor: zoom-in;
 }
+
 .zoom-overlay {
   position: fixed;
   inset: 0;
@@ -530,14 +854,17 @@ img.zoomable {
   background: rgba(8, 10, 14, 0.86);
   cursor: zoom-out;
 }
+
 .zoom-overlay img {
   max-width: min(96vw, 1400px);
   max-height: 92vh;
   width: auto;
   height: auto;
   border-radius: 8px;
+  border: 0;
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.55);
 }
+
 .zoom-close {
   position: fixed;
   top: 0.9rem;
@@ -552,6 +879,35 @@ img.zoomable {
   background: rgba(255, 255, 255, 0.14);
   cursor: pointer;
 }
+
 .zoom-close:hover {
   background: rgba(255, 255, 255, 0.28);
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media (max-width: 996px) {
+  :root {
+    --ifm-font-size-base: 16px;
+    --ifm-h1-font-size: 2rem;
+    --ifm-h2-font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer .row {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .footer {
+    padding: 2.5rem 0 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .markdown h2 {
+    margin-top: 2.25rem;
+  }
 }

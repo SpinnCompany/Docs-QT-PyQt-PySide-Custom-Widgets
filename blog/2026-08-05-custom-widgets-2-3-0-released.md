@@ -10,11 +10,11 @@ tags:
 - Custom Widgets
 - version
 - news
-title: "Custom Widgets 2.3.0: 163 widgets, painted charts, and docs that can't go stale"
+title: "Custom Widgets 2.3.0: 164 widgets, painted charts, and docs that can't go stale"
 ---
 
 Version **2.3.0** is on PyPI — the largest release in the project's history.
-The catalogue grows to **163 documented widgets**, every example app was
+The catalogue grows to **164 documented widgets**, every example app was
 rebuilt and verified, and the entire reference documentation is now generated
 straight from the code.
 
@@ -63,7 +63,7 @@ rows, frozen columns, grouping with aggregates, pivot and export.
 ## Docs that cannot drift
 
 Every widget page — prose, property tables, signals, screenshots, animations
-— is generated from the live code. The [gallery](/gallery) shows all 163
+— is generated from the live code. The [gallery](/gallery) shows all 164
 widgets (61 animated), and every screenshot in it is produced by the same
 pipeline that verifies the widgets still render.
 
