@@ -84,7 +84,7 @@ leaving Qt. Supporters get <strong>DataTable Pro</strong> on top: virtualization
 rows, frozen columns, grouping with aggregates, pivot and export.</p>
 <h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="maps-tokens-and-the-rest">Maps, tokens, and the rest<a href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/blog/custom-widgets-2-3-0-released#maps-tokens-and-the-rest" class="hash-link" aria-label="Direct link to Maps, tokens, and the rest" title="Direct link to Maps, tokens, and the rest" translate="no">​</a></h2>
 <ul>
-<li class=""><strong>QCustomMapView</strong> — the optional <code>[map]</code> extra:
+<li class=""><strong><a class="" href="https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/Widgets/QCustomMapView">QCustomMapView</a></strong> — the optional <code>[map]</code> extra:
 QtLocation's OSM backend with an offline default provider. No API key, no
 Chromium.</li>
 <li class=""><strong>Design tokens</strong> — <code>applyDesignTokens(app, theme="dark")</code> themes the whole
