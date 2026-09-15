@@ -323,7 +323,7 @@ const config = {
               },
               {
                 label: 'Contribute',
-                href: 'https://github.com/SpinnCompany/QT-PyQt-PySide-Custom-Widgets/blob/main/CONTRIBUTING.md',
+                href: 'https://github.com/SpinnCompany/QT-PyQt-PySide-Custom-Widgets',
               },
             ],
           },
