@@ -972,3 +972,19 @@ img.zoomable {
     margin-top: 2.25rem;
   }
 }
+
+/* "Get Pro" navbar link — the docs' only route to the product site, so it is
+   styled as a button rather than blending into the other navbar items. */
+.navbar-pro-link {
+  border: 1px solid var(--ifm-color-primary);
+  border-radius: 9999px;
+  padding: 0.25rem 0.9rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.navbar-pro-link:hover {
+  background-color: var(--ifm-color-primary);
+  color: #fff;
+  text-decoration: none;
+}

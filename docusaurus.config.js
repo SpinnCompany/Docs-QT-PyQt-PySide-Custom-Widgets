@@ -215,6 +215,15 @@ const config = {
               },
             ],
           },
+          // The docs are where the audience actually is, and until now they
+          // linked to the product site nowhere at all — the store got no
+          // traffic from its own documentation.
+          {
+            href: 'https://customwidgets.org/pricing/',
+            label: 'Get Pro',
+            position: 'right',
+            className: 'navbar-pro-link',
+          },
           {
             href: 'https://github.com/SpinnCompany/QT-PyQt-PySide-Custom-Widgets',
             position: 'right',
@@ -282,6 +291,27 @@ const config = {
               {
                 label: 'Blog & Tutorials',
                 to: '/blog',
+              },
+            ],
+          },
+          {
+            title: 'Custom Widgets',
+            items: [
+              {
+                label: 'Product site',
+                href: 'https://customwidgets.org/',
+              },
+              {
+                label: 'Pricing & Pro licence',
+                href: 'https://customwidgets.org/pricing/',
+              },
+              {
+                label: 'Download',
+                href: 'https://customwidgets.org/download/',
+              },
+              {
+                label: 'Widget showcase',
+                href: 'https://customwidgets.org/showcase/',
               },
             ],
           },
