@@ -27,7 +27,7 @@ drawer.open()
 |---|---|
 | **Tier** | Free (GPLv3) |
 | **Import** | `from Custom_Widgets.QCustomDrawer import QCustomDrawer` |
-| **Qt Designer** | Code only |
+| **Qt Designer** | Yes — drag it from the palette |
 
 ## Quick start
 
@@ -42,6 +42,15 @@ widget = QCustomDrawer()
 Colours come from the design tokens, so the widget follows the app theme with no extra work.
 
 <Zoomable src={useBaseUrl('/img/showcase/drawer-dark.gif')} alt="QCustomDrawer in dark theme" />
+
+## Properties
+
+Every property below is settable in code and in Qt Designer.
+
+| Property | Type | Default |
+|---|---|---|
+| `side` | `enum: `left` / `right` / `top` / `bottom`` | `left` |
+| `drawerSize` | `int` | — |
 
 ## Signals
 
@@ -58,9 +67,11 @@ Colours come from the design tokens, so the widget follows the app theme with no
 | `close()` | Close. |
 | `closed(...)` | Closed. |
 | `contentLayout()` | Content layout. |
+| `drawerSize(*args, **kwargs)` | Drawer size. |
 | `isOpen()` | Return whether the widget is open. |
 | `open()` | Open. |
 | `opened(...)` | Opened. |
+| `side(*args, **kwargs)` | Side. |
 
 ## Theming
 

@@ -44,6 +44,14 @@ Colours come from the design tokens, so the widget follows the app theme with no
 
 <Zoomable src={useBaseUrl('/img/showcase/breadcrumbs-dark.png')} alt="QCustomBreadcrumbs in dark theme" />
 
+## Properties
+
+Every property below is settable in code and in Qt Designer.
+
+| Property | Type | Default |
+|---|---|---|
+| `separator` | `string` | — |
+
 ## Signals
 
 | Signal |
@@ -56,6 +64,7 @@ Colours come from the design tokens, so the widget follows the app theme with no
 |---|---|
 | `itemClicked(...)` | Item clicked. |
 | `items()` | Items. |
+| `separator(*args, **kwargs)` | Separator. |
 | `setItems(items)` | Set the trail. Each item is a string, (label, data) pair, or a dict |
 
 ## Theming

@@ -60,6 +60,14 @@ Colours come from the design tokens, so the widget follows the app theme with no
 
 <Zoomable src={useBaseUrl('/img/showcase/tabletoolbar-dark.gif')} alt="QCustomTableToolbar in dark theme" />
 
+## Properties
+
+Every property below is settable in code and in Qt Designer.
+
+| Property | Type | Default |
+|---|---|---|
+| `searchPlaceholder` | `string` | `Search` |
+
 ## Signals
 
 | Signal |
@@ -85,6 +93,7 @@ Colours come from the design tokens, so the widget follows the app theme with no
 | `removeFilterChip(key)` | Remove a filter chip. |
 | `searchChanged(...)` | Search changed. |
 | `searchInput()` | Search input. |
+| `searchPlaceholder(*args, **kwargs)` | Search placeholder. |
 | `searchText()` | Search text. |
 | `setActiveStatus(key)` | Set the active status. |
 | `setFilterChips(items)` | Replace all filter chips. Each item is (key, label[, value]) or a |

@@ -45,6 +45,14 @@ Colours come from the design tokens, so the widget follows the app theme with no
 
 <Zoomable src={useBaseUrl('/img/showcase/accordion-dark.gif')} alt="QCustomAccordion in dark theme" />
 
+## Properties
+
+Every property below is settable in code and in Qt Designer.
+
+| Property | Type | Default |
+|---|---|---|
+| `exclusive` | `bool` | `False` |
+
 ## Signals
 
 | Signal |
@@ -56,6 +64,7 @@ Colours come from the design tokens, so the widget follows the app theme with no
 | Method | Description |
 |---|---|
 | `addSection(title, content)` | Add a section. |
+| `exclusive(*args, **kwargs)` | Exclusive. |
 | `expandedIndices()` | Expanded indices. |
 | `isExclusive()` | Return whether the widget is exclusive. |
 | `section(index)` | Section. |
@@ -72,4 +81,4 @@ See [Design tokens](../02-Theming/DesignTokens.md).
 
 ## Related
 
-[QCustomCardStack](QCustomCardStack.mdx) · [QCustomCarousel](QCustomCarousel.md) · [QCustomEmbeddedWindow](QCustomEmbeddedWindow.mdx) · [QCustomFlowLayout](QCustomFlowLayout.md) · [QCustomFlowWidget](QCustomFlowWidget.mdx) · [QCustomGlassFrame](QCustomGlassFrame.mdx) · [QCustomModal](QCustomModal.mdx) · [QCustomPopover](QCustomPopover.mdx)
+[QCustomCardStack](QCustomCardStack.mdx) · [QCustomCarousel](QCustomCarousel.md) · [QCustomComponent](QCustomComponent.md) · [QCustomComponentContainer](QCustomComponentContainer.md) · [QCustomComponentLoader](QCustomComponentLoader.md) · [QCustomEmbeddedWindow](QCustomEmbeddedWindow.mdx) · [QCustomFlowLayout](QCustomFlowLayout.md) · [QCustomFlowWidget](QCustomFlowWidget.mdx)

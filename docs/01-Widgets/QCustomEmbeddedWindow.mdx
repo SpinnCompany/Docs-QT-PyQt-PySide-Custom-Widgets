@@ -20,7 +20,7 @@ QWidget(self, /, parent: PySide6.QtWidgets.QWidget | None = None, f: PySide6.QtC
 |---|---|
 | **Tier** | Free (GPLv3) |
 | **Import** | `from Custom_Widgets.QCustomEmbeddedWindow import QCustomEmbeddedWindow` |
-| **Qt Designer** | Code only |
+| **Qt Designer** | Yes — drag it from the palette |
 
 ## Quick start
 
@@ -36,6 +36,17 @@ Colours come from the design tokens, so the widget follows the app theme with no
 
 <Zoomable src={useBaseUrl('/img/showcase/embeddedwindow-dark.gif')} alt="QCustomEmbeddedWindow in dark theme" />
 
+## Properties
+
+Every property below is settable in code and in Qt Designer.
+
+| Property | Type | Default |
+|---|---|---|
+| `borderRadius` | `int` | — |
+| `headerHeight` | `int` | — |
+| `animationDuration` | `int` | — |
+| `titleText` | `string` | — |
+
 ## Signals
 
 | Signal |
@@ -49,13 +60,17 @@ Colours come from the design tokens, so the widget follows the app theme with no
 | `addWidget(widget)` | Add a widget. |
 | `adjustSizeToContent()` | Adjust size to content. |
 | `animateHeight(startHeight, endHeight)` | Animate height. |
+| `animationDuration(*args, **kwargs)` | Animation duration. |
+| `borderRadius(*args, **kwargs)` | Border radius. |
 | `closed(...)` | Closed. |
+| `headerHeight(*args, **kwargs)` | Header height. |
 | `raiseWidget(opacityEffect)` | Raise widget. |
 | `setControlsVisible(b)` | Set the controls visible. |
 | `setShadow()` | Set the shadow. |
 | `setTitle(text)` | Set the title. |
 | `showHideContent()` | Show the hide content. |
 | `title()` | Title. |
+| `titleText(*args, **kwargs)` | Title text. |
 | `update(*args, **kwargs)` | Update. |
 
 ## Runnable example
@@ -64,4 +79,4 @@ A complete app using this widget lives at `examples/PySide6/QCustomEmbeddedWindo
 
 ## Related
 
-[QCustomAccordion](QCustomAccordion.mdx) · [QCustomCardStack](QCustomCardStack.mdx) · [QCustomCarousel](QCustomCarousel.md) · [QCustomFlowLayout](QCustomFlowLayout.md) · [QCustomFlowWidget](QCustomFlowWidget.mdx) · [QCustomGlassFrame](QCustomGlassFrame.mdx) · [QCustomModal](QCustomModal.mdx) · [QCustomPopover](QCustomPopover.mdx)
+[QCustomAccordion](QCustomAccordion.mdx) · [QCustomCardStack](QCustomCardStack.mdx) · [QCustomCarousel](QCustomCarousel.md) · [QCustomComponent](QCustomComponent.md) · [QCustomComponentContainer](QCustomComponentContainer.md) · [QCustomComponentLoader](QCustomComponentLoader.md) · [QCustomFlowLayout](QCustomFlowLayout.md) · [QCustomFlowWidget](QCustomFlowWidget.mdx)

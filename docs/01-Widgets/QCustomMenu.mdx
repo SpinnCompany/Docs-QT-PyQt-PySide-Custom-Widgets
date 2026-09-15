@@ -43,6 +43,16 @@ Colours come from the design tokens, so the widget follows the app theme with no
 
 <Zoomable src={useBaseUrl('/img/showcase/menu-dark.png')} alt="QCustomMenu in dark theme" />
 
+## Properties
+
+Every property below is settable in code and in Qt Designer.
+
+| Property | Type | Default |
+|---|---|---|
+| `itemHeight` | `int` | `38` |
+| `cornerRadius` | `int` | `14` |
+| `minWidth` | `int` | `200` |
+
 ## Signals
 
 | Signal |
@@ -57,6 +67,9 @@ Colours come from the design tokens, so the widget follows the app theme with no
 | `addSeparator()` | Add a separator. |
 | `applyColors(bg=None, text=None, muted=None, hover=None, border=None, accent=None, danger=None)` | Apply the colors. |
 | `clear()` | Clear. |
+| `cornerRadius(*args, **kwargs)` | Corner radius. |
+| `itemHeight(*args, **kwargs)` | Item height. |
+| `minWidth(*args, **kwargs)` | Min width. |
 | `popupAt(anchor, align='right', gap=4)` | Show the menu just below `anchor`, right- or left-aligned to it. |
 | `popupAtPos(global_pos)` | Popup at pos. |
 | `triggered(...)` | Triggered. |

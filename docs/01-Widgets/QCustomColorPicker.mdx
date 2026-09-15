@@ -39,6 +39,14 @@ Colours come from the design tokens, so the widget follows the app theme with no
 
 <Zoomable src={useBaseUrl('/img/showcase/colorpicker-dark.png')} alt="QCustomColorPicker in dark theme" />
 
+## Properties
+
+Every property below is settable in code and in Qt Designer.
+
+| Property | Type | Default |
+|---|---|---|
+| `currentColor` | `color` | — |
+
 ## Signals
 
 | Signal |
@@ -52,6 +60,7 @@ Colours come from the design tokens, so the widget follows the app theme with no
 | `color()` | Color. |
 | `colorChanged(...)` | Color changed. |
 | `colorName()` | Color name. |
+| `currentColor(*args, **kwargs)` | Current color. |
 | `setColor(color)` | Set the color. |
 
 ## Theming
@@ -62,4 +71,4 @@ See [Design tokens](../02-Theming/DesignTokens.md).
 
 ## Related
 
-[QCustomButtonGroup](QCustomButtonGroup.mdx) · [QCustomCheckBox](QCustomCheckBox.md) · [QCustomComboBox](QCustomComboBox.mdx) · [QCustomDateEdit](QCustomDateEdit.mdx) · [QCustomDateRangePicker](QCustomDateRangePicker.mdx) · [QCustomEmojiPicker](QCustomEmojiPicker.md) · [QCustomFileDropZone](QCustomFileDropZone.mdx) · [QCustomForm](QCustomForm.mdx)
+[QCustomButtonGroup](QCustomButtonGroup.mdx) · [QCustomCheckBox](QCustomCheckBox.md) · [QCustomComboBox](QCustomComboBox.mdx) · [QCustomDateEdit](QCustomDateEdit.mdx) · [QCustomDateRangeEdit](QCustomDateRangeEdit.mdx) · [QCustomDateRangePicker](QCustomDateRangePicker.mdx) · [QCustomEmojiPicker](QCustomEmojiPicker.md) · [QCustomFileDropZone](QCustomFileDropZone.mdx)

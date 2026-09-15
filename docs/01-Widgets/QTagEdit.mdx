@@ -19,13 +19,13 @@ A tag based edit
 | | |
 |---|---|
 | **Tier** | Free (GPLv3) |
-| **Import** | `from Custom_Widgets.QTagEdit import QTagEdit` |
-| **Qt Designer** | Code only |
+| **Import** | `from Custom_Widgets.QCustomTagEdit import QTagEdit` |
+| **Qt Designer** | Yes — drag it from the palette |
 
 ## Quick start
 
 ```python
-from Custom_Widgets.QTagEdit import QTagEdit
+from Custom_Widgets.QCustomTagEdit import QTagEdit
 
 widget = QTagEdit()
 widget.setTagSuggestions(["python", "qt", "pyside6", "pyqt5", "widgets"])
@@ -76,6 +76,12 @@ Every property below is settable in code and in Qt Designer.
 | `tagTextColor(*args, **kwargs)` | Tag text color. |
 | `tags() -> List[str]` | Returns all tag names |
 
+## Theming
+
+Colours come from the design tokens, so they follow the active theme. Roles used: `on-secondary`, `on-surface`, `outline`, `secondary`, `surface`.
+
+See [Design tokens](../02-Theming/DesignTokens.md).
+
 ## Related
 
-[QCustomButtonGroup](QCustomButtonGroup.mdx) · [QCustomCheckBox](QCustomCheckBox.md) · [QCustomColorPicker](QCustomColorPicker.mdx) · [QCustomComboBox](QCustomComboBox.mdx) · [QCustomDateEdit](QCustomDateEdit.mdx) · [QCustomDateRangePicker](QCustomDateRangePicker.mdx) · [QCustomEmojiPicker](QCustomEmojiPicker.md) · [QCustomFileDropZone](QCustomFileDropZone.mdx)
+[QCustomButtonGroup](QCustomButtonGroup.mdx) · [QCustomCheckBox](QCustomCheckBox.md) · [QCustomColorPicker](QCustomColorPicker.mdx) · [QCustomComboBox](QCustomComboBox.mdx) · [QCustomDateEdit](QCustomDateEdit.mdx) · [QCustomDateRangeEdit](QCustomDateRangeEdit.mdx) · [QCustomDateRangePicker](QCustomDateRangePicker.mdx) · [QCustomEmojiPicker](QCustomEmojiPicker.md)

@@ -47,6 +47,20 @@ Colours come from the design tokens, so the widget follows the app theme with no
 
 <Zoomable src={useBaseUrl('/img/showcase/modal-dark.gif')} alt="QCustomModal in dark theme" />
 
+## Properties
+
+Every property below is settable in code and in Qt Designer.
+
+| Property | Type | Default |
+|---|---|---|
+| `title` | `string` | `Modal title` |
+| `subtitle` | `string` | — |
+| `cornerRadius` | `int` | `20` |
+| `panelWidth` | `int` | `420` |
+| `scrimAlpha` | `int` | `120` |
+| `closeOnScrim` | `bool` | `True` |
+| `xColor` | `color` | — |
+
 ## Signals
 
 | Signal |
@@ -64,13 +78,20 @@ Colours come from the design tokens, so the widget follows the app theme with no
 | `clearActions()` | Clear the actions. |
 | `clearContent()` | Clear the content. |
 | `closeModal()` | Close the modal. |
+| `closeOnScrim(*args, **kwargs)` | Close the on scrim. |
 | `closed(...)` | Closed. |
+| `cornerRadius(*args, **kwargs)` | Corner radius. |
 | `eventFilter(obj, ev)` | Event filter. |
+| `panelWidth(*args, **kwargs)` | Panel width. |
+| `scrimAlpha(*args, **kwargs)` | Scrim alpha. |
 | `setSubtitle(text)` | Set the subtitle. |
 | `setTitle(text)` | Set the title. |
 | `showModal()` | Show the modal. |
+| `subtitle(*args, **kwargs)` | Subtitle. |
+| `title(*args, **kwargs)` | Title. |
 | `triggered(...)` | Triggered. |
+| `xColor(*args, **kwargs)` | X color. |
 
 ## Related
 
-[QCustomAccordion](QCustomAccordion.mdx) · [QCustomCardStack](QCustomCardStack.mdx) · [QCustomCarousel](QCustomCarousel.md) · [QCustomEmbeddedWindow](QCustomEmbeddedWindow.mdx) · [QCustomFlowLayout](QCustomFlowLayout.md) · [QCustomFlowWidget](QCustomFlowWidget.mdx) · [QCustomGlassFrame](QCustomGlassFrame.mdx) · [QCustomPopover](QCustomPopover.mdx)
+[QCustomAccordion](QCustomAccordion.mdx) · [QCustomCardStack](QCustomCardStack.mdx) · [QCustomCarousel](QCustomCarousel.md) · [QCustomComponent](QCustomComponent.md) · [QCustomComponentContainer](QCustomComponentContainer.md) · [QCustomComponentLoader](QCustomComponentLoader.md) · [QCustomEmbeddedWindow](QCustomEmbeddedWindow.mdx) · [QCustomFlowLayout](QCustomFlowLayout.md)
