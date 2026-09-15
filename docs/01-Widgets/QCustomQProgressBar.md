@@ -295,3 +295,9 @@ The progress bar automatically detects the application's theme state through `QC
 | `stop()` | Stop. |
 
 <!-- /generated:api-reference -->
+
+## Theming
+
+Colours come from the design tokens, so they follow the active theme. Roles used: `destructive`, `warning`.
+
+See [Design tokens](../02-Theming/DesignTokens.md).

@@ -70,7 +70,8 @@ app.exec()
 ## Theming
 
 Styled from the design tokens (`card_qss`) via `applyDesignTokens`; the surface,
-border, and header text use the `surface` / `outline` / `on-surface` roles. See
+border and title use the `surface` / `outline` / `on-surface` roles, and the
+subtitle `on-surface-muted`. See
 [Theming](../02-Theming/designer-properties.md).
 
 <!-- generated:api-reference -->

@@ -14,8 +14,8 @@ equivalent of the HTML `<kbd>` element. Pass a shortcut string like `"Ctrl+K"`
 - **Keycap rendering** — each key becomes a bordered, monospace cap.
 - **String or list input** — `"Cmd+Shift+P"` or `["Cmd", "Shift", "P"]`.
 - **Custom separator** — split on `+` by default, or any character you choose.
-- **Tokenized colours** (`surface-muted`, `on-surface`, `outline`) that follow
-  the theme.
+- **Tokenized colours** (`surface-muted`, `on-surface`, `outline`,
+  `on-surface-muted`) that follow the theme.
 
 ---
 
@@ -81,7 +81,8 @@ QCustomKbd("Ctrl-=", separator="-")   # -> "Ctrl", "="
 Styled from the design tokens (`kbd_qss` in
 `Custom_Widgets/JSonStyles/tokens.py`), applied via `applyDesignTokens` — the
 same system every modern widget uses. Keycaps use the `surface-muted`,
-`on-surface`, and `outline` roles. See
+`on-surface`, and `outline` roles, and the `+` separator between them
+`on-surface-muted`. See
 [Theming](../02-Theming/designer-properties.md).
 
 <!-- generated:api-reference -->

@@ -196,3 +196,9 @@ if __name__ == "__main__":
 | `initPen(penWidth)` | Init pen. |
 
 <!-- /generated:api-reference -->
+
+## Theming
+
+Colours come from the design tokens, so they follow the active theme. Roles used: `accent`.
+
+See [Design tokens](../02-Theming/DesignTokens.md).

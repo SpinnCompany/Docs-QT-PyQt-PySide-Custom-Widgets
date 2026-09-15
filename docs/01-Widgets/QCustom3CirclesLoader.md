@@ -195,3 +195,9 @@ This documentation should help you understand and integrate `QCustom3CirclesLoad
 | `startAnimations()` | Start the animations. |
 
 <!-- /generated:api-reference -->
+
+## Theming
+
+Colours come from the design tokens, so they follow the active theme. Roles used: `accent`.
+
+See [Design tokens](../02-Theming/DesignTokens.md).

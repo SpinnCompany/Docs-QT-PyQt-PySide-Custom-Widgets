@@ -77,8 +77,10 @@ app.exec()
 
 ## Theming
 
-Styled from the design tokens (`statcard_qss`) via `applyDesignTokens`; the trend
-colours use the `success` / `destructive` / `outline` roles. See
+Styled from the design tokens (`statcard_qss`) via `applyDesignTokens`; the card
+sits on `surface` inside an `outline` border, the value uses `on-surface`, and the
+label and caption `on-surface-muted`. The trend colours use `success` (up),
+`destructive` (down) and `on-surface-muted` (flat). See
 [Theming](../02-Theming/designer-properties.md).
 
 <!-- generated:api-reference -->
