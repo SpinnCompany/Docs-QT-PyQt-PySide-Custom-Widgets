@@ -4,7 +4,7 @@ The [Docusaurus](https://docusaurus.io) site behind
 **[spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets](https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/)** —
 the official documentation for
 [QT-PyQt-PySide-Custom-Widgets](https://github.com/SpinnCompany/QT-PyQt-PySide-Custom-Widgets):
-164 widget reference pages, usage guides, a widget gallery, the app
+167 widget reference pages, usage guides, a widget gallery, the app
 showcase and the release blog.
 
 - **Product site**: [customwidgets.org](https://customwidgets.org/)
@@ -22,12 +22,28 @@ npm run serve              # serve the production build locally
 
 ## Deploying
 
+> **Pushing to `main` does not publish anything.** Pages is configured in
+> legacy mode (`build_type: legacy`, source `gh-pages` branch), so it serves
+> that branch directly. `.github/workflows/deploy.yml` looks like it deploys on
+> push, but it is an Actions-based Pages deploy that cannot run while Pages is
+> in branch mode — it has never produced a single run. Between 2026-08-06 and
+> 2026-09-16 the published site silently sat six weeks behind `main` because of
+> this. **Deploy by hand, and check the live site afterwards.**
+
 GitHub Pages serves the `gh-pages` branch. Build with the Pages base URL,
 then publish the `build/` output to `gh-pages`:
 
 ```bash
-npm run build:gh-pages     # DEPLOY_ENV=gh-pages docusaurus build
-# publish build/ to the gh-pages branch (worktree + rsync, or docusaurus deploy)
+USE_SSH=true npm run deploy   # build:gh-pages + docusaurus deploy (force-pushes gh-pages)
+```
+
+`USE_SSH=true` is required because the remote is `git@github.com:`; without it
+Docusaurus prompts for `GIT_USER`. Verify afterwards by counting the live
+widget pages — use `grep -o`, not `grep -c`, since the sitemap is one long line:
+
+```bash
+curl -s https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/sitemap.xml \
+  | grep -o '/Widgets/[^<]*</loc>' | wc -l
 ```
 
 ## How the content is produced
