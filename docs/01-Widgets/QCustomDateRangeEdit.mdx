@@ -1,0 +1,58 @@
+---
+title: QCustomDateRangeEdit
+description: QCustomDateEdit / QCustomTimeEdit / QCustomDateRangeEdit.
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import Zoomable from '@site/src/components/Zoomable';
+
+{/* generated:widget-reference */}
+
+# QCustomDateRangeEdit
+
+QCustomDateEdit / QCustomTimeEdit / QCustomDateRangeEdit
+
+Tokenized date & time inputs built on Qt's date/time editors (correct
+calendar popup, keyboard entry and validation) plus a two-field date
+range picker that keeps start \<= end. Styled from design tokens; the
+calendar popup is scoped via the object name "customCalendar".
+
+## At a glance
+
+| | |
+|---|---|
+| **Tier** | Free (GPLv3) |
+| **Import** | `from Custom_Widgets.QCustomDateTimeEdit import QCustomDateRangeEdit` |
+| **Qt Designer** | Yes — drag it from the palette |
+
+## Quick start
+
+```python
+from Custom_Widgets.QCustomDateTimeEdit import QCustomDateRangeEdit
+
+widget = QCustomDateRangeEdit()
+```
+
+## Signals
+
+| Signal |
+|---|
+| `rangeChanged(PyObject,PyObject)` |
+
+## Methods
+
+| Method | Description |
+|---|---|
+| `dateRange()` | Date range. |
+| `endDate()` | End date. |
+| `endEdit()` | End edit. |
+| `rangeChanged(...)` | Range changed. |
+| `setDateRange(start, end)` | Set the date range. |
+| `startDate()` | Start the date. |
+| `startEdit()` | Start the edit. |
+
+## Theming
+
+Colours come from the design tokens, so they follow the active theme. Roles used: `surface`, `on-surface`, `outline`, `accent`.
+
+See [Design tokens](../02-Theming/DesignTokens.md).

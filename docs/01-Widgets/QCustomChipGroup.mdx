@@ -1,0 +1,59 @@
+---
+title: QCustomChipGroup
+description: QCustomChip / QCustomChipGroup - compact tags / filter chips.
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import Zoomable from '@site/src/components/Zoomable';
+
+{/* generated:widget-reference */}
+
+# QCustomChipGroup
+
+QCustomChip / QCustomChipGroup - compact tags / filter chips.
+
+A chip is a small rounded label, optionally closable (x) and/or
+selectable (filter/choice chip). QCustomChipGroup lays chips out in a
+wrapping flow with optional single- or multi-select. Tokenized.
+
+## At a glance
+
+| | |
+|---|---|
+| **Tier** | Free (GPLv3) |
+| **Import** | `from Custom_Widgets.QCustomChip import QCustomChipGroup` |
+| **Qt Designer** | Yes — drag it from the palette |
+
+## Quick start
+
+```python
+from Custom_Widgets.QCustomChip import QCustomChipGroup
+
+widget = QCustomChipGroup()
+```
+
+## Signals
+
+| Signal |
+|---|
+| `chipRemoved(PyObject)` |
+| `selectionChanged(QVariantList)` |
+
+## Methods
+
+| Method | Description |
+|---|---|
+| `addChip(text, data=None, closable=None, selectable=None)` | Add a chip. |
+| `chipRemoved(...)` | Chip removed. |
+| `chips()` | Chips. |
+| `count()` | Count. |
+| `selectedChips()` | Selected chips. |
+| `selectedData()` | Selected data. |
+| `selectionChanged(...)` | Selection changed. |
+| `setChips(texts)` | Set the chips. |
+
+## Theming
+
+Colours come from the design tokens, so they follow the active theme. Roles used: `surface-muted`, `on-surface`, `accent`, `on-primary`, `outline`.
+
+See [Design tokens](../02-Theming/DesignTokens.md).
