@@ -131,7 +131,7 @@ QTagEdit(parent=None, tag_suggestions=[])
 ### Basic Tag Editor
 ```python
 from qtpy.QtWidgets import QApplication, QVBoxLayout, QWidget
-from Custom_Widgets.QTagEdit import QTagEdit
+from Custom_Widgets.QCustomTagEdit import QTagEdit
 
 app = QApplication([])
 
