@@ -13,7 +13,11 @@ import Zoomable from '@site/src/components/Zoomable';
 
 :::info Pro widget
 
-`QCustomNodeGraph` is included in the free package under the GPLv3, so an application you distribute with it must be GPLv3 as well. **Custom Widgets Pro** is the commercial licence that lets you use it in closed-source software.
+`QCustomNodeGraph` ships in **Custom Widgets Pro**. It is not part of the free GPLv3 package from **2.6.0** onward — the free package keeps the import path so Qt Designer forms still load, and installing Pro activates the widget with no code change. Releases up to 2.5.0 included it under the GPLv3.
+
+```bash
+pip install QT-PyQt-PySide-Custom-Widgets-Pro
+```
 
 [See plans](https://customwidgets.org/pricing/)
 

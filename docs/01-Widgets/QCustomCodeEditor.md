@@ -4,6 +4,18 @@ sidebar_class_name: sidebar-pro
 
 # QCustomCodeEditor
 
+
+:::info Pro widget
+
+`QCustomCodeEditor` ships in **Custom Widgets Pro**. It is not part of the free GPLv3 package from **2.6.0** onward — the free package keeps the import path so Qt Designer forms still load, and installing Pro activates the widget with no code change. Releases up to 2.5.0 included it under the GPLv3.
+
+```bash
+pip install QT-PyQt-PySide-Custom-Widgets-Pro
+```
+
+[See plans](https://customwidgets.org/pricing/)
+
+:::
 ![QCustomCodeEditor](/img/showcase/codeeditor.png)
 
 > **Note:**  

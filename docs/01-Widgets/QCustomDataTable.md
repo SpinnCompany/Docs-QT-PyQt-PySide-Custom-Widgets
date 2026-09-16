@@ -1,5 +1,4 @@
 ---
-sidebar_class_name: sidebar-pro
 ---
 
 # QCustomDataTable
