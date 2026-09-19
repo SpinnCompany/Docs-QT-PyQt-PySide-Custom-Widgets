@@ -215,11 +215,15 @@ const config = {
               },
             ],
           },
+          // ?utm_source=docs is load-bearing: Docusaurus marks external links
+          // rel="noreferrer", which strips the Referer header, so a click from
+          // here lands in the access log as untraceable direct traffic. The
+          // query string is the only way to measure whether this funnel works.
           // The docs are where the audience actually is, and until now they
           // linked to the product site nowhere at all — the store got no
           // traffic from its own documentation.
           {
-            href: 'https://customwidgets.org/pricing/',
+            href: 'https://customwidgets.org/pricing/?utm_source=docs&utm_medium=navbar',
             label: 'Get Pro',
             position: 'right',
             className: 'navbar-pro-link',
@@ -299,19 +303,19 @@ const config = {
             items: [
               {
                 label: 'Product site',
-                href: 'https://customwidgets.org/',
+                href: 'https://customwidgets.org/?utm_source=docs&utm_medium=footer',
               },
               {
                 label: 'Pricing & Pro licence',
-                href: 'https://customwidgets.org/pricing/',
+                href: 'https://customwidgets.org/pricing/?utm_source=docs&utm_medium=footer',
               },
               {
                 label: 'Download',
-                href: 'https://customwidgets.org/download/',
+                href: 'https://customwidgets.org/download/?utm_source=docs&utm_medium=footer',
               },
               {
                 label: 'Widget showcase',
-                href: 'https://customwidgets.org/showcase/',
+                href: 'https://customwidgets.org/showcase/?utm_source=docs&utm_medium=footer',
               },
             ],
           },
