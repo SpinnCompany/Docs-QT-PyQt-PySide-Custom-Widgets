@@ -1,21 +1,19 @@
 // @ts-check
 import { themes as prismThemes } from 'prism-react-renderer';
 
-// Simple and reliable environment detection
-const isGitHubPages = process.env.DEPLOY_ENV === 'gh-pages';
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Qt Custom Widgets',
   tagline: 'Professional PyQt and PySide Custom Widgets & Components',
   favicon: 'img/favicon.ico',
 
-  // Dynamic configuration
   url: 'https://SpinnCompany.github.io',
-  // The published site is a GitHub *project* page, so it is served from
-  // /Docs-QT-PyQt-PySide-Custom-Widgets/ — deploying with '/' 404s every
-  // asset. CI sets DEPLOY_ENV=gh-pages; a bare local build keeps '/'.
-  baseUrl: isGitHubPages ? '/Docs-QT-PyQt-PySide-Custom-Widgets/' : '/',
+  // The site is a GitHub *project* page served from
+  // /Docs-QT-PyQt-PySide-Custom-Widgets/; a build with any other base 404s
+  // every stylesheet, script, link and sitemap URL once published. Keep it
+  // unconditional: `docusaurus deploy` runs its own build, so an env var set
+  // for an earlier build step never reaches the build that gets published.
+  baseUrl: '/Docs-QT-PyQt-PySide-Custom-Widgets/',
   
   // GitHub repo information
   organizationName: 'SpinnCompany',

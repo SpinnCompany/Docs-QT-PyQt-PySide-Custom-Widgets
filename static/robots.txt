@@ -1,4 +1,4 @@
+User-agent: *
+Allow: /
 
-#Begin Attracta SEO Tools Sitemap. Do not remove
-sitemap: http://cdn.attracta.com/sitemap/6111377.xml.gz
-#End Attracta SEO Tools Sitemap. Do not remove
+Sitemap: https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/sitemap.xml

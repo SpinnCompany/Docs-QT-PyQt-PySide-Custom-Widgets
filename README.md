@@ -20,30 +20,42 @@ npm run build              # production build into build/
 npm run serve              # serve the production build locally
 ```
 
+Both servers use the site's base path:
+<http://localhost:3000/Docs-QT-PyQt-PySide-Custom-Widgets/>.
+
 ## Deploying
 
-> **Pushing to `main` does not publish anything.** Pages is configured in
-> legacy mode (`build_type: legacy`, source `gh-pages` branch), so it serves
-> that branch directly. `.github/workflows/deploy.yml` looks like it deploys on
-> push, but it is an Actions-based Pages deploy that cannot run while Pages is
-> in branch mode — it has never produced a single run. Between 2026-08-06 and
-> 2026-09-16 the published site silently sat six weeks behind `main` because of
-> this. **Deploy by hand, and check the live site afterwards.**
-
-GitHub Pages serves the `gh-pages` branch. Build with the Pages base URL,
-then publish the `build/` output to `gh-pages`:
+> **Pushing to `main` does not publish anything.** GitHub Pages runs in legacy
+> branch mode (`build_type: legacy`, source: the `gh-pages` branch) and serves
+> that branch as-is. Between 2026-08-06 and 2026-09-16 the published site
+> silently sat six weeks behind `main` because of this. **Deploy by hand after
+> pushing `main`, and check the live site afterwards.**
 
 ```bash
-USE_SSH=true npm run deploy   # build:gh-pages + docusaurus deploy (force-pushes gh-pages)
+USE_SSH=true npm run deploy   # docusaurus deploy: builds, then force-pushes build/ to gh-pages
 ```
 
 `USE_SSH=true` is required because the remote is `git@github.com:`; without it
-Docusaurus prompts for `GIT_USER`. Verify afterwards by counting the live
-widget pages — use `grep -o`, not `grep -c`, since the sitemap is one long line:
+Docusaurus prompts for `GIT_USER`.
+
+The base path `/Docs-QT-PyQt-PySide-Custom-Widgets/` is fixed in
+`docusaurus.config.js`, so every build is a production build — there is no
+flag to forget. It used to be switched by a `DEPLOY_ENV` variable, but
+`docusaurus deploy` runs its own build, which never saw the variable: the five
+deploys of 2026-09-16..19 published a site whose stylesheets, scripts, links
+and sitemap all pointed at the host root and returned 404.
+
+Verify a minute after deploying (the Pages build takes ~30 s). Counting
+sitemap entries is not enough — a broken build has just as many — so check
+that a stylesheet and the sitemap URLs actually resolve. Every line should
+start with `200`:
 
 ```bash
-curl -s https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/sitemap.xml \
-  | grep -o '/Widgets/[^<]*</loc>' | wc -l
+B=https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets
+curl -s "$B/" | grep -o '/Docs-QT-PyQt-PySide-Custom-Widgets/assets/css/[^"]*' | head -1 \
+  | xargs -I{} curl -s -o /dev/null -w '%{http_code} {}\n' "https://spinncompany.github.io{}"
+curl -s "$B/sitemap.xml" | grep -o '<loc>[^<]*' | sed 's/<loc>//' | shuf -n 8 \
+  | xargs -n1 curl -s -o /dev/null -w '%{http_code} %{url_effective}\n'
 ```
 
 ## How the content is produced
