@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmy_website=globalThis.webpackChunkmy_website||[]).push([[3689],{80555:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/Docs-QT-PyQt-PySide-Custom-Widgets/blog","page":1,"postsPerPage":10,"totalPages":2,"totalCount":13,"nextPage":"/Docs-QT-PyQt-PySide-Custom-Widgets/blog/page/2","blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
